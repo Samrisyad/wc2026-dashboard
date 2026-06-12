@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIFA World Cup 2026 Dashboard (WIB)</title>
+<style>
+  :root {
+    --green: #0a7d3a; --gold: #d4af37; --dark: #14202b; --light: #f4f6f8; --grey: #6b7785;
+  }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; background: var(--light); color: var(--dark); }
+  header { background: #0a0a0a; color: white; padding: 24px 32px; }
+  header h1 { margin: 0; font-size: 28px; display: flex; align-items: center; gap: 12px; }
+  header p { margin: 6px 0 0; opacity: 0.85; font-size: 14px; }
+  .trophy-icon { width: 34px; height: 34px; flex-shrink: 0; }
+  nav { display: flex; gap: 8px; padding: 12px 32px; background: white; border-bottom: 1px solid #e0e4e8; flex-wrap: wrap; position: sticky; top: 0; z-index: 10; }
+  nav a { text-decoration: none; color: var(--dark); padding: 8px 14px; border-radius: 6px; font-size: 14px; font-weight: 600; }
+  nav a:hover { background: var(--light); }
+  main { padding: 24px 32px; max-width: 1200px; margin: 0 auto; }
+  section { margin-bottom: 40px; }
+  section h2 { border-left: 5px solid var(--gold); padding-left: 12px; font-size: 22px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+  .match-card { background: white; border-radius: 10px; padding: 14px 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .match-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+  .group-tag { font-size: 12px; color: var(--grey); font-weight: 700; text-transform: uppercase; }
+  .badge { font-size: 11px; padding: 3px 8px; border-radius: 12px; font-weight: 700; }
+  .badge.ft { background: #e0e4e8; color: var(--grey); }
+  .badge.live { background: #ffe1e1; color: #c0392b; animation: pulse 1.5s infinite; }
+  .badge.sched { background: #e6f0ff; color: #2563eb; }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+  .team-flag { display: inline-flex; align-items: center; gap: 5px; }
+  .flag-icon { width: 16px; height: 12px; object-fit: cover; border-radius: 2px; box-shadow: 0 0 0 1px rgba(0,0,0,0.08); vertical-align: middle; }
+  .match-teams { display: flex; justify-content: space-between; align-items: center; font-weight: 700; font-size: 16px; margin-bottom: 6px; }
+  .match-teams .team-flag { gap: 6px; }
+  .match-teams .flag-icon { width: 20px; height: 15px; }
+  .match-teams .score { font-size: 18px; color: var(--green); padding: 0 8px; }
+  .match-meta { font-size: 12px; color: var(--grey); }
+  .events { margin-top: 8px; border-top: 1px solid #eee; padding-top: 6px; font-size: 13px; }
+  .event { padding: 2px 0; }
+  table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; font-size: 14px; }
+  th, td { padding: 8px 10px; text-align: center; border-bottom: 1px solid #eee; }
+  th { background: var(--dark); color: white; font-size: 12px; text-transform: uppercase; }
+  td.team-name, td:nth-child(3), td:first-child + td { text-align: left; }
+  tr.qualify { background: #e8f7ee; }
+  .groups-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; align-items: start; }
+  .group-block { min-width: 0; }
+  .group-block h3 { margin: 0 0 8px; font-size: 16px; }
+  .group-block table { table-layout: fixed; }
+  .group-block th:nth-child(1), .group-block td:nth-child(1) { width: 22px; }
+  .group-block th:nth-child(2), .group-block td:nth-child(2) { width: auto; text-align: left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .group-block th:nth-child(n+3), .group-block td:nth-child(n+3) { width: 28px; padding-left: 2px; padding-right: 2px; }
+  .group-block th, .group-block td { font-size: 12px; padding: 6px 4px; }
+  .group-block .team-flag { max-width: 100%; overflow: hidden; }
+  .group-block .team-flag span, .group-block td.team-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; max-width: calc(100% - 22px); vertical-align: middle; }
+  .empty { color: var(--grey); font-style: italic; padding: 12px 0; }
+  .notes { background: #fffbe6; border: 1px solid #f0e0a0; border-radius: 8px; padding: 12px 18px; font-size: 13px; color: #6b5b00; }
+  .notes li { margin-bottom: 4px; }
+  footer { text-align: center; padding: 20px; color: var(--grey); font-size: 12px; }
+</style>
+</head>
+<body>
+<header>
+  <h1><svg class="trophy-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20 6h24v10c0 8-5 14-12 14s-12-6-12-14V6z" fill="#d4af37"/><path d="M20 10H10v4c0 6 4 10 10 10v-6c-2 0-4-2-4-4v-4z" fill="#d4af37"/><path d="M44 10h10v4c0 6-4 10-10 10v-6c2 0 4-2 4-4v-4z" fill="#d4af37"/><rect x="29" y="29" width="6" height="10" fill="#d4af37"/><path d="M18 42h28l-3 8H21z" fill="#d4af37"/><rect x="24" y="50" width="16" height="4" fill="#1a6b3c"/><rect x="20" y="54" width="24" height="4" rx="1" fill="#1a6b3c"/></svg> FIFA World Cup 2026 Dashboard</h1>
+  <p>All times shown in WIB (GMT+7) &middot; Last updated: 2026-06-12 12:00 WIB</p>
+</header>
+<nav>
+  <a href="#live">Live</a>
+  <a href="#schedule">Schedule</a>
+  <a href="#results">Results</a>
+  <a href="#standings">Standings</a>
+  <a href="#stats">Player Stats</a>
+  <a href="#cards">Cards</a>
+</nav>
+<main>
+  <section id="live">
+    <h2>🔴 Live Now</h2>
+    <div class="grid"><p class="empty">No live matches right now.</p></div>
+  </section>
+  <section id="schedule">
+    <h2>📅 Match Schedule (WIB)</h2>
+    <div class="grid">
+    <div class="match-card">
+      <div class="match-top">
+        <span class="group-tag">Group B</span>
+        <span class="badge sched">Scheduled</span>
+      </div>
+      <div class="match-teams">
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/ca.png" srcset="https://flagcdn.com/48x36/ca.png 2x" class="flag-icon" alt="">Canada</span></span>
+        <span class="score">vs</span>
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/ba.png" srcset="https://flagcdn.com/48x36/ba.png 2x" class="flag-icon" alt="">Bosnia-Herzegovina</span></span>
+      </div>
+      <div class="match-meta">2026-06-13 02:00 WIB &middot; BMO Field, Toronto</div>
+      
+    </div>
+    <div class="match-card">
+      <div class="match-top">
+        <span class="group-tag">Group D</span>
+        <span class="badge sched">Scheduled</span>
+      </div>
+      <div class="match-teams">
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt="">United States</span></span>
+        <span class="score">vs</span>
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/py.png" srcset="https://flagcdn.com/48x36/py.png 2x" class="flag-icon" alt="">Paraguay</span></span>
+      </div>
+      <div class="match-meta">2026-06-13 08:00 WIB &middot; SoFi Stadium, Inglewood</div>
+      
+    </div>
+    <div class="match-card">
+      <div class="match-top">
+        <span class="group-tag">Group B</span>
+        <span class="badge sched">Scheduled</span>
+      </div>
+      <div class="match-teams">
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/qa.png" srcset="https://flagcdn.com/48x36/qa.png 2x" class="flag-icon" alt="">Qatar</span></span>
+        <span class="score">vs</span>
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/ch.png" srcset="https://flagcdn.com/48x36/ch.png 2x" class="flag-icon" alt="">Switzerland</span></span>
+      </div>
+      <div class="match-meta">2026-06-14 02:00 WIB &middot; Levi's Stadium, Santa Clara</div>
+      
+    </div>
+    <div class="match-card">
+      <div class="match-top">
+        <span class="group-tag">Group C</span>
+        <span class="badge sched">Scheduled</span>
+      </div>
+      <div class="match-teams">
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/br.png" srcset="https://flagcdn.com/48x36/br.png 2x" class="flag-icon" alt="">Brazil</span></span>
+        <span class="score">vs</span>
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/ma.png" srcset="https://flagcdn.com/48x36/ma.png 2x" class="flag-icon" alt="">Morocco</span></span>
+      </div>
+      <div class="match-meta">2026-06-14 05:00 WIB &middot; MetLife Stadium, East Rutherford</div>
+      
+    </div>
+    <div class="match-card">
+      <div class="match-top">
+        <span class="group-tag">Group C</span>
+        <span class="badge sched">Scheduled</span>
+      </div>
+      <div class="match-teams">
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/ht.png" srcset="https://flagcdn.com/48x36/ht.png 2x" class="flag-icon" alt="">Haiti</span></span>
+        <span class="score">vs</span>
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/gb-sct.png" srcset="https://flagcdn.com/48x36/gb-sct.png 2x" class="flag-icon" alt="">Scotland</span></span>
+      </div>
+      <div class="match-meta">2026-06-14 08:00 WIB &middot; TBD</div>
+      
+    </div>
+    <div class="match-card">
+      <div class="match-top">
+        <span class="group-tag">Group D</span>
+        <span class="badge sched">Scheduled</span>
+      </div>
+      <div class="match-teams">
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/au.png" srcset="https://flagcdn.com/48x36/au.png 2x" class="flag-icon" alt="">Australia</span></span>
+        <span class="score">vs</span>
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/tr.png" srcset="https://flagcdn.com/48x36/tr.png 2x" class="flag-icon" alt="">Türkiye</span></span>
+      </div>
+      <div class="match-meta">2026-06-14 11:00 WIB &middot; TBD</div>
+      
+    </div>
+    <div class="match-card">
+      <div class="match-top">
+        <span class="group-tag">Group E</span>
+        <span class="badge sched">Scheduled</span>
+      </div>
+      <div class="match-teams">
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/de.png" srcset="https://flagcdn.com/48x36/de.png 2x" class="flag-icon" alt="">Germany</span></span>
+        <span class="score">vs</span>
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/cw.png" srcset="https://flagcdn.com/48x36/cw.png 2x" class="flag-icon" alt="">Curaçao</span></span>
+      </div>
+      <div class="match-meta">2026-06-15 00:00 WIB &middot; TBD</div>
+      
+    </div>
+    <div class="match-card">
+      <div class="match-top">
+        <span class="group-tag">Group F</span>
+        <span class="badge sched">Scheduled</span>
+      </div>
+      <div class="match-teams">
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/nl.png" srcset="https://flagcdn.com/48x36/nl.png 2x" class="flag-icon" alt="">Netherlands</span></span>
+        <span class="score">vs</span>
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/jp.png" srcset="https://flagcdn.com/48x36/jp.png 2x" class="flag-icon" alt="">Japan</span></span>
+      </div>
+      <div class="match-meta">2026-06-15 03:00 WIB &middot; TBD</div>
+      
+    </div>
+    <div class="match-card">
+      <div class="match-top">
+        <span class="group-tag">Group E</span>
+        <span class="badge sched">Scheduled</span>
+      </div>
+      <div class="match-teams">
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/ci.png" srcset="https://flagcdn.com/48x36/ci.png 2x" class="flag-icon" alt="">Ivory Coast</span></span>
+        <span class="score">vs</span>
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/ec.png" srcset="https://flagcdn.com/48x36/ec.png 2x" class="flag-icon" alt="">Ecuador</span></span>
+      </div>
+      <div class="match-meta">2026-06-15 06:00 WIB &middot; TBD</div>
+      
+    </div>
+    <div class="match-card">
+      <div class="match-top">
+        <span class="group-tag">Group F</span>
+        <span class="badge sched">Scheduled</span>
+      </div>
+      <div class="match-teams">
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/se.png" srcset="https://flagcdn.com/48x36/se.png 2x" class="flag-icon" alt="">Sweden</span></span>
+        <span class="score">vs</span>
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/tn.png" srcset="https://flagcdn.com/48x36/tn.png 2x" class="flag-icon" alt="">Tunisia</span></span>
+      </div>
+      <div class="match-meta">2026-06-15 09:00 WIB &middot; TBD</div>
+      
+    </div>
+    <div class="match-card">
+      <div class="match-top">
+        <span class="group-tag">Group H</span>
+        <span class="badge sched">Scheduled</span>
+      </div>
+      <div class="match-teams">
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/es.png" srcset="https://flagcdn.com/48x36/es.png 2x" class="flag-icon" alt="">Spain</span></span>
+        <span class="score">vs</span>
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/cv.png" srcset="https://flagcdn.com/48x36/cv.png 2x" class="flag-icon" alt="">Cape Verde</span></span>
+      </div>
+      <div class="match-meta">2026-06-15 23:00 WIB &middot; TBD</div>
+      
+    </div>
+    <div class="match-card">
+      <div class="match-top">
+        <span class="group-tag">Group G</span>
+        <span class="badge sched">Scheduled</span>
+      </div>
+      <div class="match-teams">
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/be.png" srcset="https://flagcdn.com/48x36/be.png 2x" class="flag-icon" alt="">Belgium</span></span>
+        <span class="score">vs</span>
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/eg.png" srcset="https://flagcdn.com/48x36/eg.png 2x" class="flag-icon" alt="">Egypt</span></span>
+      </div>
+      <div class="match-meta">2026-06-16 02:00 WIB &middot; TBD</div>
+      
+    </div></div>
+    <details style="margin-top:16px;">
+      <summary style="cursor:pointer; font-weight:600;">Full schedule table</summary>
+      <table style="margin-top:10px;">
+        <thead><tr><th>Date &amp; Time (WIB)</th><th>Group</th><th>Match</th><th>Score</th><th>Venue</th><th>Status</th></tr></thead>
+        <tbody><tr>
+        <td>2026-06-12 00:00 WIB</td><td>Group A</td>
+        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/mx.png" srcset="https://flagcdn.com/48x36/mx.png 2x" class="flag-icon" alt="">Mexico</span> vs <span class="team-flag"><img src="https://flagcdn.com/24x18/za.png" srcset="https://flagcdn.com/48x36/za.png 2x" class="flag-icon" alt="">South Africa</span></td><td>2 - 0</td><td>Estadio Azteca, Mexico City</td>
+        <td><span class="badge ft">FT</span></td>
+    </tr><tr>
+        <td>2026-06-12 09:00 WIB</td><td>Group A</td>
+        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/kr.png" srcset="https://flagcdn.com/48x36/kr.png 2x" class="flag-icon" alt="">South Korea</span> vs <span class="team-flag"><img src="https://flagcdn.com/24x18/cz.png" srcset="https://flagcdn.com/48x36/cz.png 2x" class="flag-icon" alt="">Czechia</span></td><td>2 - 1</td><td>Estadio Akron, Guadalajara</td>
+        <td><span class="badge ft">FT</span></td>
+    </tr><tr>
+        <td>2026-06-13 02:00 WIB</td><td>Group B</td>
+        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/ca.png" srcset="https://flagcdn.com/48x36/ca.png 2x" class="flag-icon" alt="">Canada</span> vs <span class="team-flag"><img src="https://flagcdn.com/24x18/ba.png" srcset="https://flagcdn.com/48x36/ba.png 2x" class="flag-icon" alt="">Bosnia-Herzegovina</span></td><td>vs</td><td>BMO Field, Toronto</td>
+        <td><span class="badge sched">Scheduled</span></td>
+    </tr><tr>
+        <td>2026-06-13 08:00 WIB</td><td>Group D</td>
+        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt="">United States</span> vs <span class="team-flag"><img src="https://flagcdn.com/24x18/py.png" srcset="https://flagcdn.com/48x36/py.png 2x" class="flag-icon" alt="">Paraguay</span></td><td>vs</td><td>SoFi Stadium, Inglewood</td>
+        <td><span class="badge sched">Scheduled</span></td>
+    </tr><tr>
+        <td>2026-06-14 02:00 WIB</td><td>Group B</td>
+        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/qa.png" srcset="https://flagcdn.com/48x36/qa.png 2x" class="flag-icon" alt="">Qatar</span> vs <span class="team-flag"><img src="https://flagcdn.com/24x18/ch.png" srcset="https://flagcdn.com/48x36/ch.png 2x" class="flag-icon" alt="">Switzerland</span></td><td>vs</td><td>Levi's Stadium, Santa Clara</td>
+        <td><span class="badge sched">Scheduled</span></td>
+    </tr><tr>
+        <td>2026-06-14 05:00 WIB</td><td>Group C</td>
+        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/br.png" srcset="https://flagcdn.com/48x36/br.png 2x" class="flag-icon" alt="">Brazil</span> vs <span class="team-flag"><img src="https://flagcdn.com/24x18/ma.png" srcset="https://flagcdn.com/48x36/ma.png 2x" class="flag-icon" alt="">Morocco</span></td><td>vs</td><td>MetLife Stadium, East Rutherford</td>
+        <td><span class="badge sched">Scheduled</span></td>
+    </tr><tr>
+        <td>2026-06-14 08:00 WIB</td><td>Group C</td>
+        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/ht.png" srcset="https://flagcdn.com/48x36/ht.png 2x" class="flag-icon" alt="">Haiti</span> vs <span class="team-flag"><img src="https://flagcdn.com/24x18/gb-sct.png" srcset="https://flagcdn.com/48x36/gb-sct.png 2x" class="flag-icon" alt="">Scotland</span></td><td>vs</td><td>TBD</td>
+        <td><span class="badge sched">Scheduled</span></td>
+    </tr><tr>
+        <td>2026-06-14 11:00 WIB</td><td>Group D</td>
+        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/au.png" srcset="https://flagcdn.com/48x36/au.png 2x" class="flag-icon" alt="">Australia</span> vs <span class="team-flag"><img src="https://flagcdn.com/24x18/tr.png" srcset="https://flagcdn.com/48x36/tr.png 2x" class="flag-icon" alt="">Türkiye</span></td><td>vs</td><td>TBD</td>
+        <td><span class="badge sched">Scheduled</span></td>
+    </tr><tr>
+        <td>2026-06-15 00:00 WIB</td><td>Group E</td>
+        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/de.png" srcset="https://flagcdn.com/48x36/de.png 2x" class="flag-icon" alt="">Germany</span> vs <span class="team-flag"><img src="https://flagcdn.com/24x18/cw.png" srcset="https://flagcdn.com/48x36/cw.png 2x" class="flag-icon" alt="">Curaçao</span></td><td>vs</td><td>TBD</td>
+        <td><span class="badge sched">Scheduled</span></td>
+    </tr><tr>
+        <td>2026-06-15 03:00 WIB</td><td>Group F</td>
+        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/nl.png" srcset="https://flagcdn.com/48x36/nl.png 2x" class="flag-icon" alt="">Netherlands</span> vs <span class="team-flag"><img src="https://flagcdn.com/24x18/jp.png" srcset="https://flagcdn.com/48x36/jp.png 2x" class="flag-icon" alt="">Japan</span></td><td>vs</td><td>TBD</td>
+        <td><span class="badge sched">Scheduled</span></td>
+    </tr><tr>
+        <td>2026-06-15 06:00 WIB</td><td>Group E</td>
+        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/ci.png" srcset="https://flagcdn.com/48x36/ci.png 2x" class="flag-icon" alt="">Ivory Coast</span> vs <span class="team-flag"><img src="https://flagcdn.com/24x18/ec.png" srcset="https://flagcdn.com/48x36/ec.png 2x" class="flag-icon" alt="">Ecuador</span></td><td>vs</td><td>TBD</td>
+        <td><span class="badge sched">Scheduled</span></td>
+    </tr><tr>
+        <td>2026-06-15 09:00 WIB</td><td>Group F</td>
+        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/se.png" srcset="https://flagcdn.com/48x36/se.png 2x" class="flag-icon" alt="">Sweden</span> vs <span class="team-flag"><img src="https://flagcdn.com/24x18/tn.png" srcset="https://flagcdn.com/48x36/tn.png 2x" class="flag-icon" alt="">Tunisia</span></td><td>vs</td><td>TBD</td>
+        <td><span class="badge sched">Scheduled</span></td>
+    </tr><tr>
+        <td>2026-06-15 23:00 WIB</td><td>Group H</td>
+        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/es.png" srcset="https://flagcdn.com/48x36/es.png 2x" class="flag-icon" alt="">Spain</span> vs <span class="team-flag"><img src="https://flagcdn.com/24x18/cv.png" srcset="https://flagcdn.com/48x36/cv.png 2x" class="flag-icon" alt="">Cape Verde</span></td><td>vs</td><td>TBD</td>
+        <td><span class="badge sched">Scheduled</span></td>
+    </tr><tr>
+        <td>2026-06-16 02:00 WIB</td><td>Group G</td>
+        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/be.png" srcset="https://flagcdn.com/48x36/be.png 2x" class="flag-icon" alt="">Belgium</span> vs <span class="team-flag"><img src="https://flagcdn.com/24x18/eg.png" srcset="https://flagcdn.com/48x36/eg.png 2x" class="flag-icon" alt="">Egypt</span></td><td>vs</td><td>TBD</td>
+        <td><span class="badge sched">Scheduled</span></td>
+    </tr><tr>
+        <td>2026-06-16 05:00 WIB</td><td>Group H</td>
+        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/sa.png" srcset="https://flagcdn.com/48x36/sa.png 2x" class="flag-icon" alt="">Saudi Arabia</span> vs <span class="team-flag"><img src="https://flagcdn.com/24x18/uy.png" srcset="https://flagcdn.com/48x36/uy.png 2x" class="flag-icon" alt="">Uruguay</span></td><td>vs</td><td>TBD</td>
+        <td><span class="badge sched">Scheduled</span></td>
+    </tr><tr>
+        <td>2026-06-16 08:00 WIB</td><td>Group G</td>
+        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/ir.png" srcset="https://flagcdn.com/48x36/ir.png 2x" class="flag-icon" alt="">Iran</span> vs <span class="team-flag"><img src="https://flagcdn.com/24x18/nz.png" srcset="https://flagcdn.com/48x36/nz.png 2x" class="flag-icon" alt="">New Zealand</span></td><td>vs</td><td>TBD</td>
+        <td><span class="badge sched">Scheduled</span></td>
+    </tr><tr>
+        <td>2026-06-17 02:00 WIB</td><td>Group I</td>
+        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/fr.png" srcset="https://flagcdn.com/48x36/fr.png 2x" class="flag-icon" alt="">France</span> vs <span class="team-flag"><img src="https://flagcdn.com/24x18/sn.png" srcset="https://flagcdn.com/48x36/sn.png 2x" class="flag-icon" alt="">Senegal</span></td><td>vs</td><td>TBD</td>
+        <td><span class="badge sched">Scheduled</span></td>
+    </tr><tr>
+        <td>2026-06-17 05:00 WIB</td><td>Group I</td>
+        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/iq.png" srcset="https://flagcdn.com/48x36/iq.png 2x" class="flag-icon" alt="">Iraq</span> vs <span class="team-flag"><img src="https://flagcdn.com/24x18/no.png" srcset="https://flagcdn.com/48x36/no.png 2x" class="flag-icon" alt="">Norway</span></td><td>vs</td><td>TBD</td>
+        <td><span class="badge sched">Scheduled</span></td>
+    </tr><tr>
+        <td>2026-06-17 08:00 WIB</td><td>Group J</td>
+        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/ar.png" srcset="https://flagcdn.com/48x36/ar.png 2x" class="flag-icon" alt="">Argentina</span> vs <span class="team-flag"><img src="https://flagcdn.com/24x18/dz.png" srcset="https://flagcdn.com/48x36/dz.png 2x" class="flag-icon" alt="">Algeria</span></td><td>vs</td><td>TBD</td>
+        <td><span class="badge sched">Scheduled</span></td>
+    </tr><tr>
+        <td>2026-06-17 11:00 WIB</td><td>Group J</td>
+        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/at.png" srcset="https://flagcdn.com/48x36/at.png 2x" class="flag-icon" alt="">Austria</span> vs <span class="team-flag"><img src="https://flagcdn.com/24x18/jo.png" srcset="https://flagcdn.com/48x36/jo.png 2x" class="flag-icon" alt="">Jordan</span></td><td>vs</td><td>TBD</td>
+        <td><span class="badge sched">Scheduled</span></td>
+    </tr><tr>
+        <td>2026-06-18 00:00 WIB</td><td>Group K</td>
+        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/pt.png" srcset="https://flagcdn.com/48x36/pt.png 2x" class="flag-icon" alt="">Portugal</span> vs <span class="team-flag"><img src="https://flagcdn.com/24x18/cd.png" srcset="https://flagcdn.com/48x36/cd.png 2x" class="flag-icon" alt="">DR Congo</span></td><td>vs</td><td>TBD</td>
+        <td><span class="badge sched">Scheduled</span></td>
+    </tr><tr>
+        <td>2026-06-18 03:00 WIB</td><td>Group L</td>
+        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/gb-eng.png" srcset="https://flagcdn.com/48x36/gb-eng.png 2x" class="flag-icon" alt="">England</span> vs <span class="team-flag"><img src="https://flagcdn.com/24x18/hr.png" srcset="https://flagcdn.com/48x36/hr.png 2x" class="flag-icon" alt="">Croatia</span></td><td>vs</td><td>TBD</td>
+        <td><span class="badge sched">Scheduled</span></td>
+    </tr><tr>
+        <td>2026-06-18 06:00 WIB</td><td>Group L</td>
+        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/gh.png" srcset="https://flagcdn.com/48x36/gh.png 2x" class="flag-icon" alt="">Ghana</span> vs <span class="team-flag"><img src="https://flagcdn.com/24x18/pa.png" srcset="https://flagcdn.com/48x36/pa.png 2x" class="flag-icon" alt="">Panama</span></td><td>vs</td><td>TBD</td>
+        <td><span class="badge sched">Scheduled</span></td>
+    </tr><tr>
+        <td>2026-06-18 09:00 WIB</td><td>Group K</td>
+        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/uz.png" srcset="https://flagcdn.com/48x36/uz.png 2x" class="flag-icon" alt="">Uzbekistan</span> vs <span class="team-flag"><img src="https://flagcdn.com/24x18/co.png" srcset="https://flagcdn.com/48x36/co.png 2x" class="flag-icon" alt="">Colombia</span></td><td>vs</td><td>TBD</td>
+        <td><span class="badge sched">Scheduled</span></td>
+    </tr></tbody>
+      </table>
+    </details>
+  </section>
+  <section id="results">
+    <h2>✅ Results</h2>
+    <div class="grid">
+    <div class="match-card">
+      <div class="match-top">
+        <span class="group-tag">Group A</span>
+        <span class="badge ft">FT</span>
+      </div>
+      <div class="match-teams">
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/kr.png" srcset="https://flagcdn.com/48x36/kr.png 2x" class="flag-icon" alt="">South Korea</span></span>
+        <span class="score">2 - 1</span>
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/cz.png" srcset="https://flagcdn.com/48x36/cz.png 2x" class="flag-icon" alt="">Czechia</span></span>
+      </div>
+      <div class="match-meta">2026-06-12 09:00 WIB &middot; Estadio Akron, Guadalajara</div>
+      <div class="events"><div class="event">⚽ <b>Ladislav Krejčí</b> (<span class="team-flag"><img src="https://flagcdn.com/24x18/cz.png" srcset="https://flagcdn.com/48x36/cz.png 2x" class="flag-icon" alt="">Czechia</span>) - 59'</div><div class="event">⚽ <b>Hwang In-beom</b> (<span class="team-flag"><img src="https://flagcdn.com/24x18/kr.png" srcset="https://flagcdn.com/48x36/kr.png 2x" class="flag-icon" alt="">South Korea</span>) - 67'</div><div class="event">⚽ <b>Oh Hyeon-gyu</b> (<span class="team-flag"><img src="https://flagcdn.com/24x18/kr.png" srcset="https://flagcdn.com/48x36/kr.png 2x" class="flag-icon" alt="">South Korea</span>) - 80'</div><div class="event">🅰 <b>Vladimír Coufal</b> assist for Ladislav Krejčí (<span class="team-flag"><img src="https://flagcdn.com/24x18/cz.png" srcset="https://flagcdn.com/48x36/cz.png 2x" class="flag-icon" alt="">Czechia</span>) - 59'</div><div class="event">🅰 <b>Hwang In-beom</b> assist for Oh Hyeon-gyu (<span class="team-flag"><img src="https://flagcdn.com/24x18/kr.png" srcset="https://flagcdn.com/48x36/kr.png 2x" class="flag-icon" alt="">South Korea</span>) - 80'</div></div>
+    </div>
+    <div class="match-card">
+      <div class="match-top">
+        <span class="group-tag">Group A</span>
+        <span class="badge ft">FT</span>
+      </div>
+      <div class="match-teams">
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/mx.png" srcset="https://flagcdn.com/48x36/mx.png 2x" class="flag-icon" alt="">Mexico</span></span>
+        <span class="score">2 - 0</span>
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/za.png" srcset="https://flagcdn.com/48x36/za.png 2x" class="flag-icon" alt="">South Africa</span></span>
+      </div>
+      <div class="match-meta">2026-06-12 00:00 WIB &middot; Estadio Azteca, Mexico City</div>
+      <div class="events"><div class="event">⚽ <b>Julián Quiñones</b> (<span class="team-flag"><img src="https://flagcdn.com/24x18/mx.png" srcset="https://flagcdn.com/48x36/mx.png 2x" class="flag-icon" alt="">Mexico</span>) - 9'</div><div class="event">⚽ <b>Raúl Jiménez</b> (<span class="team-flag"><img src="https://flagcdn.com/24x18/mx.png" srcset="https://flagcdn.com/48x36/mx.png 2x" class="flag-icon" alt="">Mexico</span>) - 62'</div><div class="event">🟥 <b>Sphephelo Sithole</b> (<span class="team-flag"><img src="https://flagcdn.com/24x18/za.png" srcset="https://flagcdn.com/48x36/za.png 2x" class="flag-icon" alt="">South Africa</span>) - 49'</div><div class="event">🟥 <b>Themba Zwane</b> (<span class="team-flag"><img src="https://flagcdn.com/24x18/za.png" srcset="https://flagcdn.com/48x36/za.png 2x" class="flag-icon" alt="">South Africa</span>) - 80'</div><div class="event">🟥 <b>César Montes</b> (<span class="team-flag"><img src="https://flagcdn.com/24x18/mx.png" srcset="https://flagcdn.com/48x36/mx.png 2x" class="flag-icon" alt="">Mexico</span>) - 92'</div></div>
+    </div></div>
+  </section>
+  <section id="standings">
+    <h2>📊 Group Standings (A-L)</h2>
+    <div class="groups-grid">
+    <div class="group-block">
+      <h3>Group A</h3>
+      <table>
+        <thead><tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr></thead>
+        <tbody><tr class="qualify">
+            <td>1</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/mx.png" srcset="https://flagcdn.com/48x36/mx.png 2x" class="flag-icon" alt="">Mexico</span></td>
+            <td>1</td><td>1</td><td>0</td><td>0</td>
+            <td>2</td><td>0</td><td>2</td><td><b>3</b></td>
+        </tr><tr class="qualify">
+            <td>2</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/kr.png" srcset="https://flagcdn.com/48x36/kr.png 2x" class="flag-icon" alt="">South Korea</span></td>
+            <td>1</td><td>1</td><td>0</td><td>0</td>
+            <td>2</td><td>1</td><td>1</td><td><b>3</b></td>
+        </tr><tr class="">
+            <td>3</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/cz.png" srcset="https://flagcdn.com/48x36/cz.png 2x" class="flag-icon" alt="">Czechia</span></td>
+            <td>1</td><td>0</td><td>0</td><td>1</td>
+            <td>1</td><td>2</td><td>-1</td><td><b>0</b></td>
+        </tr><tr class="">
+            <td>4</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/za.png" srcset="https://flagcdn.com/48x36/za.png 2x" class="flag-icon" alt="">South Africa</span></td>
+            <td>1</td><td>0</td><td>0</td><td>1</td>
+            <td>0</td><td>2</td><td>-2</td><td><b>0</b></td>
+        </tr></tbody>
+      </table>
+    </div>
+    <div class="group-block">
+      <h3>Group B</h3>
+      <table>
+        <thead><tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr></thead>
+        <tbody><tr class="qualify">
+            <td>1</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/ca.png" srcset="https://flagcdn.com/48x36/ca.png 2x" class="flag-icon" alt="">Canada</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="qualify">
+            <td>2</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/ba.png" srcset="https://flagcdn.com/48x36/ba.png 2x" class="flag-icon" alt="">Bosnia-Herzegovina</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="">
+            <td>3</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/qa.png" srcset="https://flagcdn.com/48x36/qa.png 2x" class="flag-icon" alt="">Qatar</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="">
+            <td>4</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/ch.png" srcset="https://flagcdn.com/48x36/ch.png 2x" class="flag-icon" alt="">Switzerland</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr></tbody>
+      </table>
+    </div>
+    <div class="group-block">
+      <h3>Group C</h3>
+      <table>
+        <thead><tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr></thead>
+        <tbody><tr class="qualify">
+            <td>1</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/br.png" srcset="https://flagcdn.com/48x36/br.png 2x" class="flag-icon" alt="">Brazil</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="qualify">
+            <td>2</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/ht.png" srcset="https://flagcdn.com/48x36/ht.png 2x" class="flag-icon" alt="">Haiti</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="">
+            <td>3</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/ma.png" srcset="https://flagcdn.com/48x36/ma.png 2x" class="flag-icon" alt="">Morocco</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="">
+            <td>4</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/gb-sct.png" srcset="https://flagcdn.com/48x36/gb-sct.png 2x" class="flag-icon" alt="">Scotland</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr></tbody>
+      </table>
+    </div>
+    <div class="group-block">
+      <h3>Group D</h3>
+      <table>
+        <thead><tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr></thead>
+        <tbody><tr class="qualify">
+            <td>1</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt="">United States</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="qualify">
+            <td>2</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/au.png" srcset="https://flagcdn.com/48x36/au.png 2x" class="flag-icon" alt="">Australia</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="">
+            <td>3</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/py.png" srcset="https://flagcdn.com/48x36/py.png 2x" class="flag-icon" alt="">Paraguay</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="">
+            <td>4</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/tr.png" srcset="https://flagcdn.com/48x36/tr.png 2x" class="flag-icon" alt="">Türkiye</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr></tbody>
+      </table>
+    </div>
+    <div class="group-block">
+      <h3>Group E</h3>
+      <table>
+        <thead><tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr></thead>
+        <tbody><tr class="qualify">
+            <td>1</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/de.png" srcset="https://flagcdn.com/48x36/de.png 2x" class="flag-icon" alt="">Germany</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="qualify">
+            <td>2</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/cw.png" srcset="https://flagcdn.com/48x36/cw.png 2x" class="flag-icon" alt="">Curaçao</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="">
+            <td>3</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/ci.png" srcset="https://flagcdn.com/48x36/ci.png 2x" class="flag-icon" alt="">Ivory Coast</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="">
+            <td>4</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/ec.png" srcset="https://flagcdn.com/48x36/ec.png 2x" class="flag-icon" alt="">Ecuador</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr></tbody>
+      </table>
+    </div>
+    <div class="group-block">
+      <h3>Group F</h3>
+      <table>
+        <thead><tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr></thead>
+        <tbody><tr class="qualify">
+            <td>1</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/nl.png" srcset="https://flagcdn.com/48x36/nl.png 2x" class="flag-icon" alt="">Netherlands</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="qualify">
+            <td>2</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/jp.png" srcset="https://flagcdn.com/48x36/jp.png 2x" class="flag-icon" alt="">Japan</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="">
+            <td>3</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/se.png" srcset="https://flagcdn.com/48x36/se.png 2x" class="flag-icon" alt="">Sweden</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="">
+            <td>4</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/tn.png" srcset="https://flagcdn.com/48x36/tn.png 2x" class="flag-icon" alt="">Tunisia</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr></tbody>
+      </table>
+    </div>
+    <div class="group-block">
+      <h3>Group G</h3>
+      <table>
+        <thead><tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr></thead>
+        <tbody><tr class="qualify">
+            <td>1</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/be.png" srcset="https://flagcdn.com/48x36/be.png 2x" class="flag-icon" alt="">Belgium</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="qualify">
+            <td>2</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/eg.png" srcset="https://flagcdn.com/48x36/eg.png 2x" class="flag-icon" alt="">Egypt</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="">
+            <td>3</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/ir.png" srcset="https://flagcdn.com/48x36/ir.png 2x" class="flag-icon" alt="">Iran</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="">
+            <td>4</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/nz.png" srcset="https://flagcdn.com/48x36/nz.png 2x" class="flag-icon" alt="">New Zealand</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr></tbody>
+      </table>
+    </div>
+    <div class="group-block">
+      <h3>Group H</h3>
+      <table>
+        <thead><tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr></thead>
+        <tbody><tr class="qualify">
+            <td>1</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/es.png" srcset="https://flagcdn.com/48x36/es.png 2x" class="flag-icon" alt="">Spain</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="qualify">
+            <td>2</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/cv.png" srcset="https://flagcdn.com/48x36/cv.png 2x" class="flag-icon" alt="">Cape Verde</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="">
+            <td>3</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/sa.png" srcset="https://flagcdn.com/48x36/sa.png 2x" class="flag-icon" alt="">Saudi Arabia</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="">
+            <td>4</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/uy.png" srcset="https://flagcdn.com/48x36/uy.png 2x" class="flag-icon" alt="">Uruguay</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr></tbody>
+      </table>
+    </div>
+    <div class="group-block">
+      <h3>Group I</h3>
+      <table>
+        <thead><tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr></thead>
+        <tbody><tr class="qualify">
+            <td>1</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/fr.png" srcset="https://flagcdn.com/48x36/fr.png 2x" class="flag-icon" alt="">France</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="qualify">
+            <td>2</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/sn.png" srcset="https://flagcdn.com/48x36/sn.png 2x" class="flag-icon" alt="">Senegal</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="">
+            <td>3</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/iq.png" srcset="https://flagcdn.com/48x36/iq.png 2x" class="flag-icon" alt="">Iraq</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="">
+            <td>4</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/no.png" srcset="https://flagcdn.com/48x36/no.png 2x" class="flag-icon" alt="">Norway</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr></tbody>
+      </table>
+    </div>
+    <div class="group-block">
+      <h3>Group J</h3>
+      <table>
+        <thead><tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr></thead>
+        <tbody><tr class="qualify">
+            <td>1</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/ar.png" srcset="https://flagcdn.com/48x36/ar.png 2x" class="flag-icon" alt="">Argentina</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="qualify">
+            <td>2</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/dz.png" srcset="https://flagcdn.com/48x36/dz.png 2x" class="flag-icon" alt="">Algeria</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="">
+            <td>3</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/at.png" srcset="https://flagcdn.com/48x36/at.png 2x" class="flag-icon" alt="">Austria</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="">
+            <td>4</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/jo.png" srcset="https://flagcdn.com/48x36/jo.png 2x" class="flag-icon" alt="">Jordan</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr></tbody>
+      </table>
+    </div>
+    <div class="group-block">
+      <h3>Group K</h3>
+      <table>
+        <thead><tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr></thead>
+        <tbody><tr class="qualify">
+            <td>1</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/pt.png" srcset="https://flagcdn.com/48x36/pt.png 2x" class="flag-icon" alt="">Portugal</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="qualify">
+            <td>2</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/cd.png" srcset="https://flagcdn.com/48x36/cd.png 2x" class="flag-icon" alt="">DR Congo</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="">
+            <td>3</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/uz.png" srcset="https://flagcdn.com/48x36/uz.png 2x" class="flag-icon" alt="">Uzbekistan</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="">
+            <td>4</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/co.png" srcset="https://flagcdn.com/48x36/co.png 2x" class="flag-icon" alt="">Colombia</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr></tbody>
+      </table>
+    </div>
+    <div class="group-block">
+      <h3>Group L</h3>
+      <table>
+        <thead><tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr></thead>
+        <tbody><tr class="qualify">
+            <td>1</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/gb-eng.png" srcset="https://flagcdn.com/48x36/gb-eng.png 2x" class="flag-icon" alt="">England</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="qualify">
+            <td>2</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/hr.png" srcset="https://flagcdn.com/48x36/hr.png 2x" class="flag-icon" alt="">Croatia</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="">
+            <td>3</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/gh.png" srcset="https://flagcdn.com/48x36/gh.png 2x" class="flag-icon" alt="">Ghana</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr><tr class="">
+            <td>4</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/pa.png" srcset="https://flagcdn.com/48x36/pa.png 2x" class="flag-icon" alt="">Panama</span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
+        </tr></tbody>
+      </table>
+    </div></div>
+  </section>
+  <section id="stats">
+    <h2>⚽ Top Scorers &amp; Assists</h2>
+    <div class="groups-grid">
+      <div class="group-block">
+        <h3>Top Scorers</h3>
+        <table><thead><tr><th>#</th><th>Player</th><th>Team</th><th>Goals</th></tr></thead><tbody><tr><td>1</td><td>Julián Quiñones</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/mx.png" srcset="https://flagcdn.com/48x36/mx.png 2x" class="flag-icon" alt="">Mexico</span></td><td><b>1</b></td></tr><tr><td>2</td><td>Raúl Jiménez</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/mx.png" srcset="https://flagcdn.com/48x36/mx.png 2x" class="flag-icon" alt="">Mexico</span></td><td><b>1</b></td></tr><tr><td>3</td><td>Ladislav Krejčí</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/cz.png" srcset="https://flagcdn.com/48x36/cz.png 2x" class="flag-icon" alt="">Czechia</span></td><td><b>1</b></td></tr><tr><td>4</td><td>Hwang In-beom</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/kr.png" srcset="https://flagcdn.com/48x36/kr.png 2x" class="flag-icon" alt="">South Korea</span></td><td><b>1</b></td></tr><tr><td>5</td><td>Oh Hyeon-gyu</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/kr.png" srcset="https://flagcdn.com/48x36/kr.png 2x" class="flag-icon" alt="">South Korea</span></td><td><b>1</b></td></tr></tbody></table>
+      </div>
+      <div class="group-block">
+        <h3>Top Assists</h3>
+        <table><thead><tr><th>#</th><th>Player</th><th>Team</th><th>Assists</th></tr></thead><tbody><tr><td>1</td><td>Vladimír Coufal</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/cz.png" srcset="https://flagcdn.com/48x36/cz.png 2x" class="flag-icon" alt="">Czechia</span></td><td><b>1</b></td></tr><tr><td>2</td><td>Hwang In-beom</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/kr.png" srcset="https://flagcdn.com/48x36/kr.png 2x" class="flag-icon" alt="">South Korea</span></td><td><b>1</b></td></tr></tbody></table>
+      </div>
+    </div>
+  </section>
+  <section id="cards">
+    <h2>🟨🟥 Disciplinary (Yellow/Red Cards)</h2>
+    <table><thead><tr><th>Match</th><th>Group</th><th>Player</th><th>Team</th><th>Card</th><th>Minute</th></tr></thead><tbody><tr><td><span class="team-flag"><img src="https://flagcdn.com/24x18/mx.png" srcset="https://flagcdn.com/48x36/mx.png 2x" class="flag-icon" alt="">Mexico</span> vs <span class="team-flag"><img src="https://flagcdn.com/24x18/za.png" srcset="https://flagcdn.com/48x36/za.png 2x" class="flag-icon" alt="">South Africa</span></td><td>Group A</td><td>Sphephelo Sithole</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/za.png" srcset="https://flagcdn.com/48x36/za.png 2x" class="flag-icon" alt="">South Africa</span></td><td>🟥 Red</td><td>49'</td></tr><tr><td><span class="team-flag"><img src="https://flagcdn.com/24x18/mx.png" srcset="https://flagcdn.com/48x36/mx.png 2x" class="flag-icon" alt="">Mexico</span> vs <span class="team-flag"><img src="https://flagcdn.com/24x18/za.png" srcset="https://flagcdn.com/48x36/za.png 2x" class="flag-icon" alt="">South Africa</span></td><td>Group A</td><td>Themba Zwane</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/za.png" srcset="https://flagcdn.com/48x36/za.png 2x" class="flag-icon" alt="">South Africa</span></td><td>🟥 Red</td><td>80'</td></tr><tr><td><span class="team-flag"><img src="https://flagcdn.com/24x18/mx.png" srcset="https://flagcdn.com/48x36/mx.png 2x" class="flag-icon" alt="">Mexico</span> vs <span class="team-flag"><img src="https://flagcdn.com/24x18/za.png" srcset="https://flagcdn.com/48x36/za.png 2x" class="flag-icon" alt="">South Africa</span></td><td>Group A</td><td>César Montes</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/mx.png" srcset="https://flagcdn.com/48x36/mx.png 2x" class="flag-icon" alt="">Mexico</span></td><td>🟥 Red</td><td>92'</td></tr></tbody></table>
+  </section>
+  <section>
+    <h2>ℹ️ Notes</h2>
+    <ul class="notes"><li>Matchday 1 fixtures shown above (June 11-18 WIB). Matchdays 2-3 (through June 27) and the knockout stage will be added as the tournament progresses.</li><li>Times converted from ET (UTC-4) to WIB (UTC+7, +11h). Some kickoff times/venues are provisional (TBD) pending confirmation from official sources.</li><li>Assist data for the opening match (Mexico vs South Africa) was not confirmed in available sources and is marked 'Unconfirmed'.</li><li>Card data for South Korea vs Czechia not yet confirmed in available sources.</li></ul>
+  </section>
+</main>
+<footer>Generated automatically &middot; Data from public web sources &middot; For entertainment/reference purposes</footer>
+</body>
+</html>
