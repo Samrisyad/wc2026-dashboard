@@ -4,6 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FIFA World Cup 2026 Dashboard (WIB)</title>
+<meta name="description" content="Live schedule, scores, standings, top scorers, assists and cards for the FIFA World Cup 2026, all times in WIB (GMT+7).">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FIFA World Cup 2026 Dashboard (WIB)">
+<meta property="og:description" content="Live schedule, scores, standings, top scorers, assists and cards for the FIFA World Cup 2026, all times in WIB (GMT+7).">
+<meta property="og:image" content="https://samrisyad.github.io/wc2026-dashboard/og-image.jpg">
+<meta property="og:url" content="https://samrisyad.github.io/wc2026-dashboard/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FIFA World Cup 2026 Dashboard (WIB)">
+<meta name="twitter:description" content="Live schedule, scores, standings, top scorers, assists and cards for the FIFA World Cup 2026, all times in WIB (GMT+7).">
+<meta name="twitter:image" content="https://samrisyad.github.io/wc2026-dashboard/og-image.jpg">
 <style>
   :root {
     --green: #0a7d3a; --gold: #d4af37; --dark: #14202b; --light: #f4f6f8; --grey: #6b7785;
@@ -73,6 +83,22 @@
   .table-wrap { width: 100%; overflow-x: auto; }
   .table-wrap table { min-width: 480px; }
 
+  .match-cell { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 4px; }
+  .match-cell .match-team { display: flex; min-width: 0; overflow: hidden; }
+  .match-cell .match-team.home { justify-content: flex-end; }
+  .match-cell .match-team.away { justify-content: flex-start; }
+  .match-cell .match-vs { font-size: 11px; color: var(--grey); white-space: nowrap; text-align: center; }
+  td.match-cell-td { text-align: center; }
+
+  .schedule-table { table-layout: fixed; }
+  .schedule-table th:nth-child(1), .schedule-table td:nth-child(1) { width: 150px; text-align: left; }
+  .schedule-table th:nth-child(2), .schedule-table td:nth-child(2) { width: 70px; }
+  .schedule-table th:nth-child(3), .schedule-table td:nth-child(3) { width: 150px; }
+  .schedule-table th:nth-child(4), .schedule-table td:nth-child(4) { width: 60px; }
+  .schedule-table th:nth-child(5), .schedule-table td:nth-child(5) { width: 160px; text-align: left; }
+  .schedule-table th:nth-child(6), .schedule-table td:nth-child(6) { width: 90px; }
+  .table-wrap .schedule-table { min-width: 620px; }
+
   @media (max-width: 640px) {
     header { padding: 14px 16px; }
     header h1 { font-size: 19px; gap: 8px; align-items: flex-start; line-height: 1.25; }
@@ -94,6 +120,15 @@
     .standings-block th, .standings-block td { padding: 6px 2px; font-size: 11px; }
     .standings-block th:nth-child(1), .standings-block td:nth-child(1) { width: 18px; }
     .standings-block th:nth-child(2), .standings-block td:nth-child(2) { width: 56px; }
+
+    .schedule-table th:nth-child(5), .schedule-table td:nth-child(5) { display: none; }
+    .table-wrap .schedule-table { min-width: 420px; }
+    .schedule-table th:nth-child(1), .schedule-table td:nth-child(1) { width: 120px; font-size: 11px; }
+    .schedule-table th:nth-child(3), .schedule-table td:nth-child(3) { width: 130px; }
+    .match-cell { gap: 3px; }
+    .match-cell .team-flag { gap: 3px; }
+    .match-cell .flag-icon { width: 14px; height: 11px; }
+    .match-cell .match-vs { font-size: 10px; }
   }
 </style>
 </head>
@@ -272,103 +307,103 @@
     <details style="margin-top:16px;">
       <summary style="cursor:pointer; font-weight:600;">Full schedule table</summary>
       <div class="table-wrap" style="margin-top:10px;">
-      <table>
+      <table class="schedule-table">
         <thead><tr><th>Date &amp; Time (WIB)</th><th>Group</th><th>Match</th><th>Score</th><th>Venue</th><th>Status</th></tr></thead>
         <tbody><tr>
         <td>Friday, 12 June 26 &middot; 00:00 WIB</td><td>Group A</td>
-        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/mx.png" srcset="https://flagcdn.com/48x36/mx.png 2x" class="flag-icon" alt=""><span class="team-name-text">Mexico</span></span> vs <span class="team-flag"><span class="team-name-text">South Africa</span><img src="https://flagcdn.com/24x18/za.png" srcset="https://flagcdn.com/48x36/za.png 2x" class="flag-icon" alt=""></span></td><td>2 - 0</td><td>Estadio Azteca, Mexico City</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/mx.png" srcset="https://flagcdn.com/48x36/mx.png 2x" class="flag-icon" alt=""><span class="team-name-text">MEX</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">RSA</span><img src="https://flagcdn.com/24x18/za.png" srcset="https://flagcdn.com/48x36/za.png 2x" class="flag-icon" alt=""></span></span></div></td><td>2 - 0</td><td>Estadio Azteca, Mexico City</td>
         <td><span class="badge ft">FT</span></td>
     </tr><tr>
         <td>Friday, 12 June 26 &middot; 09:00 WIB</td><td>Group A</td>
-        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/kr.png" srcset="https://flagcdn.com/48x36/kr.png 2x" class="flag-icon" alt=""><span class="team-name-text">South Korea</span></span> vs <span class="team-flag"><span class="team-name-text">Czechia</span><img src="https://flagcdn.com/24x18/cz.png" srcset="https://flagcdn.com/48x36/cz.png 2x" class="flag-icon" alt=""></span></td><td>2 - 1</td><td>Estadio Akron, Guadalajara</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/kr.png" srcset="https://flagcdn.com/48x36/kr.png 2x" class="flag-icon" alt=""><span class="team-name-text">KOR</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">CZE</span><img src="https://flagcdn.com/24x18/cz.png" srcset="https://flagcdn.com/48x36/cz.png 2x" class="flag-icon" alt=""></span></span></div></td><td>2 - 1</td><td>Estadio Akron, Guadalajara</td>
         <td><span class="badge ft">FT</span></td>
     </tr><tr>
         <td>Saturday, 13 June 26 &middot; 02:00 WIB</td><td>Group B</td>
-        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/ca.png" srcset="https://flagcdn.com/48x36/ca.png 2x" class="flag-icon" alt=""><span class="team-name-text">Canada</span></span> vs <span class="team-flag"><span class="team-name-text">Bosnia-Herzegovina</span><img src="https://flagcdn.com/24x18/ba.png" srcset="https://flagcdn.com/48x36/ba.png 2x" class="flag-icon" alt=""></span></td><td>vs</td><td>BMO Field, Toronto</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/ca.png" srcset="https://flagcdn.com/48x36/ca.png 2x" class="flag-icon" alt=""><span class="team-name-text">CAN</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">BIH</span><img src="https://flagcdn.com/24x18/ba.png" srcset="https://flagcdn.com/48x36/ba.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>BMO Field, Toronto</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Saturday, 13 June 26 &middot; 08:00 WIB</td><td>Group D</td>
-        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt=""><span class="team-name-text">United States</span></span> vs <span class="team-flag"><span class="team-name-text">Paraguay</span><img src="https://flagcdn.com/24x18/py.png" srcset="https://flagcdn.com/48x36/py.png 2x" class="flag-icon" alt=""></span></td><td>vs</td><td>SoFi Stadium, Inglewood</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt=""><span class="team-name-text">USA</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">PAR</span><img src="https://flagcdn.com/24x18/py.png" srcset="https://flagcdn.com/48x36/py.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>SoFi Stadium, Inglewood</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Sunday, 14 June 26 &middot; 02:00 WIB</td><td>Group B</td>
-        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/qa.png" srcset="https://flagcdn.com/48x36/qa.png 2x" class="flag-icon" alt=""><span class="team-name-text">Qatar</span></span> vs <span class="team-flag"><span class="team-name-text">Switzerland</span><img src="https://flagcdn.com/24x18/ch.png" srcset="https://flagcdn.com/48x36/ch.png 2x" class="flag-icon" alt=""></span></td><td>vs</td><td>Levi's Stadium, Santa Clara</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/qa.png" srcset="https://flagcdn.com/48x36/qa.png 2x" class="flag-icon" alt=""><span class="team-name-text">QAT</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">SUI</span><img src="https://flagcdn.com/24x18/ch.png" srcset="https://flagcdn.com/48x36/ch.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>Levi's Stadium, Santa Clara</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Sunday, 14 June 26 &middot; 05:00 WIB</td><td>Group C</td>
-        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/br.png" srcset="https://flagcdn.com/48x36/br.png 2x" class="flag-icon" alt=""><span class="team-name-text">Brazil</span></span> vs <span class="team-flag"><span class="team-name-text">Morocco</span><img src="https://flagcdn.com/24x18/ma.png" srcset="https://flagcdn.com/48x36/ma.png 2x" class="flag-icon" alt=""></span></td><td>vs</td><td>MetLife Stadium, East Rutherford</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/br.png" srcset="https://flagcdn.com/48x36/br.png 2x" class="flag-icon" alt=""><span class="team-name-text">BRA</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">MAR</span><img src="https://flagcdn.com/24x18/ma.png" srcset="https://flagcdn.com/48x36/ma.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>MetLife Stadium, East Rutherford</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Sunday, 14 June 26 &middot; 08:00 WIB</td><td>Group C</td>
-        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/ht.png" srcset="https://flagcdn.com/48x36/ht.png 2x" class="flag-icon" alt=""><span class="team-name-text">Haiti</span></span> vs <span class="team-flag"><span class="team-name-text">Scotland</span><img src="https://flagcdn.com/24x18/gb-sct.png" srcset="https://flagcdn.com/48x36/gb-sct.png 2x" class="flag-icon" alt=""></span></td><td>vs</td><td>TBD</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/ht.png" srcset="https://flagcdn.com/48x36/ht.png 2x" class="flag-icon" alt=""><span class="team-name-text">HAI</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">SCO</span><img src="https://flagcdn.com/24x18/gb-sct.png" srcset="https://flagcdn.com/48x36/gb-sct.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Sunday, 14 June 26 &middot; 11:00 WIB</td><td>Group D</td>
-        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/au.png" srcset="https://flagcdn.com/48x36/au.png 2x" class="flag-icon" alt=""><span class="team-name-text">Australia</span></span> vs <span class="team-flag"><span class="team-name-text">Türkiye</span><img src="https://flagcdn.com/24x18/tr.png" srcset="https://flagcdn.com/48x36/tr.png 2x" class="flag-icon" alt=""></span></td><td>vs</td><td>TBD</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/au.png" srcset="https://flagcdn.com/48x36/au.png 2x" class="flag-icon" alt=""><span class="team-name-text">AUS</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">TUR</span><img src="https://flagcdn.com/24x18/tr.png" srcset="https://flagcdn.com/48x36/tr.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Monday, 15 June 26 &middot; 00:00 WIB</td><td>Group E</td>
-        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/de.png" srcset="https://flagcdn.com/48x36/de.png 2x" class="flag-icon" alt=""><span class="team-name-text">Germany</span></span> vs <span class="team-flag"><span class="team-name-text">Curaçao</span><img src="https://flagcdn.com/24x18/cw.png" srcset="https://flagcdn.com/48x36/cw.png 2x" class="flag-icon" alt=""></span></td><td>vs</td><td>TBD</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/de.png" srcset="https://flagcdn.com/48x36/de.png 2x" class="flag-icon" alt=""><span class="team-name-text">GER</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">CUW</span><img src="https://flagcdn.com/24x18/cw.png" srcset="https://flagcdn.com/48x36/cw.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Monday, 15 June 26 &middot; 03:00 WIB</td><td>Group F</td>
-        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/nl.png" srcset="https://flagcdn.com/48x36/nl.png 2x" class="flag-icon" alt=""><span class="team-name-text">Netherlands</span></span> vs <span class="team-flag"><span class="team-name-text">Japan</span><img src="https://flagcdn.com/24x18/jp.png" srcset="https://flagcdn.com/48x36/jp.png 2x" class="flag-icon" alt=""></span></td><td>vs</td><td>TBD</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/nl.png" srcset="https://flagcdn.com/48x36/nl.png 2x" class="flag-icon" alt=""><span class="team-name-text">NED</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">JPN</span><img src="https://flagcdn.com/24x18/jp.png" srcset="https://flagcdn.com/48x36/jp.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Monday, 15 June 26 &middot; 06:00 WIB</td><td>Group E</td>
-        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/ci.png" srcset="https://flagcdn.com/48x36/ci.png 2x" class="flag-icon" alt=""><span class="team-name-text">Ivory Coast</span></span> vs <span class="team-flag"><span class="team-name-text">Ecuador</span><img src="https://flagcdn.com/24x18/ec.png" srcset="https://flagcdn.com/48x36/ec.png 2x" class="flag-icon" alt=""></span></td><td>vs</td><td>TBD</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/ci.png" srcset="https://flagcdn.com/48x36/ci.png 2x" class="flag-icon" alt=""><span class="team-name-text">CIV</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">ECU</span><img src="https://flagcdn.com/24x18/ec.png" srcset="https://flagcdn.com/48x36/ec.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Monday, 15 June 26 &middot; 09:00 WIB</td><td>Group F</td>
-        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/se.png" srcset="https://flagcdn.com/48x36/se.png 2x" class="flag-icon" alt=""><span class="team-name-text">Sweden</span></span> vs <span class="team-flag"><span class="team-name-text">Tunisia</span><img src="https://flagcdn.com/24x18/tn.png" srcset="https://flagcdn.com/48x36/tn.png 2x" class="flag-icon" alt=""></span></td><td>vs</td><td>TBD</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/se.png" srcset="https://flagcdn.com/48x36/se.png 2x" class="flag-icon" alt=""><span class="team-name-text">SWE</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">TUN</span><img src="https://flagcdn.com/24x18/tn.png" srcset="https://flagcdn.com/48x36/tn.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Monday, 15 June 26 &middot; 23:00 WIB</td><td>Group H</td>
-        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/es.png" srcset="https://flagcdn.com/48x36/es.png 2x" class="flag-icon" alt=""><span class="team-name-text">Spain</span></span> vs <span class="team-flag"><span class="team-name-text">Cape Verde</span><img src="https://flagcdn.com/24x18/cv.png" srcset="https://flagcdn.com/48x36/cv.png 2x" class="flag-icon" alt=""></span></td><td>vs</td><td>TBD</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/es.png" srcset="https://flagcdn.com/48x36/es.png 2x" class="flag-icon" alt=""><span class="team-name-text">ESP</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">CPV</span><img src="https://flagcdn.com/24x18/cv.png" srcset="https://flagcdn.com/48x36/cv.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Tuesday, 16 June 26 &middot; 02:00 WIB</td><td>Group G</td>
-        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/be.png" srcset="https://flagcdn.com/48x36/be.png 2x" class="flag-icon" alt=""><span class="team-name-text">Belgium</span></span> vs <span class="team-flag"><span class="team-name-text">Egypt</span><img src="https://flagcdn.com/24x18/eg.png" srcset="https://flagcdn.com/48x36/eg.png 2x" class="flag-icon" alt=""></span></td><td>vs</td><td>TBD</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/be.png" srcset="https://flagcdn.com/48x36/be.png 2x" class="flag-icon" alt=""><span class="team-name-text">BEL</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">EGY</span><img src="https://flagcdn.com/24x18/eg.png" srcset="https://flagcdn.com/48x36/eg.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Tuesday, 16 June 26 &middot; 05:00 WIB</td><td>Group H</td>
-        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/sa.png" srcset="https://flagcdn.com/48x36/sa.png 2x" class="flag-icon" alt=""><span class="team-name-text">Saudi Arabia</span></span> vs <span class="team-flag"><span class="team-name-text">Uruguay</span><img src="https://flagcdn.com/24x18/uy.png" srcset="https://flagcdn.com/48x36/uy.png 2x" class="flag-icon" alt=""></span></td><td>vs</td><td>TBD</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/sa.png" srcset="https://flagcdn.com/48x36/sa.png 2x" class="flag-icon" alt=""><span class="team-name-text">KSA</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">URU</span><img src="https://flagcdn.com/24x18/uy.png" srcset="https://flagcdn.com/48x36/uy.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Tuesday, 16 June 26 &middot; 08:00 WIB</td><td>Group G</td>
-        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/ir.png" srcset="https://flagcdn.com/48x36/ir.png 2x" class="flag-icon" alt=""><span class="team-name-text">Iran</span></span> vs <span class="team-flag"><span class="team-name-text">New Zealand</span><img src="https://flagcdn.com/24x18/nz.png" srcset="https://flagcdn.com/48x36/nz.png 2x" class="flag-icon" alt=""></span></td><td>vs</td><td>TBD</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/ir.png" srcset="https://flagcdn.com/48x36/ir.png 2x" class="flag-icon" alt=""><span class="team-name-text">IRN</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">NZL</span><img src="https://flagcdn.com/24x18/nz.png" srcset="https://flagcdn.com/48x36/nz.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Wednesday, 17 June 26 &middot; 02:00 WIB</td><td>Group I</td>
-        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/fr.png" srcset="https://flagcdn.com/48x36/fr.png 2x" class="flag-icon" alt=""><span class="team-name-text">France</span></span> vs <span class="team-flag"><span class="team-name-text">Senegal</span><img src="https://flagcdn.com/24x18/sn.png" srcset="https://flagcdn.com/48x36/sn.png 2x" class="flag-icon" alt=""></span></td><td>vs</td><td>TBD</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/fr.png" srcset="https://flagcdn.com/48x36/fr.png 2x" class="flag-icon" alt=""><span class="team-name-text">FRA</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">SEN</span><img src="https://flagcdn.com/24x18/sn.png" srcset="https://flagcdn.com/48x36/sn.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Wednesday, 17 June 26 &middot; 05:00 WIB</td><td>Group I</td>
-        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/iq.png" srcset="https://flagcdn.com/48x36/iq.png 2x" class="flag-icon" alt=""><span class="team-name-text">Iraq</span></span> vs <span class="team-flag"><span class="team-name-text">Norway</span><img src="https://flagcdn.com/24x18/no.png" srcset="https://flagcdn.com/48x36/no.png 2x" class="flag-icon" alt=""></span></td><td>vs</td><td>TBD</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/iq.png" srcset="https://flagcdn.com/48x36/iq.png 2x" class="flag-icon" alt=""><span class="team-name-text">IRQ</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">NOR</span><img src="https://flagcdn.com/24x18/no.png" srcset="https://flagcdn.com/48x36/no.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Wednesday, 17 June 26 &middot; 08:00 WIB</td><td>Group J</td>
-        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/ar.png" srcset="https://flagcdn.com/48x36/ar.png 2x" class="flag-icon" alt=""><span class="team-name-text">Argentina</span></span> vs <span class="team-flag"><span class="team-name-text">Algeria</span><img src="https://flagcdn.com/24x18/dz.png" srcset="https://flagcdn.com/48x36/dz.png 2x" class="flag-icon" alt=""></span></td><td>vs</td><td>TBD</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/ar.png" srcset="https://flagcdn.com/48x36/ar.png 2x" class="flag-icon" alt=""><span class="team-name-text">ARG</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">ALG</span><img src="https://flagcdn.com/24x18/dz.png" srcset="https://flagcdn.com/48x36/dz.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Wednesday, 17 June 26 &middot; 11:00 WIB</td><td>Group J</td>
-        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/at.png" srcset="https://flagcdn.com/48x36/at.png 2x" class="flag-icon" alt=""><span class="team-name-text">Austria</span></span> vs <span class="team-flag"><span class="team-name-text">Jordan</span><img src="https://flagcdn.com/24x18/jo.png" srcset="https://flagcdn.com/48x36/jo.png 2x" class="flag-icon" alt=""></span></td><td>vs</td><td>TBD</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/at.png" srcset="https://flagcdn.com/48x36/at.png 2x" class="flag-icon" alt=""><span class="team-name-text">AUT</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">JOR</span><img src="https://flagcdn.com/24x18/jo.png" srcset="https://flagcdn.com/48x36/jo.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Thursday, 18 June 26 &middot; 00:00 WIB</td><td>Group K</td>
-        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/pt.png" srcset="https://flagcdn.com/48x36/pt.png 2x" class="flag-icon" alt=""><span class="team-name-text">Portugal</span></span> vs <span class="team-flag"><span class="team-name-text">DR Congo</span><img src="https://flagcdn.com/24x18/cd.png" srcset="https://flagcdn.com/48x36/cd.png 2x" class="flag-icon" alt=""></span></td><td>vs</td><td>TBD</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/pt.png" srcset="https://flagcdn.com/48x36/pt.png 2x" class="flag-icon" alt=""><span class="team-name-text">POR</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">COD</span><img src="https://flagcdn.com/24x18/cd.png" srcset="https://flagcdn.com/48x36/cd.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Thursday, 18 June 26 &middot; 03:00 WIB</td><td>Group L</td>
-        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/gb-eng.png" srcset="https://flagcdn.com/48x36/gb-eng.png 2x" class="flag-icon" alt=""><span class="team-name-text">England</span></span> vs <span class="team-flag"><span class="team-name-text">Croatia</span><img src="https://flagcdn.com/24x18/hr.png" srcset="https://flagcdn.com/48x36/hr.png 2x" class="flag-icon" alt=""></span></td><td>vs</td><td>TBD</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/gb-eng.png" srcset="https://flagcdn.com/48x36/gb-eng.png 2x" class="flag-icon" alt=""><span class="team-name-text">ENG</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">CRO</span><img src="https://flagcdn.com/24x18/hr.png" srcset="https://flagcdn.com/48x36/hr.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Thursday, 18 June 26 &middot; 06:00 WIB</td><td>Group L</td>
-        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/gh.png" srcset="https://flagcdn.com/48x36/gh.png 2x" class="flag-icon" alt=""><span class="team-name-text">Ghana</span></span> vs <span class="team-flag"><span class="team-name-text">Panama</span><img src="https://flagcdn.com/24x18/pa.png" srcset="https://flagcdn.com/48x36/pa.png 2x" class="flag-icon" alt=""></span></td><td>vs</td><td>TBD</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/gh.png" srcset="https://flagcdn.com/48x36/gh.png 2x" class="flag-icon" alt=""><span class="team-name-text">GHA</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">PAN</span><img src="https://flagcdn.com/24x18/pa.png" srcset="https://flagcdn.com/48x36/pa.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Thursday, 18 June 26 &middot; 09:00 WIB</td><td>Group K</td>
-        <td><span class="team-flag"><img src="https://flagcdn.com/24x18/uz.png" srcset="https://flagcdn.com/48x36/uz.png 2x" class="flag-icon" alt=""><span class="team-name-text">Uzbekistan</span></span> vs <span class="team-flag"><span class="team-name-text">Colombia</span><img src="https://flagcdn.com/24x18/co.png" srcset="https://flagcdn.com/48x36/co.png 2x" class="flag-icon" alt=""></span></td><td>vs</td><td>TBD</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/uz.png" srcset="https://flagcdn.com/48x36/uz.png 2x" class="flag-icon" alt=""><span class="team-name-text">UZB</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">COL</span><img src="https://flagcdn.com/24x18/co.png" srcset="https://flagcdn.com/48x36/co.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr></tbody>
       </table>
