@@ -53,9 +53,14 @@
   .standings-block th, .standings-block td { font-size: 12px; padding: 6px 4px; }
   .standings-block .team-flag { max-width: 100%; overflow: hidden; }
   .standings-block .team-flag span, .standings-block td.team-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; max-width: calc(100% - 22px); vertical-align: middle; }
-  .group-block table { table-layout: auto; }
-  .group-block th, .group-block td { font-size: 13px; padding: 8px 10px; }
-  .group-block th:last-child, .group-block td:last-child { text-align: center; white-space: nowrap; }
+  .group-block table { table-layout: fixed; }
+  .group-block th, .group-block td { font-size: 13px; padding: 8px 6px; overflow: hidden; }
+  .group-block th:nth-child(1), .group-block td:nth-child(1) { width: 10%; }
+  .group-block th:nth-child(2), .group-block td:nth-child(2) { width: 46%; text-align: left; text-overflow: ellipsis; white-space: nowrap; }
+  .group-block th:nth-child(3), .group-block td:nth-child(3) { width: 22%; text-overflow: ellipsis; white-space: nowrap; }
+  .group-block th:nth-child(4), .group-block td:nth-child(4) { width: 22%; text-align: center; white-space: nowrap; }
+  .group-block .team-flag { max-width: 100%; overflow: hidden; }
+  .group-block .team-flag span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; max-width: calc(100% - 20px); vertical-align: middle; }
   .empty { color: var(--grey); font-style: italic; padding: 12px 0; }
   .notes { background: #fffbe6; border: 1px solid #f0e0a0; border-radius: 8px; padding: 12px 18px; font-size: 13px; color: #6b5b00; }
   .notes li { margin-bottom: 4px; }
