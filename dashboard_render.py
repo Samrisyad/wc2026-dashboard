@@ -124,6 +124,16 @@ HTML_HEAD_TMPL = """<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FIFA World Cup 2026 Dashboard (WIB)</title>
+<meta name="description" content="Live schedule, scores, standings, top scorers, assists and cards for the FIFA World Cup 2026, all times in WIB (GMT+7).">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FIFA World Cup 2026 Dashboard (WIB)">
+<meta property="og:description" content="Live schedule, scores, standings, top scorers, assists and cards for the FIFA World Cup 2026, all times in WIB (GMT+7).">
+<meta property="og:image" content="https://samrisyad.github.io/wc2026-dashboard/og-image.jpg">
+<meta property="og:url" content="https://samrisyad.github.io/wc2026-dashboard/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FIFA World Cup 2026 Dashboard (WIB)">
+<meta name="twitter:description" content="Live schedule, scores, standings, top scorers, assists and cards for the FIFA World Cup 2026, all times in WIB (GMT+7).">
+<meta name="twitter:image" content="https://samrisyad.github.io/wc2026-dashboard/og-image.jpg">
 <style>{css}</style>
 </head>
 <body>
