@@ -1,5 +1,5 @@
 {
-  "last_updated": "13 June 26 · 09:40 WIB",
+  "last_updated": "13 June 26 · 09:55 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -240,10 +240,10 @@
       "group": "D",
       "home": "United States",
       "away": "Paraguay",
-      "status": "LIVE",
+      "status": "FT",
       "score": {
         "home": 3,
-        "away": 0
+        "away": 1
       },
       "venue": "SoFi Stadium, Inglewood",
       "date_wib": "2026-06-13 08:00",
@@ -262,6 +262,11 @@
           "player": "Folarin Balogun",
           "team": "United States",
           "minute": "45"
+        },
+        {
+          "player": "Mauricio (sub)",
+          "team": "Paraguay",
+          "minute": "73"
         }
       ],
       "assists": [
@@ -282,6 +287,12 @@
           "for": "Folarin Balogun",
           "team": "United States",
           "minute": "45"
+        },
+        {
+          "player": "Unconfirmed",
+          "for": "Mauricio (sub)",
+          "team": "Paraguay",
+          "minute": "73"
         }
       ],
       "cards": [
@@ -601,7 +612,7 @@
     "Times converted from ET (UTC-4) to WIB (UTC+7, +11h). Some kickoff times/venues are provisional (TBD) pending confirmation from official sources.",
     "Group A is complete for Matchday 1: Mexico 2-0 South Africa (3 red cards, a World Cup record for an opening match) and South Korea 2-1 Czechia.",
     "Canada made history with a 1-1 draw against Bosnia-Herzegovina in the first men's World Cup match played on Canadian soil - Canada's first-ever World Cup point.",
-    "United States and Paraguay played out a goalless 0-0 draw at SoFi Stadium in Inglewood to open Group D (13 June, 08:00 WIB).",
+    "United States beat Paraguay 3-1 at SoFi Stadium in Inglewood to open Group D (13 June, kickoff 08:00 WIB) - an own goal by Damian Bobadilla and a brace from Folarin Balogun put the USMNT 3-0 up before Paraguay substitute Mauricio scored a consolation goal in the 73rd minute.",
     "Next up: Qatar vs Switzerland (14 June, 02:00 WIB) continues Group B, followed by Brazil vs Morocco and Haiti vs Scotland in Group C.",
     "This page updates automatically 3x/day (04:00, 08:00, 12:00 WIB) with the latest scores, scorers, assists, cards, and standings."
   ]
