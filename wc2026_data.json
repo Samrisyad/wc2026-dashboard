@@ -1,5 +1,5 @@
 {
-  "last_updated": "13 June 26 · 12:20 WIB",
+  "last_updated": "14 June 26 · 02:10 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -331,8 +331,11 @@
       "group": "B",
       "home": "Qatar",
       "away": "Switzerland",
-      "status": "scheduled",
-      "score": null,
+      "status": "LIVE",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
       "venue": "Levi's Stadium, Santa Clara",
       "date_wib": "2026-06-14 02:00",
       "scorers": [],
