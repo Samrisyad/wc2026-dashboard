@@ -39,6 +39,7 @@
   .badge.live { background: #ffe1e1; color: #c0392b; animation: pulse 1.5s infinite; }
   .badge.sched { background: #e6f0ff; color: #2563eb; }
   @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+  .match-card.live-card { border: 2px solid #c0392b; box-shadow: 0 1px 6px rgba(192,57,43,0.25); }
   .team-flag { display: inline-flex; align-items: center; gap: 5px; min-width: 0; max-width: 100%; }
   .team-name-text { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .flag-icon { width: 16px; height: 12px; object-fit: cover; border-radius: 2px; box-shadow: 0 0 0 1px rgba(0,0,0,0.08); vertical-align: middle; flex-shrink: 0; }
@@ -51,15 +52,14 @@
   .match-teams .score { font-size: 18px; color: var(--green); padding: 0 8px; text-align: center; white-space: nowrap; }
   .match-meta { font-size: 12px; color: var(--grey); }
   .events { margin-top: 8px; border-top: 1px solid #eee; padding-top: 6px; font-size: 13px; }
-  .events-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 12px; }
-  .events-col { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
   .event { padding: 2px 0; display: flex; align-items: baseline; gap: 4px; flex-wrap: wrap; }
-  .event-min { color: var(--grey); font-size: 12px; margin-left: auto; white-space: nowrap; }
-  .assist-note { color: var(--grey); font-size: 12px; }
-  .card-event { background: #fff8e1; border-radius: 4px; padding: 2px 6px; margin: 1px 0; }
+  .event-icon { display: inline-block; width: 18px; flex-shrink: 0; text-align: center; }
+  .event .flag-icon { width: 14px; height: 11px; }
+  .event-min { color: var(--grey); font-size: 11px; margin-left: auto; white-space: nowrap; padding-left: 6px; }
+  .assist-note { color: var(--grey); font-size: 11px; }
   @media (max-width: 600px) {
-    .events-grid { grid-template-columns: 1fr; gap: 4px; }
-    .events-col:not(:first-child) { border-top: 1px solid #f0f0f0; padding-top: 4px; }
+    .event { font-size: 12px; }
+    .event-min, .assist-note { font-size: 10px; }
   }
   table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; font-size: 14px; }
   th, td { padding: 8px 10px; text-align: center; border-bottom: 1px solid #eee; }
@@ -147,6 +147,7 @@
   <p>All times shown in WIB (GMT+7) &middot; Last updated: 13 June 26 · 08:07 WIB</p>
 </header>
 <nav>
+  
   <a href="#schedule">Schedule</a>
   <a href="#results">Results</a>
   <a href="#standings">Standings</a>
