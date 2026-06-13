@@ -154,22 +154,36 @@ CHART = chr(0x1F4CA)
 INFO = chr(0x2139) + chr(0xFE0F)
 CHECK = chr(0x2705)
 
-def match_card(m):
+def _min_sort(v):
+    s = str(v)
+    if "+" in s:
+        a, b = s.split("+", 1)
+        return int(a) + int(b)
+    return int(s)
+
+def match_card(m, extra_class=""):
+    card_class = "match-card" + (f" {extra_class}" if extra_class else "")
     events_html = ""
     if m["scorers"] or m["cards"]:
-        rows = []
-        for s in m["scorers"]:
-            rows.append(f'<div class="event">{GOAL} <b>{s["player"]}</b> ({with_flag_code(s["team"])}) - {s["minute"]}\'</div>')
+        assists_by_scorer = {}
         for a in m.get("assists", []):
             if a["player"] != "Unconfirmed":
-                rows.append(f'<div class="event">{ASSIST} <b>{a["player"]}</b> assist for {a["for"]} ({with_flag_code(a["team"])}) - {a["minute"]}\'</div>')
+                assists_by_scorer[(a["for"], a["minute"], a["team"])] = a["player"]
+
+        timeline = []
+        for s in m["scorers"]:
+            assist = assists_by_scorer.get((s["player"], s["minute"], s["team"]))
+            assist_str = f' <span class="assist-note">({ASSIST} {assist})</span>' if assist else ""
+            timeline.append((_min_sort(s["minute"]), f'<div class="event"><span class="event-icon">{GOAL}</span>{flag(s["team"])}<b>{s["player"]}</b>{assist_str} <span class="event-min">{s["minute"]}\'</span></div>'))
         for c in m["cards"]:
             icon = CARD_RED if c["type"] == "red" else CARD_YELLOW
-            rows.append(f'<div class="event">{icon} <b>{c["player"]}</b> ({with_flag_code(c["team"])}) - {c["minute"]}\'</div>')
-        events_html = f'<div class="events">{"".join(rows)}</div>'
+            timeline.append((_min_sort(c["minute"]), f'<div class="event"><span class="event-icon">{icon}</span>{flag(c["team"])}<b>{c["player"]}</b> <span class="event-min">{c["minute"]}\'</span></div>'))
+        timeline.sort(key=lambda x: x[0])
+
+        events_html = f'<div class="events">{"".join(row for _, row in timeline)}</div>'
 
     return f"""
-    <div class="match-card">
+    <div class="{card_class}">
       <div class="match-top">
         <span class="group-tag">Group {m['group']}</span>
         {status_badge(m)}
@@ -203,11 +217,24 @@ def standings_table(g):
     </div>"""
 
 # ---- Build sections ----
+live_matches = sorted([m for m in matches if m["status"] == "LIVE"], key=lambda m: m["date_wib"])
 upcoming_matches = sorted([m for m in matches if m["status"] == "scheduled"], key=lambda m: m["date_wib"])
 finished_matches = sorted([m for m in matches if m["status"] == "FT"], key=lambda m: m["date_wib"], reverse=True)
 
 finished_html = "".join(match_card(m) for m in finished_matches) or '<p class="empty">No completed matches yet.</p>'
 upcoming_html = "".join(match_card(m) for m in upcoming_matches[:12])
+
+if live_matches:
+    live_html = "".join(match_card(m, extra_class="live-card") for m in live_matches)
+    live_section_html = f"""
+  <section id="live">
+    <h2>{RED_CIRCLE} Live Now</h2>
+    <div class="grid">{live_html}</div>
+  </section>"""
+    nav_live_html = '<a href="#live">Live</a>'
+else:
+    live_section_html = ""
+    nav_live_html = ""
 
 schedule_rows = ""
 for m in sorted(matches, key=lambda m: m["date_wib"]):
@@ -247,6 +274,7 @@ parts = {
     "trophy": TROPHY, "last_updated": last_updated,
     "calendar": CALENDAR, "check": CHECK, "chart": CHART, "goal": GOAL,
     "card_red": CARD_RED, "card_yellow": CARD_YELLOW, "info": INFO,
+    "live_section_html": live_section_html, "nav_live_html": nav_live_html,
     "upcoming_html": upcoming_html,
     "schedule_rows": schedule_rows, "finished_html": finished_html,
     "standings_html": standings_html, "scorers_html": scorers_html,
@@ -258,5 +286,3 @@ HTML = dashboard_render.render(parts)
 
 with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
     f.write(HTML)
-
-print(f"Dashboard written to {OUTPUT_FILE}")
