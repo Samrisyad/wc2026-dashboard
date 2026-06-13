@@ -1,0 +1,199 @@
+{
+  "last_updated": "13 June 26 · 08:07 WIB",
+  "groups": {
+    "A": ["Mexico", "South Africa", "South Korea", "Czechia"],
+    "B": ["Canada", "Bosnia-Herzegovina", "Qatar", "Switzerland"],
+    "C": ["Brazil", "Morocco", "Haiti", "Scotland"],
+    "D": ["United States", "Paraguay", "Australia", "Türkiye"],
+    "E": ["Germany", "Curaçao", "Ivory Coast", "Ecuador"],
+    "F": ["Netherlands", "Japan", "Sweden", "Tunisia"],
+    "G": ["Belgium", "Egypt", "Iran", "New Zealand"],
+    "H": ["Spain", "Cape Verde", "Saudi Arabia", "Uruguay"],
+    "I": ["France", "Senegal", "Iraq", "Norway"],
+    "J": ["Argentina", "Algeria", "Austria", "Jordan"],
+    "K": ["Portugal", "DR Congo", "Uzbekistan", "Colombia"],
+    "L": ["England", "Croatia", "Ghana", "Panama"]
+  },
+  "matches": [
+    {
+      "group": "A", "home": "Mexico", "away": "South Africa", "status": "FT",
+      "score": {"home": 2, "away": 0},
+      "venue": "Estadio Azteca, Mexico City", "date_wib": "2026-06-12 00:00",
+      "scorers": [
+        {"player": "Julián Quiñones", "team": "Mexico", "minute": 9},
+        {"player": "Raúl Jiménez", "team": "Mexico", "minute": 62}
+      ],
+      "assists": [
+        {"player": "Roberto Alvarado", "team": "Mexico", "for": "Julián Quiñones", "minute": 9},
+        {"player": "Roberto Alvarado", "team": "Mexico", "for": "Raúl Jiménez", "minute": 62}
+      ],
+      "cards": [
+        {"player": "Sphephelo Sithole", "team": "South Africa", "type": "red", "minute": 49},
+        {"player": "Themba Zwane", "team": "South Africa", "type": "red", "minute": 80},
+        {"player": "César Montes", "team": "Mexico", "type": "red", "minute": 92}
+      ]
+    },
+    {
+      "group": "A", "home": "South Korea", "away": "Czechia", "status": "FT",
+      "score": {"home": 2, "away": 1},
+      "venue": "Estadio Akron, Guadalajara", "date_wib": "2026-06-12 09:00",
+      "scorers": [
+        {"player": "Ladislav Krejčí", "team": "Czechia", "minute": 59},
+        {"player": "Hwang In-beom", "team": "South Korea", "minute": 67},
+        {"player": "Oh Hyeon-gyu", "team": "South Korea", "minute": 80}
+      ],
+      "assists": [
+        {"player": "Vladimír Coufal", "team": "Czechia", "for": "Ladislav Krejčí", "minute": 59},
+        {"player": "Hwang In-beom", "team": "South Korea", "for": "Oh Hyeon-gyu", "minute": 80}
+      ],
+      "cards": [
+        {"player": "Lee Gi-hyuk", "team": "South Korea", "type": "yellow", "minute": 90}
+      ]
+    },
+    {
+      "group": "B", "home": "Canada", "away": "Bosnia-Herzegovina", "status": "FT",
+      "score": {"home": 1, "away": 1},
+      "venue": "BMO Field, Toronto", "date_wib": "2026-06-13 02:00",
+      "scorers": [
+        {"player": "Jovo Lukić", "team": "Bosnia-Herzegovina", "minute": 21},
+        {"player": "Cyle Larin", "team": "Canada", "minute": 78}
+      ],
+      "assists": [
+        {"player": "Sead Kolašinac", "team": "Bosnia-Herzegovina", "for": "Jovo Lukić", "minute": 21},
+        {"player": "Promise David", "team": "Canada", "for": "Cyle Larin", "minute": 78}
+      ],
+      "cards": [
+        {"player": "Alistair Johnston", "team": "Canada", "type": "yellow", "minute": 35},
+        {"player": "Jovo Lukić", "team": "Bosnia-Herzegovina", "type": "yellow", "minute": 55}
+      ]
+    },
+    {
+      "group": "D", "home": "United States", "away": "Paraguay", "status": "FT",
+      "score": {"home": 0, "away": 0},
+      "venue": "SoFi Stadium, Inglewood", "date_wib": "2026-06-13 08:00",
+      "scorers": [], "assists": [], "cards": []
+    },
+    {
+      "group": "B", "home": "Qatar", "away": "Switzerland", "status": "scheduled",
+      "score": null, "venue": "Levi's Stadium, Santa Clara", "date_wib": "2026-06-14 02:00",
+      "scorers": [], "assists": [], "cards": []
+    },
+    {
+      "group": "C", "home": "Brazil", "away": "Morocco", "status": "scheduled",
+      "score": null, "venue": "MetLife Stadium, East Rutherford", "date_wib": "2026-06-14 05:00",
+      "scorers": [], "assists": [], "cards": []
+    },
+    {
+      "group": "C", "home": "Haiti", "away": "Scotland", "status": "scheduled",
+      "score": null, "venue": "TBD", "date_wib": "2026-06-14 08:00",
+      "scorers": [], "assists": [], "cards": []
+    },
+    {
+      "group": "D", "home": "Australia", "away": "Türkiye", "status": "scheduled",
+      "score": null, "venue": "TBD", "date_wib": "2026-06-14 11:00",
+      "scorers": [], "assists": [], "cards": []
+    },
+    {
+      "group": "E", "home": "Germany", "away": "Curaçao", "status": "scheduled",
+      "score": null, "venue": "TBD", "date_wib": "2026-06-15 00:00",
+      "scorers": [], "assists": [], "cards": []
+    },
+    {
+      "group": "F", "home": "Netherlands", "away": "Japan", "status": "scheduled",
+      "score": null, "venue": "TBD", "date_wib": "2026-06-15 03:00",
+      "scorers": [], "assists": [], "cards": []
+    },
+    {
+      "group": "E", "home": "Ivory Coast", "away": "Ecuador", "status": "scheduled",
+      "score": null, "venue": "TBD", "date_wib": "2026-06-15 06:00",
+      "scorers": [], "assists": [], "cards": []
+    },
+    {
+      "group": "F", "home": "Sweden", "away": "Tunisia", "status": "scheduled",
+      "score": null, "venue": "TBD", "date_wib": "2026-06-15 09:00",
+      "scorers": [], "assists": [], "cards": []
+    },
+    {
+      "group": "H", "home": "Spain", "away": "Cape Verde", "status": "scheduled",
+      "score": null, "venue": "TBD", "date_wib": "2026-06-15 23:00",
+      "scorers": [], "assists": [], "cards": []
+    },
+    {
+      "group": "G", "home": "Belgium", "away": "Egypt", "status": "scheduled",
+      "score": null, "venue": "TBD", "date_wib": "2026-06-16 02:00",
+      "scorers": [], "assists": [], "cards": []
+    },
+    {
+      "group": "H", "home": "Saudi Arabia", "away": "Uruguay", "status": "scheduled",
+      "score": null, "venue": "TBD", "date_wib": "2026-06-16 05:00",
+      "scorers": [], "assists": [], "cards": []
+    },
+    {
+      "group": "G", "home": "Iran", "away": "New Zealand", "status": "scheduled",
+      "score": null, "venue": "TBD", "date_wib": "2026-06-16 08:00",
+      "scorers": [], "assists": [], "cards": []
+    },
+    {
+      "group": "I", "home": "France", "away": "Senegal", "status": "scheduled",
+      "score": null, "venue": "TBD", "date_wib": "2026-06-17 02:00",
+      "scorers": [], "assists": [], "cards": []
+    },
+    {
+      "group": "I", "home": "Iraq", "away": "Norway", "status": "scheduled",
+      "score": null, "venue": "TBD", "date_wib": "2026-06-17 05:00",
+      "scorers": [], "assists": [], "cards": []
+    },
+    {
+      "group": "J", "home": "Argentina", "away": "Algeria", "status": "scheduled",
+      "score": null, "venue": "TBD", "date_wib": "2026-06-17 08:00",
+      "scorers": [], "assists": [], "cards": []
+    },
+    {
+      "group": "J", "home": "Austria", "away": "Jordan", "status": "scheduled",
+      "score": null, "venue": "TBD", "date_wib": "2026-06-17 11:00",
+      "scorers": [], "assists": [], "cards": []
+    },
+    {
+      "group": "K", "home": "Portugal", "away": "DR Congo", "status": "scheduled",
+      "score": null, "venue": "TBD", "date_wib": "2026-06-18 00:00",
+      "scorers": [], "assists": [], "cards": []
+    },
+    {
+      "group": "L", "home": "England", "away": "Croatia", "status": "scheduled",
+      "score": null, "venue": "TBD", "date_wib": "2026-06-18 03:00",
+      "scorers": [], "assists": [], "cards": []
+    },
+    {
+      "group": "L", "home": "Ghana", "away": "Panama", "status": "scheduled",
+      "score": null, "venue": "TBD", "date_wib": "2026-06-18 06:00",
+      "scorers": [], "assists": [], "cards": []
+    },
+    {
+      "group": "K", "home": "Uzbekistan", "away": "Colombia", "status": "scheduled",
+      "score": null, "venue": "TBD", "date_wib": "2026-06-18 09:00",
+      "scorers": [], "assists": [], "cards": []
+    }
+  ],
+  "flags": {
+    "Canada": "ca", "Bosnia-Herzegovina": "ba", "United States": "us", "Paraguay": "py",
+    "Qatar": "qa", "Switzerland": "ch", "Brazil": "br", "Morocco": "ma", "Haiti": "ht",
+    "Scotland": "gb-sct", "Australia": "au", "Türkiye": "tr", "Germany": "de",
+    "Curaçao": "cw", "Netherlands": "nl", "Japan": "jp", "Ivory Coast": "ci",
+    "Ecuador": "ec", "Sweden": "se", "Tunisia": "tn", "Spain": "es", "Cape Verde": "cv",
+    "Belgium": "be", "Egypt": "eg", "Mexico": "mx", "South Africa": "za", "South Korea": "kr",
+    "Czechia": "cz", "Saudi Arabia": "sa", "Uruguay": "uy", "Iran": "ir", "New Zealand": "nz",
+    "France": "fr", "Senegal": "sn", "Iraq": "iq", "Norway": "no", "Argentina": "ar",
+    "Algeria": "dz", "Austria": "at", "Jordan": "jo", "Portugal": "pt", "DR Congo": "cd",
+    "England": "gb-eng", "Croatia": "hr", "Ghana": "gh", "Panama": "pa", "Uzbekistan": "uz",
+    "Colombia": "co"
+  },
+  "notes": [
+    "Matchday 1 fixtures shown above (June 11-18 WIB). Matchdays 2-3 (through June 27) and the knockout stage will be added as the tournament progresses.",
+    "Times converted from ET (UTC-4) to WIB (UTC+7, +11h). Some kickoff times/venues are provisional (TBD) pending confirmation from official sources.",
+    "Group A is complete for Matchday 1: Mexico 2-0 South Africa (3 red cards, a World Cup record for an opening match) and South Korea 2-1 Czechia.",
+    "Canada made history with a 1-1 draw against Bosnia-Herzegovina in the first men's World Cup match played on Canadian soil - Canada's first-ever World Cup point.",
+    "United States and Paraguay played out a goalless 0-0 draw at SoFi Stadium in Inglewood to open Group D (13 June, 08:00 WIB).",
+    "Next up: Qatar vs Switzerland (14 June, 02:00 WIB) continues Group B, followed by Brazil vs Morocco and Haiti vs Scotland in Group C.",
+    "This page updates automatically 3x/day (04:00, 08:00, 12:00 WIB) with the latest scores, scorers, assists, cards, and standings."
+  ]
+}
