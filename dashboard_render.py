@@ -23,6 +23,7 @@ CSS = """
   .badge { font-size: 11px; padding: 3px 8px; border-radius: 12px; font-weight: 700; }
   .badge.ft { background: #e0e4e8; color: var(--grey); }
   .badge.live { background: #ffe1e1; color: #c0392b; animation: pulse 1.5s infinite; }
+  .match-card.live-card { border: 2px solid #c0392b; box-shadow: 0 0 0 3px rgba(192,57,43,0.08); }
   .badge.sched { background: #e6f0ff; color: #2563eb; }
   @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
   .team-flag { display: inline-flex; align-items: center; gap: 5px; min-width: 0; max-width: 100%; }
@@ -171,13 +172,15 @@ def render(parts):
   <p>All times shown in WIB (GMT+7) &middot; Last updated: {last_updated}</p>
 </header>
 <nav>
-  <a href="#schedule">Schedule</a>
+  {nav_live_html}<a href="#schedule">Schedule</a>
   <a href="#results">Results</a>
   <a href="#standings">Standings</a>
   <a href="#stats">Player Stats</a>
   <a href="#cards">Cards</a>
 </nav>
 <main>""".format(**parts))
+
+    body.append(parts["live_section_html"])
 
     body.append("""
   <section id="schedule">
