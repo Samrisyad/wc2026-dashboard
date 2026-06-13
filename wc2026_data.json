@@ -1,5 +1,5 @@
 {
-  "last_updated": "13 June 26 · 08:52 WIB",
+  "last_updated": "13 June 26 · 09:40 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -242,7 +242,7 @@
       "away": "Paraguay",
       "status": "LIVE",
       "score": {
-        "home": 2,
+        "home": 3,
         "away": 0
       },
       "venue": "SoFi Stadium, Inglewood",
@@ -257,6 +257,11 @@
           "player": "Folarin Balogun",
           "team": "United States",
           "minute": "31"
+        },
+        {
+          "player": "Folarin Balogun",
+          "team": "United States",
+          "minute": "45"
         }
       ],
       "assists": [
@@ -271,9 +276,34 @@
           "for": "Folarin Balogun",
           "team": "United States",
           "minute": "31"
+        },
+        {
+          "player": "Christian Pulisic",
+          "for": "Folarin Balogun",
+          "team": "United States",
+          "minute": "45"
         }
       ],
-      "cards": []
+      "cards": [
+        {
+          "player": "Juan Jose Caceres",
+          "team": "Paraguay",
+          "type": "yellow",
+          "minute": "10"
+        },
+        {
+          "player": "Miguel Almiron",
+          "team": "Paraguay",
+          "type": "yellow",
+          "minute": "50"
+        },
+        {
+          "player": "Tyler Adams",
+          "team": "United States",
+          "type": "yellow",
+          "minute": "59"
+        }
+      ]
     },
     {
       "group": "B",
