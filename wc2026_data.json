@@ -1,5 +1,5 @@
 {
- "last_updated": "15 June 26 · 04:06 WIB",
+ "last_updated": "15 June 26 · 04:22 WIB",
  "groups": {
   "A": [
    "Mexico",
@@ -545,13 +545,37 @@
    "away": "Japan",
    "status": "LIVE",
    "score": {
-    "home": 0,
-    "away": 0
+    "home": 1,
+    "away": 1
    },
    "venue": "AT&T Stadium, Arlington",
    "date_wib": "2026-06-15 03:00",
-   "scorers": [],
-   "assists": [],
+   "scorers": [
+    {
+     "player": "Virgil van Dijk",
+     "team": "Netherlands",
+     "minute": "50"
+    },
+    {
+     "player": "Keito Nakamura",
+     "team": "Japan",
+     "minute": "57"
+    }
+   ],
+   "assists": [
+    {
+     "player": "Ryan Gravenberch",
+     "team": "Netherlands",
+     "for": "Virgil van Dijk",
+     "minute": "50"
+    },
+    {
+     "player": "Takefusa Kubo",
+     "team": "Japan",
+     "for": "Keito Nakamura",
+     "minute": "57"
+    }
+   ],
    "cards": []
   },
   {
