@@ -1,5 +1,5 @@
 {
-  "last_updated": "15 June 26 · 04:51 WIB",
+  "last_updated": "15 June 26 · 06:38 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -648,8 +648,11 @@
       "group": "E",
       "home": "Ivory Coast",
       "away": "Ecuador",
-      "status": "scheduled",
-      "score": null,
+      "status": "LIVE",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
       "venue": "Lincoln Financial Field, Philadelphia",
       "date_wib": "2026-06-15 06:00",
       "scorers": [],
