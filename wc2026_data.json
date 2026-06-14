@@ -1,5 +1,5 @@
 {
-  "last_updated": "14 June 26 · 08:36 WIB",
+  "last_updated": "14 June 26 · 08:51 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -438,11 +438,17 @@
       "status": "LIVE",
       "score": {
         "home": 0,
-        "away": 0
+        "away": 1
       },
       "venue": "Gillette Stadium, Foxborough",
       "date_wib": "2026-06-14 08:00",
-      "scorers": [],
+      "scorers": [
+        {
+          "player": "John McGinn",
+          "team": "Scotland",
+          "minute": 28
+        }
+      ],
       "assists": [],
       "cards": []
     },
