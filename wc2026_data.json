@@ -1,5 +1,5 @@
 {
-  "last_updated": "15 June 26 · 00:06 WIB",
+  "last_updated": "15 June 26 · 00:25 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -484,15 +484,28 @@
       "away": "Curaçao",
       "status": "LIVE",
       "score": {
-        "home": 0,
+        "home": 1,
         "away": 0
       },
       "venue": "NRG Stadium, Houston",
       "date_wib": "2026-06-15 00:00",
-      "scorers": [],
-      "assists": [],
+      "scorers": [
+        {
+          "player": "Felix Nmecha",
+          "team": "Germany",
+          "minute": 6
+        }
+      ],
+      "assists": [
+        {
+          "player": "Florian Wirtz",
+          "team": "Germany",
+          "for": "Felix Nmecha",
+          "minute": 6
+        }
+      ],
       "cards": [],
-      "minute": "6'"
+      "minute": "25'"
     },
     {
       "group": "F",
