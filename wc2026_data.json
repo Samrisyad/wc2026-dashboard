@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14 10:25 WIB",
+  "last_updated": "14 June 26 · 11:37 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -456,11 +456,20 @@
       "group": "D",
       "home": "Australia",
       "away": "Türkiye",
-      "status": "scheduled",
-      "score": null,
+      "status": "LIVE",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
       "venue": "BC Place, Vancouver",
       "date_wib": "2026-06-14 11:00",
-      "scorers": [],
+      "scorers": [
+        {
+          "player": "Nestory Irankunda",
+          "team": "Australia",
+          "minute": 27
+        }
+      ],
       "assists": [],
       "cards": []
     },

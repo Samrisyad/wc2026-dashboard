@@ -37,9 +37,9 @@
   .badge { font-size: 11px; padding: 3px 8px; border-radius: 12px; font-weight: 700; }
   .badge.ft { background: #e0e4e8; color: var(--grey); }
   .badge.live { background: #ffe1e1; color: #c0392b; animation: pulse 1.5s infinite; }
+  .match-card.live-card { border: 2px solid #c0392b; box-shadow: 0 0 0 3px rgba(192,57,43,0.08); }
   .badge.sched { background: #e6f0ff; color: #2563eb; }
   @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
-  .match-card.live-card { border: 2px solid #c0392b; box-shadow: 0 1px 6px rgba(192,57,43,0.25); }
   .team-flag { display: inline-flex; align-items: center; gap: 5px; min-width: 0; max-width: 100%; }
   .team-name-text { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .flag-icon { width: 16px; height: 12px; object-fit: cover; border-radius: 2px; box-shadow: 0 0 0 1px rgba(0,0,0,0.08); vertical-align: middle; flex-shrink: 0; }
@@ -52,15 +52,7 @@
   .match-teams .score { font-size: 18px; color: var(--green); padding: 0 8px; text-align: center; white-space: nowrap; }
   .match-meta { font-size: 12px; color: var(--grey); }
   .events { margin-top: 8px; border-top: 1px solid #eee; padding-top: 6px; font-size: 13px; }
-  .event { padding: 2px 0; display: flex; align-items: baseline; gap: 4px; flex-wrap: wrap; }
-  .event-icon { display: inline-block; width: 18px; flex-shrink: 0; text-align: center; }
-  .event .flag-icon { width: 14px; height: 11px; }
-  .event-min { color: var(--grey); font-size: 11px; margin-left: auto; white-space: nowrap; padding-left: 6px; }
-  .assist-note { color: var(--grey); font-size: 11px; }
-  @media (max-width: 600px) {
-    .event { font-size: 12px; }
-    .event-min, .assist-note { font-size: 10px; }
-  }
+  .event { padding: 2px 0; }
   table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; font-size: 14px; }
   th, td { padding: 8px 10px; text-align: center; border-bottom: 1px solid #eee; }
   th { background: var(--dark); color: white; font-size: 12px; text-transform: uppercase; }
@@ -72,7 +64,7 @@
   .standings-block table { table-layout: fixed; }
   .standings-block th:nth-child(1), .standings-block td:nth-child(1) { width: 24px; }
   .standings-block th:nth-child(2), .standings-block td:nth-child(2) { width: 64px; text-align: left; }
-  .standings-block th:nth-child(n+3), .standings-block td:nth-child(n+3) { width: auto; padding-left: 2px; padding-right: 2px; text-align: center; }
+  .standings-block th:nth-child(n+3), .standings-block td:nth-child(n+3) { width: auto; padding-left: 2px; padding-right: 2px; }
   .standings-block th, .standings-block td { font-size: 12px; padding: 6px 4px; }
   .standings-block .team-flag { max-width: 100%; overflow: hidden; }
   .standings-block .team-name-text, .standings-block td.team-name { vertical-align: middle; }
@@ -144,33 +136,36 @@
 <body>
 <header>
   <h1><svg class="trophy-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20 6h24v10c0 8-5 14-12 14s-12-6-12-14V6z" fill="#d4af37"/><path d="M20 10H10v4c0 6 4 10 10 10v-6c-2 0-4-2-4-4v-4z" fill="#d4af37"/><path d="M44 10h10v4c0 6-4 10-10 10v-6c2 0 4-2 4-4v-4z" fill="#d4af37"/><rect x="29" y="29" width="6" height="10" fill="#d4af37"/><path d="M18 42h28l-3 8H21z" fill="#d4af37"/><rect x="24" y="50" width="16" height="4" fill="#1a6b3c"/><rect x="20" y="54" width="24" height="4" rx="1" fill="#1a6b3c"/></svg> FIFA World Cup 2026 Dashboard</h1>
-  <p>All times shown in WIB (GMT+7) &middot; Last updated: 14 June 26 · 10:25 WIB</p>
+  <p>All times shown in WIB (GMT+7) &middot; Last updated: 14 June 26 · 11:37 WIB</p>
 </header>
 <nav>
-  
-  <a href="#schedule">Schedule</a>
+  <a href="#live">Live</a><a href="#schedule">Schedule</a>
   <a href="#results">Results</a>
   <a href="#standings">Standings</a>
   <a href="#stats">Player Stats</a>
   <a href="#cards">Cards</a>
 </nav>
 <main>
-  <section id="schedule">
-    <h2>📅 Match Schedule (WIB)</h2>
+  <section id="live">
+    <h2>🔴 Live Now</h2>
     <div class="grid">
-    <div class="match-card">
+    <div class="match-card live-card">
       <div class="match-top">
         <span class="group-tag">Group D</span>
-        <span class="badge sched">Scheduled</span>
+        <span class="badge live">LIVE</span>
       </div>
       <div class="match-teams">
         <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/au.png" srcset="https://flagcdn.com/48x36/au.png 2x" class="flag-icon" alt=""><span class="team-name-text">Australia</span></span></span>
-        <span class="score">vs</span>
+        <span class="score">1 - 0 (LIVE)</span>
         <span class="team"><span class="team-flag"><span class="team-name-text">Türkiye</span><img src="https://flagcdn.com/24x18/tr.png" srcset="https://flagcdn.com/48x36/tr.png 2x" class="flag-icon" alt=""></span></span>
       </div>
       <div class="match-meta">Sunday, 14 June 26 &middot; 11:00 WIB &middot; BC Place, Vancouver</div>
-      
-    </div>
+      <div class="events"><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/au.png" srcset="https://flagcdn.com/48x36/au.png 2x" class="flag-icon" alt=""><b>Nestory Irankunda</b> <span class="event-min">27'</span></div></div>
+    </div></div>
+  </section>
+  <section id="schedule">
+    <h2>📅 Match Schedule (WIB)</h2>
+    <div class="grid">
     <div class="match-card">
       <div class="match-top">
         <span class="group-tag">Group E</span>
@@ -313,6 +308,19 @@
       </div>
       <div class="match-meta">Wednesday, 17 June 26 &middot; 08:00 WIB &middot; Arrowhead Stadium, Kansas City</div>
       
+    </div>
+    <div class="match-card">
+      <div class="match-top">
+        <span class="group-tag">Group J</span>
+        <span class="badge sched">Scheduled</span>
+      </div>
+      <div class="match-teams">
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/at.png" srcset="https://flagcdn.com/48x36/at.png 2x" class="flag-icon" alt=""><span class="team-name-text">Austria</span></span></span>
+        <span class="score">vs</span>
+        <span class="team"><span class="team-flag"><span class="team-name-text">Jordan</span><img src="https://flagcdn.com/24x18/jo.png" srcset="https://flagcdn.com/48x36/jo.png 2x" class="flag-icon" alt=""></span></span>
+      </div>
+      <div class="match-meta">Wednesday, 17 June 26 &middot; 11:00 WIB &middot; Levi's Stadium, Santa Clara</div>
+      
     </div></div>
     <details style="margin-top:16px;">
       <summary style="cursor:pointer; font-weight:600;">Full schedule table</summary>
@@ -349,8 +357,8 @@
         <td><span class="badge ft">FT</span></td>
     </tr><tr>
         <td>Sunday, 14 June 26 &middot; 11:00 WIB</td><td>Group D</td>
-        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/au.png" srcset="https://flagcdn.com/48x36/au.png 2x" class="flag-icon" alt=""><span class="team-name-text">AUS</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">TUR</span><img src="https://flagcdn.com/24x18/tr.png" srcset="https://flagcdn.com/48x36/tr.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>BC Place, Vancouver</td>
-        <td><span class="badge sched">Scheduled</span></td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/au.png" srcset="https://flagcdn.com/48x36/au.png 2x" class="flag-icon" alt=""><span class="team-name-text">AUS</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">TUR</span><img src="https://flagcdn.com/24x18/tr.png" srcset="https://flagcdn.com/48x36/tr.png 2x" class="flag-icon" alt=""></span></span></div></td><td>1 - 0 (LIVE)</td><td>BC Place, Vancouver</td>
+        <td><span class="badge live">LIVE</span></td>
     </tr><tr>
         <td>Monday, 15 June 26 &middot; 00:00 WIB</td><td>Group E</td>
         <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/de.png" srcset="https://flagcdn.com/48x36/de.png 2x" class="flag-icon" alt=""><span class="team-name-text">GER</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">CUW</span><img src="https://flagcdn.com/24x18/cw.png" srcset="https://flagcdn.com/48x36/cw.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>NRG Stadium, Houston</td>
