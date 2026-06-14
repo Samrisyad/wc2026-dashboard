@@ -1,5 +1,5 @@
 {
-  "last_updated": "15 June 26 · 00:37 WIB",
+  "last_updated": "15 June 26 · 00:51 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -484,7 +484,7 @@
       "away": "Curaçao",
       "status": "LIVE",
       "score": {
-        "home": 1,
+        "home": 2,
         "away": 1
       },
       "venue": "NRG Stadium, Houston",
@@ -499,6 +499,11 @@
           "player": "Livano Comenencia",
           "team": "Curaçao",
           "minute": 21
+        },
+        {
+          "player": "Nico Schlotterbeck",
+          "team": "Germany",
+          "minute": 38
         }
       ],
       "assists": [
@@ -507,10 +512,16 @@
           "team": "Germany",
           "for": "Felix Nmecha",
           "minute": 6
+        },
+        {
+          "player": "Nathaniel Brown",
+          "team": "Germany",
+          "for": "Nico Schlotterbeck",
+          "minute": 38
         }
       ],
       "cards": [],
-      "minute": "36'+"
+      "minute": "HT"
     },
     {
       "group": "F",
