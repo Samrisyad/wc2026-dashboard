@@ -1,5 +1,5 @@
 {
-  "last_updated": "15 June 26 · 04:37 WIB",
+  "last_updated": "15 June 26 · 04:51 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -543,10 +543,10 @@
       "group": "F",
       "home": "Netherlands",
       "away": "Japan",
-      "status": "LIVE",
+      "status": "FT",
       "score": {
-        "home": 1,
-        "away": 1
+        "home": 2,
+        "away": 2
       },
       "venue": "AT&T Stadium, Arlington",
       "date_wib": "2026-06-15 03:00",
@@ -554,12 +554,22 @@
         {
           "player": "Virgil van Dijk",
           "team": "Netherlands",
-          "minute": "50"
+          "minute": 50
         },
         {
           "player": "Keito Nakamura",
           "team": "Japan",
-          "minute": "57"
+          "minute": 57
+        },
+        {
+          "player": "Crysencio Summerville",
+          "team": "Netherlands",
+          "minute": 64
+        },
+        {
+          "player": "Daichi Kamada",
+          "team": "Japan",
+          "minute": 89
         }
       ],
       "assists": [
@@ -567,16 +577,29 @@
           "player": "Ryan Gravenberch",
           "team": "Netherlands",
           "for": "Virgil van Dijk",
-          "minute": "50"
+          "minute": 50
         },
         {
           "player": "Takefusa Kubo",
           "team": "Japan",
           "for": "Keito Nakamura",
-          "minute": "57"
+          "minute": 57
         }
       ],
-      "cards": []
+      "cards": [
+        {
+          "player": "Crysencio Summerville",
+          "team": "Netherlands",
+          "type": "yellow",
+          "minute": 61
+        },
+        {
+          "player": "Memphis Depay",
+          "team": "Netherlands",
+          "type": "yellow",
+          "minute": 83
+        }
+      ]
     },
     {
       "group": "E",
