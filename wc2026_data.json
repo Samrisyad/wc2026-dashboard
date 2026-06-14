@@ -1,5 +1,5 @@
 {
-  "last_updated": "15 June 26 · 00:25 WIB",
+  "last_updated": "15 June 26 · 00:37 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -485,7 +485,7 @@
       "status": "LIVE",
       "score": {
         "home": 1,
-        "away": 0
+        "away": 1
       },
       "venue": "NRG Stadium, Houston",
       "date_wib": "2026-06-15 00:00",
@@ -494,6 +494,11 @@
           "player": "Felix Nmecha",
           "team": "Germany",
           "minute": 6
+        },
+        {
+          "player": "Livano Comenencia",
+          "team": "Curaçao",
+          "minute": 21
         }
       ],
       "assists": [
@@ -505,7 +510,7 @@
         }
       ],
       "cards": [],
-      "minute": "25'"
+      "minute": "36'+"
     },
     {
       "group": "F",
