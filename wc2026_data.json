@@ -1,786 +1,786 @@
 {
-  "last_updated": "15 June 26 · 03:36 WIB",
-  "groups": {
-    "A": [
-      "Mexico",
-      "South Africa",
-      "South Korea",
-      "Czechia"
-    ],
-    "B": [
-      "Canada",
-      "Bosnia-Herzegovina",
-      "Qatar",
-      "Switzerland"
-    ],
-    "C": [
-      "Brazil",
-      "Morocco",
-      "Haiti",
-      "Scotland"
-    ],
-    "D": [
-      "United States",
-      "Paraguay",
-      "Australia",
-      "Türkiye"
-    ],
-    "E": [
-      "Germany",
-      "Curaçao",
-      "Ivory Coast",
-      "Ecuador"
-    ],
-    "F": [
-      "Netherlands",
-      "Japan",
-      "Sweden",
-      "Tunisia"
-    ],
-    "G": [
-      "Belgium",
-      "Egypt",
-      "Iran",
-      "New Zealand"
-    ],
-    "H": [
-      "Spain",
-      "Cape Verde",
-      "Saudi Arabia",
-      "Uruguay"
-    ],
-    "I": [
-      "France",
-      "Senegal",
-      "Iraq",
-      "Norway"
-    ],
-    "J": [
-      "Argentina",
-      "Algeria",
-      "Austria",
-      "Jordan"
-    ],
-    "K": [
-      "Portugal",
-      "DR Congo",
-      "Uzbekistan",
-      "Colombia"
-    ],
-    "L": [
-      "England",
-      "Croatia",
-      "Ghana",
-      "Panama"
-    ]
-  },
-  "matches": [
-    {
-      "group": "A",
-      "home": "Mexico",
-      "away": "South Africa",
-      "status": "FT",
-      "score": {
-        "home": 2,
-        "away": 0
-      },
-      "venue": "Estadio Azteca, Mexico City",
-      "date_wib": "2026-06-12 00:00",
-      "scorers": [
-        {
-          "player": "Julián Quiñones",
-          "team": "Mexico",
-          "minute": 9
-        },
-        {
-          "player": "Raúl Jiménez",
-          "team": "Mexico",
-          "minute": 62
-        }
-      ],
-      "assists": [
-        {
-          "player": "Roberto Alvarado",
-          "team": "Mexico",
-          "for": "Julián Quiñones",
-          "minute": 9
-        },
-        {
-          "player": "Roberto Alvarado",
-          "team": "Mexico",
-          "for": "Raúl Jiménez",
-          "minute": 62
-        }
-      ],
-      "cards": [
-        {
-          "player": "Sphephelo Sithole",
-          "team": "South Africa",
-          "type": "red",
-          "minute": 49
-        },
-        {
-          "player": "Themba Zwane",
-          "team": "South Africa",
-          "type": "red",
-          "minute": 80
-        },
-        {
-          "player": "César Montes",
-          "team": "Mexico",
-          "type": "red",
-          "minute": 92
-        }
-      ]
-    },
-    {
-      "group": "A",
-      "home": "South Korea",
-      "away": "Czechia",
-      "status": "FT",
-      "score": {
-        "home": 2,
-        "away": 1
-      },
-      "venue": "Estadio Akron, Guadalajara",
-      "date_wib": "2026-06-12 09:00",
-      "scorers": [
-        {
-          "player": "Ladislav Krejčí",
-          "team": "Czechia",
-          "minute": 59
-        },
-        {
-          "player": "Hwang In-beom",
-          "team": "South Korea",
-          "minute": 67
-        },
-        {
-          "player": "Oh Hyeon-gyu",
-          "team": "South Korea",
-          "minute": 80
-        }
-      ],
-      "assists": [
-        {
-          "player": "Vladimír Coufal",
-          "team": "Czechia",
-          "for": "Ladislav Krejčí",
-          "minute": 59
-        },
-        {
-          "player": "Hwang In-beom",
-          "team": "South Korea",
-          "for": "Oh Hyeon-gyu",
-          "minute": 80
-        }
-      ],
-      "cards": [
-        {
-          "player": "Lee Gi-hyuk",
-          "team": "South Korea",
-          "type": "yellow",
-          "minute": 90
-        }
-      ]
-    },
-    {
-      "group": "B",
-      "home": "Canada",
-      "away": "Bosnia-Herzegovina",
-      "status": "FT",
-      "score": {
-        "home": 1,
-        "away": 1
-      },
-      "venue": "BMO Field, Toronto",
-      "date_wib": "2026-06-13 02:00",
-      "scorers": [
-        {
-          "player": "Jovo Lukić",
-          "team": "Bosnia-Herzegovina",
-          "minute": 21
-        },
-        {
-          "player": "Cyle Larin",
-          "team": "Canada",
-          "minute": 78
-        }
-      ],
-      "assists": [
-        {
-          "player": "Sead Kolašinac",
-          "team": "Bosnia-Herzegovina",
-          "for": "Jovo Lukić",
-          "minute": 21
-        },
-        {
-          "player": "Promise David",
-          "team": "Canada",
-          "for": "Cyle Larin",
-          "minute": 78
-        }
-      ],
-      "cards": [
-        {
-          "player": "Alistair Johnston",
-          "team": "Canada",
-          "type": "yellow",
-          "minute": 35
-        },
-        {
-          "player": "Jovo Lukić",
-          "team": "Bosnia-Herzegovina",
-          "type": "yellow",
-          "minute": 55
-        }
-      ]
-    },
-    {
-      "group": "D",
-      "home": "United States",
-      "away": "Paraguay",
-      "status": "FT",
-      "venue": "SoFi Stadium, Inglewood",
-      "date_wib": "2026-06-13 08:00",
-      "score": {
-        "home": 4,
-        "away": 1
-      },
-      "scorers": [
-        {
-          "player": "Damian Bobadilla (OG)",
-          "team": "United States",
-          "minute": "7"
-        },
-        {
-          "player": "Folarin Balogun",
-          "team": "United States",
-          "minute": "31"
-        },
-        {
-          "player": "Folarin Balogun",
-          "team": "United States",
-          "minute": "45"
-        },
-        {
-          "player": "Mauricio (sub)",
-          "team": "Paraguay",
-          "minute": "73"
-        },
-        {
-          "player": "Gio Reyna",
-          "team": "United States",
-          "minute": "90+8"
-        }
-      ],
-      "assists": [
-        {
-          "player": "Unconfirmed",
-          "for": "Damian Bobadilla (OG)",
-          "team": "United States",
-          "minute": "7"
-        },
-        {
-          "player": "Christian Pulisic",
-          "for": "Folarin Balogun",
-          "team": "United States",
-          "minute": "31"
-        },
-        {
-          "player": "Christian Pulisic",
-          "for": "Folarin Balogun",
-          "team": "United States",
-          "minute": "45"
-        },
-        {
-          "player": "Unconfirmed",
-          "for": "Mauricio (sub)",
-          "team": "Paraguay",
-          "minute": "73"
-        },
-        {
-          "player": "Tim Weah",
-          "for": "Gio Reyna",
-          "team": "United States",
-          "minute": "90+8"
-        }
-      ],
-      "cards": [
-        {
-          "player": "Juan Jose Caceres",
-          "team": "Paraguay",
-          "type": "yellow",
-          "minute": "10"
-        },
-        {
-          "player": "Miguel Almiron",
-          "team": "Paraguay",
-          "type": "yellow",
-          "minute": "50"
-        },
-        {
-          "player": "Tyler Adams",
-          "team": "United States",
-          "type": "yellow",
-          "minute": "59"
-        }
-      ]
-    },
-    {
-      "group": "B",
-      "home": "Qatar",
-      "away": "Switzerland",
-      "status": "FT",
-      "score": {
-        "home": 1,
-        "away": 1
-      },
-      "venue": "Levi's Stadium, Santa Clara",
-      "date_wib": "2026-06-14 02:00",
-      "scorers": [
-        {
-          "player": "Breel Embolo (pen)",
-          "team": "Switzerland",
-          "minute": "16"
-        },
-        {
-          "player": "Boualem Khoukhi",
-          "team": "Qatar",
-          "minute": "90+4"
-        }
-      ],
-      "assists": [
-        {
-          "player": "Homam Ahmed",
-          "team": "Qatar",
-          "for": "Boualem Khoukhi",
-          "minute": "90+4"
-        }
-      ],
-      "cards": [
-        {
-          "player": "Mahmoud Abunada",
-          "team": "Qatar",
-          "type": "yellow",
-          "minute": 16
-        },
-        {
-          "player": "Jassem Gaber Abdulsallam",
-          "team": "Qatar",
-          "type": "yellow",
-          "minute": 22
-        },
-        {
-          "player": "Denis Zakaria",
-          "team": "Switzerland",
-          "type": "yellow",
-          "minute": 50
-        }
-      ]
-    },
-    {
-      "group": "C",
-      "home": "Brazil",
-      "away": "Morocco",
-      "status": "FT",
-      "score": {
-        "home": 1,
-        "away": 1
-      },
-      "venue": "MetLife Stadium, East Rutherford",
-      "date_wib": "2026-06-14 05:00",
-      "scorers": [
-        {
-          "player": "Ismael Saibari",
-          "team": "Morocco",
-          "minute": 20
-        },
-        {
-          "player": "Vinícius Júnior",
-          "team": "Brazil",
-          "minute": 31
-        }
-      ],
-      "assists": [
-        {
-          "player": "Brahim Díaz",
-          "team": "Morocco",
-          "for": "Ismael Saibari",
-          "minute": 20
-        },
-        {
-          "player": "Bruno Guimarães",
-          "team": "Brazil",
-          "for": "Vinícius Júnior",
-          "minute": 31
-        }
-      ],
-      "cards": [
-        {
-          "player": "Casemiro",
-          "team": "Brazil",
-          "type": "yellow",
-          "minute": 40
-        },
-        {
-          "player": "Roger Ibañez",
-          "team": "Brazil",
-          "type": "yellow",
-          "minute": 43
-        }
-      ]
-    },
-    {
-      "group": "C",
-      "home": "Haiti",
-      "away": "Scotland",
-      "status": "FT",
-      "score": {
-        "home": 0,
-        "away": 1
-      },
-      "venue": "Gillette Stadium, Foxborough",
-      "date_wib": "2026-06-14 08:00",
-      "scorers": [
-        {
-          "player": "John McGinn",
-          "team": "Scotland",
-          "minute": 28
-        }
-      ],
-      "assists": [],
-      "cards": []
-    },
-    {
-      "group": "D",
-      "home": "Australia",
-      "away": "Türkiye",
-      "status": "FT",
-      "score": {
-        "home": 2,
-        "away": 0
-      },
-      "venue": "BC Place, Vancouver",
-      "date_wib": "2026-06-14 11:00",
-      "scorers": [
-        {
-          "player": "Nestory Irankunda",
-          "team": "Australia",
-          "minute": 27
-        },
-        {
-          "player": "Connor Metcalfe",
-          "team": "Australia",
-          "minute": 55
-        }
-      ],
-      "assists": [],
-      "cards": []
-    },
-    {
-      "group": "E",
-      "home": "Germany",
-      "away": "Curaçao",
-      "status": "FT",
-      "score": {
-        "home": 4,
-        "away": 1
-      },
-      "venue": "NRG Stadium, Houston",
-      "date_wib": "2026-06-15 00:00",
-      "scorers": [
-        {
-          "player": "Felix Nmecha",
-          "team": "Germany",
-          "minute": 6
-        },
-        {
-          "player": "Livano Comenencia",
-          "team": "Curaçao",
-          "minute": 21
-        },
-        {
-          "player": "Nico Schlotterbeck",
-          "team": "Germany",
-          "minute": 38
-        },
-        {
-          "player": "Kai Havertz",
-          "team": "Germany",
-          "minute": "45+5",
-          "note": "penalty"
-        },
-        {
-          "player": "Jamal Musiala",
-          "team": "Germany",
-          "minute": 47
-        }
-      ],
-      "assists": [
-        {
-          "player": "Florian Wirtz",
-          "team": "Germany",
-          "for": "Felix Nmecha",
-          "minute": 6
-        },
-        {
-          "player": "Nathaniel Brown",
-          "team": "Germany",
-          "for": "Nico Schlotterbeck",
-          "minute": 38
-        },
-        {
-          "player": "Joshua Kimmich",
-          "team": "Germany",
-          "for": "Jamal Musiala",
-          "minute": 47
-        }
-      ],
-      "cards": []
-    },
-    {
-      "group": "F",
-      "home": "Netherlands",
-      "away": "Japan",
-      "status": "LIVE",
-      "score": {
-        "home": 0,
-        "away": 0
-      },
-      "venue": "AT&T Stadium, Arlington",
-      "date_wib": "2026-06-15 03:00",
-      "scorers": [],
-      "assists": [],
-      "cards": []
-    },
-    {
-      "group": "E",
-      "home": "Ivory Coast",
-      "away": "Ecuador",
-      "status": "scheduled",
-      "score": null,
-      "venue": "Lincoln Financial Field, Philadelphia",
-      "date_wib": "2026-06-15 06:00",
-      "scorers": [],
-      "assists": [],
-      "cards": []
-    },
-    {
-      "group": "F",
-      "home": "Sweden",
-      "away": "Tunisia",
-      "status": "scheduled",
-      "score": null,
-      "venue": "Estadio BBVA, Monterrey",
-      "date_wib": "2026-06-15 09:00",
-      "scorers": [],
-      "assists": [],
-      "cards": []
-    },
-    {
-      "group": "H",
-      "home": "Spain",
-      "away": "Cape Verde",
-      "status": "scheduled",
-      "score": null,
-      "venue": "Mercedes-Benz Stadium, Atlanta",
-      "date_wib": "2026-06-15 23:00",
-      "scorers": [],
-      "assists": [],
-      "cards": []
-    },
-    {
-      "group": "G",
-      "home": "Belgium",
-      "away": "Egypt",
-      "status": "scheduled",
-      "score": null,
-      "venue": "Lumen Field, Seattle",
-      "date_wib": "2026-06-16 02:00",
-      "scorers": [],
-      "assists": [],
-      "cards": []
-    },
-    {
-      "group": "H",
-      "home": "Saudi Arabia",
-      "away": "Uruguay",
-      "status": "scheduled",
-      "score": null,
-      "venue": "Hard Rock Stadium, Miami Gardens",
-      "date_wib": "2026-06-16 05:00",
-      "scorers": [],
-      "assists": [],
-      "cards": []
-    },
-    {
-      "group": "G",
-      "home": "Iran",
-      "away": "New Zealand",
-      "status": "scheduled",
-      "score": null,
-      "venue": "SoFi Stadium, Inglewood",
-      "date_wib": "2026-06-16 08:00",
-      "scorers": [],
-      "assists": [],
-      "cards": []
-    },
-    {
-      "group": "I",
-      "home": "France",
-      "away": "Senegal",
-      "status": "scheduled",
-      "score": null,
-      "venue": "MetLife Stadium, East Rutherford",
-      "date_wib": "2026-06-17 02:00",
-      "scorers": [],
-      "assists": [],
-      "cards": []
-    },
-    {
-      "group": "I",
-      "home": "Iraq",
-      "away": "Norway",
-      "status": "scheduled",
-      "score": null,
-      "venue": "Gillette Stadium, Foxborough",
-      "date_wib": "2026-06-17 05:00",
-      "scorers": [],
-      "assists": [],
-      "cards": []
-    },
-    {
-      "group": "J",
-      "home": "Argentina",
-      "away": "Algeria",
-      "status": "scheduled",
-      "score": null,
-      "venue": "Arrowhead Stadium, Kansas City",
-      "date_wib": "2026-06-17 08:00",
-      "scorers": [],
-      "assists": [],
-      "cards": []
-    },
-    {
-      "group": "J",
-      "home": "Austria",
-      "away": "Jordan",
-      "status": "scheduled",
-      "score": null,
-      "venue": "Levi's Stadium, Santa Clara",
-      "date_wib": "2026-06-17 11:00",
-      "scorers": [],
-      "assists": [],
-      "cards": []
-    },
-    {
-      "group": "K",
-      "home": "Portugal",
-      "away": "DR Congo",
-      "status": "scheduled",
-      "score": null,
-      "venue": "NRG Stadium, Houston",
-      "date_wib": "2026-06-18 00:00",
-      "scorers": [],
-      "assists": [],
-      "cards": []
-    },
-    {
-      "group": "L",
-      "home": "England",
-      "away": "Croatia",
-      "status": "scheduled",
-      "score": null,
-      "venue": "AT&T Stadium, Arlington",
-      "date_wib": "2026-06-18 03:00",
-      "scorers": [],
-      "assists": [],
-      "cards": []
-    },
-    {
-      "group": "L",
-      "home": "Ghana",
-      "away": "Panama",
-      "status": "scheduled",
-      "score": null,
-      "venue": "BMO Field, Toronto",
-      "date_wib": "2026-06-18 06:00",
-      "scorers": [],
-      "assists": [],
-      "cards": []
-    },
-    {
-      "group": "K",
-      "home": "Uzbekistan",
-      "away": "Colombia",
-      "status": "scheduled",
-      "score": null,
-      "venue": "Estadio Azteca, Mexico City",
-      "date_wib": "2026-06-18 09:00",
-      "scorers": [],
-      "assists": [],
-      "cards": []
-    }
+ "last_updated": "15 June 26 · 03:52 WIB",
+ "groups": {
+  "A": [
+   "Mexico",
+   "South Africa",
+   "South Korea",
+   "Czechia"
   ],
-  "flags": {
-    "Canada": "ca",
-    "Bosnia-Herzegovina": "ba",
-    "United States": "us",
-    "Paraguay": "py",
-    "Qatar": "qa",
-    "Switzerland": "ch",
-    "Brazil": "br",
-    "Morocco": "ma",
-    "Haiti": "ht",
-    "Scotland": "gb-sct",
-    "Australia": "au",
-    "Türkiye": "tr",
-    "Germany": "de",
-    "Curaçao": "cw",
-    "Netherlands": "nl",
-    "Japan": "jp",
-    "Ivory Coast": "ci",
-    "Ecuador": "ec",
-    "Sweden": "se",
-    "Tunisia": "tn",
-    "Spain": "es",
-    "Cape Verde": "cv",
-    "Belgium": "be",
-    "Egypt": "eg",
-    "Mexico": "mx",
-    "South Africa": "za",
-    "South Korea": "kr",
-    "Czechia": "cz",
-    "Saudi Arabia": "sa",
-    "Uruguay": "uy",
-    "Iran": "ir",
-    "New Zealand": "nz",
-    "France": "fr",
-    "Senegal": "sn",
-    "Iraq": "iq",
-    "Norway": "no",
-    "Argentina": "ar",
-    "Algeria": "dz",
-    "Austria": "at",
-    "Jordan": "jo",
-    "Portugal": "pt",
-    "DR Congo": "cd",
-    "England": "gb-eng",
-    "Croatia": "hr",
-    "Ghana": "gh",
-    "Panama": "pa",
-    "Uzbekistan": "uz",
-    "Colombia": "co"
-  },
-  "notes": [
-    "Matchday 1 fixtures shown above (June 11-18 WIB). Matchdays 2-3 (through June 27) and the knockout stage will be added as the tournament progresses.",
-    "Times converted from ET (UTC-4) to WIB (UTC+7, +11h). Some kickoff times/venues are provisional (TBD) pending confirmation from official sources.",
-    "Group A is complete for Matchday 1: Mexico 2-0 South Africa (3 red cards, a World Cup record for an opening match) and South Korea 2-1 Czechia.",
-    "Canada made history with a 1-1 draw against Bosnia-Herzegovina in the first men's World Cup match played on Canadian soil - Canada's first-ever World Cup point.",
-    "United States beat Paraguay 4-1 at SoFi Stadium in Inglewood to open Group D (13 June, kickoff 08:00 WIB) - an own goal by Damian Bobadilla and a brace from Folarin Balogun put the USMNT 3-0 up before Paraguay substitute Mauricio scored a consolation goal in the 73rd minute, and Gio Reyna struck a late stoppage-time winner (90+8') assisted by Tim Weah to make it 4-1, a record margin for a USMNT World Cup match.",
-    "Qatar 1-1 Switzerland (Group B) finished at Levi's Stadium - Switzerland led 1-0 at half-time via a Breel Embolo penalty (16'), but Qatar equalized in the second half. Brazil 1-1 Morocco (Group C) finished at MetLife Stadium - Saibari (20') put Morocco ahead before Vinícius Júnior (31') leveled for Brazil, and the score stayed level to full time; Haiti 0-1 Scotland (Group C) finished at Gillette Stadium - John McGinn's 28th-minute strike was enough for Scotland's first World Cup win since 1998, despite a late Frantzdy Pierrot header for Haiti in the 85th minute.",
-    "Germany 4-1 Curaçao (Group E) at NRG Stadium, Houston - Felix Nmecha (6'), Nico Schlotterbeck (38'), Kai Havertz penalty (45+5'), and Jamal Musiala (47') scored for Germany, while Livano Comenencia (21') netted Curaçao's first-ever World Cup goal.",
-    "This page updates automatically 3x/day (04:00, 08:00, 12:00 WIB) with the latest scores, scorers, assists, cards, and standings."
+  "B": [
+   "Canada",
+   "Bosnia-Herzegovina",
+   "Qatar",
+   "Switzerland"
+  ],
+  "C": [
+   "Brazil",
+   "Morocco",
+   "Haiti",
+   "Scotland"
+  ],
+  "D": [
+   "United States",
+   "Paraguay",
+   "Australia",
+   "Türkiye"
+  ],
+  "E": [
+   "Germany",
+   "Curaçao",
+   "Ivory Coast",
+   "Ecuador"
+  ],
+  "F": [
+   "Netherlands",
+   "Japan",
+   "Sweden",
+   "Tunisia"
+  ],
+  "G": [
+   "Belgium",
+   "Egypt",
+   "Iran",
+   "New Zealand"
+  ],
+  "H": [
+   "Spain",
+   "Cape Verde",
+   "Saudi Arabia",
+   "Uruguay"
+  ],
+  "I": [
+   "France",
+   "Senegal",
+   "Iraq",
+   "Norway"
+  ],
+  "J": [
+   "Argentina",
+   "Algeria",
+   "Austria",
+   "Jordan"
+  ],
+  "K": [
+   "Portugal",
+   "DR Congo",
+   "Uzbekistan",
+   "Colombia"
+  ],
+  "L": [
+   "England",
+   "Croatia",
+   "Ghana",
+   "Panama"
   ]
+ },
+ "matches": [
+  {
+   "group": "A",
+   "home": "Mexico",
+   "away": "South Africa",
+   "status": "FT",
+   "score": {
+    "home": 2,
+    "away": 0
+   },
+   "venue": "Estadio Azteca, Mexico City",
+   "date_wib": "2026-06-12 00:00",
+   "scorers": [
+    {
+     "player": "Julián Quiñones",
+     "team": "Mexico",
+     "minute": 9
+    },
+    {
+     "player": "Raúl Jiménez",
+     "team": "Mexico",
+     "minute": 62
+    }
+   ],
+   "assists": [
+    {
+     "player": "Roberto Alvarado",
+     "team": "Mexico",
+     "for": "Julián Quiñones",
+     "minute": 9
+    },
+    {
+     "player": "Roberto Alvarado",
+     "team": "Mexico",
+     "for": "Raúl Jiménez",
+     "minute": 62
+    }
+   ],
+   "cards": [
+    {
+     "player": "Sphephelo Sithole",
+     "team": "South Africa",
+     "type": "red",
+     "minute": 49
+    },
+    {
+     "player": "Themba Zwane",
+     "team": "South Africa",
+     "type": "red",
+     "minute": 80
+    },
+    {
+     "player": "César Montes",
+     "team": "Mexico",
+     "type": "red",
+     "minute": 92
+    }
+   ]
+  },
+  {
+   "group": "A",
+   "home": "South Korea",
+   "away": "Czechia",
+   "status": "FT",
+   "score": {
+    "home": 2,
+    "away": 1
+   },
+   "venue": "Estadio Akron, Guadalajara",
+   "date_wib": "2026-06-12 09:00",
+   "scorers": [
+    {
+     "player": "Ladislav Krejčí",
+     "team": "Czechia",
+     "minute": 59
+    },
+    {
+     "player": "Hwang In-beom",
+     "team": "South Korea",
+     "minute": 67
+    },
+    {
+     "player": "Oh Hyeon-gyu",
+     "team": "South Korea",
+     "minute": 80
+    }
+   ],
+   "assists": [
+    {
+     "player": "Vladimír Coufal",
+     "team": "Czechia",
+     "for": "Ladislav Krejčí",
+     "minute": 59
+    },
+    {
+     "player": "Hwang In-beom",
+     "team": "South Korea",
+     "for": "Oh Hyeon-gyu",
+     "minute": 80
+    }
+   ],
+   "cards": [
+    {
+     "player": "Lee Gi-hyuk",
+     "team": "South Korea",
+     "type": "yellow",
+     "minute": 90
+    }
+   ]
+  },
+  {
+   "group": "B",
+   "home": "Canada",
+   "away": "Bosnia-Herzegovina",
+   "status": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "BMO Field, Toronto",
+   "date_wib": "2026-06-13 02:00",
+   "scorers": [
+    {
+     "player": "Jovo Lukić",
+     "team": "Bosnia-Herzegovina",
+     "minute": 21
+    },
+    {
+     "player": "Cyle Larin",
+     "team": "Canada",
+     "minute": 78
+    }
+   ],
+   "assists": [
+    {
+     "player": "Sead Kolašinac",
+     "team": "Bosnia-Herzegovina",
+     "for": "Jovo Lukić",
+     "minute": 21
+    },
+    {
+     "player": "Promise David",
+     "team": "Canada",
+     "for": "Cyle Larin",
+     "minute": 78
+    }
+   ],
+   "cards": [
+    {
+     "player": "Alistair Johnston",
+     "team": "Canada",
+     "type": "yellow",
+     "minute": 35
+    },
+    {
+     "player": "Jovo Lukić",
+     "team": "Bosnia-Herzegovina",
+     "type": "yellow",
+     "minute": 55
+    }
+   ]
+  },
+  {
+   "group": "D",
+   "home": "United States",
+   "away": "Paraguay",
+   "status": "FT",
+   "venue": "SoFi Stadium, Inglewood",
+   "date_wib": "2026-06-13 08:00",
+   "score": {
+    "home": 4,
+    "away": 1
+   },
+   "scorers": [
+    {
+     "player": "Damian Bobadilla (OG)",
+     "team": "United States",
+     "minute": "7"
+    },
+    {
+     "player": "Folarin Balogun",
+     "team": "United States",
+     "minute": "31"
+    },
+    {
+     "player": "Folarin Balogun",
+     "team": "United States",
+     "minute": "45"
+    },
+    {
+     "player": "Mauricio (sub)",
+     "team": "Paraguay",
+     "minute": "73"
+    },
+    {
+     "player": "Gio Reyna",
+     "team": "United States",
+     "minute": "90+8"
+    }
+   ],
+   "assists": [
+    {
+     "player": "Unconfirmed",
+     "for": "Damian Bobadilla (OG)",
+     "team": "United States",
+     "minute": "7"
+    },
+    {
+     "player": "Christian Pulisic",
+     "for": "Folarin Balogun",
+     "team": "United States",
+     "minute": "31"
+    },
+    {
+     "player": "Christian Pulisic",
+     "for": "Folarin Balogun",
+     "team": "United States",
+     "minute": "45"
+    },
+    {
+     "player": "Unconfirmed",
+     "for": "Mauricio (sub)",
+     "team": "Paraguay",
+     "minute": "73"
+    },
+    {
+     "player": "Tim Weah",
+     "for": "Gio Reyna",
+     "team": "United States",
+     "minute": "90+8"
+    }
+   ],
+   "cards": [
+    {
+     "player": "Juan Jose Caceres",
+     "team": "Paraguay",
+     "type": "yellow",
+     "minute": "10"
+    },
+    {
+     "player": "Miguel Almiron",
+     "team": "Paraguay",
+     "type": "yellow",
+     "minute": "50"
+    },
+    {
+     "player": "Tyler Adams",
+     "team": "United States",
+     "type": "yellow",
+     "minute": "59"
+    }
+   ]
+  },
+  {
+   "group": "B",
+   "home": "Qatar",
+   "away": "Switzerland",
+   "status": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "Levi's Stadium, Santa Clara",
+   "date_wib": "2026-06-14 02:00",
+   "scorers": [
+    {
+     "player": "Breel Embolo (pen)",
+     "team": "Switzerland",
+     "minute": "16"
+    },
+    {
+     "player": "Boualem Khoukhi",
+     "team": "Qatar",
+     "minute": "90+4"
+    }
+   ],
+   "assists": [
+    {
+     "player": "Homam Ahmed",
+     "team": "Qatar",
+     "for": "Boualem Khoukhi",
+     "minute": "90+4"
+    }
+   ],
+   "cards": [
+    {
+     "player": "Mahmoud Abunada",
+     "team": "Qatar",
+     "type": "yellow",
+     "minute": 16
+    },
+    {
+     "player": "Jassem Gaber Abdulsallam",
+     "team": "Qatar",
+     "type": "yellow",
+     "minute": 22
+    },
+    {
+     "player": "Denis Zakaria",
+     "team": "Switzerland",
+     "type": "yellow",
+     "minute": 50
+    }
+   ]
+  },
+  {
+   "group": "C",
+   "home": "Brazil",
+   "away": "Morocco",
+   "status": "FT",
+   "score": {
+    "home": 1,
+    "away": 1
+   },
+   "venue": "MetLife Stadium, East Rutherford",
+   "date_wib": "2026-06-14 05:00",
+   "scorers": [
+    {
+     "player": "Ismael Saibari",
+     "team": "Morocco",
+     "minute": 20
+    },
+    {
+     "player": "Vinícius Júnior",
+     "team": "Brazil",
+     "minute": 31
+    }
+   ],
+   "assists": [
+    {
+     "player": "Brahim Díaz",
+     "team": "Morocco",
+     "for": "Ismael Saibari",
+     "minute": 20
+    },
+    {
+     "player": "Bruno Guimarães",
+     "team": "Brazil",
+     "for": "Vinícius Júnior",
+     "minute": 31
+    }
+   ],
+   "cards": [
+    {
+     "player": "Casemiro",
+     "team": "Brazil",
+     "type": "yellow",
+     "minute": 40
+    },
+    {
+     "player": "Roger Ibañez",
+     "team": "Brazil",
+     "type": "yellow",
+     "minute": 43
+    }
+   ]
+  },
+  {
+   "group": "C",
+   "home": "Haiti",
+   "away": "Scotland",
+   "status": "FT",
+   "score": {
+    "home": 0,
+    "away": 1
+   },
+   "venue": "Gillette Stadium, Foxborough",
+   "date_wib": "2026-06-14 08:00",
+   "scorers": [
+    {
+     "player": "John McGinn",
+     "team": "Scotland",
+     "minute": 28
+    }
+   ],
+   "assists": [],
+   "cards": []
+  },
+  {
+   "group": "D",
+   "home": "Australia",
+   "away": "Türkiye",
+   "status": "FT",
+   "score": {
+    "home": 2,
+    "away": 0
+   },
+   "venue": "BC Place, Vancouver",
+   "date_wib": "2026-06-14 11:00",
+   "scorers": [
+    {
+     "player": "Nestory Irankunda",
+     "team": "Australia",
+     "minute": 27
+    },
+    {
+     "player": "Connor Metcalfe",
+     "team": "Australia",
+     "minute": 55
+    }
+   ],
+   "assists": [],
+   "cards": []
+  },
+  {
+   "group": "E",
+   "home": "Germany",
+   "away": "Curaçao",
+   "status": "FT",
+   "score": {
+    "home": 4,
+    "away": 1
+   },
+   "venue": "NRG Stadium, Houston",
+   "date_wib": "2026-06-15 00:00",
+   "scorers": [
+    {
+     "player": "Felix Nmecha",
+     "team": "Germany",
+     "minute": 6
+    },
+    {
+     "player": "Livano Comenencia",
+     "team": "Curaçao",
+     "minute": 21
+    },
+    {
+     "player": "Nico Schlotterbeck",
+     "team": "Germany",
+     "minute": 38
+    },
+    {
+     "player": "Kai Havertz",
+     "team": "Germany",
+     "minute": "45+5",
+     "note": "penalty"
+    },
+    {
+     "player": "Jamal Musiala",
+     "team": "Germany",
+     "minute": 47
+    }
+   ],
+   "assists": [
+    {
+     "player": "Florian Wirtz",
+     "team": "Germany",
+     "for": "Felix Nmecha",
+     "minute": 6
+    },
+    {
+     "player": "Nathaniel Brown",
+     "team": "Germany",
+     "for": "Nico Schlotterbeck",
+     "minute": 38
+    },
+    {
+     "player": "Joshua Kimmich",
+     "team": "Germany",
+     "for": "Jamal Musiala",
+     "minute": 47
+    }
+   ],
+   "cards": []
+  },
+  {
+   "group": "F",
+   "home": "Netherlands",
+   "away": "Japan",
+   "status": "LIVE",
+   "score": {
+    "home": 0,
+    "away": 0
+   },
+   "venue": "AT&T Stadium, Arlington",
+   "date_wib": "2026-06-15 03:00",
+   "scorers": [],
+   "assists": [],
+   "cards": []
+  },
+  {
+   "group": "E",
+   "home": "Ivory Coast",
+   "away": "Ecuador",
+   "status": "scheduled",
+   "score": null,
+   "venue": "Lincoln Financial Field, Philadelphia",
+   "date_wib": "2026-06-15 06:00",
+   "scorers": [],
+   "assists": [],
+   "cards": []
+  },
+  {
+   "group": "F",
+   "home": "Sweden",
+   "away": "Tunisia",
+   "status": "scheduled",
+   "score": null,
+   "venue": "Estadio BBVA, Monterrey",
+   "date_wib": "2026-06-15 09:00",
+   "scorers": [],
+   "assists": [],
+   "cards": []
+  },
+  {
+   "group": "H",
+   "home": "Spain",
+   "away": "Cape Verde",
+   "status": "scheduled",
+   "score": null,
+   "venue": "Mercedes-Benz Stadium, Atlanta",
+   "date_wib": "2026-06-15 23:00",
+   "scorers": [],
+   "assists": [],
+   "cards": []
+  },
+  {
+   "group": "G",
+   "home": "Belgium",
+   "away": "Egypt",
+   "status": "scheduled",
+   "score": null,
+   "venue": "Lumen Field, Seattle",
+   "date_wib": "2026-06-16 02:00",
+   "scorers": [],
+   "assists": [],
+   "cards": []
+  },
+  {
+   "group": "H",
+   "home": "Saudi Arabia",
+   "away": "Uruguay",
+   "status": "scheduled",
+   "score": null,
+   "venue": "Hard Rock Stadium, Miami Gardens",
+   "date_wib": "2026-06-16 05:00",
+   "scorers": [],
+   "assists": [],
+   "cards": []
+  },
+  {
+   "group": "G",
+   "home": "Iran",
+   "away": "New Zealand",
+   "status": "scheduled",
+   "score": null,
+   "venue": "SoFi Stadium, Inglewood",
+   "date_wib": "2026-06-16 08:00",
+   "scorers": [],
+   "assists": [],
+   "cards": []
+  },
+  {
+   "group": "I",
+   "home": "France",
+   "away": "Senegal",
+   "status": "scheduled",
+   "score": null,
+   "venue": "MetLife Stadium, East Rutherford",
+   "date_wib": "2026-06-17 02:00",
+   "scorers": [],
+   "assists": [],
+   "cards": []
+  },
+  {
+   "group": "I",
+   "home": "Iraq",
+   "away": "Norway",
+   "status": "scheduled",
+   "score": null,
+   "venue": "Gillette Stadium, Foxborough",
+   "date_wib": "2026-06-17 05:00",
+   "scorers": [],
+   "assists": [],
+   "cards": []
+  },
+  {
+   "group": "J",
+   "home": "Argentina",
+   "away": "Algeria",
+   "status": "scheduled",
+   "score": null,
+   "venue": "Arrowhead Stadium, Kansas City",
+   "date_wib": "2026-06-17 08:00",
+   "scorers": [],
+   "assists": [],
+   "cards": []
+  },
+  {
+   "group": "J",
+   "home": "Austria",
+   "away": "Jordan",
+   "status": "scheduled",
+   "score": null,
+   "venue": "Levi's Stadium, Santa Clara",
+   "date_wib": "2026-06-17 11:00",
+   "scorers": [],
+   "assists": [],
+   "cards": []
+  },
+  {
+   "group": "K",
+   "home": "Portugal",
+   "away": "DR Congo",
+   "status": "scheduled",
+   "score": null,
+   "venue": "NRG Stadium, Houston",
+   "date_wib": "2026-06-18 00:00",
+   "scorers": [],
+   "assists": [],
+   "cards": []
+  },
+  {
+   "group": "L",
+   "home": "England",
+   "away": "Croatia",
+   "status": "scheduled",
+   "score": null,
+   "venue": "AT&T Stadium, Arlington",
+   "date_wib": "2026-06-18 03:00",
+   "scorers": [],
+   "assists": [],
+   "cards": []
+  },
+  {
+   "group": "L",
+   "home": "Ghana",
+   "away": "Panama",
+   "status": "scheduled",
+   "score": null,
+   "venue": "BMO Field, Toronto",
+   "date_wib": "2026-06-18 06:00",
+   "scorers": [],
+   "assists": [],
+   "cards": []
+  },
+  {
+   "group": "K",
+   "home": "Uzbekistan",
+   "away": "Colombia",
+   "status": "scheduled",
+   "score": null,
+   "venue": "Estadio Azteca, Mexico City",
+   "date_wib": "2026-06-18 09:00",
+   "scorers": [],
+   "assists": [],
+   "cards": []
+  }
+ ],
+ "flags": {
+  "Canada": "ca",
+  "Bosnia-Herzegovina": "ba",
+  "United States": "us",
+  "Paraguay": "py",
+  "Qatar": "qa",
+  "Switzerland": "ch",
+  "Brazil": "br",
+  "Morocco": "ma",
+  "Haiti": "ht",
+  "Scotland": "gb-sct",
+  "Australia": "au",
+  "Türkiye": "tr",
+  "Germany": "de",
+  "Curaçao": "cw",
+  "Netherlands": "nl",
+  "Japan": "jp",
+  "Ivory Coast": "ci",
+  "Ecuador": "ec",
+  "Sweden": "se",
+  "Tunisia": "tn",
+  "Spain": "es",
+  "Cape Verde": "cv",
+  "Belgium": "be",
+  "Egypt": "eg",
+  "Mexico": "mx",
+  "South Africa": "za",
+  "South Korea": "kr",
+  "Czechia": "cz",
+  "Saudi Arabia": "sa",
+  "Uruguay": "uy",
+  "Iran": "ir",
+  "New Zealand": "nz",
+  "France": "fr",
+  "Senegal": "sn",
+  "Iraq": "iq",
+  "Norway": "no",
+  "Argentina": "ar",
+  "Algeria": "dz",
+  "Austria": "at",
+  "Jordan": "jo",
+  "Portugal": "pt",
+  "DR Congo": "cd",
+  "England": "gb-eng",
+  "Croatia": "hr",
+  "Ghana": "gh",
+  "Panama": "pa",
+  "Uzbekistan": "uz",
+  "Colombia": "co"
+ },
+ "notes": [
+  "Matchday 1 fixtures shown above (June 11-18 WIB). Matchdays 2-3 (through June 27) and the knockout stage will be added as the tournament progresses.",
+  "Times converted from ET (UTC-4) to WIB (UTC+7, +11h). Some kickoff times/venues are provisional (TBD) pending confirmation from official sources.",
+  "Group A is complete for Matchday 1: Mexico 2-0 South Africa (3 red cards, a World Cup record for an opening match) and South Korea 2-1 Czechia.",
+  "Canada made history with a 1-1 draw against Bosnia-Herzegovina in the first men's World Cup match played on Canadian soil - Canada's first-ever World Cup point.",
+  "United States beat Paraguay 4-1 at SoFi Stadium in Inglewood to open Group D (13 June, kickoff 08:00 WIB) - an own goal by Damian Bobadilla and a brace from Folarin Balogun put the USMNT 3-0 up before Paraguay substitute Mauricio scored a consolation goal in the 73rd minute, and Gio Reyna struck a late stoppage-time winner (90+8') assisted by Tim Weah to make it 4-1, a record margin for a USMNT World Cup match.",
+  "Qatar 1-1 Switzerland (Group B) finished at Levi's Stadium - Switzerland led 1-0 at half-time via a Breel Embolo penalty (16'), but Qatar equalized in the second half. Brazil 1-1 Morocco (Group C) finished at MetLife Stadium - Saibari (20') put Morocco ahead before Vinícius Júnior (31') leveled for Brazil, and the score stayed level to full time; Haiti 0-1 Scotland (Group C) finished at Gillette Stadium - John McGinn's 28th-minute strike was enough for Scotland's first World Cup win since 1998, despite a late Frantzdy Pierrot header for Haiti in the 85th minute.",
+  "Germany 4-1 Curaçao (Group E) at NRG Stadium, Houston - Felix Nmecha (6'), Nico Schlotterbeck (38'), Kai Havertz penalty (45+5'), and Jamal Musiala (47') scored for Germany, while Livano Comenencia (21') netted Curaçao's first-ever World Cup goal.",
+  "This page updates automatically 3x/day (04:00, 08:00, 12:00 WIB) with the latest scores, scorers, assists, cards, and standings."
+ ]
 }
