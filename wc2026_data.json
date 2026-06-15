@@ -1,5 +1,5 @@
 {
-  "last_updated": "15 June 26 · 12:23 WIB",
+  "last_updated": "15 June 26 · 23:06 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -455,34 +455,8 @@
           "minute": 28
         }
       ],
-      "assists": [
-        {
-          "player": "Che Adams",
-          "team": "Scotland",
-          "for": "John McGinn",
-          "minute": 28
-        }
-      ],
-      "cards": [
-        {
-          "player": "Jean-Ricner Bellegarde",
-          "team": "Haiti",
-          "type": "yellow",
-          "minute": 33
-        },
-        {
-          "player": "Kenny McLean",
-          "team": "Scotland",
-          "type": "yellow",
-          "minute": 70
-        },
-        {
-          "player": "Lennon Miller",
-          "team": "Scotland",
-          "type": "yellow",
-          "minute": 85
-        }
-      ],
+      "assists": [],
+      "cards": [],
       "highlight": "https://www.youtube.com/watch?v=EC51S5HxX-I"
     },
     {
@@ -505,17 +479,10 @@
         {
           "player": "Connor Metcalfe",
           "team": "Australia",
-          "minute": 75
+          "minute": 55
         }
       ],
-      "assists": [
-        {
-          "player": "Paul Okon-Engstler",
-          "team": "Australia",
-          "for": "Nestory Irankunda",
-          "minute": 27
-        }
-      ],
+      "assists": [],
       "cards": [],
       "highlight": "https://www.youtube.com/watch?v=2mKrPNngKIM"
     },
@@ -532,82 +499,83 @@
       "date_wib": "2026-06-15 00:00",
       "scorers": [
         {
-          "player": "Brian Nmecha",
-          "team": "Germany",
-          "minute": 6
+          "minute": 6,
+          "player": "Felix Nmecha",
+          "team": "Germany"
         },
         {
+          "minute": 21,
           "player": "Livano Comenencia",
-          "team": "Curaçao",
-          "minute": 21
+          "team": "Curaçao"
         },
         {
+          "minute": 38,
           "player": "Nico Schlotterbeck",
-          "team": "Germany",
-          "minute": 38
+          "team": "Germany"
         },
         {
+          "minute": "45+5",
+          "note": "penalty",
           "player": "Kai Havertz",
-          "team": "Germany",
-          "minute": 45
+          "team": "Germany"
         },
         {
+          "minute": 47,
           "player": "Jamal Musiala",
-          "team": "Germany",
-          "minute": 47
+          "team": "Germany"
         },
         {
+          "minute": 68,
           "player": "Nathaniel Brown",
-          "team": "Germany",
-          "minute": 68
+          "team": "Germany"
         },
         {
-          "player": "Deniz Undav",
-          "team": "Germany",
-          "minute": 78
+          "minute": 78,
+          "player": "Denis Undav",
+          "team": "Germany"
         },
         {
+          "minute": 88,
           "player": "Kai Havertz",
-          "team": "Germany",
-          "minute": 88
+          "team": "Germany"
         }
       ],
       "assists": [
         {
+          "for": "Felix Nmecha",
+          "minute": 6,
           "player": "Florian Wirtz",
-          "team": "Germany",
-          "for": "Brian Nmecha",
-          "minute": 6
+          "team": "Germany"
         },
         {
-          "player": "Nathaniel Brown",
-          "team": "Germany",
           "for": "Nico Schlotterbeck",
-          "minute": 38
+          "minute": 38,
+          "player": "Nathaniel Brown",
+          "team": "Germany"
         },
         {
-          "player": "Joshua Kimmich",
-          "team": "Germany",
           "for": "Jamal Musiala",
-          "minute": 47
-        },
-        {
-          "player": "Deniz Undav",
-          "team": "Germany",
-          "for": "Nathaniel Brown",
-          "minute": 68
-        },
-        {
+          "minute": 47,
           "player": "Joshua Kimmich",
-          "team": "Germany",
-          "for": "Deniz Undav",
-          "minute": 78
+          "team": "Germany"
         },
         {
-          "player": "Deniz Undav",
-          "team": "Germany",
+          "for": "Nathaniel Brown",
+          "minute": 68,
+          "player": "Denis Undav",
+          "team": "Germany"
+        },
+        {
+          "for": "Denis Undav",
+          "minute": 78,
+          "player": "Joshua Kimmich",
+          "team": "Germany"
+        },
+        {
           "for": "Kai Havertz",
-          "minute": 88
+          "minute": 88,
+          "player": "Denis Undav",
+          "team": "Germany"
         }
       ],
       "cards": [],
@@ -628,7 +596,7 @@
         {
           "player": "Virgil van Dijk",
           "team": "Netherlands",
-          "minute": 51
+          "minute": 50
         },
         {
           "player": "Keito Nakamura",
@@ -643,7 +611,7 @@
         {
           "player": "Daichi Kamada",
           "team": "Japan",
-          "minute": 88
+          "minute": 89
         }
       ],
       "assists": [
@@ -651,25 +619,13 @@
           "player": "Ryan Gravenberch",
           "team": "Netherlands",
           "for": "Virgil van Dijk",
-          "minute": 51
+          "minute": 50
         },
         {
           "player": "Takefusa Kubo",
           "team": "Japan",
           "for": "Keito Nakamura",
           "minute": 57
-        },
-        {
-          "player": "Ryan Gravenberch",
-          "team": "Netherlands",
-          "for": "Crysencio Summerville",
-          "minute": 64
-        },
-        {
-          "player": "Junya Ito",
-          "team": "Japan",
-          "for": "Daichi Kamada",
-          "minute": 88
         }
       ],
       "cards": [
@@ -683,13 +639,7 @@
           "player": "Memphis Depay",
           "team": "Netherlands",
           "type": "yellow",
-          "minute": 70
-        },
-        {
-          "player": "Lutsharel Geertruida",
-          "team": "Netherlands",
-          "type": "yellow",
-          "minute": 80
+          "minute": 83
         }
       ],
       "highlight": "https://www.youtube.com/watch?v=OY0nqiDecQI"
@@ -722,28 +672,10 @@
       ],
       "cards": [
         {
-          "player": "Seko Fofana",
-          "team": "Ivory Coast",
-          "type": "yellow",
-          "minute": 28
-        },
-        {
-          "player": "Franck Kessié",
-          "team": "Ivory Coast",
-          "type": "yellow",
-          "minute": 39
-        },
-        {
-          "player": "Guéla Doué",
-          "team": "Ivory Coast",
-          "type": "yellow",
-          "minute": 40
-        },
-        {
-          "player": "Jackson Porozo",
+          "player": "Jhojan Porozo",
           "team": "Ecuador",
           "type": "yellow",
-          "minute": 73
+          "minute": 80
         }
       ],
       "highlight": "https://www.youtube.com/watch?v=f5uzd5qmIy4"
@@ -761,77 +693,74 @@
       "date_wib": "2026-06-15 09:00",
       "scorers": [
         {
+          "minute": 7,
           "player": "Yasin Ayari",
-          "team": "Sweden",
-          "minute": 12
+          "team": "Sweden"
         },
         {
+          "minute": 30,
           "player": "Alexander Isak",
-          "team": "Sweden",
-          "minute": 30
+          "team": "Sweden"
         },
         {
+          "minute": 43,
           "player": "Omar Rekik",
-          "team": "Tunisia",
-          "minute": 43
+          "team": "Tunisia"
         },
         {
+          "minute": 59,
           "player": "Viktor Gyökeres",
-          "team": "Sweden",
-          "minute": 59
+          "team": "Sweden"
         },
         {
+          "minute": 84,
           "player": "Mattias Svanberg",
-          "team": "Sweden",
-          "minute": 84
+          "team": "Sweden"
         },
         {
+          "minute": "90+6",
           "player": "Yasin Ayari",
-          "team": "Sweden",
-          "minute": 90
+          "team": "Sweden"
         }
       ],
       "assists": [
         {
-          "player": "Hannibal Mejbri",
-          "team": "Tunisia",
+          "for": "Alexander Isak",
+          "minute": 30,
+          "player": "Viktor Gyökeres",
+          "team": "Sweden"
+        },
+        {
           "for": "Omar Rekik",
-          "minute": 43
+          "minute": 43,
+          "player": "Hannibal Mejbri",
+          "team": "Tunisia"
         },
         {
-          "player": "Alexander Isak",
-          "team": "Sweden",
           "for": "Viktor Gyökeres",
-          "minute": 59
-        },
-        {
+          "minute": 59,
           "player": "Alexander Isak",
-          "team": "Sweden",
-          "for": "Mattias Svanberg",
-          "minute": 84
+          "team": "Sweden"
         },
         {
-          "player": "Lucas Bergvall",
-          "team": "Sweden",
-          "for": "Yasin Ayari",
-          "minute": 90
+          "for": "Mattias Svanberg",
+          "minute": 84,
+          "player": "Alexander Isak",
+          "team": "Sweden"
         }
       ],
-      "cards": [
-        {
-          "player": "Rani Khedira",
-          "team": "Tunisia",
-          "type": "yellow",
-          "minute": 54
-        }
-      ]
+      "cards": [],
+      "highlight": "https://www.youtube.com/watch?v=M7whOH56VAE"
     },
     {
       "group": "H",
       "home": "Spain",
       "away": "Cape Verde",
-      "status": "scheduled",
-      "score": null,
+      "status": "LIVE",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
       "venue": "Mercedes-Benz Stadium, Atlanta",
       "date_wib": "2026-06-15 23:00",
       "scorers": [],

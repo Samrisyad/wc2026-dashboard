@@ -107,7 +107,7 @@ for g in standings:
 # ---- Compute player stats ----
 scorers = defaultdict(lambda: {"team": "", "goals": 0})
 assisters = defaultdict(lambda: {"team": "", "assists": 0})
-cards = []
+card_tally = {}
 
 for m in matches:
     for s in m.get("scorers", []):
@@ -121,12 +121,12 @@ for m in matches:
         assisters[key]["team"] = a["team"]
         assisters[key]["assists"] += 1
     for c in m.get("cards", []):
-        cards.append({
-            "match": f"{with_flag_code(m['home'])} vs {with_flag_code(m['away'], reverse=True)}",
-            "group": m["group"],
-            "team": c["team"], "player": c["player"],
-            "type": c["type"], "minute": c["minute"]
-        })
+        key = (c["player"], c["team"])
+        rec = card_tally.setdefault(key, {"team": c["team"], "player": c["player"], "yellow": 0, "red": 0})
+        if c["type"] == "red":
+            rec["red"] += 1
+        else:
+            rec["yellow"] += 1
 
 # ---- HTML helpers ----
 def fmt_score(m):
@@ -163,6 +163,9 @@ def _min_sort(v):
 
 def match_card(m, extra_class=""):
     card_class = "match-card" + (f" {extra_class}" if extra_class else "")
+    highlight_html = ""
+    if m.get("highlight"):
+        highlight_html = f'<a class="highlight-link" href="{m["highlight"]}" target="_blank" rel="noopener">{chr(0x25B6)} Watch Highlights</a>'
     events_html = ""
     if m["scorers"] or m["cards"]:
         assists_by_scorer = {}
@@ -195,6 +198,7 @@ def match_card(m, extra_class=""):
       </div>
       <div class="match-meta">{fmt_date(m['date_wib'])} &middot; {m['venue']}</div>
       {events_html}
+      {highlight_html}
     </div>"""
 
 def standings_table(g):
@@ -259,14 +263,13 @@ assists_html = "".join(
     for i, (p, d) in enumerate(top_assists, 1)
 ) or '<tr><td colspan="4" class="empty">No assists recorded yet.</td></tr>'
 
-RED_LABEL = f"{CARD_RED} Red"
-YELLOW_LABEL = f"{CARD_YELLOW} Yellow"
+cards_sorted = sorted(card_tally.values(), key=lambda c: (-(c["yellow"] + c["red"]), -c["red"], -c["yellow"]))
 
 cards_html = "".join(
-    f"<tr><td>{c['match']}</td><td>Group {c['group']}</td><td>{c['player']}</td><td>{with_flag_code(c['team'])}</td>"
-    f"<td>{RED_LABEL if c['type']=='red' else YELLOW_LABEL}</td><td>{c['minute']}'</td></tr>"
-    for c in cards
-) or '<tr><td colspan="6" class="empty">No cards recorded yet.</td></tr>'
+    f"<tr><td>{i}</td><td>{c['player']}</td><td>{with_flag_code(c['team'])}</td>"
+    f"<td>{c['yellow'] or ''}</td><td>{c['red'] or ''}</td></tr>"
+    for i, c in enumerate(cards_sorted, 1)
+) or '<tr><td colspan="5" class="empty">No cards recorded yet.</td></tr>'
 
 notes_html = "".join(f"<li>{n}</li>" for n in notes)
 
