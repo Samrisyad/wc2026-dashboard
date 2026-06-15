@@ -1,5 +1,5 @@
 {
-  "last_updated": "15 June 26 · 09:25 WIB",
+  "last_updated": "15 June 26 · 09:37 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -685,7 +685,7 @@
       "away": "Tunisia",
       "status": "LIVE",
       "score": {
-        "home": 1,
+        "home": 2,
         "away": 0
       },
       "venue": "Estadio BBVA, Monterrey",
@@ -695,9 +695,21 @@
           "minute": 7,
           "player": "Yasin Ayari",
           "team": "Sweden"
+        },
+        {
+          "minute": 30,
+          "player": "Alexander Isak",
+          "team": "Sweden"
         }
       ],
-      "assists": [],
+      "assists": [
+        {
+          "for": "Alexander Isak",
+          "minute": 30,
+          "player": "Viktor Gyökeres",
+          "team": "Sweden"
+        }
+      ],
       "cards": []
     },
     {
