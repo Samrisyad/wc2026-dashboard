@@ -25,6 +25,9 @@ CSS = """
   .badge.live { background: #ffe1e1; color: #c0392b; animation: pulse 1.5s infinite; }
   .badge.sched { background: #e6f0ff; color: #2563eb; }
   @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+  .match-card.live-card { border: 2px solid #c0392b; box-shadow: 0 1px 6px rgba(192,57,43,0.25); }
+  .highlight-link { display: inline-block; margin-top: 8px; font-size: 13px; font-weight: 600; color: #c0392b; text-decoration: none; }
+  .highlight-link:hover { text-decoration: underline; }
   .team-flag { display: inline-flex; align-items: center; gap: 5px; min-width: 0; max-width: 100%; }
   .team-name-text { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .flag-icon { width: 16px; height: 12px; object-fit: cover; border-radius: 2px; box-shadow: 0 0 0 1px rgba(0,0,0,0.08); vertical-align: middle; flex-shrink: 0; }
@@ -37,7 +40,15 @@ CSS = """
   .match-teams .score { font-size: 18px; color: var(--green); padding: 0 8px; text-align: center; white-space: nowrap; }
   .match-meta { font-size: 12px; color: var(--grey); }
   .events { margin-top: 8px; border-top: 1px solid #eee; padding-top: 6px; font-size: 13px; }
-  .event { padding: 2px 0; }
+  .event { padding: 2px 0; display: flex; align-items: baseline; gap: 4px; flex-wrap: wrap; }
+  .event-icon { display: inline-block; width: 18px; flex-shrink: 0; text-align: center; }
+  .event .flag-icon { width: 14px; height: 11px; }
+  .event-min { color: var(--grey); font-size: 11px; margin-left: auto; white-space: nowrap; padding-left: 6px; }
+  .assist-note { color: var(--grey); font-size: 11px; }
+  @media (max-width: 600px) {
+    .event { font-size: 12px; }
+    .event-min, .assist-note { font-size: 10px; }
+  }
   table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; font-size: 14px; }
   th, td { padding: 8px 10px; text-align: center; border-bottom: 1px solid #eee; }
   th { background: var(--dark); color: white; font-size: 12px; text-transform: uppercase; }
@@ -49,7 +60,7 @@ CSS = """
   .standings-block table { table-layout: fixed; }
   .standings-block th:nth-child(1), .standings-block td:nth-child(1) { width: 24px; }
   .standings-block th:nth-child(2), .standings-block td:nth-child(2) { width: 64px; text-align: left; }
-  .standings-block th:nth-child(n+3), .standings-block td:nth-child(n+3) { width: auto; padding-left: 2px; padding-right: 2px; }
+  .standings-block th:nth-child(n+3), .standings-block td:nth-child(n+3) { width: auto; padding-left: 2px; padding-right: 2px; text-align: center; }
   .standings-block th, .standings-block td { font-size: 12px; padding: 6px 4px; }
   .standings-block .team-flag { max-width: 100%; overflow: hidden; }
   .standings-block .team-name-text, .standings-block td.team-name { vertical-align: middle; }
@@ -171,13 +182,14 @@ def render(parts):
   <p>All times shown in WIB (GMT+7) &middot; Last updated: {last_updated}</p>
 </header>
 <nav>
+  {nav_live_html}
   <a href="#schedule">Schedule</a>
   <a href="#results">Results</a>
   <a href="#standings">Standings</a>
   <a href="#stats">Player Stats</a>
   <a href="#cards">Cards</a>
 </nav>
-<main>""".format(**parts))
+<main>{live_section_html}""".format(**parts))
 
     body.append("""
   <section id="schedule">
@@ -221,11 +233,12 @@ def render(parts):
     </div>
   </section>""".format(**parts))
 
+   
     body.append("""
   <section id="cards">
     <h2>{card_yellow}{card_red} Disciplinary (Yellow/Red Cards)</h2>
     <div class="table-wrap">
-    <table><thead><tr><th>Match</th><th>Group</th><th>Player</th><th>Team</th><th>Card</th><th>Minute</th></tr></thead><tbody>{cards_html}</tbody></table>
+    <table><thead><tr><th>#</th><th>Player</th><th>Team</th><th>{card_yellow} Yellow</th><th>{card_red} Red</th></tr></thead><tbody>{cards_html}</tbody></table>
     </div>
   </section>""".format(**parts))
 
@@ -235,6 +248,8 @@ def render(parts):
     <ul class="notes">{notes_html}</ul>
   </section>
 </main>
-<footer>Generated automatically &middot; Data from public web sources &middot; For entertainment/reference purposes</footer>""".format(**parts))
+<footer>Generated automatically &middot; Data from public web sources &middot; For entertainment/reference purposes</footer>
+</body>
+</html>""".format(**parts))
 
-    return head + "".join(body) + HTML_FOOT
+    return head + "".join(body)
