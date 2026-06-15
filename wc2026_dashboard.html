@@ -40,8 +40,6 @@
   .badge.sched { background: #e6f0ff; color: #2563eb; }
   @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
   .match-card.live-card { border: 2px solid #c0392b; box-shadow: 0 1px 6px rgba(192,57,43,0.25); }
-  .highlight-link { display: inline-block; margin-top: 8px; font-size: 13px; font-weight: 600; color: #c0392b; text-decoration: none; }
-  .highlight-link:hover { text-decoration: underline; }
   .team-flag { display: inline-flex; align-items: center; gap: 5px; min-width: 0; max-width: 100%; }
   .team-name-text { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .flag-icon { width: 16px; height: 12px; object-fit: cover; border-radius: 2px; box-shadow: 0 0 0 1px rgba(0,0,0,0.08); vertical-align: middle; flex-shrink: 0; }
@@ -74,7 +72,7 @@
   .standings-block table { table-layout: fixed; }
   .standings-block th:nth-child(1), .standings-block td:nth-child(1) { width: 24px; }
   .standings-block th:nth-child(2), .standings-block td:nth-child(2) { width: 64px; text-align: left; }
-  .standings-block th:nth-child(n+3), .standings-block td:nth-child(n+3) { width: auto; padding-left: 2px; padding-right: 2px; text-align: center; }
+  .standings-block th:nth-child(n+3), .standings-block td:nth-child(n+3) { width: auto; padding-left: 2px; padding-right: 2px; }
   .standings-block th, .standings-block td { font-size: 12px; padding: 6px 4px; }
   .standings-block .team-flag { max-width: 100%; overflow: hidden; }
   .standings-block .team-name-text, .standings-block td.team-name { vertical-align: middle; }
@@ -146,10 +144,10 @@
 <body>
 <header>
   <h1><svg class="trophy-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20 6h24v10c0 8-5 14-12 14s-12-6-12-14V6z" fill="#d4af37"/><path d="M20 10H10v4c0 6 4 10 10 10v-6c-2 0-4-2-4-4v-4z" fill="#d4af37"/><path d="M44 10h10v4c0 6-4 10-10 10v-6c2 0 4-2 4-4v-4z" fill="#d4af37"/><rect x="29" y="29" width="6" height="10" fill="#d4af37"/><path d="M18 42h28l-3 8H21z" fill="#d4af37"/><rect x="24" y="50" width="16" height="4" fill="#1a6b3c"/><rect x="20" y="54" width="24" height="4" rx="1" fill="#1a6b3c"/></svg> FIFA World Cup 2026 Dashboard</h1>
-  <p>All times shown in WIB (GMT+7) &middot; Last updated: 16 June 26 · 00:22 WIB</p>
+  <p>All times shown in WIB (GMT+7) &middot; Last updated: 13 June 26 · 09:55 WIB</p>
 </header>
 <nav>
-  <a href="#live">Live</a>
+  
   <a href="#schedule">Schedule</a>
   <a href="#results">Results</a>
   <a href="#standings">Standings</a>
@@ -157,27 +155,126 @@
   <a href="#cards">Cards</a>
 </nav>
 <main>
-  <section id="live">
-    <h2>🔴 Live Now</h2>
-    <div class="grid">
-    <div class="match-card live-card">
-      <div class="match-top">
-        <span class="group-tag">Group H</span>
-        <span class="badge live">LIVE</span>
-      </div>
-      <div class="match-teams">
-        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/es.png" srcset="https://flagcdn.com/48x36/es.png 2x" class="flag-icon" alt=""><span class="team-name-text">Spain</span></span></span>
-        <span class="score">0 - 0 (LIVE)</span>
-        <span class="team"><span class="team-flag"><span class="team-name-text">Cape Verde</span><img src="https://flagcdn.com/24x18/cv.png" srcset="https://flagcdn.com/48x36/cv.png 2x" class="flag-icon" alt=""></span></span>
-      </div>
-      <div class="match-meta">Monday, 15 June 26 &middot; 23:00 WIB &middot; Mercedes-Benz Stadium, Atlanta</div>
-      <div class="events"><div class="event"><span class="event-icon">🟨</span><img src="https://flagcdn.com/24x18/cv.png" srcset="https://flagcdn.com/48x36/cv.png 2x" class="flag-icon" alt=""><b>Sidny Cabral</b> <span class="event-min">16'</span></div></div>
-      
-    </div></div>
-  </section>
   <section id="schedule">
     <h2>📅 Match Schedule (WIB)</h2>
     <div class="grid">
+    <div class="match-card">
+      <div class="match-top">
+        <span class="group-tag">Group B</span>
+        <span class="badge sched">Scheduled</span>
+      </div>
+      <div class="match-teams">
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/qa.png" srcset="https://flagcdn.com/48x36/qa.png 2x" class="flag-icon" alt=""><span class="team-name-text">Qatar</span></span></span>
+        <span class="score">vs</span>
+        <span class="team"><span class="team-flag"><span class="team-name-text">Switzerland</span><img src="https://flagcdn.com/24x18/ch.png" srcset="https://flagcdn.com/48x36/ch.png 2x" class="flag-icon" alt=""></span></span>
+      </div>
+      <div class="match-meta">Sunday, 14 June 26 &middot; 02:00 WIB &middot; Levi's Stadium, Santa Clara</div>
+      
+    </div>
+    <div class="match-card">
+      <div class="match-top">
+        <span class="group-tag">Group C</span>
+        <span class="badge sched">Scheduled</span>
+      </div>
+      <div class="match-teams">
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/br.png" srcset="https://flagcdn.com/48x36/br.png 2x" class="flag-icon" alt=""><span class="team-name-text">Brazil</span></span></span>
+        <span class="score">vs</span>
+        <span class="team"><span class="team-flag"><span class="team-name-text">Morocco</span><img src="https://flagcdn.com/24x18/ma.png" srcset="https://flagcdn.com/48x36/ma.png 2x" class="flag-icon" alt=""></span></span>
+      </div>
+      <div class="match-meta">Sunday, 14 June 26 &middot; 05:00 WIB &middot; MetLife Stadium, East Rutherford</div>
+      
+    </div>
+    <div class="match-card">
+      <div class="match-top">
+        <span class="group-tag">Group C</span>
+        <span class="badge sched">Scheduled</span>
+      </div>
+      <div class="match-teams">
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/ht.png" srcset="https://flagcdn.com/48x36/ht.png 2x" class="flag-icon" alt=""><span class="team-name-text">Haiti</span></span></span>
+        <span class="score">vs</span>
+        <span class="team"><span class="team-flag"><span class="team-name-text">Scotland</span><img src="https://flagcdn.com/24x18/gb-sct.png" srcset="https://flagcdn.com/48x36/gb-sct.png 2x" class="flag-icon" alt=""></span></span>
+      </div>
+      <div class="match-meta">Sunday, 14 June 26 &middot; 08:00 WIB &middot; TBD</div>
+      
+    </div>
+    <div class="match-card">
+      <div class="match-top">
+        <span class="group-tag">Group D</span>
+        <span class="badge sched">Scheduled</span>
+      </div>
+      <div class="match-teams">
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/au.png" srcset="https://flagcdn.com/48x36/au.png 2x" class="flag-icon" alt=""><span class="team-name-text">Australia</span></span></span>
+        <span class="score">vs</span>
+        <span class="team"><span class="team-flag"><span class="team-name-text">Türkiye</span><img src="https://flagcdn.com/24x18/tr.png" srcset="https://flagcdn.com/48x36/tr.png 2x" class="flag-icon" alt=""></span></span>
+      </div>
+      <div class="match-meta">Sunday, 14 June 26 &middot; 11:00 WIB &middot; TBD</div>
+      
+    </div>
+    <div class="match-card">
+      <div class="match-top">
+        <span class="group-tag">Group E</span>
+        <span class="badge sched">Scheduled</span>
+      </div>
+      <div class="match-teams">
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/de.png" srcset="https://flagcdn.com/48x36/de.png 2x" class="flag-icon" alt=""><span class="team-name-text">Germany</span></span></span>
+        <span class="score">vs</span>
+        <span class="team"><span class="team-flag"><span class="team-name-text">Curaçao</span><img src="https://flagcdn.com/24x18/cw.png" srcset="https://flagcdn.com/48x36/cw.png 2x" class="flag-icon" alt=""></span></span>
+      </div>
+      <div class="match-meta">Monday, 15 June 26 &middot; 00:00 WIB &middot; TBD</div>
+      
+    </div>
+    <div class="match-card">
+      <div class="match-top">
+        <span class="group-tag">Group F</span>
+        <span class="badge sched">Scheduled</span>
+      </div>
+      <div class="match-teams">
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/nl.png" srcset="https://flagcdn.com/48x36/nl.png 2x" class="flag-icon" alt=""><span class="team-name-text">Netherlands</span></span></span>
+        <span class="score">vs</span>
+        <span class="team"><span class="team-flag"><span class="team-name-text">Japan</span><img src="https://flagcdn.com/24x18/jp.png" srcset="https://flagcdn.com/48x36/jp.png 2x" class="flag-icon" alt=""></span></span>
+      </div>
+      <div class="match-meta">Monday, 15 June 26 &middot; 03:00 WIB &middot; TBD</div>
+      
+    </div>
+    <div class="match-card">
+      <div class="match-top">
+        <span class="group-tag">Group E</span>
+        <span class="badge sched">Scheduled</span>
+      </div>
+      <div class="match-teams">
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/ci.png" srcset="https://flagcdn.com/48x36/ci.png 2x" class="flag-icon" alt=""><span class="team-name-text">Ivory Coast</span></span></span>
+        <span class="score">vs</span>
+        <span class="team"><span class="team-flag"><span class="team-name-text">Ecuador</span><img src="https://flagcdn.com/24x18/ec.png" srcset="https://flagcdn.com/48x36/ec.png 2x" class="flag-icon" alt=""></span></span>
+      </div>
+      <div class="match-meta">Monday, 15 June 26 &middot; 06:00 WIB &middot; TBD</div>
+      
+    </div>
+    <div class="match-card">
+      <div class="match-top">
+        <span class="group-tag">Group F</span>
+        <span class="badge sched">Scheduled</span>
+      </div>
+      <div class="match-teams">
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/se.png" srcset="https://flagcdn.com/48x36/se.png 2x" class="flag-icon" alt=""><span class="team-name-text">Sweden</span></span></span>
+        <span class="score">vs</span>
+        <span class="team"><span class="team-flag"><span class="team-name-text">Tunisia</span><img src="https://flagcdn.com/24x18/tn.png" srcset="https://flagcdn.com/48x36/tn.png 2x" class="flag-icon" alt=""></span></span>
+      </div>
+      <div class="match-meta">Monday, 15 June 26 &middot; 09:00 WIB &middot; TBD</div>
+      
+    </div>
+    <div class="match-card">
+      <div class="match-top">
+        <span class="group-tag">Group H</span>
+        <span class="badge sched">Scheduled</span>
+      </div>
+      <div class="match-teams">
+        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/es.png" srcset="https://flagcdn.com/48x36/es.png 2x" class="flag-icon" alt=""><span class="team-name-text">Spain</span></span></span>
+        <span class="score">vs</span>
+        <span class="team"><span class="team-flag"><span class="team-name-text">Cape Verde</span><img src="https://flagcdn.com/24x18/cv.png" srcset="https://flagcdn.com/48x36/cv.png 2x" class="flag-icon" alt=""></span></span>
+      </div>
+      <div class="match-meta">Monday, 15 June 26 &middot; 23:00 WIB &middot; TBD</div>
+      
+    </div>
     <div class="match-card">
       <div class="match-top">
         <span class="group-tag">Group G</span>
@@ -188,8 +285,7 @@
         <span class="score">vs</span>
         <span class="team"><span class="team-flag"><span class="team-name-text">Egypt</span><img src="https://flagcdn.com/24x18/eg.png" srcset="https://flagcdn.com/48x36/eg.png 2x" class="flag-icon" alt=""></span></span>
       </div>
-      <div class="match-meta">Tuesday, 16 June 26 &middot; 02:00 WIB &middot; Lumen Field, Seattle</div>
-      
+      <div class="match-meta">Tuesday, 16 June 26 &middot; 02:00 WIB &middot; TBD</div>
       
     </div>
     <div class="match-card">
@@ -202,8 +298,7 @@
         <span class="score">vs</span>
         <span class="team"><span class="team-flag"><span class="team-name-text">Uruguay</span><img src="https://flagcdn.com/24x18/uy.png" srcset="https://flagcdn.com/48x36/uy.png 2x" class="flag-icon" alt=""></span></span>
       </div>
-      <div class="match-meta">Tuesday, 16 June 26 &middot; 05:00 WIB &middot; Hard Rock Stadium, Miami Gardens</div>
-      
+      <div class="match-meta">Tuesday, 16 June 26 &middot; 05:00 WIB &middot; TBD</div>
       
     </div>
     <div class="match-card">
@@ -216,120 +311,7 @@
         <span class="score">vs</span>
         <span class="team"><span class="team-flag"><span class="team-name-text">New Zealand</span><img src="https://flagcdn.com/24x18/nz.png" srcset="https://flagcdn.com/48x36/nz.png 2x" class="flag-icon" alt=""></span></span>
       </div>
-      <div class="match-meta">Tuesday, 16 June 26 &middot; 08:00 WIB &middot; SoFi Stadium, Inglewood</div>
-      
-      
-    </div>
-    <div class="match-card">
-      <div class="match-top">
-        <span class="group-tag">Group I</span>
-        <span class="badge sched">Scheduled</span>
-      </div>
-      <div class="match-teams">
-        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/fr.png" srcset="https://flagcdn.com/48x36/fr.png 2x" class="flag-icon" alt=""><span class="team-name-text">France</span></span></span>
-        <span class="score">vs</span>
-        <span class="team"><span class="team-flag"><span class="team-name-text">Senegal</span><img src="https://flagcdn.com/24x18/sn.png" srcset="https://flagcdn.com/48x36/sn.png 2x" class="flag-icon" alt=""></span></span>
-      </div>
-      <div class="match-meta">Wednesday, 17 June 26 &middot; 02:00 WIB &middot; MetLife Stadium, East Rutherford</div>
-      
-      
-    </div>
-    <div class="match-card">
-      <div class="match-top">
-        <span class="group-tag">Group I</span>
-        <span class="badge sched">Scheduled</span>
-      </div>
-      <div class="match-teams">
-        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/iq.png" srcset="https://flagcdn.com/48x36/iq.png 2x" class="flag-icon" alt=""><span class="team-name-text">Iraq</span></span></span>
-        <span class="score">vs</span>
-        <span class="team"><span class="team-flag"><span class="team-name-text">Norway</span><img src="https://flagcdn.com/24x18/no.png" srcset="https://flagcdn.com/48x36/no.png 2x" class="flag-icon" alt=""></span></span>
-      </div>
-      <div class="match-meta">Wednesday, 17 June 26 &middot; 05:00 WIB &middot; Gillette Stadium, Foxborough</div>
-      
-      
-    </div>
-    <div class="match-card">
-      <div class="match-top">
-        <span class="group-tag">Group J</span>
-        <span class="badge sched">Scheduled</span>
-      </div>
-      <div class="match-teams">
-        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/ar.png" srcset="https://flagcdn.com/48x36/ar.png 2x" class="flag-icon" alt=""><span class="team-name-text">Argentina</span></span></span>
-        <span class="score">vs</span>
-        <span class="team"><span class="team-flag"><span class="team-name-text">Algeria</span><img src="https://flagcdn.com/24x18/dz.png" srcset="https://flagcdn.com/48x36/dz.png 2x" class="flag-icon" alt=""></span></span>
-      </div>
-      <div class="match-meta">Wednesday, 17 June 26 &middot; 08:00 WIB &middot; Arrowhead Stadium, Kansas City</div>
-      
-      
-    </div>
-    <div class="match-card">
-      <div class="match-top">
-        <span class="group-tag">Group J</span>
-        <span class="badge sched">Scheduled</span>
-      </div>
-      <div class="match-teams">
-        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/at.png" srcset="https://flagcdn.com/48x36/at.png 2x" class="flag-icon" alt=""><span class="team-name-text">Austria</span></span></span>
-        <span class="score">vs</span>
-        <span class="team"><span class="team-flag"><span class="team-name-text">Jordan</span><img src="https://flagcdn.com/24x18/jo.png" srcset="https://flagcdn.com/48x36/jo.png 2x" class="flag-icon" alt=""></span></span>
-      </div>
-      <div class="match-meta">Wednesday, 17 June 26 &middot; 11:00 WIB &middot; Levi's Stadium, Santa Clara</div>
-      
-      
-    </div>
-    <div class="match-card">
-      <div class="match-top">
-        <span class="group-tag">Group K</span>
-        <span class="badge sched">Scheduled</span>
-      </div>
-      <div class="match-teams">
-        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/pt.png" srcset="https://flagcdn.com/48x36/pt.png 2x" class="flag-icon" alt=""><span class="team-name-text">Portugal</span></span></span>
-        <span class="score">vs</span>
-        <span class="team"><span class="team-flag"><span class="team-name-text">DR Congo</span><img src="https://flagcdn.com/24x18/cd.png" srcset="https://flagcdn.com/48x36/cd.png 2x" class="flag-icon" alt=""></span></span>
-      </div>
-      <div class="match-meta">Thursday, 18 June 26 &middot; 00:00 WIB &middot; NRG Stadium, Houston</div>
-      
-      
-    </div>
-    <div class="match-card">
-      <div class="match-top">
-        <span class="group-tag">Group L</span>
-        <span class="badge sched">Scheduled</span>
-      </div>
-      <div class="match-teams">
-        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/gb-eng.png" srcset="https://flagcdn.com/48x36/gb-eng.png 2x" class="flag-icon" alt=""><span class="team-name-text">England</span></span></span>
-        <span class="score">vs</span>
-        <span class="team"><span class="team-flag"><span class="team-name-text">Croatia</span><img src="https://flagcdn.com/24x18/hr.png" srcset="https://flagcdn.com/48x36/hr.png 2x" class="flag-icon" alt=""></span></span>
-      </div>
-      <div class="match-meta">Thursday, 18 June 26 &middot; 03:00 WIB &middot; AT&T Stadium, Arlington</div>
-      
-      
-    </div>
-    <div class="match-card">
-      <div class="match-top">
-        <span class="group-tag">Group L</span>
-        <span class="badge sched">Scheduled</span>
-      </div>
-      <div class="match-teams">
-        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/gh.png" srcset="https://flagcdn.com/48x36/gh.png 2x" class="flag-icon" alt=""><span class="team-name-text">Ghana</span></span></span>
-        <span class="score">vs</span>
-        <span class="team"><span class="team-flag"><span class="team-name-text">Panama</span><img src="https://flagcdn.com/24x18/pa.png" srcset="https://flagcdn.com/48x36/pa.png 2x" class="flag-icon" alt=""></span></span>
-      </div>
-      <div class="match-meta">Thursday, 18 June 26 &middot; 06:00 WIB &middot; BMO Field, Toronto</div>
-      
-      
-    </div>
-    <div class="match-card">
-      <div class="match-top">
-        <span class="group-tag">Group K</span>
-        <span class="badge sched">Scheduled</span>
-      </div>
-      <div class="match-teams">
-        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/uz.png" srcset="https://flagcdn.com/48x36/uz.png 2x" class="flag-icon" alt=""><span class="team-name-text">Uzbekistan</span></span></span>
-        <span class="score">vs</span>
-        <span class="team"><span class="team-flag"><span class="team-name-text">Colombia</span><img src="https://flagcdn.com/24x18/co.png" srcset="https://flagcdn.com/48x36/co.png 2x" class="flag-icon" alt=""></span></span>
-      </div>
-      <div class="match-meta">Thursday, 18 June 26 &middot; 09:00 WIB &middot; Estadio Azteca, Mexico City</div>
-      
+      <div class="match-meta">Tuesday, 16 June 26 &middot; 08:00 WIB &middot; TBD</div>
       
     </div></div>
     <details style="margin-top:16px;">
@@ -351,87 +333,87 @@
         <td><span class="badge ft">FT</span></td>
     </tr><tr>
         <td>Saturday, 13 June 26 &middot; 08:00 WIB</td><td>Group D</td>
-        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt=""><span class="team-name-text">USA</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">PAR</span><img src="https://flagcdn.com/24x18/py.png" srcset="https://flagcdn.com/48x36/py.png 2x" class="flag-icon" alt=""></span></span></div></td><td>4 - 1</td><td>SoFi Stadium, Inglewood</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt=""><span class="team-name-text">USA</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">PAR</span><img src="https://flagcdn.com/24x18/py.png" srcset="https://flagcdn.com/48x36/py.png 2x" class="flag-icon" alt=""></span></span></div></td><td>3 - 1</td><td>SoFi Stadium, Inglewood</td>
         <td><span class="badge ft">FT</span></td>
     </tr><tr>
         <td>Sunday, 14 June 26 &middot; 02:00 WIB</td><td>Group B</td>
-        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/qa.png" srcset="https://flagcdn.com/48x36/qa.png 2x" class="flag-icon" alt=""><span class="team-name-text">QAT</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">SUI</span><img src="https://flagcdn.com/24x18/ch.png" srcset="https://flagcdn.com/48x36/ch.png 2x" class="flag-icon" alt=""></span></span></div></td><td>1 - 1</td><td>Levi's Stadium, Santa Clara</td>
-        <td><span class="badge ft">FT</span></td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/qa.png" srcset="https://flagcdn.com/48x36/qa.png 2x" class="flag-icon" alt=""><span class="team-name-text">QAT</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">SUI</span><img src="https://flagcdn.com/24x18/ch.png" srcset="https://flagcdn.com/48x36/ch.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>Levi's Stadium, Santa Clara</td>
+        <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Sunday, 14 June 26 &middot; 05:00 WIB</td><td>Group C</td>
-        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/br.png" srcset="https://flagcdn.com/48x36/br.png 2x" class="flag-icon" alt=""><span class="team-name-text">BRA</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">MAR</span><img src="https://flagcdn.com/24x18/ma.png" srcset="https://flagcdn.com/48x36/ma.png 2x" class="flag-icon" alt=""></span></span></div></td><td>1 - 1</td><td>MetLife Stadium, East Rutherford</td>
-        <td><span class="badge ft">FT</span></td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/br.png" srcset="https://flagcdn.com/48x36/br.png 2x" class="flag-icon" alt=""><span class="team-name-text">BRA</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">MAR</span><img src="https://flagcdn.com/24x18/ma.png" srcset="https://flagcdn.com/48x36/ma.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>MetLife Stadium, East Rutherford</td>
+        <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Sunday, 14 June 26 &middot; 08:00 WIB</td><td>Group C</td>
-        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/ht.png" srcset="https://flagcdn.com/48x36/ht.png 2x" class="flag-icon" alt=""><span class="team-name-text">HAI</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">SCO</span><img src="https://flagcdn.com/24x18/gb-sct.png" srcset="https://flagcdn.com/48x36/gb-sct.png 2x" class="flag-icon" alt=""></span></span></div></td><td>0 - 1</td><td>Gillette Stadium, Foxborough</td>
-        <td><span class="badge ft">FT</span></td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/ht.png" srcset="https://flagcdn.com/48x36/ht.png 2x" class="flag-icon" alt=""><span class="team-name-text">HAI</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">SCO</span><img src="https://flagcdn.com/24x18/gb-sct.png" srcset="https://flagcdn.com/48x36/gb-sct.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
+        <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Sunday, 14 June 26 &middot; 11:00 WIB</td><td>Group D</td>
-        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/au.png" srcset="https://flagcdn.com/48x36/au.png 2x" class="flag-icon" alt=""><span class="team-name-text">AUS</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">TUR</span><img src="https://flagcdn.com/24x18/tr.png" srcset="https://flagcdn.com/48x36/tr.png 2x" class="flag-icon" alt=""></span></span></div></td><td>2 - 0</td><td>BC Place, Vancouver</td>
-        <td><span class="badge ft">FT</span></td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/au.png" srcset="https://flagcdn.com/48x36/au.png 2x" class="flag-icon" alt=""><span class="team-name-text">AUS</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">TUR</span><img src="https://flagcdn.com/24x18/tr.png" srcset="https://flagcdn.com/48x36/tr.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
+        <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Monday, 15 June 26 &middot; 00:00 WIB</td><td>Group E</td>
-        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/de.png" srcset="https://flagcdn.com/48x36/de.png 2x" class="flag-icon" alt=""><span class="team-name-text">GER</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">CUW</span><img src="https://flagcdn.com/24x18/cw.png" srcset="https://flagcdn.com/48x36/cw.png 2x" class="flag-icon" alt=""></span></span></div></td><td>7 - 1</td><td>NRG Stadium, Houston</td>
-        <td><span class="badge ft">FT</span></td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/de.png" srcset="https://flagcdn.com/48x36/de.png 2x" class="flag-icon" alt=""><span class="team-name-text">GER</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">CUW</span><img src="https://flagcdn.com/24x18/cw.png" srcset="https://flagcdn.com/48x36/cw.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
+        <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Monday, 15 June 26 &middot; 03:00 WIB</td><td>Group F</td>
-        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/nl.png" srcset="https://flagcdn.com/48x36/nl.png 2x" class="flag-icon" alt=""><span class="team-name-text">NED</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">JPN</span><img src="https://flagcdn.com/24x18/jp.png" srcset="https://flagcdn.com/48x36/jp.png 2x" class="flag-icon" alt=""></span></span></div></td><td>2 - 2</td><td>AT&T Stadium, Arlington</td>
-        <td><span class="badge ft">FT</span></td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/nl.png" srcset="https://flagcdn.com/48x36/nl.png 2x" class="flag-icon" alt=""><span class="team-name-text">NED</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">JPN</span><img src="https://flagcdn.com/24x18/jp.png" srcset="https://flagcdn.com/48x36/jp.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
+        <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Monday, 15 June 26 &middot; 06:00 WIB</td><td>Group E</td>
-        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/ci.png" srcset="https://flagcdn.com/48x36/ci.png 2x" class="flag-icon" alt=""><span class="team-name-text">CIV</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">ECU</span><img src="https://flagcdn.com/24x18/ec.png" srcset="https://flagcdn.com/48x36/ec.png 2x" class="flag-icon" alt=""></span></span></div></td><td>1 - 0</td><td>Lincoln Financial Field, Philadelphia</td>
-        <td><span class="badge ft">FT</span></td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/ci.png" srcset="https://flagcdn.com/48x36/ci.png 2x" class="flag-icon" alt=""><span class="team-name-text">CIV</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">ECU</span><img src="https://flagcdn.com/24x18/ec.png" srcset="https://flagcdn.com/48x36/ec.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
+        <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Monday, 15 June 26 &middot; 09:00 WIB</td><td>Group F</td>
-        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/se.png" srcset="https://flagcdn.com/48x36/se.png 2x" class="flag-icon" alt=""><span class="team-name-text">SWE</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">TUN</span><img src="https://flagcdn.com/24x18/tn.png" srcset="https://flagcdn.com/48x36/tn.png 2x" class="flag-icon" alt=""></span></span></div></td><td>5 - 1</td><td>Estadio BBVA, Monterrey</td>
-        <td><span class="badge ft">FT</span></td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/se.png" srcset="https://flagcdn.com/48x36/se.png 2x" class="flag-icon" alt=""><span class="team-name-text">SWE</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">TUN</span><img src="https://flagcdn.com/24x18/tn.png" srcset="https://flagcdn.com/48x36/tn.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
+        <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Monday, 15 June 26 &middot; 23:00 WIB</td><td>Group H</td>
-        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/es.png" srcset="https://flagcdn.com/48x36/es.png 2x" class="flag-icon" alt=""><span class="team-name-text">ESP</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">CPV</span><img src="https://flagcdn.com/24x18/cv.png" srcset="https://flagcdn.com/48x36/cv.png 2x" class="flag-icon" alt=""></span></span></div></td><td>0 - 0 (LIVE)</td><td>Mercedes-Benz Stadium, Atlanta</td>
-        <td><span class="badge live">LIVE</span></td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/es.png" srcset="https://flagcdn.com/48x36/es.png 2x" class="flag-icon" alt=""><span class="team-name-text">ESP</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">CPV</span><img src="https://flagcdn.com/24x18/cv.png" srcset="https://flagcdn.com/48x36/cv.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
+        <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Tuesday, 16 June 26 &middot; 02:00 WIB</td><td>Group G</td>
-        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/be.png" srcset="https://flagcdn.com/48x36/be.png 2x" class="flag-icon" alt=""><span class="team-name-text">BEL</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">EGY</span><img src="https://flagcdn.com/24x18/eg.png" srcset="https://flagcdn.com/48x36/eg.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>Lumen Field, Seattle</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/be.png" srcset="https://flagcdn.com/48x36/be.png 2x" class="flag-icon" alt=""><span class="team-name-text">BEL</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">EGY</span><img src="https://flagcdn.com/24x18/eg.png" srcset="https://flagcdn.com/48x36/eg.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Tuesday, 16 June 26 &middot; 05:00 WIB</td><td>Group H</td>
-        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/sa.png" srcset="https://flagcdn.com/48x36/sa.png 2x" class="flag-icon" alt=""><span class="team-name-text">KSA</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">URU</span><img src="https://flagcdn.com/24x18/uy.png" srcset="https://flagcdn.com/48x36/uy.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>Hard Rock Stadium, Miami Gardens</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/sa.png" srcset="https://flagcdn.com/48x36/sa.png 2x" class="flag-icon" alt=""><span class="team-name-text">KSA</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">URU</span><img src="https://flagcdn.com/24x18/uy.png" srcset="https://flagcdn.com/48x36/uy.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Tuesday, 16 June 26 &middot; 08:00 WIB</td><td>Group G</td>
-        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/ir.png" srcset="https://flagcdn.com/48x36/ir.png 2x" class="flag-icon" alt=""><span class="team-name-text">IRN</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">NZL</span><img src="https://flagcdn.com/24x18/nz.png" srcset="https://flagcdn.com/48x36/nz.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>SoFi Stadium, Inglewood</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/ir.png" srcset="https://flagcdn.com/48x36/ir.png 2x" class="flag-icon" alt=""><span class="team-name-text">IRN</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">NZL</span><img src="https://flagcdn.com/24x18/nz.png" srcset="https://flagcdn.com/48x36/nz.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Wednesday, 17 June 26 &middot; 02:00 WIB</td><td>Group I</td>
-        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/fr.png" srcset="https://flagcdn.com/48x36/fr.png 2x" class="flag-icon" alt=""><span class="team-name-text">FRA</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">SEN</span><img src="https://flagcdn.com/24x18/sn.png" srcset="https://flagcdn.com/48x36/sn.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>MetLife Stadium, East Rutherford</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/fr.png" srcset="https://flagcdn.com/48x36/fr.png 2x" class="flag-icon" alt=""><span class="team-name-text">FRA</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">SEN</span><img src="https://flagcdn.com/24x18/sn.png" srcset="https://flagcdn.com/48x36/sn.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Wednesday, 17 June 26 &middot; 05:00 WIB</td><td>Group I</td>
-        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/iq.png" srcset="https://flagcdn.com/48x36/iq.png 2x" class="flag-icon" alt=""><span class="team-name-text">IRQ</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">NOR</span><img src="https://flagcdn.com/24x18/no.png" srcset="https://flagcdn.com/48x36/no.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>Gillette Stadium, Foxborough</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/iq.png" srcset="https://flagcdn.com/48x36/iq.png 2x" class="flag-icon" alt=""><span class="team-name-text">IRQ</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">NOR</span><img src="https://flagcdn.com/24x18/no.png" srcset="https://flagcdn.com/48x36/no.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Wednesday, 17 June 26 &middot; 08:00 WIB</td><td>Group J</td>
-        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/ar.png" srcset="https://flagcdn.com/48x36/ar.png 2x" class="flag-icon" alt=""><span class="team-name-text">ARG</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">ALG</span><img src="https://flagcdn.com/24x18/dz.png" srcset="https://flagcdn.com/48x36/dz.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>Arrowhead Stadium, Kansas City</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/ar.png" srcset="https://flagcdn.com/48x36/ar.png 2x" class="flag-icon" alt=""><span class="team-name-text">ARG</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">ALG</span><img src="https://flagcdn.com/24x18/dz.png" srcset="https://flagcdn.com/48x36/dz.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Wednesday, 17 June 26 &middot; 11:00 WIB</td><td>Group J</td>
-        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/at.png" srcset="https://flagcdn.com/48x36/at.png 2x" class="flag-icon" alt=""><span class="team-name-text">AUT</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">JOR</span><img src="https://flagcdn.com/24x18/jo.png" srcset="https://flagcdn.com/48x36/jo.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>Levi's Stadium, Santa Clara</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/at.png" srcset="https://flagcdn.com/48x36/at.png 2x" class="flag-icon" alt=""><span class="team-name-text">AUT</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">JOR</span><img src="https://flagcdn.com/24x18/jo.png" srcset="https://flagcdn.com/48x36/jo.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Thursday, 18 June 26 &middot; 00:00 WIB</td><td>Group K</td>
-        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/pt.png" srcset="https://flagcdn.com/48x36/pt.png 2x" class="flag-icon" alt=""><span class="team-name-text">POR</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">COD</span><img src="https://flagcdn.com/24x18/cd.png" srcset="https://flagcdn.com/48x36/cd.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>NRG Stadium, Houston</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/pt.png" srcset="https://flagcdn.com/48x36/pt.png 2x" class="flag-icon" alt=""><span class="team-name-text">POR</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">COD</span><img src="https://flagcdn.com/24x18/cd.png" srcset="https://flagcdn.com/48x36/cd.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Thursday, 18 June 26 &middot; 03:00 WIB</td><td>Group L</td>
-        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/gb-eng.png" srcset="https://flagcdn.com/48x36/gb-eng.png 2x" class="flag-icon" alt=""><span class="team-name-text">ENG</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">CRO</span><img src="https://flagcdn.com/24x18/hr.png" srcset="https://flagcdn.com/48x36/hr.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>AT&T Stadium, Arlington</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/gb-eng.png" srcset="https://flagcdn.com/48x36/gb-eng.png 2x" class="flag-icon" alt=""><span class="team-name-text">ENG</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">CRO</span><img src="https://flagcdn.com/24x18/hr.png" srcset="https://flagcdn.com/48x36/hr.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Thursday, 18 June 26 &middot; 06:00 WIB</td><td>Group L</td>
-        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/gh.png" srcset="https://flagcdn.com/48x36/gh.png 2x" class="flag-icon" alt=""><span class="team-name-text">GHA</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">PAN</span><img src="https://flagcdn.com/24x18/pa.png" srcset="https://flagcdn.com/48x36/pa.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>BMO Field, Toronto</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/gh.png" srcset="https://flagcdn.com/48x36/gh.png 2x" class="flag-icon" alt=""><span class="team-name-text">GHA</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">PAN</span><img src="https://flagcdn.com/24x18/pa.png" srcset="https://flagcdn.com/48x36/pa.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr><tr>
         <td>Thursday, 18 June 26 &middot; 09:00 WIB</td><td>Group K</td>
-        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/uz.png" srcset="https://flagcdn.com/48x36/uz.png 2x" class="flag-icon" alt=""><span class="team-name-text">UZB</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">COL</span><img src="https://flagcdn.com/24x18/co.png" srcset="https://flagcdn.com/48x36/co.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>Estadio Azteca, Mexico City</td>
+        <td class="match-cell-td"><div class="match-cell"><span class="match-team home"><span class="team-flag"><img src="https://flagcdn.com/24x18/uz.png" srcset="https://flagcdn.com/48x36/uz.png 2x" class="flag-icon" alt=""><span class="team-name-text">UZB</span></span></span><span class="match-vs">vs</span><span class="match-team away"><span class="team-flag"><span class="team-name-text">COL</span><img src="https://flagcdn.com/24x18/co.png" srcset="https://flagcdn.com/48x36/co.png 2x" class="flag-icon" alt=""></span></span></div></td><td>vs</td><td>TBD</td>
         <td><span class="badge sched">Scheduled</span></td>
     </tr></tbody>
       </table>
@@ -443,129 +425,16 @@
     <div class="grid">
     <div class="match-card">
       <div class="match-top">
-        <span class="group-tag">Group F</span>
-        <span class="badge ft">FT</span>
-      </div>
-      <div class="match-teams">
-        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/se.png" srcset="https://flagcdn.com/48x36/se.png 2x" class="flag-icon" alt=""><span class="team-name-text">Sweden</span></span></span>
-        <span class="score">5 - 1</span>
-        <span class="team"><span class="team-flag"><span class="team-name-text">Tunisia</span><img src="https://flagcdn.com/24x18/tn.png" srcset="https://flagcdn.com/48x36/tn.png 2x" class="flag-icon" alt=""></span></span>
-      </div>
-      <div class="match-meta">Monday, 15 June 26 &middot; 09:00 WIB &middot; Estadio BBVA, Monterrey</div>
-      <div class="events"><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/se.png" srcset="https://flagcdn.com/48x36/se.png 2x" class="flag-icon" alt=""><b>Yasin Ayari</b> <span class="event-min">7'</span></div><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/se.png" srcset="https://flagcdn.com/48x36/se.png 2x" class="flag-icon" alt=""><b>Alexander Isak</b> <span class="assist-note">(🅰 Viktor Gyökeres)</span> <span class="event-min">30'</span></div><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/tn.png" srcset="https://flagcdn.com/48x36/tn.png 2x" class="flag-icon" alt=""><b>Omar Rekik</b> <span class="assist-note">(🅰 Hannibal Mejbri)</span> <span class="event-min">43'</span></div><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/se.png" srcset="https://flagcdn.com/48x36/se.png 2x" class="flag-icon" alt=""><b>Viktor Gyökeres</b> <span class="assist-note">(🅰 Alexander Isak)</span> <span class="event-min">59'</span></div><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/se.png" srcset="https://flagcdn.com/48x36/se.png 2x" class="flag-icon" alt=""><b>Mattias Svanberg</b> <span class="assist-note">(🅰 Alexander Isak)</span> <span class="event-min">84'</span></div><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/se.png" srcset="https://flagcdn.com/48x36/se.png 2x" class="flag-icon" alt=""><b>Yasin Ayari</b> <span class="event-min">90+6'</span></div></div>
-      <a class="highlight-link" href="https://www.youtube.com/watch?v=M7whOH56VAE" target="_blank" rel="noopener">▶ Watch Highlights</a>
-    </div>
-    <div class="match-card">
-      <div class="match-top">
-        <span class="group-tag">Group E</span>
-        <span class="badge ft">FT</span>
-      </div>
-      <div class="match-teams">
-        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/ci.png" srcset="https://flagcdn.com/48x36/ci.png 2x" class="flag-icon" alt=""><span class="team-name-text">Ivory Coast</span></span></span>
-        <span class="score">1 - 0</span>
-        <span class="team"><span class="team-flag"><span class="team-name-text">Ecuador</span><img src="https://flagcdn.com/24x18/ec.png" srcset="https://flagcdn.com/48x36/ec.png 2x" class="flag-icon" alt=""></span></span>
-      </div>
-      <div class="match-meta">Monday, 15 June 26 &middot; 06:00 WIB &middot; Lincoln Financial Field, Philadelphia</div>
-      <div class="events"><div class="event"><span class="event-icon">🟨</span><img src="https://flagcdn.com/24x18/ec.png" srcset="https://flagcdn.com/48x36/ec.png 2x" class="flag-icon" alt=""><b>Jhojan Porozo</b> <span class="event-min">80'</span></div><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/ci.png" srcset="https://flagcdn.com/48x36/ci.png 2x" class="flag-icon" alt=""><b>Amad Diallo</b> <span class="assist-note">(🅰 Wilfried Singo)</span> <span class="event-min">90'</span></div></div>
-      <a class="highlight-link" href="https://www.youtube.com/watch?v=f5uzd5qmIy4" target="_blank" rel="noopener">▶ Watch Highlights</a>
-    </div>
-    <div class="match-card">
-      <div class="match-top">
-        <span class="group-tag">Group F</span>
-        <span class="badge ft">FT</span>
-      </div>
-      <div class="match-teams">
-        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/nl.png" srcset="https://flagcdn.com/48x36/nl.png 2x" class="flag-icon" alt=""><span class="team-name-text">Netherlands</span></span></span>
-        <span class="score">2 - 2</span>
-        <span class="team"><span class="team-flag"><span class="team-name-text">Japan</span><img src="https://flagcdn.com/24x18/jp.png" srcset="https://flagcdn.com/48x36/jp.png 2x" class="flag-icon" alt=""></span></span>
-      </div>
-      <div class="match-meta">Monday, 15 June 26 &middot; 03:00 WIB &middot; AT&T Stadium, Arlington</div>
-      <div class="events"><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/nl.png" srcset="https://flagcdn.com/48x36/nl.png 2x" class="flag-icon" alt=""><b>Virgil van Dijk</b> <span class="assist-note">(🅰 Ryan Gravenberch)</span> <span class="event-min">50'</span></div><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/jp.png" srcset="https://flagcdn.com/48x36/jp.png 2x" class="flag-icon" alt=""><b>Keito Nakamura</b> <span class="assist-note">(🅰 Takefusa Kubo)</span> <span class="event-min">57'</span></div><div class="event"><span class="event-icon">🟨</span><img src="https://flagcdn.com/24x18/nl.png" srcset="https://flagcdn.com/48x36/nl.png 2x" class="flag-icon" alt=""><b>Crysencio Summerville</b> <span class="event-min">61'</span></div><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/nl.png" srcset="https://flagcdn.com/48x36/nl.png 2x" class="flag-icon" alt=""><b>Crysencio Summerville</b> <span class="event-min">64'</span></div><div class="event"><span class="event-icon">🟨</span><img src="https://flagcdn.com/24x18/nl.png" srcset="https://flagcdn.com/48x36/nl.png 2x" class="flag-icon" alt=""><b>Memphis Depay</b> <span class="event-min">83'</span></div><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/jp.png" srcset="https://flagcdn.com/48x36/jp.png 2x" class="flag-icon" alt=""><b>Daichi Kamada</b> <span class="event-min">89'</span></div></div>
-      <a class="highlight-link" href="https://www.youtube.com/watch?v=OY0nqiDecQI" target="_blank" rel="noopener">▶ Watch Highlights</a>
-    </div>
-    <div class="match-card">
-      <div class="match-top">
-        <span class="group-tag">Group E</span>
-        <span class="badge ft">FT</span>
-      </div>
-      <div class="match-teams">
-        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/de.png" srcset="https://flagcdn.com/48x36/de.png 2x" class="flag-icon" alt=""><span class="team-name-text">Germany</span></span></span>
-        <span class="score">7 - 1</span>
-        <span class="team"><span class="team-flag"><span class="team-name-text">Curaçao</span><img src="https://flagcdn.com/24x18/cw.png" srcset="https://flagcdn.com/48x36/cw.png 2x" class="flag-icon" alt=""></span></span>
-      </div>
-      <div class="match-meta">Monday, 15 June 26 &middot; 00:00 WIB &middot; NRG Stadium, Houston</div>
-      <div class="events"><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/de.png" srcset="https://flagcdn.com/48x36/de.png 2x" class="flag-icon" alt=""><b>Felix Nmecha</b> <span class="assist-note">(🅰 Florian Wirtz)</span> <span class="event-min">6'</span></div><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/cw.png" srcset="https://flagcdn.com/48x36/cw.png 2x" class="flag-icon" alt=""><b>Livano Comenencia</b> <span class="event-min">21'</span></div><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/de.png" srcset="https://flagcdn.com/48x36/de.png 2x" class="flag-icon" alt=""><b>Nico Schlotterbeck</b> <span class="assist-note">(🅰 Nathaniel Brown)</span> <span class="event-min">38'</span></div><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/de.png" srcset="https://flagcdn.com/48x36/de.png 2x" class="flag-icon" alt=""><b>Jamal Musiala</b> <span class="assist-note">(🅰 Joshua Kimmich)</span> <span class="event-min">47'</span></div><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/de.png" srcset="https://flagcdn.com/48x36/de.png 2x" class="flag-icon" alt=""><b>Kai Havertz</b> <span class="event-min">45+5'</span></div><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/de.png" srcset="https://flagcdn.com/48x36/de.png 2x" class="flag-icon" alt=""><b>Nathaniel Brown</b> <span class="assist-note">(🅰 Denis Undav)</span> <span class="event-min">68'</span></div><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/de.png" srcset="https://flagcdn.com/48x36/de.png 2x" class="flag-icon" alt=""><b>Denis Undav</b> <span class="assist-note">(🅰 Joshua Kimmich)</span> <span class="event-min">78'</span></div><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/de.png" srcset="https://flagcdn.com/48x36/de.png 2x" class="flag-icon" alt=""><b>Kai Havertz</b> <span class="assist-note">(🅰 Denis Undav)</span> <span class="event-min">88'</span></div></div>
-      <a class="highlight-link" href="https://www.youtube.com/watch?v=zGQq61n6ql8" target="_blank" rel="noopener">▶ Watch Highlights</a>
-    </div>
-    <div class="match-card">
-      <div class="match-top">
-        <span class="group-tag">Group D</span>
-        <span class="badge ft">FT</span>
-      </div>
-      <div class="match-teams">
-        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/au.png" srcset="https://flagcdn.com/48x36/au.png 2x" class="flag-icon" alt=""><span class="team-name-text">Australia</span></span></span>
-        <span class="score">2 - 0</span>
-        <span class="team"><span class="team-flag"><span class="team-name-text">Türkiye</span><img src="https://flagcdn.com/24x18/tr.png" srcset="https://flagcdn.com/48x36/tr.png 2x" class="flag-icon" alt=""></span></span>
-      </div>
-      <div class="match-meta">Sunday, 14 June 26 &middot; 11:00 WIB &middot; BC Place, Vancouver</div>
-      <div class="events"><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/au.png" srcset="https://flagcdn.com/48x36/au.png 2x" class="flag-icon" alt=""><b>Nestory Irankunda</b> <span class="event-min">27'</span></div><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/au.png" srcset="https://flagcdn.com/48x36/au.png 2x" class="flag-icon" alt=""><b>Connor Metcalfe</b> <span class="event-min">55'</span></div></div>
-      <a class="highlight-link" href="https://www.youtube.com/watch?v=2mKrPNngKIM" target="_blank" rel="noopener">▶ Watch Highlights</a>
-    </div>
-    <div class="match-card">
-      <div class="match-top">
-        <span class="group-tag">Group C</span>
-        <span class="badge ft">FT</span>
-      </div>
-      <div class="match-teams">
-        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/ht.png" srcset="https://flagcdn.com/48x36/ht.png 2x" class="flag-icon" alt=""><span class="team-name-text">Haiti</span></span></span>
-        <span class="score">0 - 1</span>
-        <span class="team"><span class="team-flag"><span class="team-name-text">Scotland</span><img src="https://flagcdn.com/24x18/gb-sct.png" srcset="https://flagcdn.com/48x36/gb-sct.png 2x" class="flag-icon" alt=""></span></span>
-      </div>
-      <div class="match-meta">Sunday, 14 June 26 &middot; 08:00 WIB &middot; Gillette Stadium, Foxborough</div>
-      <div class="events"><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/gb-sct.png" srcset="https://flagcdn.com/48x36/gb-sct.png 2x" class="flag-icon" alt=""><b>John McGinn</b> <span class="event-min">28'</span></div></div>
-      <a class="highlight-link" href="https://www.youtube.com/watch?v=EC51S5HxX-I" target="_blank" rel="noopener">▶ Watch Highlights</a>
-    </div>
-    <div class="match-card">
-      <div class="match-top">
-        <span class="group-tag">Group C</span>
-        <span class="badge ft">FT</span>
-      </div>
-      <div class="match-teams">
-        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/br.png" srcset="https://flagcdn.com/48x36/br.png 2x" class="flag-icon" alt=""><span class="team-name-text">Brazil</span></span></span>
-        <span class="score">1 - 1</span>
-        <span class="team"><span class="team-flag"><span class="team-name-text">Morocco</span><img src="https://flagcdn.com/24x18/ma.png" srcset="https://flagcdn.com/48x36/ma.png 2x" class="flag-icon" alt=""></span></span>
-      </div>
-      <div class="match-meta">Sunday, 14 June 26 &middot; 05:00 WIB &middot; MetLife Stadium, East Rutherford</div>
-      <div class="events"><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/ma.png" srcset="https://flagcdn.com/48x36/ma.png 2x" class="flag-icon" alt=""><b>Ismael Saibari</b> <span class="assist-note">(🅰 Brahim Díaz)</span> <span class="event-min">20'</span></div><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/br.png" srcset="https://flagcdn.com/48x36/br.png 2x" class="flag-icon" alt=""><b>Vinícius Júnior</b> <span class="assist-note">(🅰 Bruno Guimarães)</span> <span class="event-min">31'</span></div><div class="event"><span class="event-icon">🟨</span><img src="https://flagcdn.com/24x18/br.png" srcset="https://flagcdn.com/48x36/br.png 2x" class="flag-icon" alt=""><b>Casemiro</b> <span class="event-min">40'</span></div><div class="event"><span class="event-icon">🟨</span><img src="https://flagcdn.com/24x18/br.png" srcset="https://flagcdn.com/48x36/br.png 2x" class="flag-icon" alt=""><b>Roger Ibañez</b> <span class="event-min">43'</span></div></div>
-      <a class="highlight-link" href="https://www.youtube.com/watch?v=fxcWgC9v5C0" target="_blank" rel="noopener">▶ Watch Highlights</a>
-    </div>
-    <div class="match-card">
-      <div class="match-top">
-        <span class="group-tag">Group B</span>
-        <span class="badge ft">FT</span>
-      </div>
-      <div class="match-teams">
-        <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/qa.png" srcset="https://flagcdn.com/48x36/qa.png 2x" class="flag-icon" alt=""><span class="team-name-text">Qatar</span></span></span>
-        <span class="score">1 - 1</span>
-        <span class="team"><span class="team-flag"><span class="team-name-text">Switzerland</span><img src="https://flagcdn.com/24x18/ch.png" srcset="https://flagcdn.com/48x36/ch.png 2x" class="flag-icon" alt=""></span></span>
-      </div>
-      <div class="match-meta">Sunday, 14 June 26 &middot; 02:00 WIB &middot; Levi's Stadium, Santa Clara</div>
-      <div class="events"><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/ch.png" srcset="https://flagcdn.com/48x36/ch.png 2x" class="flag-icon" alt=""><b>Breel Embolo (pen)</b> <span class="event-min">16'</span></div><div class="event"><span class="event-icon">🟨</span><img src="https://flagcdn.com/24x18/qa.png" srcset="https://flagcdn.com/48x36/qa.png 2x" class="flag-icon" alt=""><b>Mahmoud Abunada</b> <span class="event-min">16'</span></div><div class="event"><span class="event-icon">🟨</span><img src="https://flagcdn.com/24x18/qa.png" srcset="https://flagcdn.com/48x36/qa.png 2x" class="flag-icon" alt=""><b>Jassem Gaber Abdulsallam</b> <span class="event-min">22'</span></div><div class="event"><span class="event-icon">🟨</span><img src="https://flagcdn.com/24x18/ch.png" srcset="https://flagcdn.com/48x36/ch.png 2x" class="flag-icon" alt=""><b>Denis Zakaria</b> <span class="event-min">50'</span></div><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/qa.png" srcset="https://flagcdn.com/48x36/qa.png 2x" class="flag-icon" alt=""><b>Boualem Khoukhi</b> <span class="assist-note">(🅰 Homam Ahmed)</span> <span class="event-min">90+4'</span></div></div>
-      <a class="highlight-link" href="https://www.youtube.com/watch?v=DeJIOYYIZuI" target="_blank" rel="noopener">▶ Watch Highlights</a>
-    </div>
-    <div class="match-card">
-      <div class="match-top">
         <span class="group-tag">Group D</span>
         <span class="badge ft">FT</span>
       </div>
       <div class="match-teams">
         <span class="team"><span class="team-flag"><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt=""><span class="team-name-text">United States</span></span></span>
-        <span class="score">4 - 1</span>
+        <span class="score">3 - 1</span>
         <span class="team"><span class="team-flag"><span class="team-name-text">Paraguay</span><img src="https://flagcdn.com/24x18/py.png" srcset="https://flagcdn.com/48x36/py.png 2x" class="flag-icon" alt=""></span></span>
       </div>
       <div class="match-meta">Saturday, 13 June 26 &middot; 08:00 WIB &middot; SoFi Stadium, Inglewood</div>
-      <div class="events"><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt=""><b>Damian Bobadilla (OG)</b> <span class="event-min">7'</span></div><div class="event"><span class="event-icon">🟨</span><img src="https://flagcdn.com/24x18/py.png" srcset="https://flagcdn.com/48x36/py.png 2x" class="flag-icon" alt=""><b>Juan Jose Caceres</b> <span class="event-min">10'</span></div><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt=""><b>Folarin Balogun</b> <span class="assist-note">(🅰 Christian Pulisic)</span> <span class="event-min">31'</span></div><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt=""><b>Folarin Balogun</b> <span class="assist-note">(🅰 Christian Pulisic)</span> <span class="event-min">45'</span></div><div class="event"><span class="event-icon">🟨</span><img src="https://flagcdn.com/24x18/py.png" srcset="https://flagcdn.com/48x36/py.png 2x" class="flag-icon" alt=""><b>Miguel Almiron</b> <span class="event-min">50'</span></div><div class="event"><span class="event-icon">🟨</span><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt=""><b>Tyler Adams</b> <span class="event-min">59'</span></div><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/py.png" srcset="https://flagcdn.com/48x36/py.png 2x" class="flag-icon" alt=""><b>Mauricio (sub)</b> <span class="event-min">73'</span></div><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt=""><b>Gio Reyna</b> <span class="assist-note">(🅰 Tim Weah)</span> <span class="event-min">90+8'</span></div></div>
-      <a class="highlight-link" href="https://www.youtube.com/watch?v=pOVQg_pT0Ao" target="_blank" rel="noopener">▶ Watch Highlights</a>
+      <div class="events"><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt=""><b>Damian Bobadilla (OG)</b> <span class="event-min">7'</span></div><div class="event"><span class="event-icon">🟨</span><img src="https://flagcdn.com/24x18/py.png" srcset="https://flagcdn.com/48x36/py.png 2x" class="flag-icon" alt=""><b>Juan Jose Caceres</b> <span class="event-min">10'</span></div><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt=""><b>Folarin Balogun</b> <span class="assist-note">(🅰 Christian Pulisic)</span> <span class="event-min">31'</span></div><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt=""><b>Folarin Balogun</b> <span class="assist-note">(🅰 Christian Pulisic)</span> <span class="event-min">45'</span></div><div class="event"><span class="event-icon">🟨</span><img src="https://flagcdn.com/24x18/py.png" srcset="https://flagcdn.com/48x36/py.png 2x" class="flag-icon" alt=""><b>Miguel Almiron</b> <span class="event-min">50'</span></div><div class="event"><span class="event-icon">🟨</span><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt=""><b>Tyler Adams</b> <span class="event-min">59'</span></div><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/py.png" srcset="https://flagcdn.com/48x36/py.png 2x" class="flag-icon" alt=""><b>Mauricio (sub)</b> <span class="event-min">73'</span></div></div>
     </div>
     <div class="match-card">
       <div class="match-top">
@@ -579,7 +448,6 @@
       </div>
       <div class="match-meta">Saturday, 13 June 26 &middot; 02:00 WIB &middot; BMO Field, Toronto</div>
       <div class="events"><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/ba.png" srcset="https://flagcdn.com/48x36/ba.png 2x" class="flag-icon" alt=""><b>Jovo Lukić</b> <span class="assist-note">(🅰 Sead Kolašinac)</span> <span class="event-min">21'</span></div><div class="event"><span class="event-icon">🟨</span><img src="https://flagcdn.com/24x18/ca.png" srcset="https://flagcdn.com/48x36/ca.png 2x" class="flag-icon" alt=""><b>Alistair Johnston</b> <span class="event-min">35'</span></div><div class="event"><span class="event-icon">🟨</span><img src="https://flagcdn.com/24x18/ba.png" srcset="https://flagcdn.com/48x36/ba.png 2x" class="flag-icon" alt=""><b>Jovo Lukić</b> <span class="event-min">55'</span></div><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/ca.png" srcset="https://flagcdn.com/48x36/ca.png 2x" class="flag-icon" alt=""><b>Cyle Larin</b> <span class="assist-note">(🅰 Promise David)</span> <span class="event-min">78'</span></div></div>
-      <a class="highlight-link" href="https://www.youtube.com/watch?v=8swEZkTkhRQ" target="_blank" rel="noopener">▶ Watch Highlights</a>
     </div>
     <div class="match-card">
       <div class="match-top">
@@ -593,7 +461,6 @@
       </div>
       <div class="match-meta">Friday, 12 June 26 &middot; 09:00 WIB &middot; Estadio Akron, Guadalajara</div>
       <div class="events"><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/cz.png" srcset="https://flagcdn.com/48x36/cz.png 2x" class="flag-icon" alt=""><b>Ladislav Krejčí</b> <span class="assist-note">(🅰 Vladimír Coufal)</span> <span class="event-min">59'</span></div><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/kr.png" srcset="https://flagcdn.com/48x36/kr.png 2x" class="flag-icon" alt=""><b>Hwang In-beom</b> <span class="event-min">67'</span></div><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/kr.png" srcset="https://flagcdn.com/48x36/kr.png 2x" class="flag-icon" alt=""><b>Oh Hyeon-gyu</b> <span class="assist-note">(🅰 Hwang In-beom)</span> <span class="event-min">80'</span></div><div class="event"><span class="event-icon">🟨</span><img src="https://flagcdn.com/24x18/kr.png" srcset="https://flagcdn.com/48x36/kr.png 2x" class="flag-icon" alt=""><b>Lee Gi-hyuk</b> <span class="event-min">90'</span></div></div>
-      <a class="highlight-link" href="https://www.youtube.com/watch?v=smKXk96_5iM" target="_blank" rel="noopener">▶ Watch Highlights</a>
     </div>
     <div class="match-card">
       <div class="match-top">
@@ -607,7 +474,6 @@
       </div>
       <div class="match-meta">Friday, 12 June 26 &middot; 00:00 WIB &middot; Estadio Azteca, Mexico City</div>
       <div class="events"><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/mx.png" srcset="https://flagcdn.com/48x36/mx.png 2x" class="flag-icon" alt=""><b>Julián Quiñones</b> <span class="assist-note">(🅰 Roberto Alvarado)</span> <span class="event-min">9'</span></div><div class="event"><span class="event-icon">🟥</span><img src="https://flagcdn.com/24x18/za.png" srcset="https://flagcdn.com/48x36/za.png 2x" class="flag-icon" alt=""><b>Sphephelo Sithole</b> <span class="event-min">49'</span></div><div class="event"><span class="event-icon">⚽</span><img src="https://flagcdn.com/24x18/mx.png" srcset="https://flagcdn.com/48x36/mx.png 2x" class="flag-icon" alt=""><b>Raúl Jiménez</b> <span class="assist-note">(🅰 Roberto Alvarado)</span> <span class="event-min">62'</span></div><div class="event"><span class="event-icon">🟥</span><img src="https://flagcdn.com/24x18/za.png" srcset="https://flagcdn.com/48x36/za.png 2x" class="flag-icon" alt=""><b>Themba Zwane</b> <span class="event-min">80'</span></div><div class="event"><span class="event-icon">🟥</span><img src="https://flagcdn.com/24x18/mx.png" srcset="https://flagcdn.com/48x36/mx.png 2x" class="flag-icon" alt=""><b>César Montes</b> <span class="event-min">92'</span></div></div>
-      <a class="highlight-link" href="https://www.youtube.com/watch?v=bCmmFYb0f4Y" target="_blank" rel="noopener">▶ Watch Highlights</a>
     </div></div>
   </section>
   <section id="standings">
@@ -650,12 +516,12 @@
             <td>1</td><td>1</td><td>0</td><td><b>1</b></td>
         </tr><tr class="">
             <td>3</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/qa.png" srcset="https://flagcdn.com/48x36/qa.png 2x" class="flag-icon" alt=""><span class="team-name-text">QAT</span></span></td>
-            <td>1</td><td>0</td><td>1</td><td>0</td>
-            <td>1</td><td>1</td><td>0</td><td><b>1</b></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
         </tr><tr class="">
             <td>4</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/ch.png" srcset="https://flagcdn.com/48x36/ch.png 2x" class="flag-icon" alt=""><span class="team-name-text">SUI</span></span></td>
-            <td>1</td><td>0</td><td>1</td><td>0</td>
-            <td>1</td><td>1</td><td>0</td><td><b>1</b></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
         </tr></tbody>
       </table>
     </div>
@@ -664,21 +530,21 @@
       <table>
         <thead><tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr></thead>
         <tbody><tr class="qualify">
-            <td>1</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/gb-sct.png" srcset="https://flagcdn.com/48x36/gb-sct.png 2x" class="flag-icon" alt=""><span class="team-name-text">SCO</span></span></td>
-            <td>1</td><td>1</td><td>0</td><td>0</td>
-            <td>1</td><td>0</td><td>1</td><td><b>3</b></td>
+            <td>1</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/br.png" srcset="https://flagcdn.com/48x36/br.png 2x" class="flag-icon" alt=""><span class="team-name-text">BRA</span></span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
         </tr><tr class="qualify">
-            <td>2</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/br.png" srcset="https://flagcdn.com/48x36/br.png 2x" class="flag-icon" alt=""><span class="team-name-text">BRA</span></span></td>
-            <td>1</td><td>0</td><td>1</td><td>0</td>
-            <td>1</td><td>1</td><td>0</td><td><b>1</b></td>
+            <td>2</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/ma.png" srcset="https://flagcdn.com/48x36/ma.png 2x" class="flag-icon" alt=""><span class="team-name-text">MAR</span></span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
         </tr><tr class="">
-            <td>3</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/ma.png" srcset="https://flagcdn.com/48x36/ma.png 2x" class="flag-icon" alt=""><span class="team-name-text">MAR</span></span></td>
-            <td>1</td><td>0</td><td>1</td><td>0</td>
-            <td>1</td><td>1</td><td>0</td><td><b>1</b></td>
+            <td>3</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/ht.png" srcset="https://flagcdn.com/48x36/ht.png 2x" class="flag-icon" alt=""><span class="team-name-text">HAI</span></span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
         </tr><tr class="">
-            <td>4</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/ht.png" srcset="https://flagcdn.com/48x36/ht.png 2x" class="flag-icon" alt=""><span class="team-name-text">HAI</span></span></td>
-            <td>1</td><td>0</td><td>0</td><td>1</td>
-            <td>0</td><td>1</td><td>-1</td><td><b>0</b></td>
+            <td>4</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/gb-sct.png" srcset="https://flagcdn.com/48x36/gb-sct.png 2x" class="flag-icon" alt=""><span class="team-name-text">SCO</span></span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
         </tr></tbody>
       </table>
     </div>
@@ -689,19 +555,19 @@
         <tbody><tr class="qualify">
             <td>1</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt=""><span class="team-name-text">USA</span></span></td>
             <td>1</td><td>1</td><td>0</td><td>0</td>
-            <td>4</td><td>1</td><td>3</td><td><b>3</b></td>
+            <td>3</td><td>1</td><td>2</td><td><b>3</b></td>
         </tr><tr class="qualify">
             <td>2</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/au.png" srcset="https://flagcdn.com/48x36/au.png 2x" class="flag-icon" alt=""><span class="team-name-text">AUS</span></span></td>
-            <td>1</td><td>1</td><td>0</td><td>0</td>
-            <td>2</td><td>0</td><td>2</td><td><b>3</b></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
         </tr><tr class="">
             <td>3</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/tr.png" srcset="https://flagcdn.com/48x36/tr.png 2x" class="flag-icon" alt=""><span class="team-name-text">TUR</span></span></td>
-            <td>1</td><td>0</td><td>0</td><td>1</td>
-            <td>0</td><td>2</td><td>-2</td><td><b>0</b></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
         </tr><tr class="">
             <td>4</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/py.png" srcset="https://flagcdn.com/48x36/py.png 2x" class="flag-icon" alt=""><span class="team-name-text">PAR</span></span></td>
             <td>1</td><td>0</td><td>0</td><td>1</td>
-            <td>1</td><td>4</td><td>-3</td><td><b>0</b></td>
+            <td>1</td><td>3</td><td>-2</td><td><b>0</b></td>
         </tr></tbody>
       </table>
     </div>
@@ -711,20 +577,20 @@
         <thead><tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr></thead>
         <tbody><tr class="qualify">
             <td>1</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/de.png" srcset="https://flagcdn.com/48x36/de.png 2x" class="flag-icon" alt=""><span class="team-name-text">GER</span></span></td>
-            <td>1</td><td>1</td><td>0</td><td>0</td>
-            <td>7</td><td>1</td><td>6</td><td><b>3</b></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
         </tr><tr class="qualify">
-            <td>2</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/ci.png" srcset="https://flagcdn.com/48x36/ci.png 2x" class="flag-icon" alt=""><span class="team-name-text">CIV</span></span></td>
-            <td>1</td><td>1</td><td>0</td><td>0</td>
-            <td>1</td><td>0</td><td>1</td><td><b>3</b></td>
+            <td>2</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/cw.png" srcset="https://flagcdn.com/48x36/cw.png 2x" class="flag-icon" alt=""><span class="team-name-text">CUW</span></span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
         </tr><tr class="">
-            <td>3</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/ec.png" srcset="https://flagcdn.com/48x36/ec.png 2x" class="flag-icon" alt=""><span class="team-name-text">ECU</span></span></td>
-            <td>1</td><td>0</td><td>0</td><td>1</td>
-            <td>0</td><td>1</td><td>-1</td><td><b>0</b></td>
+            <td>3</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/ci.png" srcset="https://flagcdn.com/48x36/ci.png 2x" class="flag-icon" alt=""><span class="team-name-text">CIV</span></span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
         </tr><tr class="">
-            <td>4</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/cw.png" srcset="https://flagcdn.com/48x36/cw.png 2x" class="flag-icon" alt=""><span class="team-name-text">CUW</span></span></td>
-            <td>1</td><td>0</td><td>0</td><td>1</td>
-            <td>1</td><td>7</td><td>-6</td><td><b>0</b></td>
+            <td>4</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/ec.png" srcset="https://flagcdn.com/48x36/ec.png 2x" class="flag-icon" alt=""><span class="team-name-text">ECU</span></span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
         </tr></tbody>
       </table>
     </div>
@@ -733,21 +599,21 @@
       <table>
         <thead><tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr></thead>
         <tbody><tr class="qualify">
-            <td>1</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/se.png" srcset="https://flagcdn.com/48x36/se.png 2x" class="flag-icon" alt=""><span class="team-name-text">SWE</span></span></td>
-            <td>1</td><td>1</td><td>0</td><td>0</td>
-            <td>5</td><td>1</td><td>4</td><td><b>3</b></td>
+            <td>1</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/nl.png" srcset="https://flagcdn.com/48x36/nl.png 2x" class="flag-icon" alt=""><span class="team-name-text">NED</span></span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
         </tr><tr class="qualify">
-            <td>2</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/nl.png" srcset="https://flagcdn.com/48x36/nl.png 2x" class="flag-icon" alt=""><span class="team-name-text">NED</span></span></td>
-            <td>1</td><td>0</td><td>1</td><td>0</td>
-            <td>2</td><td>2</td><td>0</td><td><b>1</b></td>
+            <td>2</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/jp.png" srcset="https://flagcdn.com/48x36/jp.png 2x" class="flag-icon" alt=""><span class="team-name-text">JPN</span></span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
         </tr><tr class="">
-            <td>3</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/jp.png" srcset="https://flagcdn.com/48x36/jp.png 2x" class="flag-icon" alt=""><span class="team-name-text">JPN</span></span></td>
-            <td>1</td><td>0</td><td>1</td><td>0</td>
-            <td>2</td><td>2</td><td>0</td><td><b>1</b></td>
+            <td>3</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/se.png" srcset="https://flagcdn.com/48x36/se.png 2x" class="flag-icon" alt=""><span class="team-name-text">SWE</span></span></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
         </tr><tr class="">
             <td>4</td><td class="team-name"><span class="team-flag"><img src="https://flagcdn.com/24x18/tn.png" srcset="https://flagcdn.com/48x36/tn.png 2x" class="flag-icon" alt=""><span class="team-name-text">TUN</span></span></td>
-            <td>1</td><td>0</td><td>0</td><td>1</td>
-            <td>1</td><td>5</td><td>-4</td><td><b>0</b></td>
+            <td>0</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td><b>0</b></td>
         </tr></tbody>
       </table>
     </div>
@@ -895,23 +761,23 @@
     <div class="groups-grid">
       <div class="group-block">
         <h3>Top Scorers</h3>
-        <table><thead><tr><th>#</th><th>Player</th><th>Team</th><th>Goals</th></tr></thead><tbody><tr><td>1</td><td>Folarin Balogun</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt=""><span class="team-name-text">USA</span></span></td><td><b>2</b></td></tr><tr><td>2</td><td>Kai Havertz</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/de.png" srcset="https://flagcdn.com/48x36/de.png 2x" class="flag-icon" alt=""><span class="team-name-text">GER</span></span></td><td><b>2</b></td></tr><tr><td>3</td><td>Yasin Ayari</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/se.png" srcset="https://flagcdn.com/48x36/se.png 2x" class="flag-icon" alt=""><span class="team-name-text">SWE</span></span></td><td><b>2</b></td></tr><tr><td>4</td><td>Julián Quiñones</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/mx.png" srcset="https://flagcdn.com/48x36/mx.png 2x" class="flag-icon" alt=""><span class="team-name-text">MEX</span></span></td><td><b>1</b></td></tr><tr><td>5</td><td>Raúl Jiménez</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/mx.png" srcset="https://flagcdn.com/48x36/mx.png 2x" class="flag-icon" alt=""><span class="team-name-text">MEX</span></span></td><td><b>1</b></td></tr><tr><td>6</td><td>Ladislav Krejčí</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/cz.png" srcset="https://flagcdn.com/48x36/cz.png 2x" class="flag-icon" alt=""><span class="team-name-text">CZE</span></span></td><td><b>1</b></td></tr><tr><td>7</td><td>Hwang In-beom</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/kr.png" srcset="https://flagcdn.com/48x36/kr.png 2x" class="flag-icon" alt=""><span class="team-name-text">KOR</span></span></td><td><b>1</b></td></tr><tr><td>8</td><td>Oh Hyeon-gyu</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/kr.png" srcset="https://flagcdn.com/48x36/kr.png 2x" class="flag-icon" alt=""><span class="team-name-text">KOR</span></span></td><td><b>1</b></td></tr><tr><td>9</td><td>Jovo Lukić</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/ba.png" srcset="https://flagcdn.com/48x36/ba.png 2x" class="flag-icon" alt=""><span class="team-name-text">BIH</span></span></td><td><b>1</b></td></tr><tr><td>10</td><td>Cyle Larin</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/ca.png" srcset="https://flagcdn.com/48x36/ca.png 2x" class="flag-icon" alt=""><span class="team-name-text">CAN</span></span></td><td><b>1</b></td></tr><tr><td>11</td><td>Damian Bobadilla (OG)</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt=""><span class="team-name-text">USA</span></span></td><td><b>1</b></td></tr><tr><td>12</td><td>Mauricio (sub)</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/py.png" srcset="https://flagcdn.com/48x36/py.png 2x" class="flag-icon" alt=""><span class="team-name-text">PAR</span></span></td><td><b>1</b></td></tr><tr><td>13</td><td>Gio Reyna</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt=""><span class="team-name-text">USA</span></span></td><td><b>1</b></td></tr><tr><td>14</td><td>Breel Embolo (pen)</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/ch.png" srcset="https://flagcdn.com/48x36/ch.png 2x" class="flag-icon" alt=""><span class="team-name-text">SUI</span></span></td><td><b>1</b></td></tr><tr><td>15</td><td>Boualem Khoukhi</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/qa.png" srcset="https://flagcdn.com/48x36/qa.png 2x" class="flag-icon" alt=""><span class="team-name-text">QAT</span></span></td><td><b>1</b></td></tr></tbody></table>
+        <table><thead><tr><th>#</th><th>Player</th><th>Team</th><th>Goals</th></tr></thead><tbody><tr><td>1</td><td>Folarin Balogun</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt=""><span class="team-name-text">USA</span></span></td><td><b>2</b></td></tr><tr><td>2</td><td>Julián Quiñones</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/mx.png" srcset="https://flagcdn.com/48x36/mx.png 2x" class="flag-icon" alt=""><span class="team-name-text">MEX</span></span></td><td><b>1</b></td></tr><tr><td>3</td><td>Raúl Jiménez</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/mx.png" srcset="https://flagcdn.com/48x36/mx.png 2x" class="flag-icon" alt=""><span class="team-name-text">MEX</span></span></td><td><b>1</b></td></tr><tr><td>4</td><td>Ladislav Krejčí</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/cz.png" srcset="https://flagcdn.com/48x36/cz.png 2x" class="flag-icon" alt=""><span class="team-name-text">CZE</span></span></td><td><b>1</b></td></tr><tr><td>5</td><td>Hwang In-beom</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/kr.png" srcset="https://flagcdn.com/48x36/kr.png 2x" class="flag-icon" alt=""><span class="team-name-text">KOR</span></span></td><td><b>1</b></td></tr><tr><td>6</td><td>Oh Hyeon-gyu</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/kr.png" srcset="https://flagcdn.com/48x36/kr.png 2x" class="flag-icon" alt=""><span class="team-name-text">KOR</span></span></td><td><b>1</b></td></tr><tr><td>7</td><td>Jovo Lukić</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/ba.png" srcset="https://flagcdn.com/48x36/ba.png 2x" class="flag-icon" alt=""><span class="team-name-text">BIH</span></span></td><td><b>1</b></td></tr><tr><td>8</td><td>Cyle Larin</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/ca.png" srcset="https://flagcdn.com/48x36/ca.png 2x" class="flag-icon" alt=""><span class="team-name-text">CAN</span></span></td><td><b>1</b></td></tr><tr><td>9</td><td>Damian Bobadilla (OG)</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt=""><span class="team-name-text">USA</span></span></td><td><b>1</b></td></tr><tr><td>10</td><td>Mauricio (sub)</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/py.png" srcset="https://flagcdn.com/48x36/py.png 2x" class="flag-icon" alt=""><span class="team-name-text">PAR</span></span></td><td><b>1</b></td></tr></tbody></table>
       </div>
       <div class="group-block">
         <h3>Top Assists</h3>
-        <table><thead><tr><th>#</th><th>Player</th><th>Team</th><th>Assists</th></tr></thead><tbody><tr><td>1</td><td>Roberto Alvarado</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/mx.png" srcset="https://flagcdn.com/48x36/mx.png 2x" class="flag-icon" alt=""><span class="team-name-text">MEX</span></span></td><td><b>2</b></td></tr><tr><td>2</td><td>Christian Pulisic</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt=""><span class="team-name-text">USA</span></span></td><td><b>2</b></td></tr><tr><td>3</td><td>Joshua Kimmich</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/de.png" srcset="https://flagcdn.com/48x36/de.png 2x" class="flag-icon" alt=""><span class="team-name-text">GER</span></span></td><td><b>2</b></td></tr><tr><td>4</td><td>Denis Undav</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/de.png" srcset="https://flagcdn.com/48x36/de.png 2x" class="flag-icon" alt=""><span class="team-name-text">GER</span></span></td><td><b>2</b></td></tr><tr><td>5</td><td>Alexander Isak</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/se.png" srcset="https://flagcdn.com/48x36/se.png 2x" class="flag-icon" alt=""><span class="team-name-text">SWE</span></span></td><td><b>2</b></td></tr><tr><td>6</td><td>Vladimír Coufal</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/cz.png" srcset="https://flagcdn.com/48x36/cz.png 2x" class="flag-icon" alt=""><span class="team-name-text">CZE</span></span></td><td><b>1</b></td></tr><tr><td>7</td><td>Hwang In-beom</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/kr.png" srcset="https://flagcdn.com/48x36/kr.png 2x" class="flag-icon" alt=""><span class="team-name-text">KOR</span></span></td><td><b>1</b></td></tr><tr><td>8</td><td>Sead Kolašinac</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/ba.png" srcset="https://flagcdn.com/48x36/ba.png 2x" class="flag-icon" alt=""><span class="team-name-text">BIH</span></span></td><td><b>1</b></td></tr><tr><td>9</td><td>Promise David</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/ca.png" srcset="https://flagcdn.com/48x36/ca.png 2x" class="flag-icon" alt=""><span class="team-name-text">CAN</span></span></td><td><b>1</b></td></tr><tr><td>10</td><td>Tim Weah</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt=""><span class="team-name-text">USA</span></span></td><td><b>1</b></td></tr><tr><td>11</td><td>Homam Ahmed</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/qa.png" srcset="https://flagcdn.com/48x36/qa.png 2x" class="flag-icon" alt=""><span class="team-name-text">QAT</span></span></td><td><b>1</b></td></tr><tr><td>12</td><td>Brahim Díaz</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/ma.png" srcset="https://flagcdn.com/48x36/ma.png 2x" class="flag-icon" alt=""><span class="team-name-text">MAR</span></span></td><td><b>1</b></td></tr><tr><td>13</td><td>Bruno Guimarães</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/br.png" srcset="https://flagcdn.com/48x36/br.png 2x" class="flag-icon" alt=""><span class="team-name-text">BRA</span></span></td><td><b>1</b></td></tr><tr><td>14</td><td>Florian Wirtz</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/de.png" srcset="https://flagcdn.com/48x36/de.png 2x" class="flag-icon" alt=""><span class="team-name-text">GER</span></span></td><td><b>1</b></td></tr><tr><td>15</td><td>Nathaniel Brown</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/de.png" srcset="https://flagcdn.com/48x36/de.png 2x" class="flag-icon" alt=""><span class="team-name-text">GER</span></span></td><td><b>1</b></td></tr></tbody></table>
+        <table><thead><tr><th>#</th><th>Player</th><th>Team</th><th>Assists</th></tr></thead><tbody><tr><td>1</td><td>Roberto Alvarado</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/mx.png" srcset="https://flagcdn.com/48x36/mx.png 2x" class="flag-icon" alt=""><span class="team-name-text">MEX</span></span></td><td><b>2</b></td></tr><tr><td>2</td><td>Christian Pulisic</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt=""><span class="team-name-text">USA</span></span></td><td><b>2</b></td></tr><tr><td>3</td><td>Vladimír Coufal</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/cz.png" srcset="https://flagcdn.com/48x36/cz.png 2x" class="flag-icon" alt=""><span class="team-name-text">CZE</span></span></td><td><b>1</b></td></tr><tr><td>4</td><td>Hwang In-beom</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/kr.png" srcset="https://flagcdn.com/48x36/kr.png 2x" class="flag-icon" alt=""><span class="team-name-text">KOR</span></span></td><td><b>1</b></td></tr><tr><td>5</td><td>Sead Kolašinac</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/ba.png" srcset="https://flagcdn.com/48x36/ba.png 2x" class="flag-icon" alt=""><span class="team-name-text">BIH</span></span></td><td><b>1</b></td></tr><tr><td>6</td><td>Promise David</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/ca.png" srcset="https://flagcdn.com/48x36/ca.png 2x" class="flag-icon" alt=""><span class="team-name-text">CAN</span></span></td><td><b>1</b></td></tr></tbody></table>
       </div>
     </div>
   </section>
   <section id="cards">
     <h2>🟨🟥 Disciplinary (Yellow/Red Cards)</h2>
     <div class="table-wrap">
-    <table><thead><tr><th>#</th><th>Player</th><th>Team</th><th>🟨 Yellow</th><th>🟥 Red</th></tr></thead><tbody><tr><td>1</td><td>Sphephelo Sithole</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/za.png" srcset="https://flagcdn.com/48x36/za.png 2x" class="flag-icon" alt=""><span class="team-name-text">RSA</span></span></td><td></td><td>1</td></tr><tr><td>2</td><td>Themba Zwane</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/za.png" srcset="https://flagcdn.com/48x36/za.png 2x" class="flag-icon" alt=""><span class="team-name-text">RSA</span></span></td><td></td><td>1</td></tr><tr><td>3</td><td>César Montes</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/mx.png" srcset="https://flagcdn.com/48x36/mx.png 2x" class="flag-icon" alt=""><span class="team-name-text">MEX</span></span></td><td></td><td>1</td></tr><tr><td>4</td><td>Lee Gi-hyuk</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/kr.png" srcset="https://flagcdn.com/48x36/kr.png 2x" class="flag-icon" alt=""><span class="team-name-text">KOR</span></span></td><td>1</td><td></td></tr><tr><td>5</td><td>Alistair Johnston</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/ca.png" srcset="https://flagcdn.com/48x36/ca.png 2x" class="flag-icon" alt=""><span class="team-name-text">CAN</span></span></td><td>1</td><td></td></tr><tr><td>6</td><td>Jovo Lukić</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/ba.png" srcset="https://flagcdn.com/48x36/ba.png 2x" class="flag-icon" alt=""><span class="team-name-text">BIH</span></span></td><td>1</td><td></td></tr><tr><td>7</td><td>Juan Jose Caceres</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/py.png" srcset="https://flagcdn.com/48x36/py.png 2x" class="flag-icon" alt=""><span class="team-name-text">PAR</span></span></td><td>1</td><td></td></tr><tr><td>8</td><td>Miguel Almiron</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/py.png" srcset="https://flagcdn.com/48x36/py.png 2x" class="flag-icon" alt=""><span class="team-name-text">PAR</span></span></td><td>1</td><td></td></tr><tr><td>9</td><td>Tyler Adams</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt=""><span class="team-name-text">USA</span></span></td><td>1</td><td></td></tr><tr><td>10</td><td>Mahmoud Abunada</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/qa.png" srcset="https://flagcdn.com/48x36/qa.png 2x" class="flag-icon" alt=""><span class="team-name-text">QAT</span></span></td><td>1</td><td></td></tr><tr><td>11</td><td>Jassem Gaber Abdulsallam</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/qa.png" srcset="https://flagcdn.com/48x36/qa.png 2x" class="flag-icon" alt=""><span class="team-name-text">QAT</span></span></td><td>1</td><td></td></tr><tr><td>12</td><td>Denis Zakaria</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/ch.png" srcset="https://flagcdn.com/48x36/ch.png 2x" class="flag-icon" alt=""><span class="team-name-text">SUI</span></span></td><td>1</td><td></td></tr><tr><td>13</td><td>Casemiro</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/br.png" srcset="https://flagcdn.com/48x36/br.png 2x" class="flag-icon" alt=""><span class="team-name-text">BRA</span></span></td><td>1</td><td></td></tr><tr><td>14</td><td>Roger Ibañez</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/br.png" srcset="https://flagcdn.com/48x36/br.png 2x" class="flag-icon" alt=""><span class="team-name-text">BRA</span></span></td><td>1</td><td></td></tr><tr><td>15</td><td>Crysencio Summerville</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/nl.png" srcset="https://flagcdn.com/48x36/nl.png 2x" class="flag-icon" alt=""><span class="team-name-text">NED</span></span></td><td>1</td><td></td></tr><tr><td>16</td><td>Memphis Depay</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/nl.png" srcset="https://flagcdn.com/48x36/nl.png 2x" class="flag-icon" alt=""><span class="team-name-text">NED</span></span></td><td>1</td><td></td></tr><tr><td>17</td><td>Jhojan Porozo</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/ec.png" srcset="https://flagcdn.com/48x36/ec.png 2x" class="flag-icon" alt=""><span class="team-name-text">ECU</span></span></td><td>1</td><td></td></tr><tr><td>18</td><td>Sidny Cabral</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/cv.png" srcset="https://flagcdn.com/48x36/cv.png 2x" class="flag-icon" alt=""><span class="team-name-text">CPV</span></span></td><td>1</td><td></td></tr></tbody></table>
+    <table><thead><tr><th>Match</th><th>Group</th><th>Player</th><th>Team</th><th>Card</th><th>Minute</th></tr></thead><tbody><tr><td><span class="team-flag"><img src="https://flagcdn.com/24x18/mx.png" srcset="https://flagcdn.com/48x36/mx.png 2x" class="flag-icon" alt=""><span class="team-name-text">MEX</span></span> vs <span class="team-flag"><span class="team-name-text">RSA</span><img src="https://flagcdn.com/24x18/za.png" srcset="https://flagcdn.com/48x36/za.png 2x" class="flag-icon" alt=""></span></td><td>Group A</td><td>Sphephelo Sithole</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/za.png" srcset="https://flagcdn.com/48x36/za.png 2x" class="flag-icon" alt=""><span class="team-name-text">RSA</span></span></td><td>🟥 Red</td><td>49'</td></tr><tr><td><span class="team-flag"><img src="https://flagcdn.com/24x18/mx.png" srcset="https://flagcdn.com/48x36/mx.png 2x" class="flag-icon" alt=""><span class="team-name-text">MEX</span></span> vs <span class="team-flag"><span class="team-name-text">RSA</span><img src="https://flagcdn.com/24x18/za.png" srcset="https://flagcdn.com/48x36/za.png 2x" class="flag-icon" alt=""></span></td><td>Group A</td><td>Themba Zwane</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/za.png" srcset="https://flagcdn.com/48x36/za.png 2x" class="flag-icon" alt=""><span class="team-name-text">RSA</span></span></td><td>🟥 Red</td><td>80'</td></tr><tr><td><span class="team-flag"><img src="https://flagcdn.com/24x18/mx.png" srcset="https://flagcdn.com/48x36/mx.png 2x" class="flag-icon" alt=""><span class="team-name-text">MEX</span></span> vs <span class="team-flag"><span class="team-name-text">RSA</span><img src="https://flagcdn.com/24x18/za.png" srcset="https://flagcdn.com/48x36/za.png 2x" class="flag-icon" alt=""></span></td><td>Group A</td><td>César Montes</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/mx.png" srcset="https://flagcdn.com/48x36/mx.png 2x" class="flag-icon" alt=""><span class="team-name-text">MEX</span></span></td><td>🟥 Red</td><td>92'</td></tr><tr><td><span class="team-flag"><img src="https://flagcdn.com/24x18/kr.png" srcset="https://flagcdn.com/48x36/kr.png 2x" class="flag-icon" alt=""><span class="team-name-text">KOR</span></span> vs <span class="team-flag"><span class="team-name-text">CZE</span><img src="https://flagcdn.com/24x18/cz.png" srcset="https://flagcdn.com/48x36/cz.png 2x" class="flag-icon" alt=""></span></td><td>Group A</td><td>Lee Gi-hyuk</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/kr.png" srcset="https://flagcdn.com/48x36/kr.png 2x" class="flag-icon" alt=""><span class="team-name-text">KOR</span></span></td><td>🟨 Yellow</td><td>90'</td></tr><tr><td><span class="team-flag"><img src="https://flagcdn.com/24x18/ca.png" srcset="https://flagcdn.com/48x36/ca.png 2x" class="flag-icon" alt=""><span class="team-name-text">CAN</span></span> vs <span class="team-flag"><span class="team-name-text">BIH</span><img src="https://flagcdn.com/24x18/ba.png" srcset="https://flagcdn.com/48x36/ba.png 2x" class="flag-icon" alt=""></span></td><td>Group B</td><td>Alistair Johnston</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/ca.png" srcset="https://flagcdn.com/48x36/ca.png 2x" class="flag-icon" alt=""><span class="team-name-text">CAN</span></span></td><td>🟨 Yellow</td><td>35'</td></tr><tr><td><span class="team-flag"><img src="https://flagcdn.com/24x18/ca.png" srcset="https://flagcdn.com/48x36/ca.png 2x" class="flag-icon" alt=""><span class="team-name-text">CAN</span></span> vs <span class="team-flag"><span class="team-name-text">BIH</span><img src="https://flagcdn.com/24x18/ba.png" srcset="https://flagcdn.com/48x36/ba.png 2x" class="flag-icon" alt=""></span></td><td>Group B</td><td>Jovo Lukić</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/ba.png" srcset="https://flagcdn.com/48x36/ba.png 2x" class="flag-icon" alt=""><span class="team-name-text">BIH</span></span></td><td>🟨 Yellow</td><td>55'</td></tr><tr><td><span class="team-flag"><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt=""><span class="team-name-text">USA</span></span> vs <span class="team-flag"><span class="team-name-text">PAR</span><img src="https://flagcdn.com/24x18/py.png" srcset="https://flagcdn.com/48x36/py.png 2x" class="flag-icon" alt=""></span></td><td>Group D</td><td>Juan Jose Caceres</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/py.png" srcset="https://flagcdn.com/48x36/py.png 2x" class="flag-icon" alt=""><span class="team-name-text">PAR</span></span></td><td>🟨 Yellow</td><td>10'</td></tr><tr><td><span class="team-flag"><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt=""><span class="team-name-text">USA</span></span> vs <span class="team-flag"><span class="team-name-text">PAR</span><img src="https://flagcdn.com/24x18/py.png" srcset="https://flagcdn.com/48x36/py.png 2x" class="flag-icon" alt=""></span></td><td>Group D</td><td>Miguel Almiron</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/py.png" srcset="https://flagcdn.com/48x36/py.png 2x" class="flag-icon" alt=""><span class="team-name-text">PAR</span></span></td><td>🟨 Yellow</td><td>50'</td></tr><tr><td><span class="team-flag"><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt=""><span class="team-name-text">USA</span></span> vs <span class="team-flag"><span class="team-name-text">PAR</span><img src="https://flagcdn.com/24x18/py.png" srcset="https://flagcdn.com/48x36/py.png 2x" class="flag-icon" alt=""></span></td><td>Group D</td><td>Tyler Adams</td><td><span class="team-flag"><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" class="flag-icon" alt=""><span class="team-name-text">USA</span></span></td><td>🟨 Yellow</td><td>59'</td></tr></tbody></table>
     </div>
   </section>
   <section>
     <h2>ℹ️ Notes</h2>
-    <ul class="notes"><li>Matchday 1 fixtures shown above (June 11-18 WIB). Matchdays 2-3 (through June 27) and the knockout stage will be added as the tournament progresses.</li><li>Times converted from ET (UTC-4) to WIB (UTC+7, +11h). Some kickoff times/venues are provisional (TBD) pending confirmation from official sources.</li><li>This page updates automatically 3x/day (04:00, 08:00, 12:00 WIB) with the latest scores, scorers, assists, cards, and standings.</li></ul>
+    <ul class="notes"><li>Matchday 1 fixtures shown above (June 11-18 WIB). Matchdays 2-3 (through June 27) and the knockout stage will be added as the tournament progresses.</li><li>Times converted from ET (UTC-4) to WIB (UTC+7, +11h). Some kickoff times/venues are provisional (TBD) pending confirmation from official sources.</li><li>Group A is complete for Matchday 1: Mexico 2-0 South Africa (3 red cards, a World Cup record for an opening match) and South Korea 2-1 Czechia.</li><li>Canada made history with a 1-1 draw against Bosnia-Herzegovina in the first men's World Cup match played on Canadian soil - Canada's first-ever World Cup point.</li><li>United States beat Paraguay 3-1 at SoFi Stadium in Inglewood to open Group D (13 June, kickoff 08:00 WIB) - an own goal by Damian Bobadilla and a brace from Folarin Balogun put the USMNT 3-0 up before Paraguay substitute Mauricio scored a consolation goal in the 73rd minute.</li><li>Next up: Qatar vs Switzerland (14 June, 02:00 WIB) continues Group B, followed by Brazil vs Morocco and Haiti vs Scotland in Group C.</li><li>This page updates automatically 3x/day (04:00, 08:00, 12:00 WIB) with the latest scores, scorers, assists, cards, and standings.</li></ul>
   </section>
 </main>
 <footer>Generated automatically &middot; Data from public web sources &middot; For entertainment/reference purposes</footer>

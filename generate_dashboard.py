@@ -107,7 +107,7 @@ for g in standings:
 # ---- Compute player stats ----
 scorers = defaultdict(lambda: {"team": "", "goals": 0})
 assisters = defaultdict(lambda: {"team": "", "assists": 0})
-card_tally = {}
+cards = []
 
 for m in matches:
     for s in m.get("scorers", []):
@@ -121,12 +121,12 @@ for m in matches:
         assisters[key]["team"] = a["team"]
         assisters[key]["assists"] += 1
     for c in m.get("cards", []):
-        key = (c["player"], c["team"])
-        rec = card_tally.setdefault(key, {"team": c["team"], "player": c["player"], "yellow": 0, "red": 0})
-        if c["type"] == "red":
-            rec["red"] += 1
-        else:
-            rec["yellow"] += 1
+        cards.append({
+            "match": f"{with_flag_code(m['home'])} vs {with_flag_code(m['away'], reverse=True)}",
+            "group": m["group"],
+            "team": c["team"], "player": c["player"],
+            "type": c["type"], "minute": c["minute"]
+        })
 
 # ---- HTML helpers ----
 def fmt_score(m):
@@ -154,39 +154,22 @@ CHART = chr(0x1F4CA)
 INFO = chr(0x2139) + chr(0xFE0F)
 CHECK = chr(0x2705)
 
-def _min_sort(v):
-    s = str(v)
-    if "+" in s:
-        a, b = s.split("+", 1)
-        return int(a) + int(b)
-    return int(s)
-
-def match_card(m, extra_class=""):
-    card_class = "match-card" + (f" {extra_class}" if extra_class else "")
-    highlight_html = ""
-    if m.get("highlight"):
-        highlight_html = f'<a class="highlight-link" href="{m["highlight"]}" target="_blank" rel="noopener">{chr(0x25B6)} Watch Highlights</a>'
+def match_card(m):
     events_html = ""
     if m["scorers"] or m["cards"]:
-        assists_by_scorer = {}
+        rows = []
+        for s in m["scorers"]:
+            rows.append(f'<div class="event">{GOAL} <b>{s["player"]}</b> ({with_flag_code(s["team"])}) - {s["minute"]}\'</div>')
         for a in m.get("assists", []):
             if a["player"] != "Unconfirmed":
-                assists_by_scorer[(a["for"], a["minute"], a["team"])] = a["player"]
-
-        timeline = []
-        for s in m["scorers"]:
-            assist = assists_by_scorer.get((s["player"], s["minute"], s["team"]))
-            assist_str = f' <span class="assist-note">({ASSIST} {assist})</span>' if assist else ""
-            timeline.append((_min_sort(s["minute"]), f'<div class="event"><span class="event-icon">{GOAL}</span>{flag(s["team"])}<b>{s["player"]}</b>{assist_str} <span class="event-min">{s["minute"]}\'</span></div>'))
+                rows.append(f'<div class="event">{ASSIST} <b>{a["player"]}</b> assist for {a["for"]} ({with_flag_code(a["team"])}) - {a["minute"]}\'</div>')
         for c in m["cards"]:
             icon = CARD_RED if c["type"] == "red" else CARD_YELLOW
-            timeline.append((_min_sort(c["minute"]), f'<div class="event"><span class="event-icon">{icon}</span>{flag(c["team"])}<b>{c["player"]}</b> <span class="event-min">{c["minute"]}\'</span></div>'))
-        timeline.sort(key=lambda x: x[0])
-
-        events_html = f'<div class="events">{"".join(row for _, row in timeline)}</div>'
+            rows.append(f'<div class="event">{icon} <b>{c["player"]}</b> ({with_flag_code(c["team"])}) - {c["minute"]}\'</div>')
+        events_html = f'<div class="events">{"".join(rows)}</div>'
 
     return f"""
-    <div class="{card_class}">
+    <div class="match-card">
       <div class="match-top">
         <span class="group-tag">Group {m['group']}</span>
         {status_badge(m)}
@@ -198,7 +181,6 @@ def match_card(m, extra_class=""):
       </div>
       <div class="match-meta">{fmt_date(m['date_wib'])} &middot; {m['venue']}</div>
       {events_html}
-      {highlight_html}
     </div>"""
 
 def standings_table(g):
@@ -221,24 +203,11 @@ def standings_table(g):
     </div>"""
 
 # ---- Build sections ----
-live_matches = sorted([m for m in matches if m["status"] == "LIVE"], key=lambda m: m["date_wib"])
 upcoming_matches = sorted([m for m in matches if m["status"] == "scheduled"], key=lambda m: m["date_wib"])
 finished_matches = sorted([m for m in matches if m["status"] == "FT"], key=lambda m: m["date_wib"], reverse=True)
 
 finished_html = "".join(match_card(m) for m in finished_matches) or '<p class="empty">No completed matches yet.</p>'
 upcoming_html = "".join(match_card(m) for m in upcoming_matches[:12])
-
-if live_matches:
-    live_html = "".join(match_card(m, extra_class="live-card") for m in live_matches)
-    live_section_html = f"""
-  <section id="live">
-    <h2>{RED_CIRCLE} Live Now</h2>
-    <div class="grid">{live_html}</div>
-  </section>"""
-    nav_live_html = '<a href="#live">Live</a>'
-else:
-    live_section_html = ""
-    nav_live_html = ""
 
 schedule_rows = ""
 for m in sorted(matches, key=lambda m: m["date_wib"]):
@@ -263,13 +232,14 @@ assists_html = "".join(
     for i, (p, d) in enumerate(top_assists, 1)
 ) or '<tr><td colspan="4" class="empty">No assists recorded yet.</td></tr>'
 
-cards_sorted = sorted(card_tally.values(), key=lambda c: (-(c["yellow"] + c["red"]), -c["red"], -c["yellow"]))
+RED_LABEL = f"{CARD_RED} Red"
+YELLOW_LABEL = f"{CARD_YELLOW} Yellow"
 
 cards_html = "".join(
-    f"<tr><td>{i}</td><td>{c['player']}</td><td>{with_flag_code(c['team'])}</td>"
-    f"<td>{c['yellow'] or ''}</td><td>{c['red'] or ''}</td></tr>"
-    for i, c in enumerate(cards_sorted, 1)
-) or '<tr><td colspan="5" class="empty">No cards recorded yet.</td></tr>'
+    f"<tr><td>{c['match']}</td><td>Group {c['group']}</td><td>{c['player']}</td><td>{with_flag_code(c['team'])}</td>"
+    f"<td>{RED_LABEL if c['type']=='red' else YELLOW_LABEL}</td><td>{c['minute']}'</td></tr>"
+    for c in cards
+) or '<tr><td colspan="6" class="empty">No cards recorded yet.</td></tr>'
 
 notes_html = "".join(f"<li>{n}</li>" for n in notes)
 
@@ -277,7 +247,6 @@ parts = {
     "trophy": TROPHY, "last_updated": last_updated,
     "calendar": CALENDAR, "check": CHECK, "chart": CHART, "goal": GOAL,
     "card_red": CARD_RED, "card_yellow": CARD_YELLOW, "info": INFO,
-    "live_section_html": live_section_html, "nav_live_html": nav_live_html,
     "upcoming_html": upcoming_html,
     "schedule_rows": schedule_rows, "finished_html": finished_html,
     "standings_html": standings_html, "scorers_html": scorers_html,
@@ -289,3 +258,5 @@ HTML = dashboard_render.render(parts)
 
 with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
     f.write(HTML)
+
+print(f"Dashboard written to {OUTPUT_FILE}")
