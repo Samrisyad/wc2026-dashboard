@@ -1,5 +1,5 @@
 {
-  "last_updated": "15 June 26 · 23:36 WIB",
+  "last_updated": "15 June 26 · 23:53 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -765,7 +765,14 @@
       "date_wib": "2026-06-15 23:00",
       "scorers": [],
       "assists": [],
-      "cards": []
+      "cards": [
+        {
+          "player": "Sidny Cabral",
+          "team": "Cape Verde",
+          "type": "yellow",
+          "minute": 16
+        }
+      ]
     },
     {
       "group": "G",
