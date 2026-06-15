@@ -1,5 +1,5 @@
 {
-  "last_updated": "15 June 26 · 09:37 WIB",
+  "last_updated": "15 June 26 · 09:51 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -686,7 +686,7 @@
       "status": "LIVE",
       "score": {
         "home": 2,
-        "away": 0
+        "away": 1
       },
       "venue": "Estadio BBVA, Monterrey",
       "date_wib": "2026-06-15 09:00",
@@ -700,6 +700,11 @@
           "minute": 30,
           "player": "Alexander Isak",
           "team": "Sweden"
+        },
+        {
+          "minute": 43,
+          "player": "Omar Rekik",
+          "team": "Tunisia"
         }
       ],
       "assists": [
@@ -708,6 +713,12 @@
           "minute": 30,
           "player": "Viktor Gyökeres",
           "team": "Sweden"
+        },
+        {
+          "for": "Omar Rekik",
+          "minute": 43,
+          "player": "Hannibal Mejbri",
+          "team": "Tunisia"
         }
       ],
       "cards": []
