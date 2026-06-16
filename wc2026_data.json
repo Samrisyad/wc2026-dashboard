@@ -1,5 +1,5 @@
 {
-  "last_updated": "16 June 26 \u00b7 02:07 WIB",
+  "last_updated": "16 June 26 · 08:35 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -23,11 +23,11 @@
       "United States",
       "Paraguay",
       "Australia",
-      "T\u00fcrkiye"
+      "Türkiye"
     ],
     "E": [
       "Germany",
-      "Cura\u00e7ao",
+      "Curaçao",
       "Ivory Coast",
       "Ecuador"
     ],
@@ -88,12 +88,12 @@
       "date_wib": "2026-06-12 00:00",
       "scorers": [
         {
-          "player": "Juli\u00e1n Qui\u00f1ones",
+          "player": "Julián Quiñones",
           "team": "Mexico",
           "minute": 9
         },
         {
-          "player": "Ra\u00fal Jim\u00e9nez",
+          "player": "Raúl Jiménez",
           "team": "Mexico",
           "minute": 62
         }
@@ -102,13 +102,13 @@
         {
           "player": "Roberto Alvarado",
           "team": "Mexico",
-          "for": "Juli\u00e1n Qui\u00f1ones",
+          "for": "Julián Quiñones",
           "minute": 9
         },
         {
           "player": "Roberto Alvarado",
           "team": "Mexico",
-          "for": "Ra\u00fal Jim\u00e9nez",
+          "for": "Raúl Jiménez",
           "minute": 62
         }
       ],
@@ -126,7 +126,7 @@
           "minute": 80
         },
         {
-          "player": "C\u00e9sar Montes",
+          "player": "César Montes",
           "team": "Mexico",
           "type": "red",
           "minute": 92
@@ -147,7 +147,7 @@
       "date_wib": "2026-06-12 09:00",
       "scorers": [
         {
-          "player": "Ladislav Krej\u010d\u00ed",
+          "player": "Ladislav Krejčí",
           "team": "Czechia",
           "minute": 59
         },
@@ -164,9 +164,9 @@
       ],
       "assists": [
         {
-          "player": "Vladim\u00edr Coufal",
+          "player": "Vladimír Coufal",
           "team": "Czechia",
-          "for": "Ladislav Krej\u010d\u00ed",
+          "for": "Ladislav Krejčí",
           "minute": 59
         },
         {
@@ -199,7 +199,7 @@
       "date_wib": "2026-06-13 02:00",
       "scorers": [
         {
-          "player": "Jovo Luki\u0107",
+          "player": "Jovo Lukić",
           "team": "Bosnia-Herzegovina",
           "minute": 21
         },
@@ -211,9 +211,9 @@
       ],
       "assists": [
         {
-          "player": "Sead Kola\u0161inac",
+          "player": "Sead Kolašinac",
           "team": "Bosnia-Herzegovina",
-          "for": "Jovo Luki\u0107",
+          "for": "Jovo Lukić",
           "minute": 21
         },
         {
@@ -231,7 +231,7 @@
           "minute": 35
         },
         {
-          "player": "Jovo Luki\u0107",
+          "player": "Jovo Lukić",
           "team": "Bosnia-Herzegovina",
           "type": "yellow",
           "minute": 55
@@ -402,22 +402,22 @@
           "minute": 20
         },
         {
-          "player": "Vin\u00edcius J\u00fanior",
+          "player": "Vinícius Júnior",
           "team": "Brazil",
           "minute": 31
         }
       ],
       "assists": [
         {
-          "player": "Brahim D\u00edaz",
+          "player": "Brahim Díaz",
           "team": "Morocco",
           "for": "Ismael Saibari",
           "minute": 20
         },
         {
-          "player": "Bruno Guimar\u00e3es",
+          "player": "Bruno Guimarães",
           "team": "Brazil",
-          "for": "Vin\u00edcius J\u00fanior",
+          "for": "Vinícius Júnior",
           "minute": 31
         }
       ],
@@ -429,7 +429,7 @@
           "minute": 40
         },
         {
-          "player": "Roger Iba\u00f1ez",
+          "player": "Roger Ibañez",
           "team": "Brazil",
           "type": "yellow",
           "minute": 43
@@ -462,7 +462,7 @@
     {
       "group": "D",
       "home": "Australia",
-      "away": "T\u00fcrkiye",
+      "away": "Türkiye",
       "status": "FT",
       "score": {
         "home": 2,
@@ -489,7 +489,7 @@
     {
       "group": "E",
       "home": "Germany",
-      "away": "Cura\u00e7ao",
+      "away": "Curaçao",
       "status": "FT",
       "score": {
         "home": 7,
@@ -506,7 +506,7 @@
         {
           "minute": 21,
           "player": "Livano Comenencia",
-          "team": "Cura\u00e7ao"
+          "team": "Curaçao"
         },
         {
           "minute": 38,
@@ -709,7 +709,7 @@
         },
         {
           "minute": 59,
-          "player": "Viktor Gy\u00f6keres",
+          "player": "Viktor Gyökeres",
           "team": "Sweden"
         },
         {
@@ -727,7 +727,7 @@
         {
           "for": "Alexander Isak",
           "minute": 30,
-          "player": "Viktor Gy\u00f6keres",
+          "player": "Viktor Gyökeres",
           "team": "Sweden"
         },
         {
@@ -737,7 +737,7 @@
           "team": "Tunisia"
         },
         {
-          "for": "Viktor Gy\u00f6keres",
+          "for": "Viktor Gyökeres",
           "minute": 59,
           "player": "Alexander Isak",
           "team": "Sweden"
@@ -772,44 +772,126 @@
           "type": "yellow",
           "minute": 16
         }
-      ]
+      ],
+      "highlight": "https://www.youtube.com/watch?v=UIAMV4YIQ3I"
     },
     {
       "group": "G",
       "home": "Belgium",
       "away": "Egypt",
-      "status": "LIVE",
+      "status": "FT",
       "score": {
-        "home": 0,
-        "away": 0
+        "home": 1,
+        "away": 1
       },
       "venue": "Lumen Field, Seattle",
       "date_wib": "2026-06-16 02:00",
-      "scorers": [],
-      "assists": [],
-      "cards": []
+      "scorers": [
+        {
+          "player": "Emam Ashour",
+          "team": "Egypt",
+          "minute": 19
+        },
+        {
+          "player": "Mohamed Hany (OG)",
+          "team": "Belgium",
+          "minute": 66
+        }
+      ],
+      "assists": [
+        {
+          "player": "Mohamed Salah",
+          "team": "Egypt",
+          "for": "Emam Ashour",
+          "minute": 19
+        }
+      ],
+      "cards": [
+        {
+          "player": "Marawan Attia",
+          "team": "Egypt",
+          "type": "yellow",
+          "minute": 14
+        },
+        {
+          "player": "Timothy Castagne",
+          "team": "Belgium",
+          "type": "yellow",
+          "minute": 15
+        },
+        {
+          "player": "Ahmed Fatouh",
+          "team": "Egypt",
+          "type": "yellow",
+          "minute": 33
+        }
+      ],
+      "highlight": "https://www.youtube.com/watch?v=7IIM3VFOyRo"
     },
     {
       "group": "H",
       "home": "Saudi Arabia",
       "away": "Uruguay",
-      "status": "scheduled",
-      "score": null,
+      "status": "FT",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
       "venue": "Hard Rock Stadium, Miami Gardens",
       "date_wib": "2026-06-16 05:00",
-      "scorers": [],
-      "assists": [],
-      "cards": []
+      "scorers": [
+        {
+          "player": "Abdulelah Al-Amri",
+          "team": "Saudi Arabia",
+          "minute": 41
+        },
+        {
+          "player": "Maximiliano Araújo",
+          "team": "Uruguay",
+          "minute": 79
+        }
+      ],
+      "assists": [
+        {
+          "player": "Mohamed Kanno",
+          "team": "Saudi Arabia",
+          "for": "Abdulelah Al-Amri",
+          "minute": 41
+        },
+        {
+          "player": "Federico Viñas",
+          "team": "Uruguay",
+          "for": "Maximiliano Araújo",
+          "minute": 79
+        }
+      ],
+      "cards": [
+        {
+          "player": "Abdulelah Al-Amri",
+          "team": "Saudi Arabia",
+          "type": "yellow",
+          "minute": 43
+        }
+      ]
     },
     {
       "group": "G",
       "home": "Iran",
       "away": "New Zealand",
-      "status": "scheduled",
-      "score": null,
+      "status": "LIVE",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
       "venue": "SoFi Stadium, Inglewood",
       "date_wib": "2026-06-16 08:00",
-      "scorers": [],
+      "scorers": [
+        {
+          "player": "Elijah Just",
+          "team": "New Zealand",
+          "minute": 7
+        }
+      ],
       "assists": [],
       "cards": []
     },
@@ -922,9 +1004,9 @@
     "Haiti": "ht",
     "Scotland": "gb-sct",
     "Australia": "au",
-    "T\u00fcrkiye": "tr",
+    "Türkiye": "tr",
     "Germany": "de",
-    "Cura\u00e7ao": "cw",
+    "Curaçao": "cw",
     "Netherlands": "nl",
     "Japan": "jp",
     "Ivory Coast": "ci",
@@ -964,5 +1046,1012 @@
     "Matchday 1 fixtures shown above (June 11-18 WIB). Matchdays 2-3 (through June 27) and the knockout stage will be added as the tournament progresses.",
     "Times converted from ET (UTC-4) to WIB (UTC+7, +11h). Some kickoff times/venues are provisional (TBD) pending confirmation from official sources.",
     "This page updates automatically 3x/day (04:00, 08:00, 12:00 WIB) with the latest scores, scorers, assists, cards, and standings."
+  ],
+  "standings": {
+    "A": [
+      {
+        "team": "Mexico",
+        "gp": 1,
+        "w": 1,
+        "d": 0,
+        "l": 0,
+        "gf": 2,
+        "ga": 0,
+        "gd": 2,
+        "pts": 3
+      },
+      {
+        "team": "South Korea",
+        "gp": 1,
+        "w": 1,
+        "d": 0,
+        "l": 0,
+        "gf": 2,
+        "ga": 1,
+        "gd": 1,
+        "pts": 3
+      },
+      {
+        "team": "Czechia",
+        "gp": 1,
+        "w": 0,
+        "d": 0,
+        "l": 1,
+        "gf": 1,
+        "ga": 2,
+        "gd": -1,
+        "pts": 0
+      },
+      {
+        "team": "South Africa",
+        "gp": 1,
+        "w": 0,
+        "d": 0,
+        "l": 1,
+        "gf": 0,
+        "ga": 2,
+        "gd": -2,
+        "pts": 0
+      }
+    ],
+    "B": [
+      {
+        "team": "Canada",
+        "gp": 1,
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "Bosnia-Herzegovina",
+        "gp": 1,
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "Qatar",
+        "gp": 1,
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "Switzerland",
+        "gp": 1,
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
+      }
+    ],
+    "C": [
+      {
+        "team": "Scotland",
+        "gp": 1,
+        "w": 1,
+        "d": 0,
+        "l": 0,
+        "gf": 1,
+        "ga": 0,
+        "gd": 1,
+        "pts": 3
+      },
+      {
+        "team": "Brazil",
+        "gp": 1,
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "Morocco",
+        "gp": 1,
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "Haiti",
+        "gp": 1,
+        "w": 0,
+        "d": 0,
+        "l": 1,
+        "gf": 0,
+        "ga": 1,
+        "gd": -1,
+        "pts": 0
+      }
+    ],
+    "D": [
+      {
+        "team": "United States",
+        "gp": 1,
+        "w": 1,
+        "d": 0,
+        "l": 0,
+        "gf": 4,
+        "ga": 1,
+        "gd": 3,
+        "pts": 3
+      },
+      {
+        "team": "Australia",
+        "gp": 1,
+        "w": 1,
+        "d": 0,
+        "l": 0,
+        "gf": 2,
+        "ga": 0,
+        "gd": 2,
+        "pts": 3
+      },
+      {
+        "team": "Türkiye",
+        "gp": 1,
+        "w": 0,
+        "d": 0,
+        "l": 1,
+        "gf": 0,
+        "ga": 2,
+        "gd": -2,
+        "pts": 0
+      },
+      {
+        "team": "Paraguay",
+        "gp": 1,
+        "w": 0,
+        "d": 0,
+        "l": 1,
+        "gf": 1,
+        "ga": 4,
+        "gd": -3,
+        "pts": 0
+      }
+    ],
+    "E": [
+      {
+        "team": "Germany",
+        "gp": 1,
+        "w": 1,
+        "d": 0,
+        "l": 0,
+        "gf": 7,
+        "ga": 1,
+        "gd": 6,
+        "pts": 3
+      },
+      {
+        "team": "Ivory Coast",
+        "gp": 1,
+        "w": 1,
+        "d": 0,
+        "l": 0,
+        "gf": 1,
+        "ga": 0,
+        "gd": 1,
+        "pts": 3
+      },
+      {
+        "team": "Ecuador",
+        "gp": 1,
+        "w": 0,
+        "d": 0,
+        "l": 1,
+        "gf": 0,
+        "ga": 1,
+        "gd": -1,
+        "pts": 0
+      },
+      {
+        "team": "Curaçao",
+        "gp": 1,
+        "w": 0,
+        "d": 0,
+        "l": 1,
+        "gf": 1,
+        "ga": 7,
+        "gd": -6,
+        "pts": 0
+      }
+    ],
+    "F": [
+      {
+        "team": "Sweden",
+        "gp": 1,
+        "w": 1,
+        "d": 0,
+        "l": 0,
+        "gf": 5,
+        "ga": 1,
+        "gd": 4,
+        "pts": 3
+      },
+      {
+        "team": "Netherlands",
+        "gp": 1,
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 2,
+        "ga": 2,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "Japan",
+        "gp": 1,
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 2,
+        "ga": 2,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "Tunisia",
+        "gp": 1,
+        "w": 0,
+        "d": 0,
+        "l": 1,
+        "gf": 1,
+        "ga": 5,
+        "gd": -4,
+        "pts": 0
+      }
+    ],
+    "G": [
+      {
+        "team": "Belgium",
+        "gp": 1,
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "Egypt",
+        "gp": 1,
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "Iran",
+        "gp": 0,
+        "w": 0,
+        "d": 0,
+        "l": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      },
+      {
+        "team": "New Zealand",
+        "gp": 0,
+        "w": 0,
+        "d": 0,
+        "l": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      }
+    ],
+    "H": [
+      {
+        "team": "Saudi Arabia",
+        "gp": 1,
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "Spain",
+        "gp": 1,
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "Cape Verde",
+        "gp": 1,
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "Uruguay",
+        "gp": 1,
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
+      }
+    ],
+    "I": [
+      {
+        "team": "France",
+        "gp": 0,
+        "w": 0,
+        "d": 0,
+        "l": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      },
+      {
+        "team": "Senegal",
+        "gp": 0,
+        "w": 0,
+        "d": 0,
+        "l": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      },
+      {
+        "team": "Iraq",
+        "gp": 0,
+        "w": 0,
+        "d": 0,
+        "l": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      },
+      {
+        "team": "Norway",
+        "gp": 0,
+        "w": 0,
+        "d": 0,
+        "l": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      }
+    ],
+    "J": [
+      {
+        "team": "Argentina",
+        "gp": 0,
+        "w": 0,
+        "d": 0,
+        "l": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      },
+      {
+        "team": "Algeria",
+        "gp": 0,
+        "w": 0,
+        "d": 0,
+        "l": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      },
+      {
+        "team": "Austria",
+        "gp": 0,
+        "w": 0,
+        "d": 0,
+        "l": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      },
+      {
+        "team": "Jordan",
+        "gp": 0,
+        "w": 0,
+        "d": 0,
+        "l": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      }
+    ],
+    "K": [
+      {
+        "team": "Portugal",
+        "gp": 0,
+        "w": 0,
+        "d": 0,
+        "l": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      },
+      {
+        "team": "DR Congo",
+        "gp": 0,
+        "w": 0,
+        "d": 0,
+        "l": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      },
+      {
+        "team": "Uzbekistan",
+        "gp": 0,
+        "w": 0,
+        "d": 0,
+        "l": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      },
+      {
+        "team": "Colombia",
+        "gp": 0,
+        "w": 0,
+        "d": 0,
+        "l": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      }
+    ],
+    "L": [
+      {
+        "team": "England",
+        "gp": 0,
+        "w": 0,
+        "d": 0,
+        "l": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      },
+      {
+        "team": "Croatia",
+        "gp": 0,
+        "w": 0,
+        "d": 0,
+        "l": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      },
+      {
+        "team": "Ghana",
+        "gp": 0,
+        "w": 0,
+        "d": 0,
+        "l": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      },
+      {
+        "team": "Panama",
+        "gp": 0,
+        "w": 0,
+        "d": 0,
+        "l": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      }
+    ]
+  },
+  "top_scorers": [
+    {
+      "player": "Folarin Balogun",
+      "team": "United States",
+      "goals": 2
+    },
+    {
+      "player": "Kai Havertz",
+      "team": "Germany",
+      "goals": 2
+    },
+    {
+      "player": "Yasin Ayari",
+      "team": "Sweden",
+      "goals": 2
+    },
+    {
+      "player": "Julián Quiñones",
+      "team": "Mexico",
+      "goals": 1
+    },
+    {
+      "player": "Raúl Jiménez",
+      "team": "Mexico",
+      "goals": 1
+    },
+    {
+      "player": "Ladislav Krejčí",
+      "team": "Czechia",
+      "goals": 1
+    },
+    {
+      "player": "Hwang In-beom",
+      "team": "South Korea",
+      "goals": 1
+    },
+    {
+      "player": "Oh Hyeon-gyu",
+      "team": "South Korea",
+      "goals": 1
+    },
+    {
+      "player": "Jovo Lukić",
+      "team": "Bosnia-Herzegovina",
+      "goals": 1
+    },
+    {
+      "player": "Cyle Larin",
+      "team": "Canada",
+      "goals": 1
+    },
+    {
+      "player": "Mauricio (sub)",
+      "team": "Paraguay",
+      "goals": 1
+    },
+    {
+      "player": "Gio Reyna",
+      "team": "United States",
+      "goals": 1
+    },
+    {
+      "player": "Breel Embolo (pen)",
+      "team": "Switzerland",
+      "goals": 1
+    },
+    {
+      "player": "Boualem Khoukhi",
+      "team": "Qatar",
+      "goals": 1
+    },
+    {
+      "player": "Ismael Saibari",
+      "team": "Morocco",
+      "goals": 1
+    },
+    {
+      "player": "Vinícius Júnior",
+      "team": "Brazil",
+      "goals": 1
+    },
+    {
+      "player": "John McGinn",
+      "team": "Scotland",
+      "goals": 1
+    },
+    {
+      "player": "Nestory Irankunda",
+      "team": "Australia",
+      "goals": 1
+    },
+    {
+      "player": "Connor Metcalfe",
+      "team": "Australia",
+      "goals": 1
+    },
+    {
+      "player": "Felix Nmecha",
+      "team": "Germany",
+      "goals": 1
+    },
+    {
+      "player": "Livano Comenencia",
+      "team": "Curaçao",
+      "goals": 1
+    },
+    {
+      "player": "Nico Schlotterbeck",
+      "team": "Germany",
+      "goals": 1
+    },
+    {
+      "player": "Jamal Musiala",
+      "team": "Germany",
+      "goals": 1
+    },
+    {
+      "player": "Nathaniel Brown",
+      "team": "Germany",
+      "goals": 1
+    },
+    {
+      "player": "Denis Undav",
+      "team": "Germany",
+      "goals": 1
+    },
+    {
+      "player": "Virgil van Dijk",
+      "team": "Netherlands",
+      "goals": 1
+    },
+    {
+      "player": "Keito Nakamura",
+      "team": "Japan",
+      "goals": 1
+    },
+    {
+      "player": "Crysencio Summerville",
+      "team": "Netherlands",
+      "goals": 1
+    },
+    {
+      "player": "Daichi Kamada",
+      "team": "Japan",
+      "goals": 1
+    },
+    {
+      "player": "Amad Diallo",
+      "team": "Ivory Coast",
+      "goals": 1
+    },
+    {
+      "player": "Alexander Isak",
+      "team": "Sweden",
+      "goals": 1
+    },
+    {
+      "player": "Omar Rekik",
+      "team": "Tunisia",
+      "goals": 1
+    },
+    {
+      "player": "Viktor Gyökeres",
+      "team": "Sweden",
+      "goals": 1
+    },
+    {
+      "player": "Mattias Svanberg",
+      "team": "Sweden",
+      "goals": 1
+    },
+    {
+      "player": "Emam Ashour",
+      "team": "Egypt",
+      "goals": 1
+    },
+    {
+      "player": "Abdulelah Al-Amri",
+      "team": "Saudi Arabia",
+      "goals": 1
+    },
+    {
+      "player": "Maximiliano Araújo",
+      "team": "Uruguay",
+      "goals": 1
+    },
+    {
+      "player": "Elijah Just",
+      "team": "New Zealand",
+      "goals": 1
+    }
+  ],
+  "top_assists": [
+    {
+      "player": "Roberto Alvarado",
+      "team": "Mexico",
+      "assists": 2
+    },
+    {
+      "player": "Christian Pulisic",
+      "team": "United States",
+      "assists": 2
+    },
+    {
+      "player": "Joshua Kimmich",
+      "team": "Germany",
+      "assists": 2
+    },
+    {
+      "player": "Denis Undav",
+      "team": "Germany",
+      "assists": 2
+    },
+    {
+      "player": "Alexander Isak",
+      "team": "Sweden",
+      "assists": 2
+    },
+    {
+      "player": "Vladimír Coufal",
+      "team": "Czechia",
+      "assists": 1
+    },
+    {
+      "player": "Hwang In-beom",
+      "team": "South Korea",
+      "assists": 1
+    },
+    {
+      "player": "Sead Kolašinac",
+      "team": "Bosnia-Herzegovina",
+      "assists": 1
+    },
+    {
+      "player": "Promise David",
+      "team": "Canada",
+      "assists": 1
+    },
+    {
+      "player": "Unconfirmed",
+      "team": "United States",
+      "assists": 1
+    },
+    {
+      "player": "Unconfirmed",
+      "team": "Paraguay",
+      "assists": 1
+    },
+    {
+      "player": "Tim Weah",
+      "team": "United States",
+      "assists": 1
+    },
+    {
+      "player": "Homam Ahmed",
+      "team": "Qatar",
+      "assists": 1
+    },
+    {
+      "player": "Brahim Díaz",
+      "team": "Morocco",
+      "assists": 1
+    },
+    {
+      "player": "Bruno Guimarães",
+      "team": "Brazil",
+      "assists": 1
+    },
+    {
+      "player": "Florian Wirtz",
+      "team": "Germany",
+      "assists": 1
+    },
+    {
+      "player": "Nathaniel Brown",
+      "team": "Germany",
+      "assists": 1
+    },
+    {
+      "player": "Ryan Gravenberch",
+      "team": "Netherlands",
+      "assists": 1
+    },
+    {
+      "player": "Takefusa Kubo",
+      "team": "Japan",
+      "assists": 1
+    },
+    {
+      "player": "Wilfried Singo",
+      "team": "Ivory Coast",
+      "assists": 1
+    },
+    {
+      "player": "Viktor Gyökeres",
+      "team": "Sweden",
+      "assists": 1
+    },
+    {
+      "player": "Hannibal Mejbri",
+      "team": "Tunisia",
+      "assists": 1
+    },
+    {
+      "player": "Mohamed Salah",
+      "team": "Egypt",
+      "assists": 1
+    },
+    {
+      "player": "Mohamed Kanno",
+      "team": "Saudi Arabia",
+      "assists": 1
+    },
+    {
+      "player": "Federico Viñas",
+      "team": "Uruguay",
+      "assists": 1
+    }
+  ],
+  "cards": [
+    {
+      "player": "Sphephelo Sithole",
+      "team": "South Africa",
+      "yellow": 0,
+      "red": 1
+    },
+    {
+      "player": "Themba Zwane",
+      "team": "South Africa",
+      "yellow": 0,
+      "red": 1
+    },
+    {
+      "player": "César Montes",
+      "team": "Mexico",
+      "yellow": 0,
+      "red": 1
+    },
+    {
+      "player": "Lee Gi-hyuk",
+      "team": "South Korea",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "player": "Alistair Johnston",
+      "team": "Canada",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "player": "Jovo Lukić",
+      "team": "Bosnia-Herzegovina",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "player": "Juan Jose Caceres",
+      "team": "Paraguay",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "player": "Miguel Almiron",
+      "team": "Paraguay",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "player": "Tyler Adams",
+      "team": "United States",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "player": "Mahmoud Abunada",
+      "team": "Qatar",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "player": "Jassem Gaber Abdulsallam",
+      "team": "Qatar",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "player": "Denis Zakaria",
+      "team": "Switzerland",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "player": "Casemiro",
+      "team": "Brazil",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "player": "Roger Ibañez",
+      "team": "Brazil",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "player": "Crysencio Summerville",
+      "team": "Netherlands",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "player": "Memphis Depay",
+      "team": "Netherlands",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "player": "Jhojan Porozo",
+      "team": "Ecuador",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "player": "Sidny Cabral",
+      "team": "Cape Verde",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "player": "Marawan Attia",
+      "team": "Egypt",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "player": "Timothy Castagne",
+      "team": "Belgium",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "player": "Ahmed Fatouh",
+      "team": "Egypt",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "player": "Abdulelah Al-Amri",
+      "team": "Saudi Arabia",
+      "yellow": 1,
+      "red": 0
+    }
   ]
 }
