@@ -1,5 +1,5 @@
 {
-  "last_updated": "16 June 26 · 08:56 WIB",
+  "last_updated": "16 June 26 · 12:05 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -872,7 +872,8 @@
           "type": "yellow",
           "minute": 43
         }
-      ]
+      ],
+      "highlight": "https://www.youtube.com/watch?v=bkM_53CdH3s"
     },
     {
       "group": "G",
@@ -880,8 +881,8 @@
       "away": "New Zealand",
       "status": "FT",
       "score": {
-        "home": 1,
-        "away": 1
+        "home": 2,
+        "away": 2
       },
       "venue": "SoFi Stadium, Inglewood",
       "date_wib": "2026-06-16 08:00",
@@ -895,10 +896,40 @@
           "player": "Ramin Rezaeian",
           "team": "Iran",
           "minute": 32
+        },
+        {
+          "player": "Elijah Just",
+          "team": "New Zealand",
+          "minute": 54
+        },
+        {
+          "player": "Mohammad Mohebbi",
+          "team": "Iran",
+          "minute": 64
         }
       ],
-      "assists": [],
-      "cards": []
+      "assists": [
+        {
+          "player": "Chris Wood",
+          "team": "New Zealand",
+          "for": "Elijah Just",
+          "minute": 7
+        },
+        {
+          "player": "Ramin Rezaeian",
+          "team": "Iran",
+          "for": "Mohammad Mohebbi",
+          "minute": 64
+        }
+      ],
+      "cards": [
+        {
+          "player": "Ehsan Hajisafi",
+          "team": "Iran",
+          "type": "yellow",
+          "minute": 90
+        }
+      ]
     },
     {
       "group": "I",
@@ -1358,8 +1389,8 @@
         "w": 0,
         "d": 1,
         "l": 0,
-        "gf": 1,
-        "ga": 1,
+        "gf": 2,
+        "ga": 2,
         "gd": 0,
         "pts": 1
       },
@@ -1369,8 +1400,8 @@
         "w": 0,
         "d": 1,
         "l": 0,
-        "gf": 1,
-        "ga": 1,
+        "gf": 2,
+        "ga": 2,
         "gd": 0,
         "pts": 1
       }
@@ -1623,6 +1654,11 @@
       "goals": 2
     },
     {
+      "player": "Elijah Just",
+      "team": "New Zealand",
+      "goals": 2
+    },
+    {
       "player": "Julián Quiñones",
       "team": "Mexico",
       "goals": 1
@@ -1793,12 +1829,12 @@
       "goals": 1
     },
     {
-      "player": "Elijah Just",
-      "team": "New Zealand",
+      "player": "Ramin Rezaeian",
+      "team": "Iran",
       "goals": 1
     },
     {
-      "player": "Ramin Rezaeian",
+      "player": "Mohammad Mohebbi",
       "team": "Iran",
       "goals": 1
     }
@@ -1927,6 +1963,16 @@
     {
       "player": "Federico Viñas",
       "team": "Uruguay",
+      "assists": 1
+    },
+    {
+      "player": "Chris Wood",
+      "team": "New Zealand",
+      "assists": 1
+    },
+    {
+      "player": "Ramin Rezaeian",
+      "team": "Iran",
       "assists": 1
     }
   ],
@@ -2060,6 +2106,12 @@
     {
       "player": "Abdulelah Al-Amri",
       "team": "Saudi Arabia",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "player": "Ehsan Hajisafi",
+      "team": "Iran",
       "yellow": 1,
       "red": 0
     }
