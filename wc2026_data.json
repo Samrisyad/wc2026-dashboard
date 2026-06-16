@@ -1,5 +1,5 @@
 {
-  "last_updated": "17 June 26 · 03:09 WIB",
+  "last_updated": "17 June 26 · 05:39 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -936,27 +936,77 @@
       "group": "I",
       "home": "France",
       "away": "Senegal",
-      "status": "LIVE",
+      "status": "FT",
       "score": {
-        "home": 0,
-        "away": 0
+        "home": 3,
+        "away": 1
       },
       "venue": "MetLife Stadium, East Rutherford",
       "date_wib": "2026-06-17 02:00",
-      "scorers": [],
-      "assists": [],
+      "scorers": [
+        {
+          "player": "Kylian Mbappé",
+          "team": "France",
+          "minute": 66
+        },
+        {
+          "player": "Bradley Barcola",
+          "team": "France",
+          "minute": 82
+        },
+        {
+          "player": "Ibrahim Mbaye",
+          "team": "Senegal",
+          "minute": 90
+        },
+        {
+          "player": "Kylian Mbappé",
+          "team": "France",
+          "minute": 96
+        }
+      ],
+      "assists": [
+        {
+          "player": "Michael Olise",
+          "team": "France",
+          "for": "Kylian Mbappé",
+          "minute": 66
+        },
+        {
+          "player": "Adrien Rabiot",
+          "team": "France",
+          "for": "Bradley Barcola",
+          "minute": 82
+        }
+      ],
       "cards": []
     },
     {
       "group": "I",
       "home": "Iraq",
       "away": "Norway",
-      "status": "scheduled",
-      "score": null,
+      "status": "LIVE",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
       "venue": "Gillette Stadium, Foxborough",
       "date_wib": "2026-06-17 05:00",
-      "scorers": [],
-      "assists": [],
+      "scorers": [
+        {
+          "player": "Erling Haaland",
+          "team": "Norway",
+          "minute": 29
+        }
+      ],
+      "assists": [
+        {
+          "player": "Antonio Nusa",
+          "team": "Norway",
+          "for": "Erling Haaland",
+          "minute": 29
+        }
+      ],
       "cards": []
     },
     {
@@ -1459,24 +1509,24 @@
     "I": [
       {
         "team": "France",
-        "gp": 0,
-        "w": 0,
+        "gp": 1,
+        "w": 1,
         "d": 0,
         "l": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
+        "gf": 3,
+        "ga": 1,
+        "gd": 2,
+        "pts": 3
       },
       {
         "team": "Senegal",
-        "gp": 0,
+        "gp": 1,
         "w": 0,
         "d": 0,
-        "l": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
+        "l": 1,
+        "gf": 1,
+        "ga": 3,
+        "gd": -2,
         "pts": 0
       },
       {
@@ -1841,6 +1891,26 @@
       "player": "Mohammad Mohebbi",
       "team": "Iran",
       "goals": 1
+    },
+    {
+      "player": "Kylian Mbappé",
+      "team": "France",
+      "goals": 2
+    },
+    {
+      "player": "Bradley Barcola",
+      "team": "France",
+      "goals": 1
+    },
+    {
+      "player": "Ibrahim Mbaye",
+      "team": "Senegal",
+      "goals": 1
+    },
+    {
+      "player": "Erling Haaland",
+      "team": "Norway",
+      "goals": 1
     }
   ],
   "top_assists": [
@@ -1977,6 +2047,21 @@
     {
       "player": "Ramin Rezaeian",
       "team": "Iran",
+      "assists": 1
+    },
+    {
+      "player": "Michael Olise",
+      "team": "France",
+      "assists": 1
+    },
+    {
+      "player": "Adrien Rabiot",
+      "team": "France",
+      "assists": 1
+    },
+    {
+      "player": "Antonio Nusa",
+      "team": "Norway",
       "assists": 1
     }
   ],
