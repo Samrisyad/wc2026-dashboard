@@ -1,5 +1,5 @@
 {
-  "last_updated": "16 June 26 · 12:05 WIB",
+  "last_updated": "17 June 26 · 02:20 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -929,14 +929,18 @@
           "type": "yellow",
           "minute": 90
         }
-      ]
+      ],
+      "highlight": "https://www.youtube.com/watch?v=vBJBl7EjNI0"
     },
     {
       "group": "I",
       "home": "France",
       "away": "Senegal",
-      "status": "scheduled",
-      "score": null,
+      "status": "LIVE",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
       "venue": "MetLife Stadium, East Rutherford",
       "date_wib": "2026-06-17 02:00",
       "scorers": [],
