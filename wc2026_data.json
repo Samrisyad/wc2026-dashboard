@@ -1,5 +1,5 @@
 {
-  "last_updated": "16 June 26 · 08:35 WIB",
+  "last_updated": "16 June 26 · 08:56 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -878,9 +878,9 @@
       "group": "G",
       "home": "Iran",
       "away": "New Zealand",
-      "status": "LIVE",
+      "status": "FT",
       "score": {
-        "home": 0,
+        "home": 1,
         "away": 1
       },
       "venue": "SoFi Stadium, Inglewood",
@@ -890,6 +890,11 @@
           "player": "Elijah Just",
           "team": "New Zealand",
           "minute": 7
+        },
+        {
+          "player": "Ramin Rezaeian",
+          "team": "Iran",
+          "minute": 32
         }
       ],
       "assists": [],
@@ -1349,25 +1354,25 @@
       },
       {
         "team": "Iran",
-        "gp": 0,
+        "gp": 1,
         "w": 0,
-        "d": 0,
+        "d": 1,
         "l": 0,
-        "gf": 0,
-        "ga": 0,
+        "gf": 1,
+        "ga": 1,
         "gd": 0,
-        "pts": 0
+        "pts": 1
       },
       {
         "team": "New Zealand",
-        "gp": 0,
+        "gp": 1,
         "w": 0,
-        "d": 0,
+        "d": 1,
         "l": 0,
-        "gf": 0,
-        "ga": 0,
+        "gf": 1,
+        "ga": 1,
         "gd": 0,
-        "pts": 0
+        "pts": 1
       }
     ],
     "H": [
@@ -1790,6 +1795,11 @@
     {
       "player": "Elijah Just",
       "team": "New Zealand",
+      "goals": 1
+    },
+    {
+      "player": "Ramin Rezaeian",
+      "team": "Iran",
       "goals": 1
     }
   ],
