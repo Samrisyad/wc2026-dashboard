@@ -1,5 +1,5 @@
 {
-  "last_updated": "17 June 26 · 08:05 WIB",
+  "last_updated": "17 June 26 · 05:39 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -957,7 +957,7 @@
         {
           "player": "Ibrahim Mbaye",
           "team": "Senegal",
-          "minute": "90+5"
+          "minute": 90
         },
         {
           "player": "Kylian Mbappé",
@@ -979,17 +979,16 @@
           "minute": 82
         }
       ],
-      "cards": [],
-      "highlight": "https://www.youtube.com/watch?v=eZbyUJQThe0"
+      "cards": []
     },
     {
       "group": "I",
       "home": "Iraq",
       "away": "Norway",
-      "status": "FT",
+      "status": "LIVE",
       "score": {
-        "home": 1,
-        "away": 4
+        "home": 0,
+        "away": 1
       },
       "venue": "Gillette Stadium, Foxborough",
       "date_wib": "2026-06-17 05:00",
@@ -998,26 +997,6 @@
           "player": "Erling Haaland",
           "team": "Norway",
           "minute": 29
-        },
-        {
-          "player": "Aymen Hussein",
-          "team": "Iraq",
-          "minute": 39
-        },
-        {
-          "player": "Erling Haaland",
-          "team": "Norway",
-          "minute": 43
-        },
-        {
-          "player": "Leo Østigård",
-          "team": "Norway",
-          "minute": 76
-        },
-        {
-          "player": "Aymen Hussein (OG)",
-          "team": "Norway",
-          "minute": "90+6"
         }
       ],
       "assists": [
@@ -1026,38 +1005,16 @@
           "team": "Norway",
           "for": "Erling Haaland",
           "minute": 29
-        },
-        {
-          "player": "Amir Al-Ammari",
-          "team": "Iraq",
-          "for": "Aymen Hussein",
-          "minute": 39
-        },
-        {
-          "player": "Martin Ødegaard",
-          "team": "Norway",
-          "for": "Leo Østigård",
-          "minute": 76
         }
       ],
-      "cards": [
-        {
-          "player": "Zaid Tahseen",
-          "team": "Iraq",
-          "type": "yellow",
-          "minute": 55
-        }
-      ]
+      "cards": []
     },
     {
       "group": "J",
       "home": "Argentina",
       "away": "Algeria",
-      "status": "LIVE",
-      "score": {
-        "home": 0,
-        "away": 0
-      },
+      "status": "scheduled",
+      "score": null,
       "venue": "Arrowhead Stadium, Kansas City",
       "date_wib": "2026-06-17 08:00",
       "scorers": [],
@@ -1574,25 +1531,25 @@
       },
       {
         "team": "Iraq",
-        "gp": 1,
+        "gp": 0,
         "w": 0,
         "d": 0,
-        "l": 1,
-        "gf": 1,
-        "ga": 4,
-        "gd": -3,
+        "l": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
         "pts": 0
       },
       {
         "team": "Norway",
-        "gp": 1,
-        "w": 1,
+        "gp": 0,
+        "w": 0,
         "d": 0,
         "l": 0,
-        "gf": 4,
-        "ga": 1,
-        "gd": 3,
-        "pts": 3
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
       }
     ],
     "J": [
@@ -1953,16 +1910,6 @@
     {
       "player": "Erling Haaland",
       "team": "Norway",
-      "goals": 2
-    },
-    {
-      "player": "Aymen Hussein",
-      "team": "Iraq",
-      "goals": 1
-    },
-    {
-      "player": "Leo Østigård",
-      "team": "Norway",
       "goals": 1
     }
   ],
@@ -2116,16 +2063,6 @@
       "player": "Antonio Nusa",
       "team": "Norway",
       "assists": 1
-    },
-    {
-      "player": "Amir Al-Ammari",
-      "team": "Iraq",
-      "assists": 1
-    },
-    {
-      "player": "Martin Ødegaard",
-      "team": "Norway",
-      "assists": 1
     }
   ],
   "cards": [
@@ -2264,12 +2201,6 @@
     {
       "player": "Ehsan Hajisafi",
       "team": "Iran",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "player": "Zaid Tahseen",
-      "team": "Iraq",
       "yellow": 1,
       "red": 0
     }
