@@ -1,5 +1,5 @@
 {
-  "last_updated": "17 June 26 · 06:10 WIB",
+  "last_updated": "17 June 26 · 08:05 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -957,7 +957,7 @@
         {
           "player": "Ibrahim Mbaye",
           "team": "Senegal",
-          "minute": 90
+          "minute": "90+5"
         },
         {
           "player": "Kylian Mbappé",
@@ -979,16 +979,17 @@
           "minute": 82
         }
       ],
-      "cards": []
+      "cards": [],
+      "highlight": "https://www.youtube.com/watch?v=eZbyUJQThe0"
     },
     {
       "group": "I",
       "home": "Iraq",
       "away": "Norway",
-      "status": "LIVE",
+      "status": "FT",
       "score": {
         "home": 1,
-        "away": 2
+        "away": 4
       },
       "venue": "Gillette Stadium, Foxborough",
       "date_wib": "2026-06-17 05:00",
@@ -1007,6 +1008,16 @@
           "player": "Erling Haaland",
           "team": "Norway",
           "minute": 43
+        },
+        {
+          "player": "Leo Østigård",
+          "team": "Norway",
+          "minute": 76
+        },
+        {
+          "player": "Aymen Hussein (OG)",
+          "team": "Norway",
+          "minute": "90+6"
         }
       ],
       "assists": [
@@ -1021,16 +1032,32 @@
           "team": "Iraq",
           "for": "Aymen Hussein",
           "minute": 39
+        },
+        {
+          "player": "Martin Ødegaard",
+          "team": "Norway",
+          "for": "Leo Østigård",
+          "minute": 76
         }
       ],
-      "cards": []
+      "cards": [
+        {
+          "player": "Zaid Tahseen",
+          "team": "Iraq",
+          "type": "yellow",
+          "minute": 55
+        }
+      ]
     },
     {
       "group": "J",
       "home": "Argentina",
       "away": "Algeria",
-      "status": "scheduled",
-      "score": null,
+      "status": "LIVE",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
       "venue": "Arrowhead Stadium, Kansas City",
       "date_wib": "2026-06-17 08:00",
       "scorers": [],
@@ -1547,25 +1574,25 @@
       },
       {
         "team": "Iraq",
-        "gp": 0,
+        "gp": 1,
         "w": 0,
         "d": 0,
-        "l": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
+        "l": 1,
+        "gf": 1,
+        "ga": 4,
+        "gd": -3,
         "pts": 0
       },
       {
         "team": "Norway",
-        "gp": 0,
-        "w": 0,
+        "gp": 1,
+        "w": 1,
         "d": 0,
         "l": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
+        "gf": 4,
+        "ga": 1,
+        "gd": 3,
+        "pts": 3
       }
     ],
     "J": [
@@ -1932,6 +1959,11 @@
       "player": "Aymen Hussein",
       "team": "Iraq",
       "goals": 1
+    },
+    {
+      "player": "Leo Østigård",
+      "team": "Norway",
+      "goals": 1
     }
   ],
   "top_assists": [
@@ -2089,6 +2121,11 @@
       "player": "Amir Al-Ammari",
       "team": "Iraq",
       "assists": 1
+    },
+    {
+      "player": "Martin Ødegaard",
+      "team": "Norway",
+      "assists": 1
     }
   ],
   "cards": [
@@ -2227,6 +2264,12 @@
     {
       "player": "Ehsan Hajisafi",
       "team": "Iran",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "player": "Zaid Tahseen",
+      "team": "Iraq",
       "yellow": 1,
       "red": 0
     }
