@@ -1,5 +1,5 @@
 {
-  "last_updated": "17 June 26 · 05:39 WIB",
+  "last_updated": "18 June 26 · 08:28 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -957,7 +957,7 @@
         {
           "player": "Ibrahim Mbaye",
           "team": "Senegal",
-          "minute": 90
+          "minute": "90+5"
         },
         {
           "player": "Kylian Mbappé",
@@ -979,16 +979,17 @@
           "minute": 82
         }
       ],
-      "cards": []
+      "cards": [],
+      "highlight": "https://www.youtube.com/watch?v=eZbyUJQThe0"
     },
     {
       "group": "I",
       "home": "Iraq",
       "away": "Norway",
-      "status": "LIVE",
+      "status": "FT",
       "score": {
-        "home": 0,
-        "away": 1
+        "home": 1,
+        "away": 4
       },
       "venue": "Gillette Stadium, Foxborough",
       "date_wib": "2026-06-17 05:00",
@@ -997,6 +998,26 @@
           "player": "Erling Haaland",
           "team": "Norway",
           "minute": 29
+        },
+        {
+          "player": "Aymen Hussein",
+          "team": "Iraq",
+          "minute": 39
+        },
+        {
+          "player": "Erling Haaland",
+          "team": "Norway",
+          "minute": 43
+        },
+        {
+          "player": "Leo Østigård",
+          "team": "Norway",
+          "minute": 76
+        },
+        {
+          "player": "Aymen Hussein (OG)",
+          "team": "Norway",
+          "minute": "90+6"
         }
       ],
       "assists": [
@@ -1005,68 +1026,260 @@
           "team": "Norway",
           "for": "Erling Haaland",
           "minute": 29
+        },
+        {
+          "player": "Amir Al-Ammari",
+          "team": "Iraq",
+          "for": "Aymen Hussein",
+          "minute": 39
+        },
+        {
+          "player": "Martin Ødegaard",
+          "team": "Norway",
+          "for": "Leo Østigård",
+          "minute": 76
         }
       ],
-      "cards": []
+      "cards": [
+        {
+          "player": "Zaid Tahseen",
+          "team": "Iraq",
+          "type": "yellow",
+          "minute": 55
+        }
+      ],
+      "highlight": "https://www.youtube.com/watch?v=PC90bgSzN7g"
     },
     {
       "group": "J",
       "home": "Argentina",
       "away": "Algeria",
-      "status": "scheduled",
-      "score": null,
+      "status": "FT",
+      "score": {
+        "home": 3,
+        "away": 0
+      },
       "venue": "Arrowhead Stadium, Kansas City",
       "date_wib": "2026-06-17 08:00",
-      "scorers": [],
-      "assists": [],
-      "cards": []
+      "scorers": [
+        {
+          "player": "Lionel Messi",
+          "team": "Argentina",
+          "minute": 17
+        },
+        {
+          "player": "Lionel Messi",
+          "team": "Argentina",
+          "minute": 60
+        },
+        {
+          "player": "Lionel Messi",
+          "team": "Argentina",
+          "minute": 76
+        }
+      ],
+      "assists": [
+        {
+          "player": "Rodrigo De Paul",
+          "team": "Argentina",
+          "for": "Lionel Messi",
+          "minute": 17
+        },
+        {
+          "player": "Alexis Mac Allister",
+          "team": "Argentina",
+          "for": "Lionel Messi",
+          "minute": 60
+        },
+        {
+          "player": "Rodrigo De Paul",
+          "team": "Argentina",
+          "for": "Lionel Messi",
+          "minute": 76
+        }
+      ],
+      "cards": [],
+      "highlight": "https://www.youtube.com/watch?v=aKSUV_YUJiE"
     },
     {
       "group": "J",
       "home": "Austria",
       "away": "Jordan",
-      "status": "scheduled",
-      "score": null,
+      "status": "FT",
+      "score": {
+        "home": 3,
+        "away": 1
+      },
       "venue": "Levi's Stadium, Santa Clara",
       "date_wib": "2026-06-17 11:00",
-      "scorers": [],
+      "scorers": [
+        {
+          "player": "Romano Schmid",
+          "team": "Austria",
+          "minute": 20
+        },
+        {
+          "player": "Ali Olwan",
+          "team": "Jordan",
+          "minute": 50
+        },
+        {
+          "player": "Yazan Al-Arab (OG)",
+          "team": "Austria",
+          "minute": 76
+        },
+        {
+          "player": "Marko Arnautovic (pen)",
+          "team": "Austria",
+          "minute": "90+12"
+        }
+      ],
       "assists": [],
-      "cards": []
+      "cards": [],
+      "highlight": "https://www.youtube.com/watch?v=QL3mJ4s_Boo"
     },
     {
       "group": "K",
       "home": "Portugal",
       "away": "DR Congo",
-      "status": "scheduled",
-      "score": null,
+      "status": "FT",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
       "venue": "NRG Stadium, Houston",
       "date_wib": "2026-06-18 00:00",
-      "scorers": [],
-      "assists": [],
+      "scorers": [
+        {
+          "player": "João Neves",
+          "team": "Portugal",
+          "minute": 6
+        },
+        {
+          "player": "Yoane Wissa",
+          "team": "DR Congo",
+          "minute": "45+5"
+        }
+      ],
+      "assists": [
+        {
+          "player": "Pedro Neto",
+          "team": "Portugal",
+          "for": "João Neves",
+          "minute": 6
+        },
+        {
+          "player": "Arthur Masuaku",
+          "team": "DR Congo",
+          "for": "Yoane Wissa",
+          "minute": "45+5"
+        }
+      ],
       "cards": []
     },
     {
       "group": "L",
       "home": "England",
       "away": "Croatia",
-      "status": "scheduled",
-      "score": null,
+      "status": "FT",
+      "score": {
+        "home": 4,
+        "away": 2
+      },
       "venue": "AT&T Stadium, Arlington",
       "date_wib": "2026-06-18 03:00",
-      "scorers": [],
-      "assists": [],
+      "scorers": [
+        {
+          "player": "Harry Kane (pen)",
+          "team": "England",
+          "minute": 12
+        },
+        {
+          "player": "Martin Baturina",
+          "team": "Croatia",
+          "minute": 36
+        },
+        {
+          "player": "Harry Kane",
+          "team": "England",
+          "minute": 42
+        },
+        {
+          "player": "Petar Musa",
+          "team": "Croatia",
+          "minute": "45+5"
+        },
+        {
+          "player": "Jude Bellingham",
+          "team": "England",
+          "minute": 47
+        },
+        {
+          "player": "Marcus Rashford",
+          "team": "England",
+          "minute": 85
+        }
+      ],
+      "assists": [
+        {
+          "player": "Petar Sučić",
+          "team": "Croatia",
+          "for": "Martin Baturina",
+          "minute": 36
+        },
+        {
+          "player": "Declan Rice",
+          "team": "England",
+          "for": "Harry Kane",
+          "minute": 42
+        },
+        {
+          "player": "Ivan Perišić",
+          "team": "Croatia",
+          "for": "Petar Musa",
+          "minute": "45+5"
+        },
+        {
+          "player": "Elliot Anderson",
+          "team": "England",
+          "for": "Jude Bellingham",
+          "minute": 47
+        },
+        {
+          "player": "Bukayo Saka",
+          "team": "England",
+          "for": "Marcus Rashford",
+          "minute": 85
+        }
+      ],
       "cards": []
     },
     {
       "group": "L",
       "home": "Ghana",
       "away": "Panama",
-      "status": "scheduled",
-      "score": null,
+      "status": "FT",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
       "venue": "BMO Field, Toronto",
       "date_wib": "2026-06-18 06:00",
-      "scorers": [],
-      "assists": [],
+      "scorers": [
+        {
+          "player": "Caleb Yirenkyi",
+          "team": "Ghana",
+          "minute": "90+5"
+        }
+      ],
+      "assists": [
+        {
+          "player": "Brandon Thomas-Asante",
+          "team": "Ghana",
+          "for": "Caleb Yirenkyi",
+          "minute": "90+5"
+        }
+      ],
       "cards": []
     },
     {
@@ -1080,6 +1293,582 @@
       "scorers": [],
       "assists": [],
       "cards": []
+    },
+    {
+      "date_wib": "2026-06-18 23:00",
+      "group": "A",
+      "home": "Czechia",
+      "away": "South Africa",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "Mercedes-Benz Stadium, Atlanta"
+    },
+    {
+      "date_wib": "2026-06-19 02:00",
+      "group": "B",
+      "home": "Switzerland",
+      "away": "Bosnia-Herzegovina",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "SoFi Stadium, Inglewood"
+    },
+    {
+      "date_wib": "2026-06-19 05:00",
+      "group": "B",
+      "home": "Canada",
+      "away": "Qatar",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "BC Place, Vancouver"
+    },
+    {
+      "date_wib": "2026-06-19 08:00",
+      "group": "A",
+      "home": "Mexico",
+      "away": "South Korea",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "Estadio Akron, Guadalajara"
+    },
+    {
+      "date_wib": "2026-06-20 02:00",
+      "group": "D",
+      "home": "United States",
+      "away": "Australia",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "Lumen Field, Seattle"
+    },
+    {
+      "date_wib": "2026-06-20 05:00",
+      "group": "C",
+      "home": "Scotland",
+      "away": "Morocco",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "Gillette Stadium, Foxborough"
+    },
+    {
+      "date_wib": "2026-06-20 07:30",
+      "group": "C",
+      "home": "Brazil",
+      "away": "Haiti",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "Lincoln Financial Field, Philadelphia"
+    },
+    {
+      "date_wib": "2026-06-20 10:00",
+      "group": "D",
+      "home": "Türkiye",
+      "away": "Paraguay",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "Levi's Stadium, Santa Clara"
+    },
+    {
+      "date_wib": "2026-06-21 00:00",
+      "group": "F",
+      "home": "Netherlands",
+      "away": "Sweden",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "NRG Stadium, Houston"
+    },
+    {
+      "date_wib": "2026-06-21 03:00",
+      "group": "E",
+      "home": "Germany",
+      "away": "Ivory Coast",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "BMO Field, Toronto"
+    },
+    {
+      "date_wib": "2026-06-21 07:00",
+      "group": "E",
+      "home": "Ecuador",
+      "away": "Curaçao",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "Arrowhead Stadium, Kansas City"
+    },
+    {
+      "date_wib": "2026-06-21 11:00",
+      "group": "F",
+      "home": "Tunisia",
+      "away": "Japan",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "Estadio BBVA, Monterrey"
+    },
+    {
+      "date_wib": "2026-06-21 23:00",
+      "group": "H",
+      "home": "Spain",
+      "away": "Saudi Arabia",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "Mercedes-Benz Stadium, Atlanta"
+    },
+    {
+      "date_wib": "2026-06-22 02:00",
+      "group": "G",
+      "home": "Belgium",
+      "away": "Iran",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "SoFi Stadium, Inglewood"
+    },
+    {
+      "date_wib": "2026-06-22 05:00",
+      "group": "H",
+      "home": "Uruguay",
+      "away": "Cape Verde",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "Hard Rock Stadium, Miami Gardens"
+    },
+    {
+      "date_wib": "2026-06-22 08:00",
+      "group": "G",
+      "home": "New Zealand",
+      "away": "Egypt",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "BC Place, Vancouver"
+    },
+    {
+      "date_wib": "2026-06-23 00:00",
+      "group": "J",
+      "home": "Argentina",
+      "away": "Austria",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "AT&T Stadium, Arlington"
+    },
+    {
+      "date_wib": "2026-06-23 04:00",
+      "group": "I",
+      "home": "France",
+      "away": "Iraq",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "Lincoln Financial Field, Philadelphia"
+    },
+    {
+      "date_wib": "2026-06-23 07:00",
+      "group": "I",
+      "home": "Norway",
+      "away": "Senegal",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "BMO Field, Toronto"
+    },
+    {
+      "date_wib": "2026-06-23 10:00",
+      "group": "J",
+      "home": "Jordan",
+      "away": "Algeria",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "Levi's Stadium, Santa Clara"
+    },
+    {
+      "date_wib": "2026-06-24 00:00",
+      "group": "K",
+      "home": "Portugal",
+      "away": "Uzbekistan",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "NRG Stadium, Houston"
+    },
+    {
+      "date_wib": "2026-06-24 03:00",
+      "group": "L",
+      "home": "England",
+      "away": "Ghana",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "Gillette Stadium, Foxborough"
+    },
+    {
+      "date_wib": "2026-06-24 06:00",
+      "group": "L",
+      "home": "Panama",
+      "away": "Croatia",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "Gillette Stadium, Foxborough"
+    },
+    {
+      "date_wib": "2026-06-24 09:00",
+      "group": "K",
+      "home": "Colombia",
+      "away": "DR Congo",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "Estadio Akron, Guadalajara"
+    },
+    {
+      "date_wib": "2026-06-25 02:00",
+      "group": "B",
+      "home": "Switzerland",
+      "away": "Canada",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "BC Place, Vancouver"
+    },
+    {
+      "date_wib": "2026-06-25 02:00",
+      "group": "B",
+      "home": "Bosnia-Herzegovina",
+      "away": "Qatar",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "Lumen Field, Seattle"
+    },
+    {
+      "date_wib": "2026-06-25 05:00",
+      "group": "C",
+      "home": "Morocco",
+      "away": "Haiti",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "Mercedes-Benz Stadium, Atlanta"
+    },
+    {
+      "date_wib": "2026-06-25 05:00",
+      "group": "C",
+      "home": "Scotland",
+      "away": "Brazil",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "Hard Rock Stadium, Miami Gardens"
+    },
+    {
+      "date_wib": "2026-06-25 08:00",
+      "group": "A",
+      "home": "South Africa",
+      "away": "South Korea",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "Estadio BBVA, Monterrey"
+    },
+    {
+      "date_wib": "2026-06-25 08:00",
+      "group": "A",
+      "home": "Czechia",
+      "away": "Mexico",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "Estadio Azteca, Mexico City"
+    },
+    {
+      "date_wib": "2026-06-26 03:00",
+      "group": "E",
+      "home": "Curaçao",
+      "away": "Ivory Coast",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "Lincoln Financial Field, Philadelphia"
+    },
+    {
+      "date_wib": "2026-06-26 03:00",
+      "group": "E",
+      "home": "Ecuador",
+      "away": "Germany",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "MetLife Stadium, East Rutherford"
+    },
+    {
+      "date_wib": "2026-06-26 06:00",
+      "group": "F",
+      "home": "Tunisia",
+      "away": "Netherlands",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "Arrowhead Stadium, Kansas City"
+    },
+    {
+      "date_wib": "2026-06-26 06:00",
+      "group": "F",
+      "home": "Japan",
+      "away": "Sweden",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "AT&T Stadium, Arlington"
+    },
+    {
+      "date_wib": "2026-06-26 09:00",
+      "group": "D",
+      "home": "Türkiye",
+      "away": "United States",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "SoFi Stadium, Inglewood"
+    },
+    {
+      "date_wib": "2026-06-26 09:00",
+      "group": "D",
+      "home": "Paraguay",
+      "away": "Australia",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "Levi's Stadium, Santa Clara"
+    },
+    {
+      "date_wib": "2026-06-27 02:00",
+      "group": "I",
+      "home": "Norway",
+      "away": "France",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "Gillette Stadium, Foxborough"
+    },
+    {
+      "date_wib": "2026-06-27 02:00",
+      "group": "I",
+      "home": "Senegal",
+      "away": "Iraq",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "BMO Field, Toronto"
+    },
+    {
+      "date_wib": "2026-06-27 07:00",
+      "group": "H",
+      "home": "Cape Verde",
+      "away": "Saudi Arabia",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "NRG Stadium, Houston"
+    },
+    {
+      "date_wib": "2026-06-27 07:00",
+      "group": "H",
+      "home": "Uruguay",
+      "away": "Spain",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "Estadio Akron, Guadalajara"
+    },
+    {
+      "date_wib": "2026-06-27 10:00",
+      "group": "G",
+      "home": "New Zealand",
+      "away": "Belgium",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "BC Place, Vancouver"
+    },
+    {
+      "date_wib": "2026-06-27 10:00",
+      "group": "G",
+      "home": "Egypt",
+      "away": "Iran",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "Lumen Field, Seattle"
+    },
+    {
+      "date_wib": "2026-06-28 04:00",
+      "group": "L",
+      "home": "Panama",
+      "away": "England",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "MetLife Stadium, East Rutherford"
+    },
+    {
+      "date_wib": "2026-06-28 04:00",
+      "group": "L",
+      "home": "Croatia",
+      "away": "Ghana",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "Lincoln Financial Field, Philadelphia"
+    },
+    {
+      "date_wib": "2026-06-28 06:30",
+      "group": "K",
+      "home": "Colombia",
+      "away": "Portugal",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "Hard Rock Stadium, Miami Gardens"
+    },
+    {
+      "date_wib": "2026-06-28 06:30",
+      "group": "K",
+      "home": "DR Congo",
+      "away": "Uzbekistan",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "Mercedes-Benz Stadium, Atlanta"
+    },
+    {
+      "date_wib": "2026-06-28 09:00",
+      "group": "J",
+      "home": "Algeria",
+      "away": "Austria",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "Arrowhead Stadium, Kansas City"
+    },
+    {
+      "date_wib": "2026-06-28 09:00",
+      "group": "J",
+      "home": "Jordan",
+      "away": "Argentina",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "venue": "AT&T Stadium, Arlington"
     }
   ],
   "flags": {
@@ -1531,70 +2320,70 @@
       },
       {
         "team": "Iraq",
-        "gp": 0,
+        "gp": 1,
         "w": 0,
         "d": 0,
-        "l": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
+        "l": 1,
+        "gf": 1,
+        "ga": 4,
+        "gd": -3,
         "pts": 0
       },
       {
         "team": "Norway",
-        "gp": 0,
-        "w": 0,
+        "gp": 1,
+        "w": 1,
         "d": 0,
         "l": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
+        "gf": 4,
+        "ga": 1,
+        "gd": 3,
+        "pts": 3
       }
     ],
     "J": [
       {
         "team": "Argentina",
-        "gp": 0,
-        "w": 0,
+        "gp": 1,
+        "w": 1,
         "d": 0,
         "l": 0,
-        "gf": 0,
+        "gf": 3,
         "ga": 0,
-        "gd": 0,
-        "pts": 0
+        "gd": 3,
+        "pts": 3
       },
       {
         "team": "Algeria",
-        "gp": 0,
+        "gp": 1,
         "w": 0,
         "d": 0,
-        "l": 0,
+        "l": 1,
         "gf": 0,
-        "ga": 0,
-        "gd": 0,
+        "ga": 3,
+        "gd": -3,
         "pts": 0
       },
       {
         "team": "Austria",
-        "gp": 0,
-        "w": 0,
+        "gp": 1,
+        "w": 1,
         "d": 0,
         "l": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
+        "gf": 3,
+        "ga": 1,
+        "gd": 2,
+        "pts": 3
       },
       {
         "team": "Jordan",
-        "gp": 0,
+        "gp": 1,
         "w": 0,
         "d": 0,
-        "l": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
+        "l": 1,
+        "gf": 1,
+        "ga": 3,
+        "gd": -2,
         "pts": 0
       }
     ],
@@ -1693,6 +2482,11 @@
   },
   "top_scorers": [
     {
+      "player": "Lionel Messi",
+      "team": "Argentina",
+      "goals": 3
+    },
+    {
       "player": "Folarin Balogun",
       "team": "United States",
       "goals": 2
@@ -1710,6 +2504,16 @@
     {
       "player": "Elijah Just",
       "team": "New Zealand",
+      "goals": 2
+    },
+    {
+      "player": "Kylian Mbappé",
+      "team": "France",
+      "goals": 2
+    },
+    {
+      "player": "Erling Haaland",
+      "team": "Norway",
       "goals": 2
     },
     {
@@ -1893,11 +2697,6 @@
       "goals": 1
     },
     {
-      "player": "Kylian Mbappé",
-      "team": "France",
-      "goals": 2
-    },
-    {
       "player": "Bradley Barcola",
       "team": "France",
       "goals": 1
@@ -1908,8 +2707,28 @@
       "goals": 1
     },
     {
-      "player": "Erling Haaland",
+      "player": "Aymen Hussein",
+      "team": "Iraq",
+      "goals": 1
+    },
+    {
+      "player": "Leo Østigård",
       "team": "Norway",
+      "goals": 1
+    },
+    {
+      "player": "Romano Schmid",
+      "team": "Austria",
+      "goals": 1
+    },
+    {
+      "player": "Ali Olwan",
+      "team": "Jordan",
+      "goals": 1
+    },
+    {
+      "player": "Marko Arnautovic (pen)",
+      "team": "Austria",
       "goals": 1
     }
   ],
@@ -2063,6 +2882,26 @@
       "player": "Antonio Nusa",
       "team": "Norway",
       "assists": 1
+    },
+    {
+      "player": "Amir Al-Ammari",
+      "team": "Iraq",
+      "assists": 1
+    },
+    {
+      "player": "Martin Ødegaard",
+      "team": "Norway",
+      "assists": 1
+    },
+    {
+      "player": "Rodrigo De Paul",
+      "team": "Argentina",
+      "assists": 2
+    },
+    {
+      "player": "Alexis Mac Allister",
+      "team": "Argentina",
+      "assists": 1
     }
   ],
   "cards": [
@@ -2201,6 +3040,12 @@
     {
       "player": "Ehsan Hajisafi",
       "team": "Iran",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "player": "Zaid Tahseen",
+      "team": "Iraq",
       "yellow": 1,
       "red": 0
     }
