@@ -1,5 +1,5 @@
 {
-  "last_updated": "20 June 26 · 09:30 WIB",
+  "last_updated": "20 June 26 · 11:45 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -1684,7 +1684,7 @@
       "group": "C",
       "home": "Brazil",
       "away": "Haiti",
-      "status": "LIVE",
+      "status": "FT",
       "score": {
         "home": 3,
         "away": 0
@@ -1693,17 +1693,17 @@
         {
           "player": "Matheus Cunha",
           "team": "Brazil",
-          "minute": 27
+          "minute": 24
         },
         {
           "player": "Matheus Cunha",
           "team": "Brazil",
-          "minute": 38
+          "minute": 36
         },
         {
           "player": "Vinícius Júnior",
           "team": "Brazil",
-          "minute": "45+4"
+          "minute": "45+3"
         }
       ],
       "assists": [
@@ -1711,13 +1711,13 @@
           "player": "Vinícius Júnior",
           "team": "Brazil",
           "for": "Matheus Cunha",
-          "minute": 38
+          "minute": 36
         },
         {
           "player": "Lucas Paquetá",
           "team": "Brazil",
           "for": "Vinícius Júnior",
-          "minute": "45+4"
+          "minute": "45+3"
         }
       ],
       "cards": [
@@ -1731,7 +1731,19 @@
           "player": "Frantzdy Pierrot",
           "team": "Haiti",
           "type": "yellow",
-          "minute": "45+7"
+          "minute": "45+4"
+        },
+        {
+          "player": "Douglas Santos",
+          "team": "Brazil",
+          "type": "yellow",
+          "minute": 70
+        },
+        {
+          "player": "Danley Jean Jacques",
+          "team": "Haiti",
+          "type": "yellow",
+          "minute": 75
         }
       ],
       "venue": "Lincoln Financial Field, Philadelphia"
@@ -1741,11 +1753,34 @@
       "group": "D",
       "home": "Türkiye",
       "away": "Paraguay",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
-      "cards": [],
+      "status": "FT",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "scorers": [
+        {
+          "player": "Matías Galarza",
+          "team": "Paraguay",
+          "minute": 2
+        }
+      ],
+      "assists": [
+        {
+          "player": "Julio Enciso",
+          "team": "Paraguay",
+          "for": "Matías Galarza",
+          "minute": 2
+        }
+      ],
+      "cards": [
+        {
+          "player": "Miguel Almirón",
+          "team": "Paraguay",
+          "type": "red",
+          "minute": "45+3"
+        }
+      ],
       "venue": "Levi's Stadium, Santa Clara"
     },
     {
@@ -2402,24 +2437,24 @@
       },
       {
         "team": "Brazil",
-        "gp": 1,
-        "w": 0,
+        "gp": 2,
+        "w": 1,
         "d": 1,
         "l": 0,
-        "gf": 1,
+        "gf": 4,
         "ga": 1,
-        "gd": 0,
-        "pts": 1
+        "gd": 3,
+        "pts": 4
       },
       {
         "team": "Haiti",
-        "gp": 1,
+        "gp": 2,
         "w": 0,
         "d": 0,
-        "l": 1,
+        "l": 2,
         "gf": 0,
-        "ga": 1,
-        "gd": -1,
+        "ga": 4,
+        "gd": -4,
         "pts": 0
       }
     ],
@@ -2448,25 +2483,25 @@
       },
       {
         "team": "Türkiye",
-        "gp": 1,
+        "gp": 2,
         "w": 0,
         "d": 0,
-        "l": 1,
+        "l": 2,
         "gf": 0,
-        "ga": 2,
-        "gd": -2,
+        "ga": 3,
+        "gd": -3,
         "pts": 0
       },
       {
         "team": "Paraguay",
-        "gp": 1,
-        "w": 0,
+        "gp": 2,
+        "w": 1,
         "d": 0,
         "l": 1,
-        "gf": 1,
+        "gf": 2,
         "ga": 4,
-        "gd": -3,
-        "pts": 0
+        "gd": -2,
+        "pts": 3
       }
     ],
     "E": [
