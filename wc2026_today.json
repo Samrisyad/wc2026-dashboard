@@ -36,7 +36,7 @@
       "away": "Haiti",
       "date_wib": "2026-06-20 07:30",
       "venue": "Lincoln Financial Field, Philadelphia",
-      "status": "LIVE",
+      "status": "FT",
       "score": {
         "home": 3,
         "away": 0
@@ -50,8 +50,11 @@
       "away": "Paraguay",
       "date_wib": "2026-06-20 10:00",
       "venue": "Levi's Stadium, Santa Clara",
-      "status": "scheduled",
-      "score": null,
+      "status": "FT",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
       "highlight": null
     }
   ]
