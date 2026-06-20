@@ -1,5 +1,5 @@
 {
-  "last_updated": "20 June 26 · 12:00 WIB",
+  "last_updated": "21 June 26 · 00:50 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -1792,8 +1792,11 @@
       "group": "F",
       "home": "Netherlands",
       "away": "Sweden",
-      "status": "scheduled",
-      "score": null,
+      "status": "LIVE",
+      "score": {
+        "home": 2,
+        "away": 0
+      },
       "scorers": [],
       "assists": [],
       "cards": [],
