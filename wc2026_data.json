@@ -1,5 +1,5 @@
 {
-  "last_updated": "20 June 26 · 02:50 WIB",
+  "last_updated": "20 June 26 · 09:30 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -1574,14 +1574,81 @@
       "group": "D",
       "home": "United States",
       "away": "Australia",
-      "status": "LIVE",
+      "status": "FT",
       "score": {
-        "home": 1,
+        "home": 2,
         "away": 0
       },
-      "scorers": [],
-      "assists": [],
-      "cards": [],
+      "scorers": [
+        {
+          "player": "Cameron Burgess (OG)",
+          "team": "United States",
+          "minute": 11
+        },
+        {
+          "player": "Alex Freeman",
+          "team": "United States",
+          "minute": 44
+        }
+      ],
+      "assists": [
+        {
+          "player": "Folarin Balogun",
+          "team": "United States",
+          "for": "Cameron Burgess (OG)",
+          "minute": 11
+        },
+        {
+          "player": "Sergino Dest",
+          "team": "United States",
+          "for": "Alex Freeman",
+          "minute": 44
+        }
+      ],
+      "cards": [
+        {
+          "player": "Jordan Bos",
+          "team": "Australia",
+          "type": "yellow",
+          "minute": 30
+        },
+        {
+          "player": "Alessandro Circati",
+          "team": "Australia",
+          "type": "yellow",
+          "minute": 40
+        },
+        {
+          "player": "Antonee Robinson",
+          "team": "United States",
+          "type": "yellow",
+          "minute": 56
+        },
+        {
+          "player": "Jacob Italiano",
+          "team": "Australia",
+          "type": "yellow",
+          "minute": 80
+        },
+        {
+          "player": "Harry Souttar",
+          "team": "Australia",
+          "type": "yellow",
+          "minute": 85
+        },
+        {
+          "player": "Folarin Balogun",
+          "team": "United States",
+          "type": "yellow",
+          "minute": 88
+        },
+        {
+          "player": "Chris Richards",
+          "team": "United States",
+          "type": "yellow",
+          "minute": 90
+        }
+      ],
       "venue": "Lumen Field, Seattle"
     },
     {
@@ -1589,10 +1656,26 @@
       "group": "C",
       "home": "Scotland",
       "away": "Morocco",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
+      "status": "FT",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "scorers": [
+        {
+          "player": "Ismael Saibari",
+          "team": "Morocco",
+          "minute": 2
+        }
+      ],
+      "assists": [
+        {
+          "player": "Brahim Díaz",
+          "team": "Morocco",
+          "for": "Ismael Saibari",
+          "minute": 2
+        }
+      ],
       "cards": [],
       "venue": "Gillette Stadium, Foxborough"
     },
@@ -1601,11 +1684,56 @@
       "group": "C",
       "home": "Brazil",
       "away": "Haiti",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
-      "cards": [],
+      "status": "LIVE",
+      "score": {
+        "home": 3,
+        "away": 0
+      },
+      "scorers": [
+        {
+          "player": "Matheus Cunha",
+          "team": "Brazil",
+          "minute": 27
+        },
+        {
+          "player": "Matheus Cunha",
+          "team": "Brazil",
+          "minute": 38
+        },
+        {
+          "player": "Vinícius Júnior",
+          "team": "Brazil",
+          "minute": "45+4"
+        }
+      ],
+      "assists": [
+        {
+          "player": "Vinícius Júnior",
+          "team": "Brazil",
+          "for": "Matheus Cunha",
+          "minute": 38
+        },
+        {
+          "player": "Lucas Paquetá",
+          "team": "Brazil",
+          "for": "Vinícius Júnior",
+          "minute": "45+4"
+        }
+      ],
+      "cards": [
+        {
+          "player": "Carlens Arcus",
+          "team": "Haiti",
+          "type": "yellow",
+          "minute": 4
+        },
+        {
+          "player": "Frantzdy Pierrot",
+          "team": "Haiti",
+          "type": "yellow",
+          "minute": "45+7"
+        }
+      ],
       "venue": "Lincoln Financial Field, Philadelphia"
     },
     {
@@ -2251,29 +2379,29 @@
     ],
     "C": [
       {
+        "team": "Morocco",
+        "gp": 2,
+        "w": 1,
+        "d": 1,
+        "l": 0,
+        "gf": 2,
+        "ga": 1,
+        "gd": 1,
+        "pts": 4
+      },
+      {
         "team": "Scotland",
-        "gp": 1,
+        "gp": 2,
         "w": 1,
         "d": 0,
-        "l": 0,
+        "l": 1,
         "gf": 1,
-        "ga": 0,
-        "gd": 1,
+        "ga": 1,
+        "gd": 0,
         "pts": 3
       },
       {
         "team": "Brazil",
-        "gp": 1,
-        "w": 0,
-        "d": 1,
-        "l": 0,
-        "gf": 1,
-        "ga": 1,
-        "gd": 0,
-        "pts": 1
-      },
-      {
-        "team": "Morocco",
         "gp": 1,
         "w": 0,
         "d": 1,
@@ -2298,24 +2426,24 @@
     "D": [
       {
         "team": "United States",
-        "gp": 1,
-        "w": 1,
+        "gp": 2,
+        "w": 2,
         "d": 0,
         "l": 0,
-        "gf": 4,
+        "gf": 6,
         "ga": 1,
-        "gd": 3,
-        "pts": 3
+        "gd": 5,
+        "pts": 6
       },
       {
         "team": "Australia",
-        "gp": 1,
+        "gp": 2,
         "w": 1,
         "d": 0,
-        "l": 0,
+        "l": 1,
         "gf": 2,
-        "ga": 0,
-        "gd": 2,
+        "ga": 2,
+        "gd": 0,
         "pts": 3
       },
       {
@@ -2709,760 +2837,5 @@
         "pts": 0
       }
     ]
-  },
-  "top_scorers": [
-    {
-      "player": "Lionel Messi",
-      "team": "Argentina",
-      "goals": 3
-    },
-    {
-      "player": "Folarin Balogun",
-      "team": "United States",
-      "goals": 2
-    },
-    {
-      "player": "Kai Havertz",
-      "team": "Germany",
-      "goals": 2
-    },
-    {
-      "player": "Yasin Ayari",
-      "team": "Sweden",
-      "goals": 2
-    },
-    {
-      "player": "Elijah Just",
-      "team": "New Zealand",
-      "goals": 2
-    },
-    {
-      "player": "Kylian Mbappé",
-      "team": "France",
-      "goals": 2
-    },
-    {
-      "player": "Erling Haaland",
-      "team": "Norway",
-      "goals": 2
-    },
-    {
-      "player": "Cyle Larin",
-      "team": "Canada",
-      "goals": 2
-    },
-    {
-      "player": "Johan Manzambi",
-      "team": "Switzerland",
-      "goals": 2
-    },
-    {
-      "player": "Jonathan David",
-      "team": "Canada",
-      "goals": 3
-    },
-    {
-      "player": "Julián Quiñones",
-      "team": "Mexico",
-      "goals": 1
-    },
-    {
-      "player": "Raúl Jiménez",
-      "team": "Mexico",
-      "goals": 1
-    },
-    {
-      "player": "Ladislav Krejčí",
-      "team": "Czechia",
-      "goals": 1
-    },
-    {
-      "player": "Hwang In-beom",
-      "team": "South Korea",
-      "goals": 1
-    },
-    {
-      "player": "Oh Hyeon-gyu",
-      "team": "South Korea",
-      "goals": 1
-    },
-    {
-      "player": "Jovo Lukić",
-      "team": "Bosnia-Herzegovina",
-      "goals": 1
-    },
-    {
-      "player": "Mauricio (sub)",
-      "team": "Paraguay",
-      "goals": 1
-    },
-    {
-      "player": "Gio Reyna",
-      "team": "United States",
-      "goals": 1
-    },
-    {
-      "player": "Breel Embolo (pen)",
-      "team": "Switzerland",
-      "goals": 1
-    },
-    {
-      "player": "Boualem Khoukhi",
-      "team": "Qatar",
-      "goals": 1
-    },
-    {
-      "player": "Ismael Saibari",
-      "team": "Morocco",
-      "goals": 1
-    },
-    {
-      "player": "Vinícius Júnior",
-      "team": "Brazil",
-      "goals": 1
-    },
-    {
-      "player": "John McGinn",
-      "team": "Scotland",
-      "goals": 1
-    },
-    {
-      "player": "Nestory Irankunda",
-      "team": "Australia",
-      "goals": 1
-    },
-    {
-      "player": "Connor Metcalfe",
-      "team": "Australia",
-      "goals": 1
-    },
-    {
-      "player": "Felix Nmecha",
-      "team": "Germany",
-      "goals": 1
-    },
-    {
-      "player": "Livano Comenencia",
-      "team": "Curaçao",
-      "goals": 1
-    },
-    {
-      "player": "Nico Schlotterbeck",
-      "team": "Germany",
-      "goals": 1
-    },
-    {
-      "player": "Jamal Musiala",
-      "team": "Germany",
-      "goals": 1
-    },
-    {
-      "player": "Nathaniel Brown",
-      "team": "Germany",
-      "goals": 1
-    },
-    {
-      "player": "Denis Undav",
-      "team": "Germany",
-      "goals": 1
-    },
-    {
-      "player": "Virgil van Dijk",
-      "team": "Netherlands",
-      "goals": 1
-    },
-    {
-      "player": "Keito Nakamura",
-      "team": "Japan",
-      "goals": 1
-    },
-    {
-      "player": "Crysencio Summerville",
-      "team": "Netherlands",
-      "goals": 1
-    },
-    {
-      "player": "Daichi Kamada",
-      "team": "Japan",
-      "goals": 1
-    },
-    {
-      "player": "Amad Diallo",
-      "team": "Ivory Coast",
-      "goals": 1
-    },
-    {
-      "player": "Alexander Isak",
-      "team": "Sweden",
-      "goals": 1
-    },
-    {
-      "player": "Omar Rekik",
-      "team": "Tunisia",
-      "goals": 1
-    },
-    {
-      "player": "Viktor Gyökeres",
-      "team": "Sweden",
-      "goals": 1
-    },
-    {
-      "player": "Mattias Svanberg",
-      "team": "Sweden",
-      "goals": 1
-    },
-    {
-      "player": "Emam Ashour",
-      "team": "Egypt",
-      "goals": 1
-    },
-    {
-      "player": "Abdulelah Al-Amri",
-      "team": "Saudi Arabia",
-      "goals": 1
-    },
-    {
-      "player": "Maximiliano Araújo",
-      "team": "Uruguay",
-      "goals": 1
-    },
-    {
-      "player": "Ramin Rezaeian",
-      "team": "Iran",
-      "goals": 1
-    },
-    {
-      "player": "Mohammad Mohebbi",
-      "team": "Iran",
-      "goals": 1
-    },
-    {
-      "player": "Bradley Barcola",
-      "team": "France",
-      "goals": 1
-    },
-    {
-      "player": "Ibrahim Mbaye",
-      "team": "Senegal",
-      "goals": 1
-    },
-    {
-      "player": "Aymen Hussein",
-      "team": "Iraq",
-      "goals": 1
-    },
-    {
-      "player": "Leo Østigård",
-      "team": "Norway",
-      "goals": 1
-    },
-    {
-      "player": "Romano Schmid",
-      "team": "Austria",
-      "goals": 1
-    },
-    {
-      "player": "Ali Olwan",
-      "team": "Jordan",
-      "goals": 1
-    },
-    {
-      "player": "Marko Arnautovic (pen)",
-      "team": "Austria",
-      "goals": 1
-    },
-    {
-      "player": "Daniel Muñoz",
-      "team": "Colombia",
-      "goals": 1
-    },
-    {
-      "player": "Abbosbek Fayzullaev",
-      "team": "Uzbekistan",
-      "goals": 1
-    },
-    {
-      "player": "Luis Díaz",
-      "team": "Colombia",
-      "goals": 1
-    },
-    {
-      "player": "Jaminton Campaz",
-      "team": "Colombia",
-      "goals": 1
-    },
-    {
-      "player": "Michal Sadílek",
-      "team": "Czechia",
-      "goals": 1
-    },
-    {
-      "player": "Teboho Mokoena",
-      "team": "South Africa",
-      "goals": 1
-    },
-    {
-      "player": "Rubén Vargas",
-      "team": "Switzerland",
-      "goals": 1
-    },
-    {
-      "player": "Ermin Mahmic",
-      "team": "Bosnia-Herzegovina",
-      "goals": 1
-    },
-    {
-      "player": "Granit Xhaka",
-      "team": "Switzerland",
-      "goals": 1
-    },
-    {
-      "player": "Nathan-Dylan Saliba",
-      "team": "Canada",
-      "goals": 1
-    },
-    {
-      "player": "Luis Romo",
-      "team": "Mexico",
-      "goals": 1
-    },
-    {
-      "player": "Nathan-Dylan Saliba",
-      "team": "Canada",
-      "goals": 1
-    },
-    {
-      "player": "Luis Romo",
-      "team": "Mexico",
-      "goals": 1
-    }
-  ],
-  "top_assists": [
-    {
-      "player": "Roberto Alvarado",
-      "team": "Mexico",
-      "assists": 2
-    },
-    {
-      "player": "Christian Pulisic",
-      "team": "United States",
-      "assists": 2
-    },
-    {
-      "player": "Joshua Kimmich",
-      "team": "Germany",
-      "assists": 2
-    },
-    {
-      "player": "Denis Undav",
-      "team": "Germany",
-      "assists": 2
-    },
-    {
-      "player": "Alexander Isak",
-      "team": "Sweden",
-      "assists": 2
-    },
-    {
-      "player": "Rodrigo De Paul",
-      "team": "Argentina",
-      "assists": 2
-    },
-    {
-      "player": "Rubén Vargas",
-      "team": "Switzerland",
-      "assists": 2
-    },
-    {
-      "player": "Vladimír Coufal",
-      "team": "Czechia",
-      "assists": 1
-    },
-    {
-      "player": "Hwang In-beom",
-      "team": "South Korea",
-      "assists": 1
-    },
-    {
-      "player": "Sead Kolašinac",
-      "team": "Bosnia-Herzegovina",
-      "assists": 1
-    },
-    {
-      "player": "Promise David",
-      "team": "Canada",
-      "assists": 1
-    },
-    {
-      "player": "Unconfirmed",
-      "team": "United States",
-      "assists": 1
-    },
-    {
-      "player": "Unconfirmed",
-      "team": "Paraguay",
-      "assists": 1
-    },
-    {
-      "player": "Tim Weah",
-      "team": "United States",
-      "assists": 1
-    },
-    {
-      "player": "Homam Ahmed",
-      "team": "Qatar",
-      "assists": 1
-    },
-    {
-      "player": "Brahim Díaz",
-      "team": "Morocco",
-      "assists": 1
-    },
-    {
-      "player": "Bruno Guimarães",
-      "team": "Brazil",
-      "assists": 1
-    },
-    {
-      "player": "Florian Wirtz",
-      "team": "Germany",
-      "assists": 1
-    },
-    {
-      "player": "Nathaniel Brown",
-      "team": "Germany",
-      "assists": 1
-    },
-    {
-      "player": "Ryan Gravenberch",
-      "team": "Netherlands",
-      "assists": 1
-    },
-    {
-      "player": "Takefusa Kubo",
-      "team": "Japan",
-      "assists": 1
-    },
-    {
-      "player": "Wilfried Singo",
-      "team": "Ivory Coast",
-      "assists": 1
-    },
-    {
-      "player": "Viktor Gyökeres",
-      "team": "Sweden",
-      "assists": 1
-    },
-    {
-      "player": "Hannibal Mejbri",
-      "team": "Tunisia",
-      "assists": 1
-    },
-    {
-      "player": "Mohamed Salah",
-      "team": "Egypt",
-      "assists": 1
-    },
-    {
-      "player": "Mohamed Kanno",
-      "team": "Saudi Arabia",
-      "assists": 1
-    },
-    {
-      "player": "Federico Viñas",
-      "team": "Uruguay",
-      "assists": 1
-    },
-    {
-      "player": "Chris Wood",
-      "team": "New Zealand",
-      "assists": 1
-    },
-    {
-      "player": "Ramin Rezaeian",
-      "team": "Iran",
-      "assists": 1
-    },
-    {
-      "player": "Michael Olise",
-      "team": "France",
-      "assists": 1
-    },
-    {
-      "player": "Adrien Rabiot",
-      "team": "France",
-      "assists": 1
-    },
-    {
-      "player": "Antonio Nusa",
-      "team": "Norway",
-      "assists": 1
-    },
-    {
-      "player": "Amir Al-Ammari",
-      "team": "Iraq",
-      "assists": 1
-    },
-    {
-      "player": "Martin Ødegaard",
-      "team": "Norway",
-      "assists": 1
-    },
-    {
-      "player": "Alexis Mac Allister",
-      "team": "Argentina",
-      "assists": 1
-    },
-    {
-      "player": "Luis Díaz",
-      "team": "Colombia",
-      "assists": 1
-    },
-    {
-      "player": "Gustavo Puerta",
-      "team": "Colombia",
-      "assists": 1
-    },
-    {
-      "player": "Breel Embolo",
-      "team": "Switzerland",
-      "assists": 1
-    },
-    {
-      "player": "Alistair Johnston",
-      "team": "Canada",
-      "assists": 1
-    },
-    {
-      "player": "Tajon Buchanan",
-      "team": "Canada",
-      "assists": 1
-    },
-    {
-      "player": "Cyle Larin",
-      "team": "Canada",
-      "assists": 1
-    },
-    {
-      "player": "Jacob Shaffelburg",
-      "team": "Canada",
-      "assists": 1
-    },
-    {
-      "player": "Nathan-Dylan Saliba",
-      "team": "Canada",
-      "assists": 1
-    },
-    {
-      "player": "Jacob Shaffelburg",
-      "team": "Canada",
-      "assists": 1
-    }
-  ],
-  "cards": [
-    {
-      "player": "Sphephelo Sithole",
-      "team": "South Africa",
-      "yellow": 0,
-      "red": 1
-    },
-    {
-      "player": "Themba Zwane",
-      "team": "South Africa",
-      "yellow": 0,
-      "red": 1
-    },
-    {
-      "player": "César Montes",
-      "team": "Mexico",
-      "yellow": 0,
-      "red": 1
-    },
-    {
-      "player": "Tarik Muharemovic",
-      "team": "Bosnia-Herzegovina",
-      "yellow": 0,
-      "red": 1
-    },
-    {
-      "player": "Lee Gi-hyuk",
-      "team": "South Korea",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "player": "Alistair Johnston",
-      "team": "Canada",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "player": "Jovo Lukić",
-      "team": "Bosnia-Herzegovina",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "player": "Juan Jose Caceres",
-      "team": "Paraguay",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "player": "Miguel Almiron",
-      "team": "Paraguay",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "player": "Tyler Adams",
-      "team": "United States",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "player": "Mahmoud Abunada",
-      "team": "Qatar",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "player": "Jassem Gaber Abdulsallam",
-      "team": "Qatar",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "player": "Denis Zakaria",
-      "team": "Switzerland",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "player": "Casemiro",
-      "team": "Brazil",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "player": "Roger Ibañez",
-      "team": "Brazil",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "player": "Crysencio Summerville",
-      "team": "Netherlands",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "player": "Memphis Depay",
-      "team": "Netherlands",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "player": "Jhojan Porozo",
-      "team": "Ecuador",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "player": "Sidny Cabral",
-      "team": "Cape Verde",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "player": "Marawan Attia",
-      "team": "Egypt",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "player": "Timothy Castagne",
-      "team": "Belgium",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "player": "Ahmed Fatouh",
-      "team": "Egypt",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "player": "Abdulelah Al-Amri",
-      "team": "Saudi Arabia",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "player": "Ehsan Hajisafi",
-      "team": "Iran",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "player": "Zaid Tahseen",
-      "team": "Iraq",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "player": "Teboho Mokoena",
-      "team": "South Africa",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "player": "Derek Cornelius",
-      "team": "Canada",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "player": "Homam Ahmed",
-      "team": "Qatar",
-      "yellow": 0,
-      "red": 1
-    },
-    {
-      "player": "Assim Madibo",
-      "team": "Qatar",
-      "yellow": 0,
-      "red": 1
-    },
-    {
-      "player": "Luis Romo",
-      "team": "Mexico",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "player": "Homam Ahmed",
-      "team": "Qatar",
-      "yellow": 0,
-      "red": 1
-    },
-    {
-      "player": "Assim Madibo",
-      "team": "Qatar",
-      "yellow": 0,
-      "red": 1
-    },
-    {
-      "player": "Lee Kang-in",
-      "team": "South Korea",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "player": "Paik Seung-ho",
-      "team": "South Korea",
-      "yellow": 1,
-      "red": 0
-    }
-  ]
+  }
 }

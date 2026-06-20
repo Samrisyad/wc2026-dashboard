@@ -1,0 +1,58 @@
+{
+  "date": "2026-06-20",
+  "matches": [
+    {
+      "match_index": 28,
+      "group": "D",
+      "home": "United States",
+      "away": "Australia",
+      "date_wib": "2026-06-20 02:00",
+      "venue": "Lumen Field, Seattle",
+      "status": "FT",
+      "score": {
+        "home": 2,
+        "away": 0
+      },
+      "highlight": null
+    },
+    {
+      "match_index": 29,
+      "group": "C",
+      "home": "Scotland",
+      "away": "Morocco",
+      "date_wib": "2026-06-20 05:00",
+      "venue": "Gillette Stadium, Foxborough",
+      "status": "FT",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "highlight": null
+    },
+    {
+      "match_index": 30,
+      "group": "C",
+      "home": "Brazil",
+      "away": "Haiti",
+      "date_wib": "2026-06-20 07:30",
+      "venue": "Lincoln Financial Field, Philadelphia",
+      "status": "LIVE",
+      "score": {
+        "home": 3,
+        "away": 0
+      },
+      "highlight": null
+    },
+    {
+      "match_index": 31,
+      "group": "D",
+      "home": "Türkiye",
+      "away": "Paraguay",
+      "date_wib": "2026-06-20 10:00",
+      "venue": "Levi's Stadium, Santa Clara",
+      "status": "scheduled",
+      "score": null,
+      "highlight": null
+    }
+  ]
+}
