@@ -1,5 +1,5 @@
 {
-  "last_updated": "22 June 26 · 02:50 WIB",
+  "last_updated": "22 June 26 · 06:06 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -1868,8 +1868,7 @@
         }
       ],
       "cards": [],
-      "venue": "NRG Stadium, Houston",
-      "highlight": "https://www.youtube.com/watch?v=18WdmTByp5Q"
+      "venue": "NRG Stadium, Houston"
     },
     {
       "date_wib": "2026-06-21 03:00",
@@ -1919,8 +1918,7 @@
         }
       ],
       "cards": [],
-      "venue": "BMO Field, Toronto",
-      "highlight": "https://www.youtube.com/watch?v=5tz9NTqXks0"
+      "venue": "BMO Field, Toronto"
     },
     {
       "date_wib": "2026-06-21 07:00",
@@ -1942,8 +1940,7 @@
           "minute": 43
         }
       ],
-      "venue": "Arrowhead Stadium, Kansas City",
-      "highlight": "https://www.youtube.com/watch?v=Ksdu7W04mM0"
+      "venue": "Arrowhead Stadium, Kansas City"
     },
     {
       "date_wib": "2026-06-21 11:00",
@@ -1986,8 +1983,7 @@
         }
       ],
       "cards": [],
-      "venue": "Estadio BBVA, Monterrey",
-      "highlight": "https://www.youtube.com/watch?v=m5XRS6JsPtY"
+      "venue": "Estadio BBVA, Monterrey"
     },
     {
       "date_wib": "2026-06-21 23:00",
@@ -1999,9 +1995,62 @@
         "home": 4,
         "away": 0
       },
-      "scorers": [],
-      "assists": [],
-      "cards": [],
+      "scorers": [
+        {
+          "player": "Lamine Yamal",
+          "team": "Spain",
+          "minute": 10
+        },
+        {
+          "player": "Mikel Oyarzabal",
+          "team": "Spain",
+          "minute": 21
+        },
+        {
+          "player": "Mikel Oyarzabal",
+          "team": "Spain",
+          "minute": 24
+        },
+        {
+          "player": "Hassan Tambakti (OG)",
+          "team": "Spain",
+          "minute": 49
+        }
+      ],
+      "assists": [
+        {
+          "player": "Mikel Oyarzabal",
+          "team": "Spain",
+          "for": "Lamine Yamal",
+          "minute": 10
+        },
+        {
+          "player": "Aymeric Laporte",
+          "team": "Spain",
+          "for": "Mikel Oyarzabal",
+          "minute": 21
+        },
+        {
+          "player": "Dani Olmo",
+          "team": "Spain",
+          "for": "Mikel Oyarzabal",
+          "minute": 24
+        }
+      ],
+      "cards": [
+        {
+          "player": "Salem Al-Dawsari",
+          "team": "Saudi Arabia",
+          "type": "yellow",
+          "minute": 30
+        },
+        {
+          "player": "Mohamed Kanno",
+          "team": "Saudi Arabia",
+          "type": "yellow",
+          "minute": 60
+        }
+      ],
       "venue": "Mercedes-Benz Stadium, Atlanta"
     },
     {
@@ -2009,14 +2058,27 @@
       "group": "G",
       "home": "Belgium",
       "away": "Iran",
-      "status": "LIVE",
+      "status": "FT",
       "score": {
         "home": 0,
         "away": 0
       },
       "scorers": [],
       "assists": [],
-      "cards": [],
+      "cards": [
+        {
+          "player": "Romelu Lukaku",
+          "team": "Belgium",
+          "type": "yellow",
+          "minute": 3
+        },
+        {
+          "player": "Nathan Ngoy",
+          "team": "Belgium",
+          "type": "red",
+          "minute": 66
+        }
+      ],
       "venue": "SoFi Stadium, Inglewood"
     },
     {
@@ -2024,9 +2086,28 @@
       "group": "H",
       "home": "Uruguay",
       "away": "Cape Verde",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
+      "status": "LIVE",
+      "score": {
+        "home": 2,
+        "away": 1
+      },
+      "scorers": [
+        {
+          "player": "Kevin Pina",
+          "team": "Cape Verde",
+          "minute": 21
+        },
+        {
+          "player": "Maxi Araujo",
+          "team": "Uruguay",
+          "minute": 44
+        },
+        {
+          "player": "Agustin Canobbio",
+          "team": "Uruguay",
+          "minute": "45+6"
+        }
+      ],
       "assists": [],
       "cards": [],
       "venue": "Hard Rock Stadium, Miami Gardens"
@@ -2763,14 +2844,14 @@
     "G": [
       {
         "team": "Belgium",
-        "gp": 1,
+        "gp": 2,
         "w": 0,
-        "d": 1,
+        "d": 2,
         "l": 0,
         "gf": 1,
         "ga": 1,
         "gd": 0,
-        "pts": 1
+        "pts": 2
       },
       {
         "team": "Egypt",
@@ -2785,14 +2866,14 @@
       },
       {
         "team": "Iran",
-        "gp": 1,
+        "gp": 2,
         "w": 0,
-        "d": 1,
+        "d": 2,
         "l": 0,
         "gf": 2,
         "ga": 2,
         "gd": 0,
-        "pts": 1
+        "pts": 2
       },
       {
         "team": "New Zealand",
@@ -2809,25 +2890,25 @@
     "H": [
       {
         "team": "Saudi Arabia",
-        "gp": 1,
+        "gp": 2,
         "w": 0,
         "d": 1,
-        "l": 0,
+        "l": 1,
         "gf": 1,
-        "ga": 1,
-        "gd": 0,
+        "ga": 5,
+        "gd": -4,
         "pts": 1
       },
       {
         "team": "Spain",
-        "gp": 1,
-        "w": 0,
+        "gp": 2,
+        "w": 1,
         "d": 1,
         "l": 0,
-        "gf": 0,
+        "gf": 4,
         "ga": 0,
-        "gd": 0,
-        "pts": 1
+        "gd": 4,
+        "pts": 4
       },
       {
         "team": "Cape Verde",

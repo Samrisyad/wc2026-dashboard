@@ -1,28 +1,28 @@
 {
-  "date": "2026-06-21",
+  "date": "2026-06-22",
   "matches": [
     {
-      "match_index": 32,
-      "group": "F",
-      "home": "Netherlands",
-      "away": "Sweden",
-      "date_wib": "2026-06-21 00:00",
-      "venue": "NRG Stadium, Houston",
+      "match_index": 37,
+      "group": "G",
+      "home": "Belgium",
+      "away": "Iran",
+      "date_wib": "2026-06-22 02:00",
+      "venue": "SoFi Stadium, Inglewood",
       "status": "FT",
       "score": {
-        "home": 5,
-        "away": 1
+        "home": 0,
+        "away": 0
       },
       "highlight": null
     },
     {
-      "match_index": 33,
-      "group": "E",
-      "home": "Germany",
-      "away": "Ivory Coast",
-      "date_wib": "2026-06-21 03:00",
-      "venue": "BMO Field, Toronto",
-      "status": "FT",
+      "match_index": 38,
+      "group": "H",
+      "home": "Uruguay",
+      "away": "Cape Verde",
+      "date_wib": "2026-06-22 05:00",
+      "venue": "Hard Rock Stadium, Miami Gardens",
+      "status": "LIVE",
       "score": {
         "home": 2,
         "away": 1
@@ -30,45 +30,14 @@
       "highlight": null
     },
     {
-      "match_index": 34,
-      "group": "E",
-      "home": "Ecuador",
-      "away": "Curaçao",
-      "date_wib": "2026-06-21 07:00",
-      "venue": "Arrowhead Stadium, Kansas City",
-      "status": "FT",
-      "score": {
-        "home": 0,
-        "away": 0
-      },
-      "highlight": null
-    },
-    {
-      "match_index": 35,
-      "group": "F",
-      "home": "Tunisia",
-      "away": "Japan",
-      "date_wib": "2026-06-21 11:00",
-      "venue": "Estadio BBVA, Monterrey",
-      "status": "FT",
-      "score": {
-        "home": 0,
-        "away": 4
-      },
-      "highlight": null
-    },
-    {
-      "match_index": 36,
-      "group": "H",
-      "home": "Spain",
-      "away": "Saudi Arabia",
-      "date_wib": "2026-06-21 23:00",
-      "venue": "Mercedes-Benz Stadium, Atlanta",
-      "status": "FT",
-      "score": {
-        "home": 4,
-        "away": 0
-      },
+      "match_index": 39,
+      "group": "G",
+      "home": "New Zealand",
+      "away": "Egypt",
+      "date_wib": "2026-06-22 08:00",
+      "venue": "BC Place, Vancouver",
+      "status": "scheduled",
+      "score": null,
       "highlight": null
     }
   ]
