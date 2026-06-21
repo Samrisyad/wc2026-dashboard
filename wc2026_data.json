@@ -1,5 +1,5 @@
 {
-  "last_updated": "21 June 26 · 06:10 WIB",
+  "last_updated": "21 June 26 · 12:10 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -1925,11 +1925,21 @@
       "group": "E",
       "home": "Ecuador",
       "away": "Curaçao",
-      "status": "scheduled",
-      "score": null,
+      "status": "FT",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
       "scorers": [],
       "assists": [],
-      "cards": [],
+      "cards": [
+        {
+          "player": "Jordy Alcívar",
+          "team": "Ecuador",
+          "type": "yellow",
+          "minute": 43
+        }
+      ],
       "venue": "Arrowhead Stadium, Kansas City"
     },
     {
