@@ -1,5 +1,5 @@
 {
-  "last_updated": "21 June 26 · 13:36 WIB",
+  "last_updated": "22 June 26 · 02:50 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -1868,7 +1868,8 @@
         }
       ],
       "cards": [],
-      "venue": "NRG Stadium, Houston"
+      "venue": "NRG Stadium, Houston",
+      "highlight": "https://www.youtube.com/watch?v=18WdmTByp5Q"
     },
     {
       "date_wib": "2026-06-21 03:00",
@@ -1918,7 +1919,8 @@
         }
       ],
       "cards": [],
-      "venue": "BMO Field, Toronto"
+      "venue": "BMO Field, Toronto",
+      "highlight": "https://www.youtube.com/watch?v=5tz9NTqXks0"
     },
     {
       "date_wib": "2026-06-21 07:00",
@@ -1940,7 +1942,8 @@
           "minute": 43
         }
       ],
-      "venue": "Arrowhead Stadium, Kansas City"
+      "venue": "Arrowhead Stadium, Kansas City",
+      "highlight": "https://www.youtube.com/watch?v=Ksdu7W04mM0"
     },
     {
       "date_wib": "2026-06-21 11:00",
@@ -1983,7 +1986,8 @@
         }
       ],
       "cards": [],
-      "venue": "Estadio BBVA, Monterrey"
+      "venue": "Estadio BBVA, Monterrey",
+      "highlight": "https://www.youtube.com/watch?v=m5XRS6JsPtY"
     },
     {
       "date_wib": "2026-06-21 23:00",
@@ -2005,8 +2009,11 @@
       "group": "G",
       "home": "Belgium",
       "away": "Iran",
-      "status": "scheduled",
-      "score": null,
+      "status": "LIVE",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
       "scorers": [],
       "assists": [],
       "cards": [],
