@@ -64,8 +64,11 @@
       "away": "Saudi Arabia",
       "date_wib": "2026-06-21 23:00",
       "venue": "Mercedes-Benz Stadium, Atlanta",
-      "status": "scheduled",
-      "score": null,
+      "status": "LIVE",
+      "score": {
+        "home": 3,
+        "away": 0
+      },
       "highlight": null
     }
   ]

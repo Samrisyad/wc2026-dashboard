@@ -1990,8 +1990,11 @@
       "group": "H",
       "home": "Spain",
       "away": "Saudi Arabia",
-      "status": "scheduled",
-      "score": null,
+      "status": "LIVE",
+      "score": {
+        "home": 3,
+        "away": 0
+      },
       "scorers": [],
       "assists": [],
       "cards": [],
