@@ -1,5 +1,5 @@
 {
-  "last_updated": "21 June 26 · 12:10 WIB",
+  "last_updated": "21 June 26 · 13:36 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -1947,10 +1947,41 @@
       "group": "F",
       "home": "Tunisia",
       "away": "Japan",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
+      "status": "FT",
+      "score": {
+        "home": 0,
+        "away": 4
+      },
+      "scorers": [
+        {
+          "player": "Daichi Kamada",
+          "team": "Japan",
+          "minute": 4
+        },
+        {
+          "player": "Ayase Ueda",
+          "team": "Japan",
+          "minute": 31
+        },
+        {
+          "player": "Junya Ito",
+          "team": "Japan",
+          "minute": 69
+        },
+        {
+          "player": "Ayase Ueda",
+          "team": "Japan",
+          "minute": 83
+        }
+      ],
+      "assists": [
+        {
+          "player": "Keito Nakamura",
+          "team": "Japan",
+          "for": "Daichi Kamada",
+          "minute": 4
+        }
+      ],
       "cards": [],
       "venue": "Estadio BBVA, Monterrey"
     },

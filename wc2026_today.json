@@ -50,8 +50,11 @@
       "away": "Japan",
       "date_wib": "2026-06-21 11:00",
       "venue": "Estadio BBVA, Monterrey",
-      "status": "scheduled",
-      "score": null,
+      "status": "FT",
+      "score": {
+        "home": 0,
+        "away": 4
+      },
       "highlight": null
     },
     {
