@@ -1,5 +1,5 @@
 {
-  "last_updated": "21 June 26 · 00:50 WIB",
+  "last_updated": "21 June 26 · 06:10 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -1792,13 +1792,81 @@
       "group": "F",
       "home": "Netherlands",
       "away": "Sweden",
-      "status": "LIVE",
+      "status": "FT",
       "score": {
-        "home": 2,
-        "away": 0
+        "home": 5,
+        "away": 1
       },
-      "scorers": [],
-      "assists": [],
+      "scorers": [
+        {
+          "player": "Brian Brobbey",
+          "team": "Netherlands",
+          "minute": 5
+        },
+        {
+          "player": "Brian Brobbey",
+          "team": "Netherlands",
+          "minute": 17
+        },
+        {
+          "player": "Cody Gakpo",
+          "team": "Netherlands",
+          "minute": 47
+        },
+        {
+          "player": "Cody Gakpo",
+          "team": "Netherlands",
+          "minute": 54
+        },
+        {
+          "player": "Anthony Elanga",
+          "team": "Sweden",
+          "minute": 59
+        },
+        {
+          "player": "Crysencio Summerville",
+          "team": "Netherlands",
+          "minute": 89
+        }
+      ],
+      "assists": [
+        {
+          "player": "Cody Gakpo",
+          "team": "Netherlands",
+          "for": "Brian Brobbey",
+          "minute": 5
+        },
+        {
+          "player": "Denzel Dumfries",
+          "team": "Netherlands",
+          "for": "Brian Brobbey",
+          "minute": 17
+        },
+        {
+          "player": "Denzel Dumfries",
+          "team": "Netherlands",
+          "for": "Cody Gakpo",
+          "minute": 47
+        },
+        {
+          "player": "Crysencio Summerville",
+          "team": "Netherlands",
+          "for": "Cody Gakpo",
+          "minute": 54
+        },
+        {
+          "player": "Alexander Isak",
+          "team": "Sweden",
+          "for": "Anthony Elanga",
+          "minute": 59
+        },
+        {
+          "player": "Memphis Depay",
+          "team": "Netherlands",
+          "for": "Crysencio Summerville",
+          "minute": 89
+        }
+      ],
       "cards": [],
       "venue": "NRG Stadium, Houston"
     },
@@ -1807,10 +1875,48 @@
       "group": "E",
       "home": "Germany",
       "away": "Ivory Coast",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
+      "status": "FT",
+      "score": {
+        "home": 2,
+        "away": 1
+      },
+      "scorers": [
+        {
+          "player": "Franck Kessié",
+          "team": "Ivory Coast",
+          "minute": 30
+        },
+        {
+          "player": "Deniz Undav",
+          "team": "Germany",
+          "minute": 68
+        },
+        {
+          "player": "Deniz Undav",
+          "team": "Germany",
+          "minute": 94
+        }
+      ],
+      "assists": [
+        {
+          "player": "Amad Diallo",
+          "team": "Ivory Coast",
+          "for": "Franck Kessié",
+          "minute": 30
+        },
+        {
+          "player": "Nadiem Amiri",
+          "team": "Germany",
+          "for": "Deniz Undav",
+          "minute": 68
+        },
+        {
+          "player": "Felix Nmecha",
+          "team": "Germany",
+          "for": "Deniz Undav",
+          "minute": 94
+        }
+      ],
       "cards": [],
       "venue": "BMO Field, Toronto"
     },
@@ -2514,24 +2620,24 @@
     "E": [
       {
         "team": "Germany",
-        "gp": 1,
-        "w": 1,
+        "gp": 2,
+        "w": 2,
         "d": 0,
         "l": 0,
-        "gf": 7,
-        "ga": 1,
-        "gd": 6,
-        "pts": 3
+        "gf": 9,
+        "ga": 2,
+        "gd": 7,
+        "pts": 6
       },
       {
         "team": "Ivory Coast",
-        "gp": 1,
+        "gp": 2,
         "w": 1,
         "d": 0,
-        "l": 0,
-        "gf": 1,
-        "ga": 0,
-        "gd": 1,
+        "l": 1,
+        "gf": 2,
+        "ga": 2,
+        "gd": 0,
         "pts": 3
       },
       {
@@ -2559,26 +2665,26 @@
     ],
     "F": [
       {
-        "team": "Sweden",
-        "gp": 1,
-        "w": 1,
-        "d": 0,
-        "l": 0,
-        "gf": 5,
-        "ga": 1,
-        "gd": 4,
-        "pts": 3
-      },
-      {
         "team": "Netherlands",
-        "gp": 1,
-        "w": 0,
+        "gp": 2,
+        "w": 1,
         "d": 1,
         "l": 0,
-        "gf": 2,
-        "ga": 2,
+        "gf": 7,
+        "ga": 3,
+        "gd": 4,
+        "pts": 4
+      },
+      {
+        "team": "Sweden",
+        "gp": 2,
+        "w": 1,
+        "d": 0,
+        "l": 1,
+        "gf": 6,
+        "ga": 6,
         "gd": 0,
-        "pts": 1
+        "pts": 3
       },
       {
         "team": "Japan",

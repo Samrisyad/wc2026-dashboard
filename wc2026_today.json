@@ -1,61 +1,66 @@
 {
-  "date": "2026-06-20",
+  "date": "2026-06-21",
   "matches": [
     {
-      "match_index": 28,
-      "group": "D",
-      "home": "United States",
-      "away": "Australia",
-      "date_wib": "2026-06-20 02:00",
-      "venue": "Lumen Field, Seattle",
+      "match_index": 32,
+      "group": "F",
+      "home": "Netherlands",
+      "away": "Sweden",
+      "date_wib": "2026-06-21 00:00",
+      "venue": "NRG Stadium, Houston",
+      "status": "FT",
+      "score": {
+        "home": 5,
+        "away": 1
+      },
+      "highlight": null
+    },
+    {
+      "match_index": 33,
+      "group": "E",
+      "home": "Germany",
+      "away": "Ivory Coast",
+      "date_wib": "2026-06-21 03:00",
+      "venue": "BMO Field, Toronto",
       "status": "FT",
       "score": {
         "home": 2,
-        "away": 0
-      },
-      "highlight": "https://www.youtube.com/watch?v=rgK22YH1WGQ"
-    },
-    {
-      "match_index": 29,
-      "group": "C",
-      "home": "Scotland",
-      "away": "Morocco",
-      "date_wib": "2026-06-20 05:00",
-      "venue": "Gillette Stadium, Foxborough",
-      "status": "FT",
-      "score": {
-        "home": 0,
         "away": 1
       },
-      "highlight": "https://www.youtube.com/watch?v=A5qIPOOzr4U"
+      "highlight": null
     },
     {
-      "match_index": 30,
-      "group": "C",
-      "home": "Brazil",
-      "away": "Haiti",
-      "date_wib": "2026-06-20 07:30",
-      "venue": "Lincoln Financial Field, Philadelphia",
-      "status": "FT",
-      "score": {
-        "home": 3,
-        "away": 0
-      },
-      "highlight": "https://www.youtube.com/watch?v=M1NBHugxz50"
+      "match_index": 34,
+      "group": "E",
+      "home": "Ecuador",
+      "away": "Curaçao",
+      "date_wib": "2026-06-21 07:00",
+      "venue": "Arrowhead Stadium, Kansas City",
+      "status": "scheduled",
+      "score": null,
+      "highlight": null
     },
     {
-      "match_index": 31,
-      "group": "D",
-      "home": "Türkiye",
-      "away": "Paraguay",
-      "date_wib": "2026-06-20 10:00",
-      "venue": "Levi's Stadium, Santa Clara",
-      "status": "FT",
-      "score": {
-        "home": 0,
-        "away": 1
-      },
-      "highlight": "https://www.youtube.com/watch?v=DRdqPDCsFVs"
+      "match_index": 35,
+      "group": "F",
+      "home": "Tunisia",
+      "away": "Japan",
+      "date_wib": "2026-06-21 11:00",
+      "venue": "Estadio BBVA, Monterrey",
+      "status": "scheduled",
+      "score": null,
+      "highlight": null
+    },
+    {
+      "match_index": 36,
+      "group": "H",
+      "home": "Spain",
+      "away": "Saudi Arabia",
+      "date_wib": "2026-06-21 23:00",
+      "venue": "Mercedes-Benz Stadium, Atlanta",
+      "status": "scheduled",
+      "score": null,
+      "highlight": null
     }
   ]
 }
