@@ -1,5 +1,5 @@
 {
-  "last_updated": "22 June 26 · 09:46 WIB",
+  "last_updated": "22 June 26 · 10:17 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -2110,7 +2110,7 @@
         {
           "player": "Hélio Varela",
           "team": "Cape Verde",
-          "minute": 60
+          "minute": 61
         }
       ],
       "assists": [
@@ -2123,10 +2123,28 @@
       ],
       "cards": [
         {
+          "player": "Sidny Lopes Cabral",
+          "team": "Cape Verde",
+          "type": "yellow",
+          "minute": 14
+        },
+        {
           "player": "Rodrigo Bentancur",
           "team": "Uruguay",
           "type": "yellow",
           "minute": 19
+        },
+        {
+          "player": "Mathías Olivera",
+          "team": "Uruguay",
+          "type": "yellow",
+          "minute": 65
+        },
+        {
+          "player": "Diney Borges",
+          "team": "Cape Verde",
+          "type": "yellow",
+          "minute": "90+4"
         }
       ],
       "venue": "Hard Rock Stadium, Miami Gardens"
@@ -2175,6 +2193,12 @@
           "team": "Egypt",
           "for": "Mostafa Ziko",
           "minute": 58
+        },
+        {
+          "player": "Mohamed Salah",
+          "team": "Egypt",
+          "for": "Trezeguet",
+          "minute": 84
         }
       ],
       "cards": [
