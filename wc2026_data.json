@@ -1,5 +1,5 @@
 {
-  "last_updated": "22 June 26 · 06:06 WIB",
+  "last_updated": "22 June 26 · 09:46 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -2086,10 +2086,10 @@
       "group": "H",
       "home": "Uruguay",
       "away": "Cape Verde",
-      "status": "LIVE",
+      "status": "FT",
       "score": {
         "home": 2,
-        "away": 1
+        "away": 2
       },
       "scorers": [
         {
@@ -2106,10 +2106,29 @@
           "player": "Agustin Canobbio",
           "team": "Uruguay",
           "minute": "45+6"
+        },
+        {
+          "player": "Hélio Varela",
+          "team": "Cape Verde",
+          "minute": 60
         }
       ],
-      "assists": [],
-      "cards": [],
+      "assists": [
+        {
+          "player": "Maxi Araujo",
+          "team": "Uruguay",
+          "for": "Agustin Canobbio",
+          "minute": "45+6"
+        }
+      ],
+      "cards": [
+        {
+          "player": "Rodrigo Bentancur",
+          "team": "Uruguay",
+          "type": "yellow",
+          "minute": 19
+        }
+      ],
       "venue": "Hard Rock Stadium, Miami Gardens"
     },
     {
@@ -2117,11 +2136,55 @@
       "group": "G",
       "home": "New Zealand",
       "away": "Egypt",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
-      "cards": [],
+      "status": "FT",
+      "score": {
+        "home": 1,
+        "away": 3
+      },
+      "scorers": [
+        {
+          "player": "Finn Surman",
+          "team": "New Zealand",
+          "minute": 15
+        },
+        {
+          "player": "Mostafa Ziko",
+          "team": "Egypt",
+          "minute": 58
+        },
+        {
+          "player": "Mohamed Salah",
+          "team": "Egypt",
+          "minute": 67
+        },
+        {
+          "player": "Trezeguet",
+          "team": "Egypt",
+          "minute": 84
+        }
+      ],
+      "assists": [
+        {
+          "player": "Tim Payne",
+          "team": "New Zealand",
+          "for": "Finn Surman",
+          "minute": 15
+        },
+        {
+          "player": "Mohamed Hany",
+          "team": "Egypt",
+          "for": "Mostafa Ziko",
+          "minute": 58
+        }
+      ],
+      "cards": [
+        {
+          "player": "Mohanad Lasheen",
+          "team": "Egypt",
+          "type": "yellow",
+          "minute": 17
+        }
+      ],
       "venue": "BC Place, Vancouver"
     },
     {
@@ -2855,14 +2918,14 @@
       },
       {
         "team": "Egypt",
-        "gp": 1,
-        "w": 0,
+        "gp": 2,
+        "w": 1,
         "d": 1,
         "l": 0,
-        "gf": 1,
-        "ga": 1,
-        "gd": 0,
-        "pts": 1
+        "gf": 4,
+        "ga": 2,
+        "gd": 2,
+        "pts": 4
       },
       {
         "team": "Iran",
@@ -2877,13 +2940,13 @@
       },
       {
         "team": "New Zealand",
-        "gp": 1,
+        "gp": 2,
         "w": 0,
         "d": 1,
-        "l": 0,
-        "gf": 2,
-        "ga": 2,
-        "gd": 0,
+        "l": 1,
+        "gf": 3,
+        "ga": 5,
+        "gd": -2,
         "pts": 1
       }
     ],
@@ -2912,25 +2975,25 @@
       },
       {
         "team": "Cape Verde",
-        "gp": 1,
+        "gp": 2,
         "w": 0,
-        "d": 1,
+        "d": 2,
         "l": 0,
-        "gf": 0,
-        "ga": 0,
+        "gf": 2,
+        "ga": 2,
         "gd": 0,
-        "pts": 1
+        "pts": 2
       },
       {
         "team": "Uruguay",
-        "gp": 1,
+        "gp": 2,
         "w": 0,
-        "d": 1,
+        "d": 2,
         "l": 0,
-        "gf": 1,
-        "ga": 1,
+        "gf": 3,
+        "ga": 3,
         "gd": 0,
-        "pts": 1
+        "pts": 2
       }
     ],
     "I": [
