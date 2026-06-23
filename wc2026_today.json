@@ -1,60 +1,51 @@
 {
-  "date": "2026-06-23",
+  "date": "2026-06-24",
   "matches": [
     {
-      "match_index": 40,
-      "group": "J",
-      "home": "Argentina",
-      "away": "Austria",
-      "date_wib": "2026-06-23 00:00",
-      "venue": "AT&T Stadium, Arlington",
-      "status": "FT",
-      "score": {
-        "home": 2,
-        "away": 0
-      },
-      "highlight": "https://www.youtube.com/watch?v=2Z8pdzcNjKo"
-    },
-    {
-      "match_index": 41,
-      "group": "I",
-      "home": "France",
-      "away": "Iraq",
-      "date_wib": "2026-06-23 04:00",
-      "venue": "Lincoln Financial Field, Philadelphia",
-      "status": "FT",
+      "match_index": 44,
+      "group": "K",
+      "home": "Portugal",
+      "away": "Uzbekistan",
+      "date_wib": "2026-06-24 00:00",
+      "venue": "NRG Stadium, Houston",
+      "status": "LIVE",
       "score": {
         "home": 3,
         "away": 0
       },
-      "highlight": "https://www.youtube.com/watch?v=zdGI7o71vSU"
+      "highlight": null
     },
     {
-      "match_index": 42,
-      "group": "I",
-      "home": "Norway",
-      "away": "Senegal",
-      "date_wib": "2026-06-23 07:00",
-      "venue": "BMO Field, Toronto",
-      "status": "FT",
-      "score": {
-        "home": 3,
-        "away": 2
-      },
-      "highlight": "https://www.youtube.com/watch?v=GSmM3oWc7T0"
+      "match_index": 45,
+      "group": "L",
+      "home": "England",
+      "away": "Ghana",
+      "date_wib": "2026-06-24 03:00",
+      "venue": "Gillette Stadium, Foxborough",
+      "status": "scheduled",
+      "score": null,
+      "highlight": null
     },
     {
-      "match_index": 43,
-      "group": "J",
-      "home": "Jordan",
-      "away": "Algeria",
-      "date_wib": "2026-06-23 10:00",
-      "venue": "Levi's Stadium, Santa Clara",
-      "status": "FT",
-      "score": {
-        "home": 1,
-        "away": 2
-      },
+      "match_index": 46,
+      "group": "L",
+      "home": "Panama",
+      "away": "Croatia",
+      "date_wib": "2026-06-24 06:00",
+      "venue": "Gillette Stadium, Foxborough",
+      "status": "scheduled",
+      "score": null,
+      "highlight": null
+    },
+    {
+      "match_index": 47,
+      "group": "K",
+      "home": "Colombia",
+      "away": "DR Congo",
+      "date_wib": "2026-06-24 09:00",
+      "venue": "Estadio Akron, Guadalajara",
+      "status": "scheduled",
+      "score": null,
       "highlight": null
     }
   ]

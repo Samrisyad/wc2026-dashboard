@@ -2409,8 +2409,11 @@
       "group": "K",
       "home": "Portugal",
       "away": "Uzbekistan",
-      "status": "scheduled",
-      "score": null,
+      "status": "LIVE",
+      "score": {
+        "home": 3,
+        "away": 0
+      },
       "scorers": [],
       "assists": [],
       "cards": [],
