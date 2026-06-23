@@ -8,9 +8,12 @@
       "away": "Austria",
       "date_wib": "2026-06-23 00:00",
       "venue": "AT&T Stadium, Arlington",
-      "status": "scheduled",
-      "score": null,
-      "highlight": null
+      "status": "FT",
+      "score": {
+        "home": 2,
+        "away": 0
+      },
+      "highlight": "https://www.youtube.com/watch?v=2Z8pdzcNjKo"
     },
     {
       "match_index": 41,
@@ -19,8 +22,11 @@
       "away": "Iraq",
       "date_wib": "2026-06-23 04:00",
       "venue": "Lincoln Financial Field, Philadelphia",
-      "status": "scheduled",
-      "score": null,
+      "status": "FT",
+      "score": {
+        "home": 3,
+        "away": 0
+      },
       "highlight": null
     },
     {
@@ -30,8 +36,11 @@
       "away": "Senegal",
       "date_wib": "2026-06-23 07:00",
       "venue": "BMO Field, Toronto",
-      "status": "scheduled",
-      "score": null,
+      "status": "FT",
+      "score": {
+        "home": 3,
+        "away": 2
+      },
       "highlight": null
     },
     {
@@ -41,8 +50,11 @@
       "away": "Algeria",
       "date_wib": "2026-06-23 10:00",
       "venue": "Levi's Stadium, Santa Clara",
-      "status": "scheduled",
-      "score": null,
+      "status": "FT",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
       "highlight": null
     }
   ]

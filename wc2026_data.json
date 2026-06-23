@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-23 08:57 WIB",
+  "last_updated": "23 June 2026 · 09:15 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -2224,22 +2224,76 @@
       "group": "J",
       "home": "Argentina",
       "away": "Austria",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
+      "status": "FT",
+      "score": {
+        "home": 2,
+        "away": 0
+      },
+      "scorers": [
+        {
+          "player": "Lionel Messi",
+          "team": "Argentina",
+          "minute": 38
+        },
+        {
+          "player": "Lionel Messi",
+          "team": "Argentina",
+          "minute": 95
+        }
+      ],
+      "assists": [
+        {
+          "player": "Facundo Medina",
+          "team": "Argentina",
+          "for": "Lionel Messi",
+          "minute": 38
+        }
+      ],
       "cards": [],
-      "venue": "AT&T Stadium, Arlington"
+      "venue": "AT&T Stadium, Arlington",
+      "highlight": "https://www.youtube.com/watch?v=2Z8pdzcNjKo"
     },
     {
       "date_wib": "2026-06-23 04:00",
       "group": "I",
       "home": "France",
       "away": "Iraq",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
+      "status": "FT",
+      "score": {
+        "home": 3,
+        "away": 0
+      },
+      "scorers": [
+        {
+          "player": "Kylian Mbappé",
+          "team": "France",
+          "minute": 14
+        },
+        {
+          "player": "Kylian Mbappé",
+          "team": "France",
+          "minute": 54
+        },
+        {
+          "player": "Ousmane Dembélé",
+          "team": "France",
+          "minute": 66
+        }
+      ],
+      "assists": [
+        {
+          "player": "Ousmane Dembélé",
+          "team": "France",
+          "for": "Kylian Mbappé",
+          "minute": 54
+        },
+        {
+          "player": "Michael Olise",
+          "team": "France",
+          "for": "Ousmane Dembélé",
+          "minute": 66
+        }
+      ],
       "cards": [],
       "venue": "Lincoln Financial Field, Philadelphia"
     },
@@ -2248,10 +2302,52 @@
       "group": "I",
       "home": "Norway",
       "away": "Senegal",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
+      "status": "FT",
+      "score": {
+        "home": 3,
+        "away": 2
+      },
+      "scorers": [
+        {
+          "player": "Marcus Holmgren Pedersen",
+          "team": "Norway",
+          "minute": 43
+        },
+        {
+          "player": "Erling Haaland",
+          "team": "Norway",
+          "minute": 48
+        },
+        {
+          "player": "Ismaila Sarr",
+          "team": "Senegal",
+          "minute": 53
+        },
+        {
+          "player": "Erling Haaland",
+          "team": "Norway",
+          "minute": 58
+        },
+        {
+          "player": "Ismaila Sarr",
+          "team": "Senegal",
+          "minute": "90+3"
+        }
+      ],
+      "assists": [
+        {
+          "player": "Sadio Mané",
+          "team": "Senegal",
+          "for": "Ismaila Sarr",
+          "minute": 53
+        },
+        {
+          "player": "David Möller Wolfe",
+          "team": "Norway",
+          "for": "Erling Haaland",
+          "minute": 58
+        }
+      ],
       "cards": [],
       "venue": "BMO Field, Toronto"
     },
@@ -2260,10 +2356,26 @@
       "group": "J",
       "home": "Jordan",
       "away": "Algeria",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
+      "status": "FT",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "scorers": [
+        {
+          "player": "Ali Olwan",
+          "team": "Jordan",
+          "minute": 50
+        }
+      ],
+      "assists": [
+        {
+          "player": "Noor Al-Rawabdeh",
+          "team": "Jordan",
+          "for": "Ali Olwan",
+          "minute": 50
+        }
+      ],
       "cards": [],
       "venue": "Levi's Stadium, Santa Clara"
     },
