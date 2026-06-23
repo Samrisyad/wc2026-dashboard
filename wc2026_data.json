@@ -1,5 +1,5 @@
 {
-  "last_updated": "23 June 2026 · 12:06 WIB",
+  "last_updated": "23 June 2026 · 12:13 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -2295,7 +2295,8 @@
         }
       ],
       "cards": [],
-      "venue": "Lincoln Financial Field, Philadelphia"
+      "venue": "Lincoln Financial Field, Philadelphia",
+      "highlight": "https://www.youtube.com/watch?v=zdGI7o71vSU"
     },
     {
       "date_wib": "2026-06-23 07:00",
@@ -2349,7 +2350,8 @@
         }
       ],
       "cards": [],
-      "venue": "BMO Field, Toronto"
+      "venue": "BMO Field, Toronto",
+      "highlight": "https://www.youtube.com/watch?v=GSmM3oWc7T0"
     },
     {
       "date_wib": "2026-06-23 10:00",
@@ -2359,24 +2361,47 @@
       "status": "FT",
       "score": {
         "home": 1,
-        "away": 0
+        "away": 2
       },
       "scorers": [
         {
-          "player": "Ali Olwan",
+          "player": "Nizar Alrashdan",
           "team": "Jordan",
-          "minute": 50
+          "minute": 36
+        },
+        {
+          "player": "Nadhir Benbouali",
+          "team": "Algeria",
+          "minute": 69
+        },
+        {
+          "player": "Amine Gouiri",
+          "team": "Algeria",
+          "minute": 82
         }
       ],
       "assists": [
         {
-          "player": "Noor Al-Rawabdeh",
+          "player": "Mousa Altamari",
           "team": "Jordan",
-          "for": "Ali Olwan",
-          "minute": 50
+          "for": "Nizar Alrashdan",
+          "minute": 36
+        },
+        {
+          "player": "Riyad Mahrez",
+          "team": "Algeria",
+          "for": "Nadhir Benbouali",
+          "minute": 69
         }
       ],
-      "cards": [],
+      "cards": [
+        {
+          "player": "Ramiz Zerrouki",
+          "team": "Algeria",
+          "type": "yellow",
+          "minute": 44
+        }
+      ],
       "venue": "Levi's Stadium, Santa Clara"
     },
     {
@@ -3199,6 +3224,17 @@
         "pts": 6
       },
       {
+        "team": "Algeria",
+        "gp": 2,
+        "w": 1,
+        "d": 0,
+        "l": 1,
+        "gf": 2,
+        "ga": 4,
+        "gd": -2,
+        "pts": 3
+      },
+      {
         "team": "Austria",
         "gp": 2,
         "w": 1,
@@ -3212,23 +3248,12 @@
       {
         "team": "Jordan",
         "gp": 2,
-        "w": 1,
-        "d": 0,
-        "l": 1,
-        "gf": 2,
-        "ga": 3,
-        "gd": -1,
-        "pts": 3
-      },
-      {
-        "team": "Algeria",
-        "gp": 2,
         "w": 0,
         "d": 0,
         "l": 2,
-        "gf": 0,
-        "ga": 4,
-        "gd": -4,
+        "gf": 2,
+        "ga": 5,
+        "gd": -3,
         "pts": 0
       }
     ],

@@ -27,7 +27,7 @@
         "home": 3,
         "away": 0
       },
-      "highlight": null
+      "highlight": "https://www.youtube.com/watch?v=zdGI7o71vSU"
     },
     {
       "match_index": 42,
@@ -41,7 +41,7 @@
         "home": 3,
         "away": 2
       },
-      "highlight": null
+      "highlight": "https://www.youtube.com/watch?v=GSmM3oWc7T0"
     },
     {
       "match_index": 43,
@@ -53,7 +53,7 @@
       "status": "FT",
       "score": {
         "home": 1,
-        "away": 0
+        "away": 2
       },
       "highlight": null
     }
