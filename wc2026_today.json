@@ -1,60 +1,70 @@
 {
-  "date": "2026-06-24",
+  "date": "2026-06-25",
   "matches": [
     {
-      "match_index": 44,
-      "group": "K",
-      "home": "Portugal",
-      "away": "Uzbekistan",
-      "date_wib": "2026-06-24 00:00",
-      "venue": "NRG Stadium, Houston",
-      "status": "FT",
-      "score": {
-        "home": 5,
-        "away": 0
-      },
-      "highlight": "https://www.youtube.com/watch?v=RBfb_U6ACeQ"
-    },
-    {
-      "match_index": 45,
-      "group": "L",
-      "home": "England",
-      "away": "Ghana",
-      "date_wib": "2026-06-24 03:00",
-      "venue": "Gillette Stadium, Foxborough",
-      "status": "FT",
-      "score": {
-        "home": 0,
-        "away": 0
-      },
-      "highlight": "https://www.youtube.com/watch?v=u1ztrr2cIkU"
-    },
-    {
-      "match_index": 46,
-      "group": "L",
-      "home": "Panama",
-      "away": "Croatia",
-      "date_wib": "2026-06-24 06:00",
-      "venue": "BMO Field, Toronto",
-      "status": "FT",
-      "score": {
-        "home": 0,
-        "away": 1
-      },
+      "match_index": 48,
+      "group": "B",
+      "home": "Switzerland",
+      "away": "Canada",
+      "date_wib": "2026-06-25 02:00",
+      "venue": "BC Place, Vancouver",
+      "status": "LIVE",
+      "score": {"home": 0, "away": 0},
       "highlight": null
     },
     {
-      "match_index": 47,
-      "group": "K",
-      "home": "Colombia",
-      "away": "DR Congo",
-      "date_wib": "2026-06-24 09:00",
-      "venue": "Estadio Akron, Guadalajara",
-      "status": "FT",
-      "score": {
-        "home": 1,
-        "away": 0
-      },
+      "match_index": 49,
+      "group": "B",
+      "home": "Bosnia-Herzegovina",
+      "away": "Qatar",
+      "date_wib": "2026-06-25 02:00",
+      "venue": "Lumen Field, Seattle",
+      "status": "LIVE",
+      "score": {"home": 2, "away": 1},
+      "highlight": null
+    },
+    {
+      "match_index": 50,
+      "group": "C",
+      "home": "Morocco",
+      "away": "Haiti",
+      "date_wib": "2026-06-25 05:00",
+      "venue": "Mercedes-Benz Stadium, Atlanta",
+      "status": "scheduled",
+      "score": null,
+      "highlight": null
+    },
+    {
+      "match_index": 51,
+      "group": "C",
+      "home": "Scotland",
+      "away": "Brazil",
+      "date_wib": "2026-06-25 05:00",
+      "venue": "Hard Rock Stadium, Miami Gardens",
+      "status": "scheduled",
+      "score": null,
+      "highlight": null
+    },
+    {
+      "match_index": 52,
+      "group": "A",
+      "home": "South Africa",
+      "away": "South Korea",
+      "date_wib": "2026-06-25 08:00",
+      "venue": "Estadio BBVA, Monterrey",
+      "status": "scheduled",
+      "score": null,
+      "highlight": null
+    },
+    {
+      "match_index": 53,
+      "group": "A",
+      "home": "Czechia",
+      "away": "Mexico",
+      "date_wib": "2026-06-25 08:00",
+      "venue": "Estadio Azteca, Mexico City",
+      "status": "scheduled",
+      "score": null,
       "highlight": null
     }
   ]

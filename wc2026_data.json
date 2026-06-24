@@ -2570,8 +2570,11 @@
       "group": "B",
       "home": "Switzerland",
       "away": "Canada",
-      "status": "scheduled",
-      "score": null,
+      "status": "LIVE",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
       "scorers": [],
       "assists": [],
       "cards": [],
@@ -2582,8 +2585,11 @@
       "group": "B",
       "home": "Bosnia-Herzegovina",
       "away": "Qatar",
-      "status": "scheduled",
-      "score": null,
+      "status": "LIVE",
+      "score": {
+        "home": 2,
+        "away": 1
+      },
       "scorers": [],
       "assists": [],
       "cards": [],
