@@ -1,5 +1,5 @@
 {
-  "last_updated": "24 June 2026 · 06:06 WIB",
+  "last_updated": "24 June 2026 · 09:45 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -2492,14 +2492,34 @@
       "group": "L",
       "home": "Panama",
       "away": "Croatia",
-      "status": "LIVE",
+      "status": "FT",
       "score": {
         "home": 0,
-        "away": 0
+        "away": 1
       },
-      "scorers": [],
-      "assists": [],
-      "cards": [],
+      "scorers": [
+        {
+          "player": "Ante Budimir",
+          "team": "Croatia",
+          "minute": 54
+        }
+      ],
+      "assists": [
+        {
+          "player": "Josip Stanisić",
+          "team": "Croatia",
+          "for": "Ante Budimir",
+          "minute": 54
+        }
+      ],
+      "cards": [
+        {
+          "player": "Yoel Bárcenas",
+          "team": "Panama",
+          "type": "yellow",
+          "minute": 61
+        }
+      ],
       "venue": "BMO Field, Toronto"
     },
     {
@@ -2507,8 +2527,11 @@
       "group": "K",
       "home": "Colombia",
       "away": "DR Congo",
-      "status": "scheduled",
-      "score": null,
+      "status": "LIVE",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
       "scorers": [],
       "assists": [],
       "cards": [],
@@ -3390,24 +3413,24 @@
       },
       {
         "team": "Croatia",
-        "gp": 1,
-        "w": 0,
+        "gp": 2,
+        "w": 1,
         "d": 0,
         "l": 1,
-        "gf": 2,
+        "gf": 3,
         "ga": 4,
-        "gd": -2,
-        "pts": 0
+        "gd": -1,
+        "pts": 3
       },
       {
         "team": "Panama",
-        "gp": 1,
+        "gp": 2,
         "w": 0,
         "d": 0,
-        "l": 1,
+        "l": 2,
         "gf": 0,
-        "ga": 1,
-        "gd": -1,
+        "ga": 2,
+        "gd": -2,
         "pts": 0
       }
     ]

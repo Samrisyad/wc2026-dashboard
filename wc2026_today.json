@@ -36,10 +36,10 @@
       "away": "Croatia",
       "date_wib": "2026-06-24 06:00",
       "venue": "BMO Field, Toronto",
-      "status": "LIVE",
+      "status": "FT",
       "score": {
         "home": 0,
-        "away": 0
+        "away": 1
       },
       "highlight": null
     },
@@ -50,8 +50,11 @@
       "away": "DR Congo",
       "date_wib": "2026-06-24 09:00",
       "venue": "Estadio Akron, Guadalajara",
-      "status": "scheduled",
-      "score": null,
+      "status": "LIVE",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
       "highlight": null
     }
   ]
