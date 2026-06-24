@@ -13,7 +13,7 @@
         "home": 5,
         "away": 0
       },
-      "highlight": null
+      "highlight": "https://www.youtube.com/watch?v=RBfb_U6ACeQ"
     },
     {
       "match_index": 45,
@@ -27,7 +27,7 @@
         "home": 0,
         "away": 0
       },
-      "highlight": null
+      "highlight": "https://www.youtube.com/watch?v=u1ztrr2cIkU"
     },
     {
       "match_index": 46,
@@ -50,9 +50,9 @@
       "away": "DR Congo",
       "date_wib": "2026-06-24 09:00",
       "venue": "Estadio Akron, Guadalajara",
-      "status": "LIVE",
+      "status": "FT",
       "score": {
-        "home": 0,
+        "home": 1,
         "away": 0
       },
       "highlight": null

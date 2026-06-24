@@ -1,5 +1,5 @@
 {
-  "last_updated": "24 June 2026 · 09:45 WIB",
+  "last_updated": "24 June 2026 · 12:07 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -2457,7 +2457,8 @@
         }
       ],
       "cards": [],
-      "venue": "NRG Stadium, Houston"
+      "venue": "NRG Stadium, Houston",
+      "highlight": "https://www.youtube.com/watch?v=RBfb_U6ACeQ"
     },
     {
       "date_wib": "2026-06-24 03:00",
@@ -2485,7 +2486,8 @@
           "minute": 65
         }
       ],
-      "venue": "Gillette Stadium, Foxborough"
+      "venue": "Gillette Stadium, Foxborough",
+      "highlight": "https://www.youtube.com/watch?v=u1ztrr2cIkU"
     },
     {
       "date_wib": "2026-06-24 06:00",
@@ -2527,14 +2529,40 @@
       "group": "K",
       "home": "Colombia",
       "away": "DR Congo",
-      "status": "LIVE",
+      "status": "FT",
       "score": {
-        "home": 0,
+        "home": 1,
         "away": 0
       },
-      "scorers": [],
-      "assists": [],
-      "cards": [],
+      "scorers": [
+        {
+          "player": "Daniel Muñoz",
+          "team": "Colombia",
+          "minute": 76
+        }
+      ],
+      "assists": [
+        {
+          "player": "Juan Fernando Quintero",
+          "team": "Colombia",
+          "for": "Daniel Muñoz",
+          "minute": 76
+        }
+      ],
+      "cards": [
+        {
+          "player": "Jefferson Lerma",
+          "team": "Colombia",
+          "type": "yellow",
+          "minute": 85
+        },
+        {
+          "player": "Charles Pickel",
+          "team": "DR Congo",
+          "type": "yellow",
+          "minute": 88
+        }
+      ],
       "venue": "Estadio Akron, Guadalajara"
     },
     {
@@ -3342,7 +3370,7 @@
         "pts": 0
       }
     ],
-        "K": [
+    "K": [
       {
         "team": "Portugal",
         "gp": 2,
