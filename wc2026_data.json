@@ -1,5 +1,5 @@
 {
-  "last_updated": "24 June 2026 · 12:08 WIB",
+  "last_updated": "25 June 2026 · 06:10 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -2570,13 +2570,48 @@
       "group": "B",
       "home": "Switzerland",
       "away": "Canada",
-      "status": "LIVE",
+      "status": "FT",
       "score": {
-        "home": 0,
-        "away": 0
+        "home": 2,
+        "away": 1
       },
-      "scorers": [],
-      "assists": [],
+      "scorers": [
+        {
+          "player": "Rubén Vargas",
+          "team": "Switzerland",
+          "minute": 46
+        },
+        {
+          "player": "Johan Manzambi",
+          "team": "Switzerland",
+          "minute": 57
+        },
+        {
+          "player": "Promise David",
+          "team": "Canada",
+          "minute": 76
+        }
+      ],
+      "assists": [
+        {
+          "player": "Johan Manzambi",
+          "team": "Switzerland",
+          "for": "Rubén Vargas",
+          "minute": 46
+        },
+        {
+          "player": "Breel Embolo",
+          "team": "Switzerland",
+          "for": "Johan Manzambi",
+          "minute": 57
+        },
+        {
+          "player": "Nathan-Dylan Saliba",
+          "team": "Canada",
+          "for": "Promise David",
+          "minute": 76
+        }
+      ],
       "cards": [],
       "venue": "BC Place, Vancouver"
     },
@@ -2585,13 +2620,47 @@
       "group": "B",
       "home": "Bosnia-Herzegovina",
       "away": "Qatar",
-      "status": "LIVE",
+      "status": "FT",
       "score": {
-        "home": 2,
+        "home": 3,
         "away": 1
       },
-      "scorers": [],
-      "assists": [],
+      "scorers": [
+        {
+          "player": "Kerim Alajbegović",
+          "team": "Bosnia-Herzegovina",
+          "minute": 29
+        },
+        {
+          "player": "Sultan Al Brake (OG)",
+          "team": "Bosnia-Herzegovina",
+          "minute": 34
+        },
+        {
+          "player": "Hasan Al Haydos",
+          "team": "Qatar",
+          "minute": 42
+        },
+        {
+          "player": "Ermin Mahmić",
+          "team": "Bosnia-Herzegovina",
+          "minute": 80
+        }
+      ],
+      "assists": [
+        {
+          "player": "Ivan Bašić",
+          "team": "Bosnia-Herzegovina",
+          "for": "Kerim Alajbegović",
+          "minute": 29
+        },
+        {
+          "player": "Edmilson Júnior",
+          "team": "Qatar",
+          "for": "Hasan Al Haydos",
+          "minute": 42
+        }
+      ],
       "cards": [],
       "venue": "Lumen Field, Seattle"
     },
@@ -2600,9 +2669,33 @@
       "group": "C",
       "home": "Morocco",
       "away": "Haiti",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
+      "status": "LIVE",
+      "score": {
+        "home": 2,
+        "away": 2
+      },
+      "scorers": [
+        {
+          "player": "Bono (OG)",
+          "team": "Haiti",
+          "minute": 11
+        },
+        {
+          "player": "Achraf Hakimi",
+          "team": "Morocco",
+          "minute": 39
+        },
+        {
+          "player": "Wilson Isidor",
+          "team": "Haiti",
+          "minute": 44
+        },
+        {
+          "player": "Ismael Saibari",
+          "team": "Morocco",
+          "minute": 46
+        }
+      ],
       "assists": [],
       "cards": [],
       "venue": "Mercedes-Benz Stadium, Atlanta"
@@ -2612,9 +2705,23 @@
       "group": "C",
       "home": "Scotland",
       "away": "Brazil",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
+      "status": "LIVE",
+      "score": {
+        "home": 0,
+        "away": 2
+      },
+      "scorers": [
+        {
+          "player": "Vinícius Júnior",
+          "team": "Brazil",
+          "minute": 8
+        },
+        {
+          "player": "Vinícius Júnior",
+          "team": "Brazil",
+          "minute": "45+2"
+        }
+      ],
       "assists": [],
       "cards": [],
       "venue": "Hard Rock Stadium, Miami Gardens"
@@ -2964,26 +3071,37 @@
     ],
     "B": [
       {
-        "team": "Canada",
+        "team": "Switzerland",
         "gp": 3,
         "w": 2,
         "d": 1,
         "l": 0,
-        "gf": 10,
-        "ga": 1,
-        "gd": 9,
+        "gf": 7,
+        "ga": 3,
+        "gd": 4,
         "pts": 7
       },
       {
-        "team": "Bosnia-Herzegovina",
-        "gp": 2,
-        "w": 0,
+        "team": "Canada",
+        "gp": 3,
+        "w": 1,
         "d": 1,
         "l": 1,
-        "gf": 2,
-        "ga": 5,
-        "gd": -3,
-        "pts": 1
+        "gf": 8,
+        "ga": 3,
+        "gd": 5,
+        "pts": 4
+      },
+      {
+        "team": "Bosnia-Herzegovina",
+        "gp": 3,
+        "w": 1,
+        "d": 1,
+        "l": 1,
+        "gf": 5,
+        "ga": 6,
+        "gd": -1,
+        "pts": 4
       },
       {
         "team": "Qatar",
@@ -2991,21 +3109,10 @@
         "w": 0,
         "d": 1,
         "l": 2,
-        "gf": 1,
+        "gf": 2,
         "ga": 10,
-        "gd": -9,
+        "gd": -8,
         "pts": 1
-      },
-      {
-        "team": "Switzerland",
-        "gp": 2,
-        "w": 1,
-        "d": 1,
-        "l": 0,
-        "gf": 5,
-        "ga": 2,
-        "gd": 3,
-        "pts": 4
       }
     ],
     "C": [

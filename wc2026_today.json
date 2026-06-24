@@ -8,8 +8,11 @@
       "away": "Canada",
       "date_wib": "2026-06-25 02:00",
       "venue": "BC Place, Vancouver",
-      "status": "LIVE",
-      "score": {"home": 0, "away": 0},
+      "status": "FT",
+      "score": {
+        "home": 2,
+        "away": 1
+      },
       "highlight": null
     },
     {
@@ -19,8 +22,11 @@
       "away": "Qatar",
       "date_wib": "2026-06-25 02:00",
       "venue": "Lumen Field, Seattle",
-      "status": "LIVE",
-      "score": {"home": 2, "away": 1},
+      "status": "FT",
+      "score": {
+        "home": 3,
+        "away": 1
+      },
       "highlight": null
     },
     {
@@ -30,8 +36,11 @@
       "away": "Haiti",
       "date_wib": "2026-06-25 05:00",
       "venue": "Mercedes-Benz Stadium, Atlanta",
-      "status": "scheduled",
-      "score": null,
+      "status": "LIVE",
+      "score": {
+        "home": 2,
+        "away": 2
+      },
       "highlight": null
     },
     {
@@ -41,8 +50,11 @@
       "away": "Brazil",
       "date_wib": "2026-06-25 05:00",
       "venue": "Hard Rock Stadium, Miami Gardens",
-      "status": "scheduled",
-      "score": null,
+      "status": "LIVE",
+      "score": {
+        "home": 0,
+        "away": 2
+      },
       "highlight": null
     },
     {
