@@ -13,7 +13,7 @@
         "home": 2,
         "away": 1
       },
-      "highlight": null
+      "highlight": "https://www.youtube.com/watch?v=ajK7P58s2v0"
     },
     {
       "match_index": 49,
@@ -27,7 +27,7 @@
         "home": 3,
         "away": 1
       },
-      "highlight": null
+      "highlight": "https://www.youtube.com/watch?v=OzEREl7Vj1I"
     },
     {
       "match_index": 50,
@@ -41,7 +41,7 @@
         "home": 4,
         "away": 2
       },
-      "highlight": null
+      "highlight": "https://www.youtube.com/watch?v=U1iiIGR0ezM"
     },
     {
       "match_index": 51,
@@ -55,7 +55,7 @@
         "home": 0,
         "away": 3
       },
-      "highlight": null
+      "highlight": "https://www.youtube.com/watch?v=Zw3RUEUK_Sk"
     },
     {
       "match_index": 52,
@@ -81,7 +81,7 @@
       "status": "FT",
       "score": {
         "home": 0,
-        "away": 2
+        "away": 3
       },
       "highlight": null
     }
