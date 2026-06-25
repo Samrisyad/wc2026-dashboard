@@ -36,9 +36,9 @@
       "away": "Haiti",
       "date_wib": "2026-06-25 05:00",
       "venue": "Mercedes-Benz Stadium, Atlanta",
-      "status": "LIVE",
+      "status": "FT",
       "score": {
-        "home": 2,
+        "home": 4,
         "away": 2
       },
       "highlight": null
@@ -50,10 +50,10 @@
       "away": "Brazil",
       "date_wib": "2026-06-25 05:00",
       "venue": "Hard Rock Stadium, Miami Gardens",
-      "status": "LIVE",
+      "status": "FT",
       "score": {
         "home": 0,
-        "away": 2
+        "away": 3
       },
       "highlight": null
     },
@@ -64,8 +64,11 @@
       "away": "South Korea",
       "date_wib": "2026-06-25 08:00",
       "venue": "Estadio BBVA, Monterrey",
-      "status": "scheduled",
-      "score": null,
+      "status": "FT",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
       "highlight": null
     },
     {
@@ -75,8 +78,11 @@
       "away": "Mexico",
       "date_wib": "2026-06-25 08:00",
       "venue": "Estadio Azteca, Mexico City",
-      "status": "scheduled",
-      "score": null,
+      "status": "FT",
+      "score": {
+        "home": 0,
+        "away": 2
+      },
       "highlight": null
     }
   ]

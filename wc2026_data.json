@@ -2669,9 +2669,9 @@
       "group": "C",
       "home": "Morocco",
       "away": "Haiti",
-      "status": "LIVE",
+      "status": "FT",
       "score": {
-        "home": 2,
+        "home": 4,
         "away": 2
       },
       "scorers": [
@@ -2705,10 +2705,10 @@
       "group": "C",
       "home": "Scotland",
       "away": "Brazil",
-      "status": "LIVE",
+      "status": "FT",
       "score": {
         "home": 0,
-        "away": 2
+        "away": 3
       },
       "scorers": [
         {
@@ -2731,8 +2731,11 @@
       "group": "A",
       "home": "South Africa",
       "away": "South Korea",
-      "status": "scheduled",
-      "score": null,
+      "status": "FT",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
       "scorers": [],
       "assists": [],
       "cards": [],
@@ -2743,8 +2746,11 @@
       "group": "A",
       "home": "Czechia",
       "away": "Mexico",
-      "status": "scheduled",
-      "score": null,
+      "status": "FT",
+      "score": {
+        "home": 0,
+        "away": 2
+      },
       "scorers": [],
       "assists": [],
       "cards": [],
