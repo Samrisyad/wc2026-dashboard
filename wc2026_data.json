@@ -1,5 +1,5 @@
 {
-  "last_updated": "25 June 2026 · 10:15 WIB",
+  "last_updated": "29 June 2026 · 16:00 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -2402,7 +2402,8 @@
           "minute": 44
         }
       ],
-      "venue": "Levi's Stadium, Santa Clara"
+      "venue": "Levi's Stadium, Santa Clara",
+      "highlight": "https://www.youtube.com/watch?v=SX5qYQWA0yk"
     },
     {
       "date_wib": "2026-06-24 00:00",
@@ -2522,7 +2523,8 @@
           "minute": 61
         }
       ],
-      "venue": "BMO Field, Toronto"
+      "venue": "BMO Field, Toronto",
+      "highlight": "https://www.youtube.com/watch?v=uR7JmgIxgAc"
     },
     {
       "date_wib": "2026-06-24 09:00",
@@ -2563,7 +2565,8 @@
           "minute": 88
         }
       ],
-      "venue": "Estadio Akron, Guadalajara"
+      "venue": "Estadio Akron, Guadalajara",
+      "highlight": "https://www.youtube.com/watch?v=0mHbeuqGxqk"
     },
     {
       "date_wib": "2026-06-25 02:00",
@@ -2802,7 +2805,8 @@
       ],
       "assists": [],
       "cards": [],
-      "venue": "Estadio BBVA, Monterrey"
+      "venue": "Estadio BBVA, Monterrey",
+      "highlight": "https://www.youtube.com/watch?v=wuVCQUrEuB4"
     },
     {
       "date_wib": "2026-06-25 08:00",
@@ -2833,223 +2837,898 @@
       ],
       "assists": [],
       "cards": [],
-      "venue": "Estadio Azteca, Mexico City"
+      "venue": "Estadio Azteca, Mexico City",
+      "highlight": "https://www.youtube.com/watch?v=tQ5V3-35nkg"
     },
     {
       "date_wib": "2026-06-26 03:00",
       "group": "E",
       "home": "Curaçao",
       "away": "Ivory Coast",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
+      "status": "FT",
+      "score": {
+        "home": 0,
+        "away": 2
+      },
+      "scorers": [
+        {
+          "player": "Nicolas Pépé",
+          "team": "Ivory Coast",
+          "minute": 7
+        },
+        {
+          "player": "Nicolas Pépé",
+          "team": "Ivory Coast",
+          "minute": 64
+        }
+      ],
       "assists": [],
       "cards": [],
-      "venue": "Lincoln Financial Field, Philadelphia"
+      "venue": "Lincoln Financial Field, Philadelphia",
+      "highlight": "https://www.youtube.com/watch?v=LGzgHDYZKNg"
     },
     {
       "date_wib": "2026-06-26 03:00",
       "group": "E",
       "home": "Ecuador",
       "away": "Germany",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
+      "status": "FT",
+      "score": {
+        "home": 2,
+        "away": 1
+      },
+      "scorers": [
+        {
+          "player": "Leroy Sané",
+          "team": "Germany",
+          "minute": 2
+        },
+        {
+          "player": "Nilson Angulo",
+          "team": "Ecuador",
+          "minute": 9
+        },
+        {
+          "player": "Gonzalo Plata",
+          "team": "Ecuador",
+          "minute": 78
+        }
+      ],
+      "assists": [
+        {
+          "player": "Florian Wirtz",
+          "team": "Germany",
+          "for": "Leroy Sané",
+          "minute": 2
+        },
+        {
+          "player": "Pedro Vite",
+          "team": "Ecuador",
+          "for": "Nilson Angulo",
+          "minute": 9
+        },
+        {
+          "player": "Kevin Rodríguez",
+          "team": "Ecuador",
+          "for": "Gonzalo Plata",
+          "minute": 78
+        }
+      ],
       "cards": [],
-      "venue": "MetLife Stadium, East Rutherford"
+      "venue": "MetLife Stadium, East Rutherford",
+      "highlight": "https://www.youtube.com/watch?v=9iIQz7Zhygk"
     },
     {
       "date_wib": "2026-06-26 06:00",
       "group": "F",
       "home": "Tunisia",
       "away": "Netherlands",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
+      "status": "FT",
+      "score": {
+        "home": 1,
+        "away": 3
+      },
+      "scorers": [
+        {
+          "player": "Hamza Skhiri",
+          "team": "Tunisia",
+          "minute": 3,
+          "ownGoal": true
+        },
+        {
+          "player": "Brian Brobbey",
+          "team": "Netherlands",
+          "minute": 7
+        },
+        {
+          "player": "Anis Mastouri",
+          "team": "Tunisia",
+          "minute": 54
+        },
+        {
+          "player": "Jan Paul van Hecke",
+          "team": "Netherlands",
+          "minute": 62
+        }
+      ],
       "assists": [],
       "cards": [],
-      "venue": "Arrowhead Stadium, Kansas City"
+      "venue": "Arrowhead Stadium, Kansas City",
+      "highlight": "https://www.youtube.com/watch?v=2pxOQY1pBaE"
     },
     {
       "date_wib": "2026-06-26 06:00",
       "group": "F",
       "home": "Japan",
       "away": "Sweden",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
+      "status": "FT",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "scorers": [
+        {
+          "player": "Daizen Maeda",
+          "team": "Japan",
+          "minute": null
+        },
+        {
+          "player": "Anthony Elanga",
+          "team": "Sweden",
+          "minute": null
+        }
+      ],
       "assists": [],
       "cards": [],
-      "venue": "AT&T Stadium, Arlington"
+      "venue": "AT&T Stadium, Arlington",
+      "highlight": "https://www.youtube.com/watch?v=6fZNt3M8v9w"
     },
     {
       "date_wib": "2026-06-26 09:00",
       "group": "D",
       "home": "Türkiye",
       "away": "United States",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
+      "status": "FT",
+      "score": {
+        "home": 3,
+        "away": 2
+      },
+      "scorers": [
+        {
+          "player": "Austin Trusty",
+          "team": "United States",
+          "minute": 3
+        },
+        {
+          "player": "Arda Güler",
+          "team": "Türkiye",
+          "minute": 10
+        },
+        {
+          "player": "Barış Yılmaz",
+          "team": "Türkiye",
+          "minute": 31
+        },
+        {
+          "player": "Sebastian Berhalter",
+          "team": "United States",
+          "minute": 49
+        },
+        {
+          "player": "Kaan Ayhan",
+          "team": "Türkiye",
+          "minute": "90+8"
+        }
+      ],
       "assists": [],
       "cards": [],
-      "venue": "SoFi Stadium, Inglewood"
+      "venue": "SoFi Stadium, Inglewood",
+      "highlight": "https://www.youtube.com/watch?v=88qVK0one7w"
     },
     {
       "date_wib": "2026-06-26 09:00",
       "group": "D",
       "home": "Paraguay",
       "away": "Australia",
-      "status": "scheduled",
-      "score": null,
+      "status": "FT",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
       "scorers": [],
       "assists": [],
       "cards": [],
-      "venue": "Levi's Stadium, Santa Clara"
+      "venue": "Levi's Stadium, Santa Clara",
+      "highlight": "https://www.youtube.com/watch?v=4x7IRKjAVaE"
     },
     {
       "date_wib": "2026-06-27 02:00",
       "group": "I",
       "home": "Norway",
       "away": "France",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
+      "status": "FT",
+      "score": {
+        "home": 1,
+        "away": 4
+      },
+      "scorers": [
+        {
+          "player": "Ousmane Dembélé",
+          "team": "France",
+          "minute": 7
+        },
+        {
+          "player": "Ousmane Dembélé",
+          "team": "France",
+          "minute": 20
+        },
+        {
+          "player": "Thelo Aasgaard",
+          "team": "Norway",
+          "minute": 21
+        },
+        {
+          "player": "Ousmane Dembélé",
+          "team": "France",
+          "minute": 32
+        },
+        {
+          "player": "Désiré Doué",
+          "team": "France",
+          "minute": "90+4"
+        }
+      ],
+      "assists": [
+        {
+          "player": "Kylian Mbappé",
+          "team": "France",
+          "for": "Ousmane Dembélé",
+          "minute": 7
+        },
+        {
+          "player": "Kylian Mbappé",
+          "team": "France",
+          "for": "Ousmane Dembélé",
+          "minute": 20
+        },
+        {
+          "player": "Adrien Tchouaméni",
+          "team": "France",
+          "for": "Ousmane Dembélé",
+          "minute": 32
+        }
+      ],
       "cards": [],
-      "venue": "Gillette Stadium, Foxborough"
+      "venue": "Gillette Stadium, Foxborough",
+      "highlight": "https://www.youtube.com/watch?v=Wv-FnpSreck"
     },
     {
       "date_wib": "2026-06-27 02:00",
       "group": "I",
       "home": "Senegal",
       "away": "Iraq",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
+      "status": "FT",
+      "score": {
+        "home": 5,
+        "away": 0
+      },
+      "scorers": [
+        {
+          "player": "Habib Diarra",
+          "team": "Senegal",
+          "minute": 4
+        },
+        {
+          "player": "Ismaila Sarr",
+          "team": "Senegal",
+          "minute": 56
+        },
+        {
+          "player": "Pape Gueye",
+          "team": "Senegal",
+          "minute": 59
+        },
+        {
+          "player": "Pape Gueye",
+          "team": "Senegal",
+          "minute": 71
+        },
+        {
+          "player": "Iliman Ndiaye",
+          "team": "Senegal",
+          "minute": 82
+        }
+      ],
       "assists": [],
       "cards": [],
-      "venue": "BMO Field, Toronto"
+      "venue": "BMO Field, Toronto",
+      "highlight": "https://www.youtube.com/watch?v=ZAayRG3ROto"
     },
     {
       "date_wib": "2026-06-27 07:00",
       "group": "H",
       "home": "Cape Verde",
       "away": "Saudi Arabia",
-      "status": "scheduled",
-      "score": null,
+      "status": "FT",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
       "scorers": [],
       "assists": [],
       "cards": [],
-      "venue": "NRG Stadium, Houston"
+      "venue": "NRG Stadium, Houston",
+      "highlight": "https://www.youtube.com/watch?v=OPV3kRWvGbM"
     },
     {
       "date_wib": "2026-06-27 07:00",
       "group": "H",
       "home": "Uruguay",
       "away": "Spain",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
+      "status": "FT",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "scorers": [
+        {
+          "player": "Alex Baena",
+          "team": "Spain",
+          "minute": 42
+        }
+      ],
+      "assists": [
+        {
+          "player": "Marcos Llorente",
+          "team": "Spain",
+          "for": "Alex Baena",
+          "minute": 42
+        }
+      ],
       "cards": [],
-      "venue": "Estadio Akron, Guadalajara"
+      "venue": "Estadio Akron, Guadalajara",
+      "highlight": "https://www.youtube.com/watch?v=ZmPfacqqUDk"
     },
     {
       "date_wib": "2026-06-27 10:00",
       "group": "G",
       "home": "New Zealand",
       "away": "Belgium",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
+      "status": "FT",
+      "score": {
+        "home": 1,
+        "away": 5
+      },
+      "scorers": [
+        {
+          "player": "Leandro Trossard",
+          "team": "Belgium",
+          "minute": 28
+        },
+        {
+          "player": "Leandro Trossard",
+          "team": "Belgium",
+          "minute": 50
+        },
+        {
+          "player": "Kevin De Bruyne",
+          "team": "Belgium",
+          "minute": 66
+        },
+        {
+          "player": "Elijah Just",
+          "team": "New Zealand",
+          "minute": 84
+        },
+        {
+          "player": "Romelu Lukaku",
+          "team": "Belgium",
+          "minute": 86
+        },
+        {
+          "player": "Alexis Saelemaekers",
+          "team": "Belgium",
+          "minute": "90+4"
+        }
+      ],
       "assists": [],
       "cards": [],
-      "venue": "BC Place, Vancouver"
+      "venue": "BC Place, Vancouver",
+      "highlight": "https://www.youtube.com/watch?v=AGfyLmGcykY"
     },
     {
       "date_wib": "2026-06-27 10:00",
       "group": "G",
       "home": "Egypt",
       "away": "Iran",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
+      "status": "FT",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "scorers": [
+        {
+          "player": "Mahmoud Saber",
+          "team": "Egypt",
+          "minute": 5
+        },
+        {
+          "player": "Ramin Rezaeian",
+          "team": "Iran",
+          "minute": 14
+        }
+      ],
       "assists": [],
       "cards": [],
-      "venue": "Lumen Field, Seattle"
+      "venue": "Lumen Field, Seattle",
+      "highlight": "https://www.youtube.com/watch?v=bhQEBmuoRi0"
     },
     {
       "date_wib": "2026-06-28 04:00",
       "group": "L",
       "home": "Panama",
       "away": "England",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
+      "status": "FT",
+      "score": {
+        "home": 0,
+        "away": 2
+      },
+      "scorers": [
+        {
+          "player": "Jude Bellingham",
+          "team": "England",
+          "minute": 62
+        },
+        {
+          "player": "Harry Kane",
+          "team": "England",
+          "minute": 67
+        }
+      ],
+      "assists": [
+        {
+          "player": "Bukayo Saka",
+          "team": "England",
+          "for": "Jude Bellingham",
+          "minute": 62
+        },
+        {
+          "player": "Jude Bellingham",
+          "team": "England",
+          "for": "Harry Kane",
+          "minute": 67
+        }
+      ],
       "cards": [],
-      "venue": "MetLife Stadium, East Rutherford"
+      "venue": "MetLife Stadium, East Rutherford",
+      "highlight": "https://www.youtube.com/watch?v=FbKajKnYuFM"
     },
     {
       "date_wib": "2026-06-28 04:00",
       "group": "L",
       "home": "Croatia",
       "away": "Ghana",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
+      "status": "FT",
+      "score": {
+        "home": 2,
+        "away": 1
+      },
+      "scorers": [
+        {
+          "player": "Petar Sučić",
+          "team": "Croatia",
+          "minute": 31
+        },
+        {
+          "player": "Derrick Luckassen",
+          "team": "Ghana",
+          "minute": 73
+        },
+        {
+          "player": "Nikola Vlašić",
+          "team": "Croatia",
+          "minute": 83
+        }
+      ],
+      "assists": [
+        {
+          "player": "Luka Modrić",
+          "team": "Croatia",
+          "for": "Nikola Vlašić",
+          "minute": 83
+        }
+      ],
       "cards": [],
-      "venue": "Lincoln Financial Field, Philadelphia"
+      "venue": "Lincoln Financial Field, Philadelphia",
+      "highlight": "https://www.youtube.com/watch?v=QjkAjbEKbsc"
     },
     {
       "date_wib": "2026-06-28 06:30",
       "group": "K",
       "home": "Colombia",
       "away": "Portugal",
-      "status": "scheduled",
-      "score": null,
+      "status": "FT",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
       "scorers": [],
       "assists": [],
       "cards": [],
-      "venue": "Hard Rock Stadium, Miami Gardens"
+      "venue": "Hard Rock Stadium, Miami Gardens",
+      "highlight": "https://www.youtube.com/watch?v=TmeRUYcAhjA"
     },
     {
       "date_wib": "2026-06-28 06:30",
       "group": "K",
       "home": "DR Congo",
       "away": "Uzbekistan",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
+      "status": "FT",
+      "score": {
+        "home": 3,
+        "away": 1
+      },
+      "scorers": [
+        {
+          "player": "Eldor Shomurodov",
+          "team": "Uzbekistan",
+          "minute": 10
+        },
+        {
+          "player": "Yoane Wissa",
+          "team": "DR Congo",
+          "minute": 68
+        },
+        {
+          "player": "Fiston Mayele",
+          "team": "DR Congo",
+          "minute": 78
+        },
+        {
+          "player": "Yoane Wissa",
+          "team": "DR Congo",
+          "minute": "90+1",
+          "penalty": true
+        }
+      ],
       "assists": [],
       "cards": [],
-      "venue": "Mercedes-Benz Stadium, Atlanta"
+      "venue": "Mercedes-Benz Stadium, Atlanta",
+      "highlight": "https://www.youtube.com/watch?v=0HF-O0AJN7I"
     },
     {
       "date_wib": "2026-06-28 09:00",
       "group": "J",
       "home": "Algeria",
       "away": "Austria",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
+      "status": "FT",
+      "score": {
+        "home": 3,
+        "away": 3
+      },
+      "scorers": [
+        {
+          "player": "Marko Arnautović",
+          "team": "Austria",
+          "minute": 28
+        },
+        {
+          "player": "Rachid Belghali",
+          "team": "Algeria",
+          "minute": 41
+        },
+        {
+          "player": "Marcel Sabitzer",
+          "team": "Austria",
+          "minute": 55
+        },
+        {
+          "player": "Riyad Mahrez",
+          "team": "Algeria",
+          "minute": 60
+        },
+        {
+          "player": "Riyad Mahrez",
+          "team": "Algeria",
+          "minute": "90+3"
+        },
+        {
+          "player": "Saša Kalajdžić",
+          "team": "Austria",
+          "minute": "90+5"
+        }
+      ],
+      "assists": [
+        {
+          "player": "David Alaba",
+          "team": "Austria",
+          "for": "Marko Arnautović",
+          "minute": 28
+        },
+        {
+          "player": "Konrad Laimer",
+          "team": "Austria",
+          "for": "Marcel Sabitzer",
+          "minute": 55
+        },
+        {
+          "player": "Houssem Aouar",
+          "team": "Algeria",
+          "for": "Riyad Mahrez",
+          "minute": 60
+        },
+        {
+          "player": "Houssem Aouar",
+          "team": "Algeria",
+          "for": "Riyad Mahrez",
+          "minute": "90+3"
+        }
+      ],
       "cards": [],
-      "venue": "Arrowhead Stadium, Kansas City"
+      "venue": "Arrowhead Stadium, Kansas City",
+      "highlight": "https://www.youtube.com/watch?v=EnkjLNRrzQU"
     },
     {
       "date_wib": "2026-06-28 09:00",
       "group": "J",
       "home": "Jordan",
       "away": "Argentina",
+      "status": "FT",
+      "score": {
+        "home": 1,
+        "away": 3
+      },
+      "scorers": [
+        {
+          "player": "Giovani Lo Celso",
+          "team": "Argentina",
+          "minute": 22
+        },
+        {
+          "player": "Mousa Altamari",
+          "team": "Jordan",
+          "minute": 52
+        },
+        {
+          "player": "Lautaro Martínez",
+          "team": "Argentina",
+          "minute": 60,
+          "penalty": true
+        },
+        {
+          "player": "Lionel Messi",
+          "team": "Argentina",
+          "minute": 80
+        }
+      ],
+      "assists": [
+        {
+          "player": "Ehsan Haddad",
+          "team": "Jordan",
+          "for": "Mousa Altamari",
+          "minute": 52
+        }
+      ],
+      "cards": [],
+      "venue": "AT&T Stadium, Arlington",
+      "highlight": "https://www.youtube.com/watch?v=VZy5dEYsJ00"
+    },
+    {
+      "stage": "R32",
+      "home": "South Africa",
+      "away": "Canada",
+      "date_wib": "2026-06-29 02:00",
+      "venue": "SoFi Stadium, Inglewood",
+      "status": "FT",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "scorers": [
+        {
+          "player": "Stephen Eustaquio",
+          "team": "Canada",
+          "minute": "90+2"
+        }
+      ],
+      "assists": [],
+      "cards": [],
+      "group": null
+    },
+    {
+      "stage": "R32",
+      "home": "Brazil",
+      "away": "Japan",
+      "date_wib": "2026-06-30 00:00",
+      "venue": "NRG Stadium, Houston",
       "status": "scheduled",
       "score": null,
       "scorers": [],
       "assists": [],
       "cards": [],
-      "venue": "AT&T Stadium, Arlington"
+      "group": null
+    },
+    {
+      "stage": "R32",
+      "home": "Germany",
+      "away": "Paraguay",
+      "date_wib": "2026-06-30 03:30",
+      "venue": "Gillette Stadium, Foxborough",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "group": null
+    },
+    {
+      "stage": "R32",
+      "home": "Netherlands",
+      "away": "Morocco",
+      "date_wib": "2026-06-30 08:00",
+      "venue": "Estadio BBVA, Monterrey",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "group": null
+    },
+    {
+      "stage": "R32",
+      "home": "Ivory Coast",
+      "away": "Norway",
+      "date_wib": "2026-07-01 00:00",
+      "venue": "AT&T Stadium, Arlington",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "group": null
+    },
+    {
+      "stage": "R32",
+      "home": "France",
+      "away": "Sweden",
+      "date_wib": "2026-07-01 04:00",
+      "venue": "MetLife Stadium, East Rutherford",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "group": null
+    },
+    {
+      "stage": "R32",
+      "home": "Mexico",
+      "away": "Ecuador",
+      "date_wib": "2026-07-01 08:00",
+      "venue": "Estadio Azteca, Mexico City",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "group": null
+    },
+    {
+      "stage": "R32",
+      "home": "England",
+      "away": "DR Congo",
+      "date_wib": "2026-07-01 23:00",
+      "venue": "Mercedes-Benz Stadium, Atlanta",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "group": null
+    },
+    {
+      "stage": "R32",
+      "home": "Belgium",
+      "away": "Senegal",
+      "date_wib": "2026-07-02 03:00",
+      "venue": "Lumen Field, Seattle",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "group": null
+    },
+    {
+      "stage": "R32",
+      "home": "United States",
+      "away": "Bosnia-Herzegovina",
+      "date_wib": "2026-07-02 07:00",
+      "venue": "Levi's Stadium, Santa Clara",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "group": null
+    },
+    {
+      "stage": "R32",
+      "home": "Spain",
+      "away": "Austria",
+      "date_wib": "2026-07-03 02:00",
+      "venue": "SoFi Stadium, Inglewood",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "group": null
+    },
+    {
+      "stage": "R32",
+      "home": "Portugal",
+      "away": "Croatia",
+      "date_wib": "2026-07-03 06:00",
+      "venue": "BMO Field, Toronto",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "group": null
+    },
+    {
+      "stage": "R32",
+      "home": "Switzerland",
+      "away": "Algeria",
+      "date_wib": "2026-07-03 10:00",
+      "venue": "BC Place, Vancouver",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "group": null
+    },
+    {
+      "stage": "R32",
+      "home": "Argentina",
+      "away": "Cape Verde",
+      "date_wib": "2026-07-03 19:00",
+      "venue": "Hard Rock Stadium, Miami Gardens",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "group": null
+    },
+    {
+      "stage": "R32",
+      "home": "Colombia",
+      "away": "Ghana",
+      "date_wib": "2026-07-03 23:00",
+      "venue": "Arrowhead Stadium, Kansas City",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "group": null
+    },
+    {
+      "stage": "R32",
+      "home": "Australia",
+      "away": "Egypt",
+      "date_wib": "2026-07-04 02:30",
+      "venue": "AT&T Stadium, Arlington",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": [],
+      "group": null
     }
   ],
   "flags": {
@@ -3249,45 +3928,45 @@
     "D": [
       {
         "team": "United States",
-        "gp": 2,
+        "gp": 3,
         "w": 2,
         "d": 0,
-        "l": 0,
-        "gf": 6,
-        "ga": 1,
-        "gd": 5,
+        "l": 1,
+        "gf": 8,
+        "ga": 4,
+        "gd": 4,
         "pts": 6
       },
       {
         "team": "Australia",
-        "gp": 2,
+        "gp": 3,
         "w": 1,
-        "d": 0,
+        "d": 1,
         "l": 1,
         "gf": 2,
         "ga": 2,
         "gd": 0,
-        "pts": 3
-      },
-      {
-        "team": "Türkiye",
-        "gp": 2,
-        "w": 0,
-        "d": 0,
-        "l": 2,
-        "gf": 0,
-        "ga": 3,
-        "gd": -3,
-        "pts": 0
+        "pts": 4
       },
       {
         "team": "Paraguay",
-        "gp": 2,
+        "gp": 3,
         "w": 1,
-        "d": 0,
+        "d": 1,
         "l": 1,
         "gf": 2,
         "ga": 4,
+        "gd": -2,
+        "pts": 4
+      },
+      {
+        "team": "Türkiye",
+        "gp": 3,
+        "w": 1,
+        "d": 0,
+        "l": 2,
+        "gf": 3,
+        "ga": 5,
         "gd": -2,
         "pts": 3
       }
@@ -3295,368 +3974,368 @@
     "E": [
       {
         "team": "Germany",
-        "gp": 2,
+        "gp": 3,
         "w": 2,
         "d": 0,
-        "l": 0,
-        "gf": 9,
-        "ga": 2,
-        "gd": 7,
+        "l": 1,
+        "gf": 10,
+        "ga": 4,
+        "gd": 6,
         "pts": 6
       },
       {
         "team": "Ivory Coast",
-        "gp": 2,
-        "w": 1,
+        "gp": 3,
+        "w": 2,
         "d": 0,
+        "l": 1,
+        "gf": 4,
+        "ga": 2,
+        "gd": 2,
+        "pts": 6
+      },
+      {
+        "team": "Ecuador",
+        "gp": 3,
+        "w": 1,
+        "d": 1,
         "l": 1,
         "gf": 2,
         "ga": 2,
         "gd": 0,
-        "pts": 3
-      },
-      {
-        "team": "Ecuador",
-        "gp": 1,
-        "w": 0,
-        "d": 0,
-        "l": 1,
-        "gf": 0,
-        "ga": 1,
-        "gd": -1,
-        "pts": 0
+        "pts": 4
       },
       {
         "team": "Curaçao",
-        "gp": 1,
+        "gp": 3,
         "w": 0,
-        "d": 0,
-        "l": 1,
+        "d": 1,
+        "l": 2,
         "gf": 1,
-        "ga": 7,
-        "gd": -6,
-        "pts": 0
+        "ga": 9,
+        "gd": -8,
+        "pts": 1
       }
     ],
     "F": [
       {
         "team": "Netherlands",
-        "gp": 2,
-        "w": 1,
+        "gp": 3,
+        "w": 2,
         "d": 1,
+        "l": 0,
+        "gf": 10,
+        "ga": 4,
+        "gd": 6,
+        "pts": 7
+      },
+      {
+        "team": "Japan",
+        "gp": 3,
+        "w": 1,
+        "d": 2,
         "l": 0,
         "gf": 7,
         "ga": 3,
         "gd": 4,
-        "pts": 4
+        "pts": 5
       },
       {
         "team": "Sweden",
-        "gp": 2,
+        "gp": 3,
         "w": 1,
-        "d": 0,
-        "l": 1,
-        "gf": 6,
-        "ga": 6,
-        "gd": 0,
-        "pts": 3
-      },
-      {
-        "team": "Japan",
-        "gp": 1,
-        "w": 0,
         "d": 1,
-        "l": 0,
-        "gf": 2,
-        "ga": 2,
+        "l": 1,
+        "gf": 7,
+        "ga": 7,
         "gd": 0,
-        "pts": 1
+        "pts": 4
       },
       {
         "team": "Tunisia",
-        "gp": 1,
+        "gp": 3,
         "w": 0,
         "d": 0,
-        "l": 1,
-        "gf": 1,
-        "ga": 5,
-        "gd": -4,
+        "l": 3,
+        "gf": 2,
+        "ga": 12,
+        "gd": -10,
         "pts": 0
       }
     ],
     "G": [
       {
         "team": "Belgium",
-        "gp": 2,
-        "w": 0,
+        "gp": 3,
+        "w": 1,
         "d": 2,
         "l": 0,
-        "gf": 1,
-        "ga": 1,
-        "gd": 0,
-        "pts": 2
+        "gf": 6,
+        "ga": 2,
+        "gd": 4,
+        "pts": 5
       },
       {
         "team": "Egypt",
-        "gp": 2,
+        "gp": 3,
         "w": 1,
-        "d": 1,
+        "d": 2,
         "l": 0,
-        "gf": 4,
-        "ga": 2,
+        "gf": 5,
+        "ga": 3,
         "gd": 2,
-        "pts": 4
+        "pts": 5
       },
       {
         "team": "Iran",
-        "gp": 2,
+        "gp": 3,
         "w": 0,
-        "d": 2,
+        "d": 3,
         "l": 0,
-        "gf": 2,
-        "ga": 2,
+        "gf": 3,
+        "ga": 3,
         "gd": 0,
-        "pts": 2
+        "pts": 3
       },
       {
         "team": "New Zealand",
-        "gp": 2,
+        "gp": 3,
         "w": 0,
         "d": 1,
-        "l": 1,
-        "gf": 3,
-        "ga": 5,
-        "gd": -2,
+        "l": 2,
+        "gf": 4,
+        "ga": 10,
+        "gd": -6,
         "pts": 1
       }
     ],
     "H": [
       {
-        "team": "Saudi Arabia",
-        "gp": 2,
-        "w": 0,
-        "d": 1,
-        "l": 1,
-        "gf": 1,
-        "ga": 5,
-        "gd": -4,
-        "pts": 1
-      },
-      {
         "team": "Spain",
-        "gp": 2,
-        "w": 1,
+        "gp": 3,
+        "w": 2,
         "d": 1,
         "l": 0,
-        "gf": 4,
+        "gf": 5,
         "ga": 0,
-        "gd": 4,
-        "pts": 4
+        "gd": 5,
+        "pts": 7
       },
       {
         "team": "Cape Verde",
-        "gp": 2,
+        "gp": 3,
         "w": 0,
-        "d": 2,
+        "d": 3,
         "l": 0,
         "gf": 2,
         "ga": 2,
         "gd": 0,
-        "pts": 2
+        "pts": 3
       },
       {
         "team": "Uruguay",
-        "gp": 2,
+        "gp": 3,
         "w": 0,
         "d": 2,
-        "l": 0,
+        "l": 1,
         "gf": 3,
-        "ga": 3,
-        "gd": 0,
+        "ga": 4,
+        "gd": -1,
+        "pts": 2
+      },
+      {
+        "team": "Saudi Arabia",
+        "gp": 3,
+        "w": 0,
+        "d": 2,
+        "l": 1,
+        "gf": 1,
+        "ga": 5,
+        "gd": -4,
         "pts": 2
       }
     ],
     "I": [
       {
         "team": "France",
-        "gp": 2,
-        "w": 2,
+        "gp": 3,
+        "w": 3,
         "d": 0,
         "l": 0,
-        "gf": 6,
-        "ga": 1,
-        "gd": 5,
-        "pts": 6
+        "gf": 10,
+        "ga": 2,
+        "gd": 8,
+        "pts": 9
       },
       {
         "team": "Norway",
-        "gp": 2,
+        "gp": 3,
         "w": 2,
         "d": 0,
-        "l": 0,
-        "gf": 7,
-        "ga": 3,
-        "gd": 4,
+        "l": 1,
+        "gf": 8,
+        "ga": 7,
+        "gd": 1,
         "pts": 6
       },
       {
         "team": "Senegal",
-        "gp": 2,
-        "w": 0,
+        "gp": 3,
+        "w": 1,
         "d": 0,
         "l": 2,
-        "gf": 3,
+        "gf": 8,
         "ga": 6,
-        "gd": -3,
-        "pts": 0
+        "gd": 2,
+        "pts": 3
       },
       {
         "team": "Iraq",
-        "gp": 2,
+        "gp": 3,
         "w": 0,
         "d": 0,
-        "l": 2,
+        "l": 3,
         "gf": 1,
-        "ga": 7,
-        "gd": -6,
+        "ga": 12,
+        "gd": -11,
         "pts": 0
       }
     ],
     "J": [
       {
         "team": "Argentina",
-        "gp": 2,
-        "w": 2,
+        "gp": 3,
+        "w": 3,
         "d": 0,
         "l": 0,
-        "gf": 5,
-        "ga": 0,
-        "gd": 5,
-        "pts": 6
-      },
-      {
-        "team": "Algeria",
-        "gp": 2,
-        "w": 1,
-        "d": 0,
-        "l": 1,
-        "gf": 2,
-        "ga": 4,
-        "gd": -2,
-        "pts": 3
+        "gf": 8,
+        "ga": 1,
+        "gd": 7,
+        "pts": 9
       },
       {
         "team": "Austria",
-        "gp": 2,
+        "gp": 3,
         "w": 1,
-        "d": 0,
+        "d": 1,
         "l": 1,
-        "gf": 3,
-        "ga": 3,
+        "gf": 6,
+        "ga": 6,
         "gd": 0,
-        "pts": 3
+        "pts": 4
+      },
+      {
+        "team": "Algeria",
+        "gp": 3,
+        "w": 1,
+        "d": 1,
+        "l": 1,
+        "gf": 5,
+        "ga": 7,
+        "gd": -2,
+        "pts": 4
       },
       {
         "team": "Jordan",
-        "gp": 2,
+        "gp": 3,
         "w": 0,
         "d": 0,
-        "l": 2,
-        "gf": 2,
-        "ga": 5,
-        "gd": -3,
+        "l": 3,
+        "gf": 3,
+        "ga": 8,
+        "gd": -5,
         "pts": 0
       }
     ],
     "K": [
       {
-        "team": "Portugal",
-        "gp": 2,
-        "w": 1,
+        "team": "Colombia",
+        "gp": 3,
+        "w": 2,
         "d": 1,
+        "l": 0,
+        "gf": 4,
+        "ga": 1,
+        "gd": 3,
+        "pts": 7
+      },
+      {
+        "team": "Portugal",
+        "gp": 3,
+        "w": 1,
+        "d": 2,
         "l": 0,
         "gf": 6,
         "ga": 1,
         "gd": 5,
-        "pts": 4
-      },
-      {
-        "team": "Colombia",
-        "gp": 1,
-        "w": 1,
-        "d": 0,
-        "l": 0,
-        "gf": 3,
-        "ga": 1,
-        "gd": 2,
-        "pts": 3
+        "pts": 5
       },
       {
         "team": "DR Congo",
-        "gp": 1,
-        "w": 0,
+        "gp": 3,
+        "w": 1,
         "d": 1,
-        "l": 0,
-        "gf": 1,
-        "ga": 1,
-        "gd": 0,
-        "pts": 1
+        "l": 1,
+        "gf": 4,
+        "ga": 3,
+        "gd": 1,
+        "pts": 4
       },
       {
         "team": "Uzbekistan",
-        "gp": 2,
+        "gp": 3,
         "w": 0,
         "d": 0,
-        "l": 2,
-        "gf": 1,
-        "ga": 8,
-        "gd": -7,
+        "l": 3,
+        "gf": 2,
+        "ga": 11,
+        "gd": -9,
         "pts": 0
       }
     ],
     "L": [
       {
         "team": "England",
-        "gp": 2,
-        "w": 1,
+        "gp": 3,
+        "w": 2,
         "d": 1,
         "l": 0,
-        "gf": 4,
+        "gf": 6,
         "ga": 2,
-        "gd": 2,
-        "pts": 4
-      },
-      {
-        "team": "Ghana",
-        "gp": 2,
-        "w": 1,
-        "d": 1,
-        "l": 0,
-        "gf": 1,
-        "ga": 0,
-        "gd": 1,
-        "pts": 4
+        "gd": 4,
+        "pts": 7
       },
       {
         "team": "Croatia",
-        "gp": 2,
-        "w": 1,
+        "gp": 3,
+        "w": 2,
         "d": 0,
         "l": 1,
-        "gf": 3,
-        "ga": 4,
-        "gd": -1,
-        "pts": 3
+        "gf": 5,
+        "ga": 5,
+        "gd": 0,
+        "pts": 6
+      },
+      {
+        "team": "Ghana",
+        "gp": 3,
+        "w": 1,
+        "d": 1,
+        "l": 1,
+        "gf": 2,
+        "ga": 2,
+        "gd": 0,
+        "pts": 4
       },
       {
         "team": "Panama",
-        "gp": 2,
+        "gp": 3,
         "w": 0,
         "d": 0,
-        "l": 2,
+        "l": 3,
         "gf": 0,
-        "ga": 2,
-        "gd": -2,
+        "ga": 4,
+        "gd": -4,
         "pts": 0
       }
     ]
