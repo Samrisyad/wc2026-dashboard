@@ -150,13 +150,446 @@
 </header>
 <nav>
   
+  <a href="#knockout">Knockout</a>
   <a href="#schedule">Schedule</a>
   <a href="#results">Results</a>
   <a href="#standings">Standings</a>
   <a href="#stats">Player Stats</a>
   <a href="#cards">Cards</a>
 </nav>
-<main>
+<main><style>
+/* ===== KNOCKOUT BRACKET ===== */
+#knockout { padding: 0 16px 24px; }
+#knockout h2 { margin-bottom: 12px; }
+
+.bracket-scroll { overflow-x: auto; padding-bottom: 8px; }
+
+.bracket-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  min-width: 900px;
+}
+
+.bracket-half {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 0;
+}
+
+.bracket-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 12px;
+  min-width: 180px;
+}
+
+.bracket-divider {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .05em;
+  color: var(--color-meta, #888);
+  padding: 6px 0;
+  border-top: 1px dashed var(--color-border, #ddd);
+  border-bottom: 1px dashed var(--color-border, #ddd);
+  margin: 8px 0;
+}
+
+.bk-round {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 160px;
+  max-width: 180px;
+}
+
+.bk-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--color-meta, #888);
+  text-align: center;
+  padding: 4px 2px 6px;
+  white-space: nowrap;
+}
+
+.bk-col {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 4px;
+  justify-content: space-around;
+  padding: 0 4px;
+}
+
+.bk-pair {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  justify-content: center;
+  position: relative;
+}
+
+/* Right-side connector bracket */
+.bk-pair::after {
+  content: '';
+  position: absolute;
+  right: -4px;
+  top: calc(25% + 4px);
+  height: calc(50% - 8px);
+  width: 6px;
+  border-top: 2px solid var(--color-border, #ccc);
+  border-right: 2px solid var(--color-border, #ccc);
+  border-bottom: 2px solid var(--color-border, #ccc);
+  pointer-events: none;
+}
+
+/* Left-side connector for non-first rounds */
+.r16 .bn::before,
+.qf .bn::before,
+.sf .bn::before {
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: 50%;
+  width: 4px;
+  height: 2px;
+  background: var(--color-border, #ccc);
+}
+
+/* Match bracket node */
+.bn {
+  background: var(--color-card, #fff);
+  border: 1px solid var(--color-border, #e0e0e0);
+  border-radius: 6px;
+  padding: 5px 7px;
+  font-size: 12px;
+  position: relative;
+  transition: box-shadow .15s;
+  flex: 1;
+  min-height: 44px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bn.bn-ft { border-color: var(--color-success, #22c55e); }
+.bn.bn-live { border-color: #ef4444; }
+.bn.bn-final {
+  border: 2px solid gold;
+  background: var(--color-card, #fff);
+  min-width: 160px;
+}
+
+.bn.bn-clickable { cursor: pointer; }
+.bn.bn-clickable:hover { box-shadow: 0 2px 8px rgba(0,0,0,.12); }
+
+.bn-inner { display: flex; flex-direction: column; gap: 2px; }
+
+.bn-teams {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.bn-team {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.bn-team.bn-tbd {
+  color: var(--color-meta, #888);
+  font-weight: 400;
+  font-size: 11px;
+}
+
+.flag-icon-sm {
+  width: 16px;
+  height: 12px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.bn-score {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  padding: 1px 0;
+  color: var(--color-accent, #2563eb);
+}
+.bn-score.bn-live { color: #ef4444; }
+
+.bn-date {
+  display: block;
+  font-size: 10px;
+  color: var(--color-meta, #888);
+  text-align: center;
+  padding: 2px 0;
+}
+
+.bn-code {
+  font-size: 10px;
+  color: var(--color-meta, #777);
+  font-weight: 400;
+}
+
+.bn-ast {
+  font-size: 10px;
+  color: var(--color-meta, #888);
+}
+
+/* Expandable detail */
+.bn-detail {
+  display: none;
+  margin-top: 4px;
+  padding-top: 4px;
+  border-top: 1px solid var(--color-border, #eee);
+  font-size: 11px;
+}
+
+.bn.open .bn-detail { display: block; }
+.bn-event { padding: 1px 0; line-height: 1.4; }
+
+/* Third-place container */
+.third-place-wrap {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.third-label {
+  font-size: 11px;
+  color: var(--color-meta, #888);
+  font-weight: 600;
+  margin-bottom: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+</style>
+<section id="knockout" class="section">
+<h2>🏆 Knockout Phase</h2>
+<div class="bracket-scroll">
+  <div class="bracket-body">
+
+    <!-- UPPER HALF: M73-M80 → R16 → QF → SF → Final -->
+    <div class="bracket-half">
+      
+<div class="bk-round r32">
+  <div class="bk-label">Round of 32</div>
+  <div class="bk-col">
+    <div class="bk-pair"><div class="bn   "  data-match="74">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team"><img src="https://flagcdn.com/16x12/br.png" class="flag-icon-sm" alt=""><b>BRA</b></span><span class="bn-date">30 Jun · 00:00 WIB</span><span class="bn-team"><img src="https://flagcdn.com/16x12/jp.png" class="flag-icon-sm" alt=""><b>JPN</b></span></div>
+  </div>
+</div><div class="bn   "  data-match="77">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team"><img src="https://flagcdn.com/16x12/ci.png" class="flag-icon-sm" alt=""><b>CIV</b></span><span class="bn-date">1 Jul · 00:00 WIB</span><span class="bn-team"><img src="https://flagcdn.com/16x12/no.png" class="flag-icon-sm" alt=""><b>NOR</b></span></div>
+  </div>
+</div></div>
+    <div class="bk-pair"><div class="bn bn-ft bn-clickable " onclick="this.classList.toggle('open')" data-match="73">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team"><img src="https://flagcdn.com/16x12/za.png" class="flag-icon-sm" alt=""><b>RSA</b></span><span class="bn-score">0 – 1</span><span class="bn-team"><img src="https://flagcdn.com/16x12/ca.png" class="flag-icon-sm" alt=""><b>CAN</b></span></div>
+  </div><div class="bn-detail"><div class="bn-event">⚽ <b>Stephen Eustaquio</b> 90+2' <span class="bn-code">CAN</span></div></div>
+</div><div class="bn   "  data-match="75">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team"><img src="https://flagcdn.com/16x12/de.png" class="flag-icon-sm" alt=""><b>GER</b></span><span class="bn-date">30 Jun · 03:30 WIB</span><span class="bn-team"><img src="https://flagcdn.com/16x12/py.png" class="flag-icon-sm" alt=""><b>PAR</b></span></div>
+  </div>
+</div></div>
+    <div class="bk-pair"><div class="bn   "  data-match="76">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team"><img src="https://flagcdn.com/16x12/nl.png" class="flag-icon-sm" alt=""><b>NED</b></span><span class="bn-date">30 Jun · 08:00 WIB</span><span class="bn-team"><img src="https://flagcdn.com/16x12/ma.png" class="flag-icon-sm" alt=""><b>MAR</b></span></div>
+  </div>
+</div><div class="bn   "  data-match="78">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team"><img src="https://flagcdn.com/16x12/fr.png" class="flag-icon-sm" alt=""><b>FRA</b></span><span class="bn-date">1 Jul · 04:00 WIB</span><span class="bn-team"><img src="https://flagcdn.com/16x12/se.png" class="flag-icon-sm" alt=""><b>SWE</b></span></div>
+  </div>
+</div></div>
+    <div class="bk-pair"><div class="bn   "  data-match="79">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team"><img src="https://flagcdn.com/16x12/mx.png" class="flag-icon-sm" alt=""><b>MEX</b></span><span class="bn-date">1 Jul · 08:00 WIB</span><span class="bn-team"><img src="https://flagcdn.com/16x12/ec.png" class="flag-icon-sm" alt=""><b>ECU</b></span></div>
+  </div>
+</div><div class="bn   "  data-match="80">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team"><img src="https://flagcdn.com/16x12/gb-eng.png" class="flag-icon-sm" alt=""><b>ENG</b></span><span class="bn-date">1 Jul · 23:00 WIB</span><span class="bn-team"><img src="https://flagcdn.com/16x12/cd.png" class="flag-icon-sm" alt=""><b>COD</b></span></div>
+  </div>
+</div></div>
+  </div>
+</div>
+      
+<div class="bk-round r16">
+  <div class="bk-label">Round of 16</div>
+  <div class="bk-col">
+    <div class="bk-pair"><div class="bn   "  data-match="89">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team bn-tbd">WM74</span><span class="bn-date">TBD</span><span class="bn-team bn-tbd">WM77</span></div>
+  </div>
+</div><div class="bn   "  data-match="90">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team"><img src="https://flagcdn.com/16x12/ca.png" class="flag-icon-sm" alt=""><b>CAN</b></span><span class="bn-date">TBD</span><span class="bn-team bn-tbd">WM75</span></div>
+  </div>
+</div></div>
+    <div class="bk-pair"><div class="bn   "  data-match="91">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team bn-tbd">WM76</span><span class="bn-date">TBD</span><span class="bn-team bn-tbd">WM78</span></div>
+  </div>
+</div><div class="bn   "  data-match="92">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team bn-tbd">WM79</span><span class="bn-date">TBD</span><span class="bn-team bn-tbd">WM80</span></div>
+  </div>
+</div></div>
+  </div>
+</div>
+      
+<div class="bk-round qf">
+  <div class="bk-label">Quarter-Finals</div>
+  <div class="bk-col">
+    <div class="bk-pair"><div class="bn   "  data-match="97">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team bn-tbd">WM89</span><span class="bn-date">TBD</span><span class="bn-team bn-tbd">WM90</span></div>
+  </div>
+</div><div class="bn   "  data-match="98">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team bn-tbd">WM91</span><span class="bn-date">TBD</span><span class="bn-team bn-tbd">WM92</span></div>
+  </div>
+</div></div>
+  </div>
+</div>
+      
+<div class="bk-round sf">
+  <div class="bk-label">Semi-Finals</div>
+  <div class="bk-col">
+    <div class="bn   "  data-match="101">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team bn-tbd">WM97</span><span class="bn-date">TBD</span><span class="bn-team bn-tbd">WM98</span></div>
+  </div>
+</div>
+  </div>
+</div>
+      <div class="bracket-center">
+        <div class="bk-label" style="font-size:12px;color:var(--color-accent,#2563eb)">🏆 FINAL</div>
+        <div class="bn   bn-final"  data-match="104">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team bn-tbd">WM101</span><span class="bn-date">TBD</span><span class="bn-team bn-tbd">WM102</span></div>
+  </div>
+</div>
+        <div class="third-place-wrap">
+          <div class="third-label">3rd Place</div>
+          <div class="bn   "  data-match="103">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team bn-tbd">LM101</span><span class="bn-date">TBD</span><span class="bn-team bn-tbd">LM102</span></div>
+  </div>
+</div>
+        </div>
+      </div>
+      
+<div class="bk-round sf">
+  <div class="bk-label">Semi-Finals</div>
+  <div class="bk-col">
+    <div class="bn   "  data-match="102">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team bn-tbd">WM99</span><span class="bn-date">TBD</span><span class="bn-team bn-tbd">WM100</span></div>
+  </div>
+</div>
+  </div>
+</div>
+      
+<div class="bk-round qf">
+  <div class="bk-label">Quarter-Finals</div>
+  <div class="bk-col">
+    <div class="bk-pair"><div class="bn   "  data-match="99">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team bn-tbd">WM93</span><span class="bn-date">TBD</span><span class="bn-team bn-tbd">WM94</span></div>
+  </div>
+</div><div class="bn   "  data-match="100">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team bn-tbd">WM95</span><span class="bn-date">TBD</span><span class="bn-team bn-tbd">WM96</span></div>
+  </div>
+</div></div>
+  </div>
+</div>
+      
+<div class="bk-round r16">
+  <div class="bk-label">Round of 16</div>
+  <div class="bk-col">
+    <div class="bk-pair"><div class="bn   "  data-match="93">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team bn-tbd">WM83</span><span class="bn-date">TBD</span><span class="bn-team bn-tbd">WM84</span></div>
+  </div>
+</div><div class="bn   "  data-match="94">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team bn-tbd">WM81</span><span class="bn-date">TBD</span><span class="bn-team bn-tbd">WM82</span></div>
+  </div>
+</div></div>
+    <div class="bk-pair"><div class="bn   "  data-match="95">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team bn-tbd">WM86</span><span class="bn-date">TBD</span><span class="bn-team bn-tbd">WM88</span></div>
+  </div>
+</div><div class="bn   "  data-match="96">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team bn-tbd">WM85</span><span class="bn-date">TBD</span><span class="bn-team bn-tbd">WM87</span></div>
+  </div>
+</div></div>
+  </div>
+</div>
+      
+<div class="bk-round r32">
+  <div class="bk-label">Round of 32</div>
+  <div class="bk-col">
+    <div class="bk-pair"><div class="bn   "  data-match="81">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team"><img src="https://flagcdn.com/16x12/be.png" class="flag-icon-sm" alt=""><b>BEL</b></span><span class="bn-date">2 Jul · 03:00 WIB</span><span class="bn-team"><img src="https://flagcdn.com/16x12/sn.png" class="flag-icon-sm" alt=""><b>SEN</b></span></div>
+  </div>
+</div><div class="bn   "  data-match="82">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team"><img src="https://flagcdn.com/16x12/us.png" class="flag-icon-sm" alt=""><b>USA</b></span><span class="bn-date">2 Jul · 07:00 WIB</span><span class="bn-team"><img src="https://flagcdn.com/16x12/ba.png" class="flag-icon-sm" alt=""><b>BIH</b></span></div>
+  </div>
+</div></div>
+    <div class="bk-pair"><div class="bn   "  data-match="83">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team"><img src="https://flagcdn.com/16x12/es.png" class="flag-icon-sm" alt=""><b>ESP</b></span><span class="bn-date">3 Jul · 02:00 WIB</span><span class="bn-team"><img src="https://flagcdn.com/16x12/at.png" class="flag-icon-sm" alt=""><b>AUT</b></span></div>
+  </div>
+</div><div class="bn   "  data-match="84">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team"><img src="https://flagcdn.com/16x12/pt.png" class="flag-icon-sm" alt=""><b>POR</b></span><span class="bn-date">3 Jul · 06:00 WIB</span><span class="bn-team"><img src="https://flagcdn.com/16x12/hr.png" class="flag-icon-sm" alt=""><b>CRO</b></span></div>
+  </div>
+</div></div>
+    <div class="bk-pair"><div class="bn   "  data-match="85">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team"><img src="https://flagcdn.com/16x12/ch.png" class="flag-icon-sm" alt=""><b>SUI</b></span><span class="bn-date">3 Jul · 10:00 WIB</span><span class="bn-team"><img src="https://flagcdn.com/16x12/dz.png" class="flag-icon-sm" alt=""><b>ALG</b></span></div>
+  </div>
+</div><div class="bn   "  data-match="87">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team"><img src="https://flagcdn.com/16x12/co.png" class="flag-icon-sm" alt=""><b>COL</b></span><span class="bn-date">3 Jul · 23:00 WIB</span><span class="bn-team"><img src="https://flagcdn.com/16x12/gh.png" class="flag-icon-sm" alt=""><b>GHA</b></span></div>
+  </div>
+</div></div>
+    <div class="bk-pair"><div class="bn   "  data-match="86">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team"><img src="https://flagcdn.com/16x12/ar.png" class="flag-icon-sm" alt=""><b>ARG</b></span><span class="bn-date">3 Jul · 19:00 WIB</span><span class="bn-team"><img src="https://flagcdn.com/16x12/cv.png" class="flag-icon-sm" alt=""><b>CPV</b></span></div>
+  </div>
+</div><div class="bn   "  data-match="88">
+  <div class="bn-inner">
+    <div class="bn-teams"><span class="bn-team"><img src="https://flagcdn.com/16x12/au.png" class="flag-icon-sm" alt=""><b>AUS</b></span><span class="bn-date">4 Jul · 02:30 WIB</span><span class="bn-team"><img src="https://flagcdn.com/16x12/eg.png" class="flag-icon-sm" alt=""><b>EGY</b></span></div>
+  </div>
+</div></div>
+  </div>
+</div>
+    </div>
+
+  </div>
+</div>
+</section>
   <section id="schedule">
     <h2>📅 Match Schedule (WIB)</h2>
     <div class="grid">

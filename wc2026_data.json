@@ -3533,7 +3533,8 @@
       ],
       "assists": [],
       "cards": [],
-      "group": null
+      "group": null,
+      "match_num": 73
     },
     {
       "stage": "R32",
@@ -3546,7 +3547,8 @@
       "scorers": [],
       "assists": [],
       "cards": [],
-      "group": null
+      "group": null,
+      "match_num": 74
     },
     {
       "stage": "R32",
@@ -3559,7 +3561,8 @@
       "scorers": [],
       "assists": [],
       "cards": [],
-      "group": null
+      "group": null,
+      "match_num": 75
     },
     {
       "stage": "R32",
@@ -3572,7 +3575,8 @@
       "scorers": [],
       "assists": [],
       "cards": [],
-      "group": null
+      "group": null,
+      "match_num": 76
     },
     {
       "stage": "R32",
@@ -3585,7 +3589,8 @@
       "scorers": [],
       "assists": [],
       "cards": [],
-      "group": null
+      "group": null,
+      "match_num": 77
     },
     {
       "stage": "R32",
@@ -3598,7 +3603,8 @@
       "scorers": [],
       "assists": [],
       "cards": [],
-      "group": null
+      "group": null,
+      "match_num": 78
     },
     {
       "stage": "R32",
@@ -3611,7 +3617,8 @@
       "scorers": [],
       "assists": [],
       "cards": [],
-      "group": null
+      "group": null,
+      "match_num": 79
     },
     {
       "stage": "R32",
@@ -3624,7 +3631,8 @@
       "scorers": [],
       "assists": [],
       "cards": [],
-      "group": null
+      "group": null,
+      "match_num": 80
     },
     {
       "stage": "R32",
@@ -3637,7 +3645,8 @@
       "scorers": [],
       "assists": [],
       "cards": [],
-      "group": null
+      "group": null,
+      "match_num": 81
     },
     {
       "stage": "R32",
@@ -3650,7 +3659,8 @@
       "scorers": [],
       "assists": [],
       "cards": [],
-      "group": null
+      "group": null,
+      "match_num": 82
     },
     {
       "stage": "R32",
@@ -3663,7 +3673,8 @@
       "scorers": [],
       "assists": [],
       "cards": [],
-      "group": null
+      "group": null,
+      "match_num": 83
     },
     {
       "stage": "R32",
@@ -3676,7 +3687,8 @@
       "scorers": [],
       "assists": [],
       "cards": [],
-      "group": null
+      "group": null,
+      "match_num": 84
     },
     {
       "stage": "R32",
@@ -3689,7 +3701,8 @@
       "scorers": [],
       "assists": [],
       "cards": [],
-      "group": null
+      "group": null,
+      "match_num": 85
     },
     {
       "stage": "R32",
@@ -3702,7 +3715,8 @@
       "scorers": [],
       "assists": [],
       "cards": [],
-      "group": null
+      "group": null,
+      "match_num": 86
     },
     {
       "stage": "R32",
@@ -3715,7 +3729,8 @@
       "scorers": [],
       "assists": [],
       "cards": [],
-      "group": null
+      "group": null,
+      "match_num": 87
     },
     {
       "stage": "R32",
@@ -3728,7 +3743,8 @@
       "scorers": [],
       "assists": [],
       "cards": [],
-      "group": null
+      "group": null,
+      "match_num": 88
     }
   ],
   "flags": {
@@ -4337,6 +4353,258 @@
         "ga": 4,
         "gd": -4,
         "pts": 0
+      }
+    ]
+  },
+  "knockout_bracket": {
+    "R16": [
+      {
+        "stage": "R16",
+        "match_num": 89,
+        "home_from": "winner_M74",
+        "away_from": "winner_M77",
+        "home": null,
+        "away": null,
+        "date_wib": "TBD",
+        "venue": "Lincoln Financial Field, Philadelphia",
+        "status": "scheduled",
+        "score": null,
+        "scorers": [],
+        "assists": [],
+        "cards": []
+      },
+      {
+        "stage": "R16",
+        "match_num": 90,
+        "home_from": "winner_M73",
+        "away_from": "winner_M75",
+        "home": "Canada",
+        "away": null,
+        "date_wib": "TBD",
+        "venue": "NRG Stadium, Houston",
+        "status": "scheduled",
+        "score": null,
+        "scorers": [],
+        "assists": [],
+        "cards": []
+      },
+      {
+        "stage": "R16",
+        "match_num": 91,
+        "home_from": "winner_M76",
+        "away_from": "winner_M78",
+        "home": null,
+        "away": null,
+        "date_wib": "TBD",
+        "venue": "MetLife Stadium, East Rutherford",
+        "status": "scheduled",
+        "score": null,
+        "scorers": [],
+        "assists": [],
+        "cards": []
+      },
+      {
+        "stage": "R16",
+        "match_num": 92,
+        "home_from": "winner_M79",
+        "away_from": "winner_M80",
+        "home": null,
+        "away": null,
+        "date_wib": "TBD",
+        "venue": "Estadio Azteca, Mexico City",
+        "status": "scheduled",
+        "score": null,
+        "scorers": [],
+        "assists": [],
+        "cards": []
+      },
+      {
+        "stage": "R16",
+        "match_num": 93,
+        "home_from": "winner_M83",
+        "away_from": "winner_M84",
+        "home": null,
+        "away": null,
+        "date_wib": "TBD",
+        "venue": "AT&T Stadium, Arlington",
+        "status": "scheduled",
+        "score": null,
+        "scorers": [],
+        "assists": [],
+        "cards": []
+      },
+      {
+        "stage": "R16",
+        "match_num": 94,
+        "home_from": "winner_M81",
+        "away_from": "winner_M82",
+        "home": null,
+        "away": null,
+        "date_wib": "TBD",
+        "venue": "Lumen Field, Seattle",
+        "status": "scheduled",
+        "score": null,
+        "scorers": [],
+        "assists": [],
+        "cards": []
+      },
+      {
+        "stage": "R16",
+        "match_num": 95,
+        "home_from": "winner_M86",
+        "away_from": "winner_M88",
+        "home": null,
+        "away": null,
+        "date_wib": "TBD",
+        "venue": "Mercedes-Benz Stadium, Atlanta",
+        "status": "scheduled",
+        "score": null,
+        "scorers": [],
+        "assists": [],
+        "cards": []
+      },
+      {
+        "stage": "R16",
+        "match_num": 96,
+        "home_from": "winner_M85",
+        "away_from": "winner_M87",
+        "home": null,
+        "away": null,
+        "date_wib": "TBD",
+        "venue": "BC Place, Vancouver",
+        "status": "scheduled",
+        "score": null,
+        "scorers": [],
+        "assists": [],
+        "cards": []
+      }
+    ],
+    "QF": [
+      {
+        "stage": "QF",
+        "match_num": 97,
+        "home_from": "winner_M89",
+        "away_from": "winner_M90",
+        "home": null,
+        "away": null,
+        "date_wib": "TBD",
+        "venue": "Gillette Stadium, Foxborough",
+        "status": "scheduled",
+        "score": null,
+        "scorers": [],
+        "assists": [],
+        "cards": []
+      },
+      {
+        "stage": "QF",
+        "match_num": 98,
+        "home_from": "winner_M91",
+        "away_from": "winner_M92",
+        "home": null,
+        "away": null,
+        "date_wib": "TBD",
+        "venue": "SoFi Stadium, Inglewood",
+        "status": "scheduled",
+        "score": null,
+        "scorers": [],
+        "assists": [],
+        "cards": []
+      },
+      {
+        "stage": "QF",
+        "match_num": 99,
+        "home_from": "winner_M93",
+        "away_from": "winner_M94",
+        "home": null,
+        "away": null,
+        "date_wib": "TBD",
+        "venue": "BMO Field, Toronto",
+        "status": "scheduled",
+        "score": null,
+        "scorers": [],
+        "assists": [],
+        "cards": []
+      },
+      {
+        "stage": "QF",
+        "match_num": 100,
+        "home_from": "winner_M95",
+        "away_from": "winner_M96",
+        "home": null,
+        "away": null,
+        "date_wib": "TBD",
+        "venue": "Hard Rock Stadium, Miami Gardens",
+        "status": "scheduled",
+        "score": null,
+        "scorers": [],
+        "assists": [],
+        "cards": []
+      }
+    ],
+    "SF": [
+      {
+        "stage": "SF",
+        "match_num": 101,
+        "home_from": "winner_M97",
+        "away_from": "winner_M98",
+        "home": null,
+        "away": null,
+        "date_wib": "TBD",
+        "venue": "MetLife Stadium, East Rutherford",
+        "status": "scheduled",
+        "score": null,
+        "scorers": [],
+        "assists": [],
+        "cards": []
+      },
+      {
+        "stage": "SF",
+        "match_num": 102,
+        "home_from": "winner_M99",
+        "away_from": "winner_M100",
+        "home": null,
+        "away": null,
+        "date_wib": "TBD",
+        "venue": "AT&T Stadium, Arlington",
+        "status": "scheduled",
+        "score": null,
+        "scorers": [],
+        "assists": [],
+        "cards": []
+      }
+    ],
+    "3rd_place": [
+      {
+        "stage": "3rd_place",
+        "match_num": 103,
+        "home_from": "loser_M101",
+        "away_from": "loser_M102",
+        "home": null,
+        "away": null,
+        "date_wib": "TBD",
+        "venue": "Hard Rock Stadium, Miami Gardens",
+        "status": "scheduled",
+        "score": null,
+        "scorers": [],
+        "assists": [],
+        "cards": []
+      }
+    ],
+    "Final": [
+      {
+        "stage": "Final",
+        "match_num": 104,
+        "home_from": "winner_M101",
+        "away_from": "winner_M102",
+        "home": null,
+        "away": null,
+        "date_wib": "TBD",
+        "venue": "MetLife Stadium, East Rutherford",
+        "status": "scheduled",
+        "score": null,
+        "scorers": [],
+        "assists": [],
+        "cards": []
       }
     ]
   }
