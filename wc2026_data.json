@@ -1,5 +1,5 @@
 {
-  "last_updated": "29 June 2026 · 16:00 WIB",
+  "last_updated": "30 June 2026 · 06:06 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -3542,11 +3542,62 @@
       "away": "Japan",
       "date_wib": "2026-06-30 00:00",
       "venue": "NRG Stadium, Houston",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
-      "cards": [],
+      "status": "FT",
+      "score": {
+        "home": 2,
+        "away": 1
+      },
+      "scorers": [
+        {
+          "player": "Kaishu Sano",
+          "team": "Japan",
+          "minute": 29
+        },
+        {
+          "player": "Casemiro",
+          "team": "Brazil",
+          "minute": 56
+        },
+        {
+          "player": "Gabriel Martinelli",
+          "team": "Brazil",
+          "minute": "90+5"
+        }
+      ],
+      "assists": [
+        {
+          "player": "Gabriel Magalhães",
+          "team": "Brazil",
+          "for": "Casemiro",
+          "minute": 56
+        },
+        {
+          "player": "Bruno Guimarães",
+          "team": "Brazil",
+          "for": "Gabriel Martinelli",
+          "minute": "90+5"
+        }
+      ],
+      "cards": [
+        {
+          "player": "Kaishu Sano",
+          "team": "Japan",
+          "type": "yellow",
+          "minute": 12
+        },
+        {
+          "player": "Casemiro",
+          "team": "Brazil",
+          "type": "yellow",
+          "minute": 14
+        },
+        {
+          "player": "Daichi Kamada",
+          "team": "Japan",
+          "type": "yellow",
+          "minute": 45
+        }
+      ],
       "group": null,
       "match_num": 74
     },
@@ -3556,10 +3607,37 @@
       "away": "Paraguay",
       "date_wib": "2026-06-30 03:30",
       "venue": "Gillette Stadium, Foxborough",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
+      "status": "LIVE",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "scorers": [
+        {
+          "player": "Julio Enciso",
+          "team": "Paraguay",
+          "minute": 42
+        },
+        {
+          "player": "Kai Havertz",
+          "team": "Germany",
+          "minute": 73
+        }
+      ],
+      "assists": [
+        {
+          "player": "Matías Galarza",
+          "team": "Paraguay",
+          "for": "Julio Enciso",
+          "minute": 42
+        },
+        {
+          "player": "Florian Wirtz",
+          "team": "Germany",
+          "for": "Kai Havertz",
+          "minute": 73
+        }
+      ],
       "cards": [],
       "group": null,
       "match_num": 75

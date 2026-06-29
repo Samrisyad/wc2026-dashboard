@@ -1,18 +1,43 @@
 {
-  "date": "2026-06-29",
+  "date": "2026-06-30",
   "matches": [
     {
-      "match_index": 72,
+      "match_index": 73,
       "group": null,
-      "home": "South Africa",
-      "away": "Canada",
-      "date_wib": "2026-06-29 02:00",
-      "venue": "SoFi Stadium, Inglewood",
+      "home": "Brazil",
+      "away": "Japan",
+      "date_wib": "2026-06-30 00:00",
+      "venue": "NRG Stadium, Houston",
       "status": "FT",
       "score": {
-        "home": 0,
+        "home": 2,
         "away": 1
       },
+      "highlight": null
+    },
+    {
+      "match_index": 74,
+      "group": null,
+      "home": "Germany",
+      "away": "Paraguay",
+      "date_wib": "2026-06-30 03:30",
+      "venue": "Gillette Stadium, Foxborough",
+      "status": "LIVE",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "highlight": null
+    },
+    {
+      "match_index": 75,
+      "group": null,
+      "home": "Netherlands",
+      "away": "Morocco",
+      "date_wib": "2026-06-30 08:00",
+      "venue": "Estadio BBVA, Monterrey",
+      "status": "scheduled",
+      "score": null,
       "highlight": null
     }
   ]
