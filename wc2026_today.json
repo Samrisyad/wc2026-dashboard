@@ -1,46 +1,54 @@
 {
-  "date": "2026-06-30",
+  "date": "2026-07-01",
   "matches": [
     {
-      "match_index": 73,
+      "match_index": 76,
       "group": null,
-      "home": "Brazil",
-      "away": "Japan",
-      "date_wib": "2026-06-30 00:00",
-      "venue": "NRG Stadium, Houston",
+      "home": "Ivory Coast",
+      "away": "Norway",
+      "date_wib": "2026-07-01 00:00",
+      "venue": "AT&T Stadium, Arlington",
       "status": "FT",
       "score": {
-        "home": 2,
-        "away": 1
+        "home": 1,
+        "away": 2
       },
       "highlight": null
     },
     {
-      "match_index": 74,
+      "match_index": 77,
       "group": null,
-      "home": "Germany",
-      "away": "Paraguay",
-      "date_wib": "2026-06-30 03:30",
-      "venue": "Gillette Stadium, Foxborough",
+      "home": "France",
+      "away": "Sweden",
+      "date_wib": "2026-07-01 04:00",
+      "venue": "MetLife Stadium, East Rutherford",
       "status": "FT",
       "score": {
-        "home": 1,
-        "away": 1
+        "home": 3,
+        "away": 0
       },
       "highlight": null
     },
     {
-      "match_index": 75,
+      "match_index": 78,
       "group": null,
-      "home": "Netherlands",
-      "away": "Morocco",
-      "date_wib": "2026-06-30 08:00",
-      "venue": "Estadio BBVA, Monterrey",
-      "status": "FT",
-      "score": {
-        "home": 1,
-        "away": 1
-      },
+      "home": "Mexico",
+      "away": "Ecuador",
+      "date_wib": "2026-07-01 08:00",
+      "venue": "Estadio Azteca, Mexico City",
+      "status": "scheduled",
+      "score": null,
+      "highlight": null
+    },
+    {
+      "match_index": 79,
+      "group": null,
+      "home": "England",
+      "away": "DR Congo",
+      "date_wib": "2026-07-01 23:00",
+      "venue": "Mercedes-Benz Stadium, Atlanta",
+      "status": "scheduled",
+      "score": null,
       "highlight": null
     }
   ]

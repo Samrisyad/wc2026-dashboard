@@ -1,5 +1,5 @@
 {
-  "last_updated": "30 June 2026 · 12:06 WIB",
+  "last_updated": "2026-07-01 06:06 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -3711,10 +3711,36 @@
       "away": "Norway",
       "date_wib": "2026-07-01 00:00",
       "venue": "AT&T Stadium, Arlington",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
+      "status": "FT",
+      "score": {
+        "home": 1,
+        "away": 2
+      },
+      "scorers": [
+        {
+          "player": "Antonio Nusa",
+          "team": "Norway",
+          "minute": 39
+        },
+        {
+          "player": "Amad Diallo",
+          "team": "Ivory Coast",
+          "minute": 74
+        },
+        {
+          "player": "Erling Haaland",
+          "team": "Norway",
+          "minute": 86
+        }
+      ],
+      "assists": [
+        {
+          "player": "Patrick Berg",
+          "team": "Norway",
+          "for": "Erling Haaland",
+          "minute": 86
+        }
+      ],
       "cards": [],
       "group": null,
       "match_num": 77
@@ -3725,10 +3751,42 @@
       "away": "Sweden",
       "date_wib": "2026-07-01 04:00",
       "venue": "MetLife Stadium, East Rutherford",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
+      "status": "FT",
+      "score": {
+        "home": 3,
+        "away": 0
+      },
+      "scorers": [
+        {
+          "player": "Kylian Mbappé",
+          "team": "France",
+          "minute": 45
+        },
+        {
+          "player": "Bradley Barcola",
+          "team": "France",
+          "minute": 50
+        },
+        {
+          "player": "Kylian Mbappé",
+          "team": "France",
+          "minute": 74
+        }
+      ],
+      "assists": [
+        {
+          "player": "Michael Olise",
+          "team": "France",
+          "for": "Bradley Barcola",
+          "minute": 50
+        },
+        {
+          "player": "Michael Olise",
+          "team": "France",
+          "for": "Kylian Mbappé",
+          "minute": 74
+        }
+      ],
       "cards": [],
       "group": null,
       "match_num": 78
@@ -3878,8 +3936,8 @@
       "match_num": 89,
       "home_from": "winner_M74",
       "away_from": "winner_M77",
-      "home": null,
-      "away": null,
+      "home": "Brazil",
+      "away": "Norway",
       "date_wib": "TBD",
       "venue": "Lincoln Financial Field, Philadelphia",
       "status": "scheduled",
@@ -3908,8 +3966,8 @@
       "match_num": 91,
       "home_from": "winner_M76",
       "away_from": "winner_M78",
-      "home": null,
-      "away": null,
+      "home": "Morocco",
+      "away": "France",
       "date_wib": "TBD",
       "venue": "MetLife Stadium, East Rutherford",
       "status": "scheduled",
