@@ -22,7 +22,7 @@
       "away": "Paraguay",
       "date_wib": "2026-06-30 03:30",
       "venue": "Gillette Stadium, Foxborough",
-      "status": "LIVE",
+      "status": "FT",
       "score": {
         "home": 1,
         "away": 1
@@ -36,8 +36,11 @@
       "away": "Morocco",
       "date_wib": "2026-06-30 08:00",
       "venue": "Estadio BBVA, Monterrey",
-      "status": "scheduled",
-      "score": null,
+      "status": "FT",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
       "highlight": null
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "last_updated": "30 June 2026 · 06:06 WIB",
+  "last_updated": "30 June 2026 · 12:07 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -3607,7 +3607,7 @@
       "away": "Paraguay",
       "date_wib": "2026-06-30 03:30",
       "venue": "Gillette Stadium, Foxborough",
-      "status": "LIVE",
+      "status": "FT",
       "score": {
         "home": 1,
         "away": 1
@@ -3640,7 +3640,11 @@
       ],
       "cards": [],
       "group": null,
-      "match_num": 75
+      "match_num": 75,
+      "pso": {
+        "home": 3,
+        "away": 4
+      }
     },
     {
       "stage": "R32",
@@ -3648,13 +3652,44 @@
       "away": "Morocco",
       "date_wib": "2026-06-30 08:00",
       "venue": "Estadio BBVA, Monterrey",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
+      "status": "FT",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "scorers": [
+        {
+          "player": "Cody Gakpo",
+          "team": "Netherlands",
+          "minute": 71
+        },
+        {
+          "player": "Issa Diop",
+          "team": "Morocco",
+          "minute": "90+2"
+        }
+      ],
+      "assists": [
+        {
+          "player": "Crysencio Summerville",
+          "team": "Netherlands",
+          "for": "Cody Gakpo",
+          "minute": 71
+        },
+        {
+          "player": "Chemsdine Talbi",
+          "team": "Morocco",
+          "for": "Issa Diop",
+          "minute": "90+2"
+        }
+      ],
       "cards": [],
       "group": null,
-      "match_num": 76
+      "match_num": 76,
+      "pso": {
+        "home": 2,
+        "away": 3
+      }
     },
     {
       "stage": "R32",
