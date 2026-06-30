@@ -1,5 +1,5 @@
 {
-  "last_updated": "30 June 2026 · 12:07 WIB",
+  "last_updated": "30 June 2026 · 12:06 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -3638,7 +3638,14 @@
           "minute": 73
         }
       ],
-      "cards": [],
+      "cards": [
+        {
+          "player": "Andrés Cubas",
+          "team": "Paraguay",
+          "type": "yellow",
+          "minute": 65
+        }
+      ],
       "group": null,
       "match_num": 75,
       "pso": {
@@ -3683,7 +3690,14 @@
           "minute": "90+2"
         }
       ],
-      "cards": [],
+      "cards": [
+        {
+          "player": "Issa Diop",
+          "team": "Morocco",
+          "type": "yellow",
+          "minute": 55
+        }
+      ],
       "group": null,
       "match_num": 76,
       "pso": {
