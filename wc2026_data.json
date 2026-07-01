@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-01 06:06 WIB",
+  "last_updated": "2026-07-01 11:54 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -3797,11 +3797,39 @@
       "away": "Ecuador",
       "date_wib": "2026-07-01 08:00",
       "venue": "Estadio Azteca, Mexico City",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
-      "cards": [],
+      "status": "FT",
+      "score": {
+        "home": 2,
+        "away": 0
+      },
+      "scorers": [
+        {
+          "player": "Julian Quinones",
+          "team": "Mexico",
+          "minute": 22
+        },
+        {
+          "player": "Raul Jimenez",
+          "team": "Mexico",
+          "minute": 31
+        }
+      ],
+      "assists": [
+        {
+          "player": "Julian Quinones",
+          "team": "Mexico",
+          "for": "Raul Jimenez",
+          "minute": 31
+        }
+      ],
+      "cards": [
+        {
+          "player": "Piero Hincapie",
+          "team": "Ecuador",
+          "type": "red",
+          "minute": "90+5"
+        }
+      ],
       "group": null,
       "match_num": 79
     },
@@ -3952,7 +3980,7 @@
       "home_from": "winner_M73",
       "away_from": "winner_M75",
       "home": "Canada",
-      "away": null,
+      "away": "Paraguay",
       "date_wib": "TBD",
       "venue": "NRG Stadium, Houston",
       "status": "scheduled",
@@ -3981,7 +4009,7 @@
       "match_num": 92,
       "home_from": "winner_M79",
       "away_from": "winner_M80",
-      "home": null,
+      "home": "Mexico",
       "away": null,
       "date_wib": "TBD",
       "venue": "Estadio Azteca, Mexico City",
