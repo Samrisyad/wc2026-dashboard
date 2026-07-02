@@ -22,8 +22,11 @@
       "away": "Bosnia-Herzegovina",
       "date_wib": "2026-07-02 07:00",
       "venue": "Levi's Stadium, Santa Clara",
-      "status": "scheduled",
-      "score": null,
+      "status": "FT",
+      "score": {
+        "home": 2,
+        "away": 0
+      },
       "highlight": null
     }
   ]

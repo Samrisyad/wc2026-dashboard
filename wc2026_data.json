@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-02 07:09 WIB",
+  "last_updated": "2026-07-02 10:30 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -3985,11 +3985,38 @@
       "away": "Bosnia-Herzegovina",
       "date_wib": "2026-07-02 07:00",
       "venue": "Levi's Stadium, Santa Clara",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
+      "status": "FT",
+      "score": {
+        "home": 2,
+        "away": 0
+      },
+      "scorers": [
+        {
+          "player": "Folarin Balogun",
+          "team": "United States",
+          "minute": 45
+        },
+        {
+          "player": "Malik Tillman",
+          "team": "United States",
+          "minute": 82
+        }
+      ],
       "assists": [],
-      "cards": [],
+      "cards": [
+        {
+          "player": "Folarin Balogun",
+          "team": "United States",
+          "type": "red",
+          "minute": 64
+        },
+        {
+          "player": "Stjepan Radeljić",
+          "team": "Bosnia-Herzegovina",
+          "type": "yellow",
+          "minute": 80
+        }
+      ],
       "group": null,
       "match_num": 82
     },
@@ -4157,7 +4184,7 @@
       "match_num": 94,
       "home_from": "winner_M81",
       "away_from": "winner_M82",
-      "home": null,
+      "home": "Belgium",
       "away": null,
       "date_wib": "TBD",
       "venue": "Lumen Field, Seattle",
