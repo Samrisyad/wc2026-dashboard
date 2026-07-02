@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-02 10:30 WIB",
+  "last_updated": "2026-07-02 12:49 WIB",
   "group_stage_complete": true,
   "group_stage_complete_since": "28 June 2026 WIB",
   "matches": [
@@ -613,9 +613,9 @@
       "stage": "R16",
       "match_num": 90,
       "home_from": "winner_M73",
-      "away_from": "winner_M76",
+      "away_from": "winner_M75",
       "home": "Canada",
-      "away": "Morocco",
+      "away": "Paraguay",
       "date_wib": "TBD",
       "venue": "NRG Stadium, Houston",
       "status": "scheduled",
@@ -627,9 +627,9 @@
     {
       "stage": "R16",
       "match_num": 91,
-      "home_from": "winner_M75",
+      "home_from": "winner_M76",
       "away_from": "winner_M78",
-      "home": "Paraguay",
+      "home": "Morocco",
       "away": "France",
       "date_wib": "TBD",
       "venue": "MetLife Stadium, East Rutherford",

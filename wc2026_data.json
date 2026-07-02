@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-02 10:30 WIB",
+  "last_updated": "2026-07-02 12:49 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -4123,9 +4123,9 @@
       "stage": "R16",
       "match_num": 90,
       "home_from": "winner_M73",
-      "away_from": "winner_M76",
+      "away_from": "winner_M75",
       "home": "Canada",
-      "away": "Morocco",
+      "away": "Paraguay",
       "date_wib": "TBD",
       "venue": "NRG Stadium, Houston",
       "status": "scheduled",
@@ -4137,9 +4137,9 @@
     {
       "stage": "R16",
       "match_num": 91,
-      "home_from": "winner_M75",
+      "home_from": "winner_M76",
       "away_from": "winner_M78",
-      "home": "Paraguay",
+      "home": "Morocco",
       "away": "France",
       "date_wib": "TBD",
       "venue": "MetLife Stadium, East Rutherford",
@@ -4185,7 +4185,7 @@
       "home_from": "winner_M81",
       "away_from": "winner_M82",
       "home": "Belgium",
-      "away": null,
+      "away": "United States",
       "date_wib": "TBD",
       "venue": "Lumen Field, Seattle",
       "status": "scheduled",
