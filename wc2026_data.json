@@ -1,5 +1,5 @@
 {
-  "last_updated": "30 June 2026 · 06:06 WIB",
+  "last_updated": "2026-07-02 07:09 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -3607,7 +3607,7 @@
       "away": "Paraguay",
       "date_wib": "2026-06-30 03:30",
       "venue": "Gillette Stadium, Foxborough",
-      "status": "LIVE",
+      "status": "FT",
       "score": {
         "home": 1,
         "away": 1
@@ -3638,9 +3638,20 @@
           "minute": 73
         }
       ],
-      "cards": [],
+      "cards": [
+        {
+          "player": "Andrés Cubas",
+          "team": "Paraguay",
+          "type": "yellow",
+          "minute": 65
+        }
+      ],
       "group": null,
-      "match_num": 75
+      "match_num": 75,
+      "pso": {
+        "home": 3,
+        "away": 4
+      }
     },
     {
       "stage": "R32",
@@ -3648,13 +3659,51 @@
       "away": "Morocco",
       "date_wib": "2026-06-30 08:00",
       "venue": "Estadio BBVA, Monterrey",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
-      "cards": [],
+      "status": "FT",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "scorers": [
+        {
+          "player": "Cody Gakpo",
+          "team": "Netherlands",
+          "minute": 71
+        },
+        {
+          "player": "Issa Diop",
+          "team": "Morocco",
+          "minute": "90+2"
+        }
+      ],
+      "assists": [
+        {
+          "player": "Crysencio Summerville",
+          "team": "Netherlands",
+          "for": "Cody Gakpo",
+          "minute": 71
+        },
+        {
+          "player": "Chemsdine Talbi",
+          "team": "Morocco",
+          "for": "Issa Diop",
+          "minute": "90+2"
+        }
+      ],
+      "cards": [
+        {
+          "player": "Issa Diop",
+          "team": "Morocco",
+          "type": "yellow",
+          "minute": 55
+        }
+      ],
       "group": null,
-      "match_num": 76
+      "match_num": 76,
+      "pso": {
+        "home": 2,
+        "away": 3
+      }
     },
     {
       "stage": "R32",
@@ -3662,10 +3711,36 @@
       "away": "Norway",
       "date_wib": "2026-07-01 00:00",
       "venue": "AT&T Stadium, Arlington",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
+      "status": "FT",
+      "score": {
+        "home": 1,
+        "away": 2
+      },
+      "scorers": [
+        {
+          "player": "Antonio Nusa",
+          "team": "Norway",
+          "minute": 39
+        },
+        {
+          "player": "Amad Diallo",
+          "team": "Ivory Coast",
+          "minute": 74
+        },
+        {
+          "player": "Erling Haaland",
+          "team": "Norway",
+          "minute": 86
+        }
+      ],
+      "assists": [
+        {
+          "player": "Patrick Berg",
+          "team": "Norway",
+          "for": "Erling Haaland",
+          "minute": 86
+        }
+      ],
       "cards": [],
       "group": null,
       "match_num": 77
@@ -3676,10 +3751,42 @@
       "away": "Sweden",
       "date_wib": "2026-07-01 04:00",
       "venue": "MetLife Stadium, East Rutherford",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
+      "status": "FT",
+      "score": {
+        "home": 3,
+        "away": 0
+      },
+      "scorers": [
+        {
+          "player": "Kylian Mbappé",
+          "team": "France",
+          "minute": 45
+        },
+        {
+          "player": "Bradley Barcola",
+          "team": "France",
+          "minute": 50
+        },
+        {
+          "player": "Kylian Mbappé",
+          "team": "France",
+          "minute": 74
+        }
+      ],
+      "assists": [
+        {
+          "player": "Michael Olise",
+          "team": "France",
+          "for": "Bradley Barcola",
+          "minute": 50
+        },
+        {
+          "player": "Michael Olise",
+          "team": "France",
+          "for": "Kylian Mbappé",
+          "minute": 74
+        }
+      ],
       "cards": [],
       "group": null,
       "match_num": 78
@@ -3690,11 +3797,63 @@
       "away": "Ecuador",
       "date_wib": "2026-07-01 08:00",
       "venue": "Estadio Azteca, Mexico City",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
-      "cards": [],
+      "status": "FT",
+      "score": {
+        "home": 2,
+        "away": 0
+      },
+      "scorers": [
+        {
+          "player": "Julián Quiñones",
+          "team": "Mexico",
+          "minute": 22
+        },
+        {
+          "player": "Raúl Jiménez",
+          "team": "Mexico",
+          "minute": 31
+        }
+      ],
+      "assists": [
+        {
+          "player": "Roberto Alvarado",
+          "team": "Mexico",
+          "for": "Julián Quiñones",
+          "minute": 22
+        },
+        {
+          "player": "Julián Quiñones",
+          "team": "Mexico",
+          "for": "Raúl Jiménez",
+          "minute": 31
+        }
+      ],
+      "cards": [
+        {
+          "player": "Piero Hincapié",
+          "team": "Ecuador",
+          "type": "red",
+          "minute": "90+5"
+        },
+        {
+          "player": "Alan Franco",
+          "team": "Ecuador",
+          "type": "yellow",
+          "minute": null
+        },
+        {
+          "player": "Kendry Páez",
+          "team": "Ecuador",
+          "type": "yellow",
+          "minute": null
+        },
+        {
+          "player": "Moisés Caicedo",
+          "team": "Ecuador",
+          "type": "yellow",
+          "minute": null
+        }
+      ],
       "group": null,
       "match_num": 79
     },
@@ -3704,10 +3863,48 @@
       "away": "DR Congo",
       "date_wib": "2026-07-01 23:00",
       "venue": "Mercedes-Benz Stadium, Atlanta",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
+      "status": "FT",
+      "score": {
+        "home": 2,
+        "away": 1
+      },
+      "scorers": [
+        {
+          "player": "Brian Cipenga",
+          "team": "DR Congo",
+          "minute": 7
+        },
+        {
+          "player": "Harry Kane",
+          "team": "England",
+          "minute": 74
+        },
+        {
+          "player": "Harry Kane",
+          "team": "England",
+          "minute": 86
+        }
+      ],
+      "assists": [
+        {
+          "player": "Chancel Mbemba",
+          "team": "DR Congo",
+          "for": "Brian Cipenga",
+          "minute": 7
+        },
+        {
+          "player": "Anthony Gordon",
+          "team": "England",
+          "for": "Harry Kane",
+          "minute": 74
+        },
+        {
+          "player": "Anthony Gordon",
+          "team": "England",
+          "for": "Harry Kane",
+          "minute": 86
+        }
+      ],
       "cards": [],
       "group": null,
       "match_num": 80
@@ -3718,10 +3915,66 @@
       "away": "Senegal",
       "date_wib": "2026-07-02 03:00",
       "venue": "Lumen Field, Seattle",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
+      "status": "FT",
+      "score": {
+        "home": 3,
+        "away": 2
+      },
+      "aet": true,
+      "scorers": [
+        {
+          "player": "Habib Diarra",
+          "team": "Senegal",
+          "minute": 25
+        },
+        {
+          "player": "Ismaïla Sarr",
+          "team": "Senegal",
+          "minute": 51
+        },
+        {
+          "player": "Romelu Lukaku",
+          "team": "Belgium",
+          "minute": 86
+        },
+        {
+          "player": "Youri Tielemans",
+          "team": "Belgium",
+          "minute": 89
+        },
+        {
+          "player": "Youri Tielemans",
+          "team": "Belgium",
+          "minute": "120+5",
+          "penalty": true
+        }
+      ],
+      "assists": [
+        {
+          "player": "Ismaïla Sarr",
+          "team": "Senegal",
+          "for": "Habib Diarra",
+          "minute": 25
+        },
+        {
+          "player": "Moussa Niakhaté",
+          "team": "Senegal",
+          "for": "Ismaïla Sarr",
+          "minute": 51
+        },
+        {
+          "player": "Thomas Meunier",
+          "team": "Belgium",
+          "for": "Romelu Lukaku",
+          "minute": 86
+        },
+        {
+          "player": "Leandro Trossard",
+          "team": "Belgium",
+          "for": "Youri Tielemans",
+          "minute": 89
+        }
+      ],
       "cards": [],
       "group": null,
       "match_num": 81
@@ -3823,6 +4076,246 @@
       "cards": [],
       "group": null,
       "match_num": 88
+    },
+    {
+      "stage": "R16",
+      "match_num": 89,
+      "home_from": "winner_M74",
+      "away_from": "winner_M77",
+      "home": "Brazil",
+      "away": "Norway",
+      "date_wib": "TBD",
+      "venue": "Lincoln Financial Field, Philadelphia",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": []
+    },
+    {
+      "stage": "R16",
+      "match_num": 90,
+      "home_from": "winner_M73",
+      "away_from": "winner_M76",
+      "home": "Canada",
+      "away": "Morocco",
+      "date_wib": "TBD",
+      "venue": "NRG Stadium, Houston",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": []
+    },
+    {
+      "stage": "R16",
+      "match_num": 91,
+      "home_from": "winner_M75",
+      "away_from": "winner_M78",
+      "home": "Paraguay",
+      "away": "France",
+      "date_wib": "TBD",
+      "venue": "MetLife Stadium, East Rutherford",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": []
+    },
+    {
+      "stage": "R16",
+      "match_num": 92,
+      "home_from": "winner_M79",
+      "away_from": "winner_M80",
+      "home": "Mexico",
+      "away": "England",
+      "date_wib": "TBD",
+      "venue": "Estadio Azteca, Mexico City",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": []
+    },
+    {
+      "stage": "R16",
+      "match_num": 93,
+      "home_from": "winner_M83",
+      "away_from": "winner_M84",
+      "home": null,
+      "away": null,
+      "date_wib": "TBD",
+      "venue": "AT&T Stadium, Arlington",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": []
+    },
+    {
+      "stage": "R16",
+      "match_num": 94,
+      "home_from": "winner_M81",
+      "away_from": "winner_M82",
+      "home": null,
+      "away": null,
+      "date_wib": "TBD",
+      "venue": "Lumen Field, Seattle",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": []
+    },
+    {
+      "stage": "R16",
+      "match_num": 95,
+      "home_from": "winner_M86",
+      "away_from": "winner_M88",
+      "home": null,
+      "away": null,
+      "date_wib": "TBD",
+      "venue": "Mercedes-Benz Stadium, Atlanta",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": []
+    },
+    {
+      "stage": "R16",
+      "match_num": 96,
+      "home_from": "winner_M85",
+      "away_from": "winner_M87",
+      "home": null,
+      "away": null,
+      "date_wib": "TBD",
+      "venue": "BC Place, Vancouver",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": []
+    },
+    {
+      "stage": "QF",
+      "match_num": 97,
+      "home_from": "winner_M90",
+      "away_from": "winner_M91",
+      "home": null,
+      "away": null,
+      "date_wib": "TBD",
+      "venue": "Gillette Stadium, Foxborough",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": []
+    },
+    {
+      "stage": "QF",
+      "match_num": 98,
+      "home_from": "winner_M89",
+      "away_from": "winner_M92",
+      "home": null,
+      "away": null,
+      "date_wib": "TBD",
+      "venue": "SoFi Stadium, Inglewood",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": []
+    },
+    {
+      "stage": "QF",
+      "match_num": 99,
+      "home_from": "winner_M93",
+      "away_from": "winner_M94",
+      "home": null,
+      "away": null,
+      "date_wib": "TBD",
+      "venue": "BMO Field, Toronto",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": []
+    },
+    {
+      "stage": "QF",
+      "match_num": 100,
+      "home_from": "winner_M95",
+      "away_from": "winner_M96",
+      "home": null,
+      "away": null,
+      "date_wib": "TBD",
+      "venue": "Hard Rock Stadium, Miami Gardens",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": []
+    },
+    {
+      "stage": "SF",
+      "match_num": 101,
+      "home_from": "winner_M97",
+      "away_from": "winner_M98",
+      "home": null,
+      "away": null,
+      "date_wib": "TBD",
+      "venue": "MetLife Stadium, East Rutherford",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": []
+    },
+    {
+      "stage": "SF",
+      "match_num": 102,
+      "home_from": "winner_M99",
+      "away_from": "winner_M100",
+      "home": null,
+      "away": null,
+      "date_wib": "TBD",
+      "venue": "AT&T Stadium, Arlington",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": []
+    },
+    {
+      "stage": "3rd_place",
+      "match_num": 103,
+      "home_from": "loser_M101",
+      "away_from": "loser_M102",
+      "home": null,
+      "away": null,
+      "date_wib": "TBD",
+      "venue": "Hard Rock Stadium, Miami Gardens",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": []
+    },
+    {
+      "stage": "Final",
+      "match_num": 104,
+      "home_from": "winner_M101",
+      "away_from": "winner_M102",
+      "home": null,
+      "away": null,
+      "date_wib": "TBD",
+      "venue": "MetLife Stadium, East Rutherford",
+      "status": "scheduled",
+      "score": null,
+      "scorers": [],
+      "assists": [],
+      "cards": []
     }
   ],
   "flags": {
@@ -4435,255 +4928,111 @@
     ]
   },
   "knockout_bracket": {
-    "R16": [
-      {
-        "stage": "R16",
-        "match_num": 89,
-        "home_from": "winner_M74",
-        "away_from": "winner_M77",
-        "home": null,
-        "away": null,
-        "date_wib": "TBD",
-        "venue": "Lincoln Financial Field, Philadelphia",
-        "status": "scheduled",
-        "score": null,
-        "scorers": [],
-        "assists": [],
-        "cards": []
+    "structure": {
+      "R32_to_R16": {
+        "89": {
+          "feeds_from": [
+            74,
+            77
+          ]
+        },
+        "90": {
+          "feeds_from": [
+            73,
+            75
+          ]
+        },
+        "91": {
+          "feeds_from": [
+            76,
+            78
+          ]
+        },
+        "92": {
+          "feeds_from": [
+            79,
+            80
+          ]
+        },
+        "93": {
+          "feeds_from": [
+            83,
+            84
+          ]
+        },
+        "94": {
+          "feeds_from": [
+            81,
+            82
+          ]
+        },
+        "95": {
+          "feeds_from": [
+            86,
+            88
+          ]
+        },
+        "96": {
+          "feeds_from": [
+            85,
+            87
+          ]
+        }
       },
-      {
-        "stage": "R16",
-        "match_num": 90,
-        "home_from": "winner_M73",
-        "away_from": "winner_M75",
-        "home": "Canada",
-        "away": null,
-        "date_wib": "TBD",
-        "venue": "NRG Stadium, Houston",
-        "status": "scheduled",
-        "score": null,
-        "scorers": [],
-        "assists": [],
-        "cards": []
+      "R16_to_QF": {
+        "97": {
+          "feeds_from": [
+            89,
+            90
+          ]
+        },
+        "98": {
+          "feeds_from": [
+            91,
+            92
+          ]
+        },
+        "99": {
+          "feeds_from": [
+            93,
+            94
+          ]
+        },
+        "100": {
+          "feeds_from": [
+            95,
+            96
+          ]
+        }
       },
-      {
-        "stage": "R16",
-        "match_num": 91,
-        "home_from": "winner_M76",
-        "away_from": "winner_M78",
-        "home": null,
-        "away": null,
-        "date_wib": "TBD",
-        "venue": "MetLife Stadium, East Rutherford",
-        "status": "scheduled",
-        "score": null,
-        "scorers": [],
-        "assists": [],
-        "cards": []
+      "QF_to_SF": {
+        "101": {
+          "feeds_from": [
+            97,
+            98
+          ]
+        },
+        "102": {
+          "feeds_from": [
+            99,
+            100
+          ]
+        }
       },
-      {
-        "stage": "R16",
-        "match_num": 92,
-        "home_from": "winner_M79",
-        "away_from": "winner_M80",
-        "home": null,
-        "away": null,
-        "date_wib": "TBD",
-        "venue": "Estadio Azteca, Mexico City",
-        "status": "scheduled",
-        "score": null,
-        "scorers": [],
-        "assists": [],
-        "cards": []
-      },
-      {
-        "stage": "R16",
-        "match_num": 93,
-        "home_from": "winner_M83",
-        "away_from": "winner_M84",
-        "home": null,
-        "away": null,
-        "date_wib": "TBD",
-        "venue": "AT&T Stadium, Arlington",
-        "status": "scheduled",
-        "score": null,
-        "scorers": [],
-        "assists": [],
-        "cards": []
-      },
-      {
-        "stage": "R16",
-        "match_num": 94,
-        "home_from": "winner_M81",
-        "away_from": "winner_M82",
-        "home": null,
-        "away": null,
-        "date_wib": "TBD",
-        "venue": "Lumen Field, Seattle",
-        "status": "scheduled",
-        "score": null,
-        "scorers": [],
-        "assists": [],
-        "cards": []
-      },
-      {
-        "stage": "R16",
-        "match_num": 95,
-        "home_from": "winner_M86",
-        "away_from": "winner_M88",
-        "home": null,
-        "away": null,
-        "date_wib": "TBD",
-        "venue": "Mercedes-Benz Stadium, Atlanta",
-        "status": "scheduled",
-        "score": null,
-        "scorers": [],
-        "assists": [],
-        "cards": []
-      },
-      {
-        "stage": "R16",
-        "match_num": 96,
-        "home_from": "winner_M85",
-        "away_from": "winner_M87",
-        "home": null,
-        "away": null,
-        "date_wib": "TBD",
-        "venue": "BC Place, Vancouver",
-        "status": "scheduled",
-        "score": null,
-        "scorers": [],
-        "assists": [],
-        "cards": []
+      "SF_to_Final": {
+        "103": {
+          "feeds_from": [
+            "loser_101",
+            "loser_102"
+          ]
+        },
+        "104": {
+          "feeds_from": [
+            101,
+            102
+          ]
+        }
       }
-    ],
-    "QF": [
-      {
-        "stage": "QF",
-        "match_num": 97,
-        "home_from": "winner_M89",
-        "away_from": "winner_M90",
-        "home": null,
-        "away": null,
-        "date_wib": "TBD",
-        "venue": "Gillette Stadium, Foxborough",
-        "status": "scheduled",
-        "score": null,
-        "scorers": [],
-        "assists": [],
-        "cards": []
-      },
-      {
-        "stage": "QF",
-        "match_num": 98,
-        "home_from": "winner_M91",
-        "away_from": "winner_M92",
-        "home": null,
-        "away": null,
-        "date_wib": "TBD",
-        "venue": "SoFi Stadium, Inglewood",
-        "status": "scheduled",
-        "score": null,
-        "scorers": [],
-        "assists": [],
-        "cards": []
-      },
-      {
-        "stage": "QF",
-        "match_num": 99,
-        "home_from": "winner_M93",
-        "away_from": "winner_M94",
-        "home": null,
-        "away": null,
-        "date_wib": "TBD",
-        "venue": "BMO Field, Toronto",
-        "status": "scheduled",
-        "score": null,
-        "scorers": [],
-        "assists": [],
-        "cards": []
-      },
-      {
-        "stage": "QF",
-        "match_num": 100,
-        "home_from": "winner_M95",
-        "away_from": "winner_M96",
-        "home": null,
-        "away": null,
-        "date_wib": "TBD",
-        "venue": "Hard Rock Stadium, Miami Gardens",
-        "status": "scheduled",
-        "score": null,
-        "scorers": [],
-        "assists": [],
-        "cards": []
-      }
-    ],
-    "SF": [
-      {
-        "stage": "SF",
-        "match_num": 101,
-        "home_from": "winner_M97",
-        "away_from": "winner_M98",
-        "home": null,
-        "away": null,
-        "date_wib": "TBD",
-        "venue": "MetLife Stadium, East Rutherford",
-        "status": "scheduled",
-        "score": null,
-        "scorers": [],
-        "assists": [],
-        "cards": []
-      },
-      {
-        "stage": "SF",
-        "match_num": 102,
-        "home_from": "winner_M99",
-        "away_from": "winner_M100",
-        "home": null,
-        "away": null,
-        "date_wib": "TBD",
-        "venue": "AT&T Stadium, Arlington",
-        "status": "scheduled",
-        "score": null,
-        "scorers": [],
-        "assists": [],
-        "cards": []
-      }
-    ],
-    "3rd_place": [
-      {
-        "stage": "3rd_place",
-        "match_num": 103,
-        "home_from": "loser_M101",
-        "away_from": "loser_M102",
-        "home": null,
-        "away": null,
-        "date_wib": "TBD",
-        "venue": "Hard Rock Stadium, Miami Gardens",
-        "status": "scheduled",
-        "score": null,
-        "scorers": [],
-        "assists": [],
-        "cards": []
-      }
-    ],
-    "Final": [
-      {
-        "stage": "Final",
-        "match_num": 104,
-        "home_from": "winner_M101",
-        "away_from": "winner_M102",
-        "home": null,
-        "away": null,
-        "date_wib": "TBD",
-        "venue": "MetLife Stadium, East Rutherford",
-        "status": "scheduled",
-        "score": null,
-        "scorers": [],
-        "assists": [],
-        "cards": []
-      }
-    ]
+    }
   }
 }

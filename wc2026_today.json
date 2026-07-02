@@ -1,41 +1,27 @@
 {
-  "date": "2026-06-30",
+  "date": "2026-07-02",
   "matches": [
     {
-      "match_index": 73,
+      "match_index": 80,
       "group": null,
-      "home": "Brazil",
-      "away": "Japan",
-      "date_wib": "2026-06-30 00:00",
-      "venue": "NRG Stadium, Houston",
+      "home": "Belgium",
+      "away": "Senegal",
+      "date_wib": "2026-07-02 03:00",
+      "venue": "Lumen Field, Seattle",
       "status": "FT",
       "score": {
-        "home": 2,
-        "away": 1
+        "home": 3,
+        "away": 2
       },
       "highlight": null
     },
     {
-      "match_index": 74,
+      "match_index": 81,
       "group": null,
-      "home": "Germany",
-      "away": "Paraguay",
-      "date_wib": "2026-06-30 03:30",
-      "venue": "Gillette Stadium, Foxborough",
-      "status": "LIVE",
-      "score": {
-        "home": 1,
-        "away": 1
-      },
-      "highlight": null
-    },
-    {
-      "match_index": 75,
-      "group": null,
-      "home": "Netherlands",
-      "away": "Morocco",
-      "date_wib": "2026-06-30 08:00",
-      "venue": "Estadio BBVA, Monterrey",
+      "home": "United States",
+      "away": "Bosnia-Herzegovina",
+      "date_wib": "2026-07-02 07:00",
+      "venue": "Levi's Stadium, Santa Clara",
       "status": "scheduled",
       "score": null,
       "highlight": null
