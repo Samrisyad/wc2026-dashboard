@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-02 13:12",
+  "last_updated": "2026-07-03 07:15",
   "group_stage_complete": true,
   "group_stage_complete_since": "28 June 2026 WIB",
   "matches": [
@@ -526,11 +526,56 @@
       "away": "Austria",
       "date_wib": "2026-07-03 02:00",
       "venue": "SoFi Stadium, Inglewood",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
-      "cards": [],
+      "status": "FT",
+      "score": {
+        "home": 3,
+        "away": 0
+      },
+      "scorers": [
+        {
+          "player": "Mikel Oyarzabal",
+          "team": "Spain",
+          "minute": 36
+        },
+        {
+          "player": "Pedro Porro",
+          "team": "Spain",
+          "minute": 66
+        },
+        {
+          "player": "Mikel Oyarzabal",
+          "team": "Spain",
+          "minute": 89
+        }
+      ],
+      "assists": [
+        {
+          "player": "Marc Cucurella",
+          "team": "Spain",
+          "for": "Mikel Oyarzabal",
+          "minute": 36
+        },
+        {
+          "player": "Alex Baena",
+          "team": "Spain",
+          "for": "Pedro Porro",
+          "minute": 66
+        },
+        {
+          "player": "Marc Cucurella",
+          "team": "Spain",
+          "for": "Mikel Oyarzabal",
+          "minute": 89
+        }
+      ],
+      "cards": [
+        {
+          "player": "Stefan Posch",
+          "team": "Austria",
+          "type": "yellow",
+          "minute": 83
+        }
+      ],
       "group": null,
       "match_num": 83
     },
@@ -670,7 +715,7 @@
       "home_from": "winner_M84",
       "away_from": "winner_M83",
       "home": null,
-      "away": null,
+      "away": "Spain",
       "date_wib": "2026-07-07 02:00",
       "venue": "AT&T Stadium, Arlington",
       "status": "scheduled",
