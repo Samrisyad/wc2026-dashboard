@@ -13,7 +13,7 @@
         "home": 3,
         "away": 0
       },
-      "highlight": null
+      "highlight": "https://www.youtube.com/watch?v=5owBspHLM4Y"
     },
     {
       "match_index": 83,
@@ -22,8 +22,11 @@
       "away": "Croatia",
       "date_wib": "2026-07-03 06:00",
       "venue": "BMO Field, Toronto",
-      "status": "scheduled",
-      "score": null,
+      "status": "FT",
+      "score": {
+        "home": 2,
+        "away": 1
+      },
       "highlight": null
     },
     {
@@ -33,8 +36,11 @@
       "away": "Algeria",
       "date_wib": "2026-07-03 10:00",
       "venue": "BC Place, Vancouver",
-      "status": "scheduled",
-      "score": null,
+      "status": "FT",
+      "score": {
+        "home": 2,
+        "away": 0
+      },
       "highlight": null
     },
     {

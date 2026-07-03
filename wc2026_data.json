@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-03 07:15",
+  "last_updated": "2026-07-03 13:10 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -4087,7 +4087,8 @@
         }
       ],
       "group": null,
-      "match_num": 83
+      "match_num": 83,
+      "highlight": "https://www.youtube.com/watch?v=5owBspHLM4Y"
     },
     {
       "stage": "R32",
@@ -4095,10 +4096,37 @@
       "away": "Croatia",
       "date_wib": "2026-07-03 06:00",
       "venue": "BMO Field, Toronto",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
+      "status": "FT",
+      "score": {
+        "home": 2,
+        "away": 1
+      },
+      "scorers": [
+        {
+          "player": "Ivan Perišić",
+          "team": "Croatia",
+          "minute": 53
+        },
+        {
+          "player": "Cristiano Ronaldo",
+          "team": "Portugal",
+          "minute": 68,
+          "penalty": true
+        },
+        {
+          "player": "Gonçalo Ramos",
+          "team": "Portugal",
+          "minute": "90+4"
+        }
+      ],
+      "assists": [
+        {
+          "player": "Rafael Leão",
+          "team": "Portugal",
+          "for": "Gonçalo Ramos",
+          "minute": "90+4"
+        }
+      ],
       "cards": [],
       "group": null,
       "match_num": 84
@@ -4109,10 +4137,31 @@
       "away": "Algeria",
       "date_wib": "2026-07-03 10:00",
       "venue": "BC Place, Vancouver",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
+      "status": "FT",
+      "score": {
+        "home": 2,
+        "away": 0
+      },
+      "scorers": [
+        {
+          "player": "Breel Embolo",
+          "team": "Switzerland",
+          "minute": 10
+        },
+        {
+          "player": "Dan Ndoye",
+          "team": "Switzerland",
+          "minute": 46
+        }
+      ],
+      "assists": [
+        {
+          "player": "Johan Manzambi",
+          "team": "Switzerland",
+          "for": "Breel Embolo",
+          "minute": 10
+        }
+      ],
       "cards": [],
       "group": null,
       "match_num": 85
@@ -4225,7 +4274,7 @@
       "home_from": "winner_M84",
       "away_from": "winner_M83",
       "home": null,
-      "away": null,
+      "away": "Spain",
       "date_wib": "2026-07-07 02:00",
       "venue": "AT&T Stadium, Arlington",
       "status": "scheduled",
