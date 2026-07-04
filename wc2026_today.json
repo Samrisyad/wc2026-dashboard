@@ -8,12 +8,12 @@
       "away": "Cape Verde",
       "date_wib": "2026-07-04 05:00",
       "venue": "Hard Rock Stadium, Miami Gardens",
-      "status": "LIVE",
+      "status": "FT",
       "score": {
-        "home": 1,
-        "away": 1
+        "home": 3,
+        "away": 2
       },
-      "highlight": null
+      "highlight": "https://www.youtube.com/watch?v=w4w_v8qxMJ0"
     },
     {
       "match_index": 86,
@@ -22,8 +22,11 @@
       "away": "Ghana",
       "date_wib": "2026-07-04 08:30",
       "venue": "Arrowhead Stadium, Kansas City",
-      "status": "scheduled",
-      "score": null,
+      "status": "FT",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
       "highlight": null
     },
     {
@@ -38,7 +41,7 @@
         "home": 1,
         "away": 1
       },
-      "highlight": null
+      "highlight": "https://www.youtube.com/watch?v=hWRmw9hAHZY"
     }
   ]
 }
