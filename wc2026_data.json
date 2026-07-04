@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-03 13:10 WIB",
+  "last_updated": "2026-07-04 07:35 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -4129,7 +4129,8 @@
       ],
       "cards": [],
       "group": null,
-      "match_num": 84
+      "match_num": 84,
+      "highlight": "https://www.youtube.com/watch?v=eKLrQ2ztNhA"
     },
     {
       "stage": "R32",
@@ -4164,17 +4165,32 @@
       ],
       "cards": [],
       "group": null,
-      "match_num": 85
+      "match_num": 85,
+      "highlight": "https://www.youtube.com/watch?v=gFJzsur8YqY"
     },
     {
       "stage": "R32",
       "home": "Argentina",
       "away": "Cape Verde",
-      "date_wib": "2026-07-03 19:00",
+      "date_wib": "2026-07-04 05:00",
       "venue": "Hard Rock Stadium, Miami Gardens",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
+      "status": "LIVE",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "scorers": [
+        {
+          "player": "Lionel Messi",
+          "team": "Argentina",
+          "minute": 29
+        },
+        {
+          "player": "Deroy Duarte",
+          "team": "Cape Verde",
+          "minute": null
+        }
+      ],
       "assists": [],
       "cards": [],
       "group": null,
@@ -4184,7 +4200,7 @@
       "stage": "R32",
       "home": "Colombia",
       "away": "Ghana",
-      "date_wib": "2026-07-03 23:00",
+      "date_wib": "2026-07-04 08:30",
       "venue": "Arrowhead Stadium, Kansas City",
       "status": "scheduled",
       "score": null,
@@ -4198,12 +4214,39 @@
       "stage": "R32",
       "home": "Australia",
       "away": "Egypt",
-      "date_wib": "2026-07-04 02:30",
+      "date_wib": "2026-07-04 01:00",
       "venue": "AT&T Stadium, Arlington",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
+      "status": "FT",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "aet": true,
+      "pso": {
+        "home": 2,
+        "away": 4
+      },
+      "scorers": [
+        {
+          "player": "Emam Ashour",
+          "team": "Egypt",
+          "minute": 13
+        },
+        {
+          "player": "Mohamed Hany",
+          "team": "Australia",
+          "minute": 55,
+          "own_goal": true
+        }
+      ],
+      "assists": [
+        {
+          "player": "Karim Hafez",
+          "team": "Egypt",
+          "for": "Emam Ashour",
+          "minute": 13
+        }
+      ],
       "cards": [],
       "group": null,
       "match_num": 88
@@ -4273,7 +4316,7 @@
       "match_num": 93,
       "home_from": "winner_M84",
       "away_from": "winner_M83",
-      "home": null,
+      "home": "Portugal",
       "away": "Spain",
       "date_wib": "2026-07-07 02:00",
       "venue": "AT&T Stadium, Arlington",
@@ -4304,7 +4347,7 @@
       "home_from": "winner_M86",
       "away_from": "winner_M88",
       "home": null,
-      "away": null,
+      "away": "Egypt",
       "date_wib": "2026-07-07 23:00",
       "venue": "Mercedes-Benz Stadium, Atlanta",
       "status": "scheduled",
@@ -4318,7 +4361,7 @@
       "match_num": 96,
       "home_from": "winner_M85",
       "away_from": "winner_M87",
-      "home": null,
+      "home": "Switzerland",
       "away": null,
       "date_wib": "2026-07-08 03:00",
       "venue": "BC Place, Vancouver",

@@ -1,57 +1,18 @@
 {
-  "date": "2026-07-03",
+  "date": "2026-07-04",
   "matches": [
-    {
-      "match_index": 82,
-      "group": null,
-      "home": "Spain",
-      "away": "Austria",
-      "date_wib": "2026-07-03 02:00",
-      "venue": "SoFi Stadium, Inglewood",
-      "status": "FT",
-      "score": {
-        "home": 3,
-        "away": 0
-      },
-      "highlight": "https://www.youtube.com/watch?v=5owBspHLM4Y"
-    },
-    {
-      "match_index": 83,
-      "group": null,
-      "home": "Portugal",
-      "away": "Croatia",
-      "date_wib": "2026-07-03 06:00",
-      "venue": "BMO Field, Toronto",
-      "status": "FT",
-      "score": {
-        "home": 2,
-        "away": 1
-      },
-      "highlight": null
-    },
-    {
-      "match_index": 84,
-      "group": null,
-      "home": "Switzerland",
-      "away": "Algeria",
-      "date_wib": "2026-07-03 10:00",
-      "venue": "BC Place, Vancouver",
-      "status": "FT",
-      "score": {
-        "home": 2,
-        "away": 0
-      },
-      "highlight": null
-    },
     {
       "match_index": 85,
       "group": null,
       "home": "Argentina",
       "away": "Cape Verde",
-      "date_wib": "2026-07-03 19:00",
+      "date_wib": "2026-07-04 05:00",
       "venue": "Hard Rock Stadium, Miami Gardens",
-      "status": "scheduled",
-      "score": null,
+      "status": "LIVE",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
       "highlight": null
     },
     {
@@ -59,10 +20,24 @@
       "group": null,
       "home": "Colombia",
       "away": "Ghana",
-      "date_wib": "2026-07-03 23:00",
+      "date_wib": "2026-07-04 08:30",
       "venue": "Arrowhead Stadium, Kansas City",
       "status": "scheduled",
       "score": null,
+      "highlight": null
+    },
+    {
+      "match_index": 87,
+      "group": null,
+      "home": "Australia",
+      "away": "Egypt",
+      "date_wib": "2026-07-04 01:00",
+      "venue": "AT&T Stadium, Arlington",
+      "status": "FT",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
       "highlight": null
     }
   ]
