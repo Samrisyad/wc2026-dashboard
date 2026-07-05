@@ -1,47 +1,33 @@
 {
-  "date": "2026-07-04",
+  "date": "2026-07-05",
   "matches": [
     {
-      "match_index": 85,
+      "match_index": 88,
       "group": null,
-      "home": "Argentina",
-      "away": "Cape Verde",
-      "date_wib": "2026-07-04 05:00",
-      "venue": "Hard Rock Stadium, Miami Gardens",
+      "home": "Paraguay",
+      "away": "France",
+      "date_wib": "2026-07-05 04:00",
+      "venue": "Lincoln Financial Field, Philadelphia",
       "status": "FT",
       "score": {
-        "home": 3,
-        "away": 2
-      },
-      "highlight": "https://www.youtube.com/watch?v=w4w_v8qxMJ0"
-    },
-    {
-      "match_index": 86,
-      "group": null,
-      "home": "Colombia",
-      "away": "Ghana",
-      "date_wib": "2026-07-04 08:30",
-      "venue": "Arrowhead Stadium, Kansas City",
-      "status": "FT",
-      "score": {
-        "home": 1,
-        "away": 0
+        "home": 0,
+        "away": 1
       },
       "highlight": null
     },
     {
-      "match_index": 87,
+      "match_index": 89,
       "group": null,
-      "home": "Australia",
-      "away": "Egypt",
-      "date_wib": "2026-07-04 01:00",
-      "venue": "AT&T Stadium, Arlington",
+      "home": "Canada",
+      "away": "Morocco",
+      "date_wib": "2026-07-05 00:00",
+      "venue": "NRG Stadium, Houston",
       "status": "FT",
       "score": {
-        "home": 1,
-        "away": 1
+        "home": 0,
+        "away": 3
       },
-      "highlight": "https://www.youtube.com/watch?v=hWRmw9hAHZY"
+      "highlight": "https://www.youtube.com/watch?v=ZREBLvA6SKU"
     }
   ]
 }

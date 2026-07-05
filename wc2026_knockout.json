@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-04 13:15 WIB",
+  "last_updated": "2026-07-05 07:15 WIB",
   "group_stage_complete": true,
   "group_stage_complete_since": "28 June 2026 WIB",
   "matches": [
@@ -758,7 +758,8 @@
       ],
       "cards": [],
       "group": null,
-      "match_num": 87
+      "match_num": 87,
+      "highlight": "https://www.youtube.com/watch?v=ZFHvfmTtBxU"
     },
     {
       "stage": "R32",
@@ -811,11 +812,40 @@
       "away": "France",
       "date_wib": "2026-07-05 04:00",
       "venue": "Lincoln Financial Field, Philadelphia",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
+      "status": "FT",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "scorers": [
+        {
+          "player": "Kylian Mbappé",
+          "team": "France",
+          "minute": 70,
+          "penalty": true
+        }
+      ],
       "assists": [],
-      "cards": []
+      "cards": [
+        {
+          "player": "Bradley Barcola",
+          "team": "France",
+          "type": "yellow",
+          "minute": 19
+        },
+        {
+          "player": "Michael Olise",
+          "team": "France",
+          "type": "yellow",
+          "minute": null
+        },
+        {
+          "player": "Manu Koné",
+          "team": "France",
+          "type": "yellow",
+          "minute": null
+        }
+      ]
     },
     {
       "stage": "R16",
@@ -826,11 +856,87 @@
       "away": "Morocco",
       "date_wib": "2026-07-05 00:00",
       "venue": "NRG Stadium, Houston",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
-      "cards": []
+      "status": "FT",
+      "score": {
+        "home": 0,
+        "away": 3
+      },
+      "scorers": [
+        {
+          "player": "Azzedine Ounahi",
+          "team": "Morocco",
+          "minute": 50
+        },
+        {
+          "player": "Azzedine Ounahi",
+          "team": "Morocco",
+          "minute": 82
+        },
+        {
+          "player": "Soufiane Rahimi",
+          "team": "Morocco",
+          "minute": "90+8"
+        }
+      ],
+      "assists": [
+        {
+          "player": "Achraf Hakimi",
+          "team": "Morocco",
+          "for": "Azzedine Ounahi",
+          "minute": 50
+        },
+        {
+          "player": "Brahim Díaz",
+          "team": "Morocco",
+          "for": "Azzedine Ounahi",
+          "minute": 82
+        },
+        {
+          "player": "Brahim Díaz",
+          "team": "Morocco",
+          "for": "Soufiane Rahimi",
+          "minute": "90+8"
+        }
+      ],
+      "cards": [
+        {
+          "player": "Redouane Halhal",
+          "team": "Morocco",
+          "type": "yellow",
+          "minute": 20
+        },
+        {
+          "player": "Richie Laryea",
+          "team": "Canada",
+          "type": "yellow",
+          "minute": 40
+        },
+        {
+          "player": "Achraf Hakimi",
+          "team": "Morocco",
+          "type": "yellow",
+          "minute": 40
+        },
+        {
+          "player": "Jonathan David",
+          "team": "Canada",
+          "type": "yellow",
+          "minute": 43
+        },
+        {
+          "player": "Azzedine Ounahi",
+          "team": "Morocco",
+          "type": "yellow",
+          "minute": 45
+        },
+        {
+          "player": "Bilal El Khannouss",
+          "team": "Morocco",
+          "type": "yellow",
+          "minute": 45
+        }
+      ],
+      "highlight": "https://www.youtube.com/watch?v=ZREBLvA6SKU"
     },
     {
       "stage": "R16",
@@ -927,8 +1033,8 @@
       "match_num": 97,
       "home_from": "winner_M89",
       "away_from": "winner_M90",
-      "home": null,
-      "away": null,
+      "home": "France",
+      "away": "Morocco",
       "date_wib": "2026-07-10 03:00",
       "venue": "Gillette Stadium, Foxborough",
       "status": "scheduled",
