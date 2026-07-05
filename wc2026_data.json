@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-05 07:15 WIB",
+  "last_updated": "2026-07-05 13:10 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -4355,7 +4355,8 @@
           "type": "yellow",
           "minute": null
         }
-      ]
+      ],
+      "highlight": "https://www.youtube.com/watch?v=ModaKcd6cH8"
     },
     {
       "stage": "R16",
@@ -4543,8 +4544,8 @@
       "match_num": 97,
       "home_from": "winner_M89",
       "away_from": "winner_M90",
-      "home": null,
-      "away": null,
+      "home": "France",
+      "away": "Morocco",
       "date_wib": "2026-07-10 03:00",
       "venue": "Gillette Stadium, Foxborough",
       "status": "scheduled",
