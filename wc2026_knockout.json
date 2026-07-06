@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-06 07:15 WIB",
+  "last_updated": "2026-07-06 13:10 WIB",
   "group_stage_complete": true,
   "group_stage_complete_since": "28 June 2026 WIB",
   "matches": [
@@ -997,11 +997,63 @@
       "away": "England",
       "date_wib": "2026-07-06 07:00",
       "venue": "Estadio Azteca, Mexico City",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
-      "cards": []
+      "status": "FT",
+      "score": {
+        "home": 2,
+        "away": 3
+      },
+      "scorers": [
+        {
+          "player": "Jude Bellingham",
+          "team": "England",
+          "minute": 36
+        },
+        {
+          "player": "Jude Bellingham",
+          "team": "England",
+          "minute": 38
+        },
+        {
+          "player": "Julián Quiñones",
+          "team": "Mexico",
+          "minute": 42
+        },
+        {
+          "player": "Harry Kane",
+          "team": "England",
+          "minute": 60,
+          "penalty": true
+        },
+        {
+          "player": "Raúl Jiménez",
+          "team": "Mexico",
+          "minute": 69,
+          "penalty": true
+        }
+      ],
+      "assists": [
+        {
+          "player": "Bukayo Saka",
+          "team": "England",
+          "for": "Jude Bellingham",
+          "minute": 36
+        },
+        {
+          "player": "Harry Kane",
+          "team": "England",
+          "for": "Jude Bellingham",
+          "minute": 38
+        }
+      ],
+      "cards": [
+        {
+          "player": "Jarell Quansah",
+          "team": "England",
+          "type": "red",
+          "minute": 54
+        }
+      ],
+      "highlight": "https://www.youtube.com/watch?v=guRLeUEydoM"
     },
     {
       "stage": "R16",
@@ -1099,7 +1151,7 @@
       "home_from": "winner_M91",
       "away_from": "winner_M92",
       "home": "Norway",
-      "away": null,
+      "away": "England",
       "date_wib": "2026-07-12 04:00",
       "venue": "BMO Field, Toronto",
       "status": "scheduled",

@@ -22,9 +22,12 @@
       "away": "England",
       "date_wib": "2026-07-06 07:00",
       "venue": "Estadio Azteca, Mexico City",
-      "status": "scheduled",
-      "score": null,
-      "highlight": null
+      "status": "FT",
+      "score": {
+        "home": 2,
+        "away": 3
+      },
+      "highlight": "https://www.youtube.com/watch?v=guRLeUEydoM"
     }
   ]
 }
