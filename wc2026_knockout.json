@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-05 13:10 WIB",
+  "last_updated": "2026-07-06 07:15 WIB",
   "group_stage_complete": true,
   "group_stage_complete_since": "28 June 2026 WIB",
   "matches": [
@@ -948,11 +948,45 @@
       "away": "Norway",
       "date_wib": "2026-07-06 03:00",
       "venue": "MetLife Stadium, East Rutherford",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
-      "cards": []
+      "status": "FT",
+      "score": {
+        "home": 1,
+        "away": 2
+      },
+      "scorers": [
+        {
+          "player": "Erling Haaland",
+          "team": "Norway",
+          "minute": 79
+        },
+        {
+          "player": "Erling Haaland",
+          "team": "Norway",
+          "minute": 90
+        },
+        {
+          "player": "Neymar",
+          "team": "Brazil",
+          "minute": "90+10",
+          "penalty": true
+        }
+      ],
+      "assists": [
+        {
+          "player": "Andreas Schjelderup",
+          "team": "Norway",
+          "for": "Erling Haaland",
+          "minute": 79
+        },
+        {
+          "player": "Andreas Schjelderup",
+          "team": "Norway",
+          "for": "Erling Haaland",
+          "minute": 90
+        }
+      ],
+      "cards": [],
+      "highlight": "https://www.youtube.com/watch?v=sVjd-XMWlso"
     },
     {
       "stage": "R16",
@@ -1064,7 +1098,7 @@
       "match_num": 99,
       "home_from": "winner_M91",
       "away_from": "winner_M92",
-      "home": null,
+      "home": "Norway",
       "away": null,
       "date_wib": "2026-07-12 04:00",
       "venue": "BMO Field, Toronto",

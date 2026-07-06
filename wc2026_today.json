@@ -1,33 +1,30 @@
 {
-  "date": "2026-07-05",
+  "date": "2026-07-06",
   "matches": [
     {
-      "match_index": 88,
+      "match_index": 90,
       "group": null,
-      "home": "Paraguay",
-      "away": "France",
-      "date_wib": "2026-07-05 04:00",
-      "venue": "Lincoln Financial Field, Philadelphia",
+      "home": "Brazil",
+      "away": "Norway",
+      "date_wib": "2026-07-06 03:00",
+      "venue": "MetLife Stadium, East Rutherford",
       "status": "FT",
       "score": {
-        "home": 0,
-        "away": 1
+        "home": 1,
+        "away": 2
       },
-      "highlight": "https://www.youtube.com/watch?v=ModaKcd6cH8"
+      "highlight": "https://www.youtube.com/watch?v=sVjd-XMWlso"
     },
     {
-      "match_index": 89,
+      "match_index": 91,
       "group": null,
-      "home": "Canada",
-      "away": "Morocco",
-      "date_wib": "2026-07-05 00:00",
-      "venue": "NRG Stadium, Houston",
-      "status": "FT",
-      "score": {
-        "home": 0,
-        "away": 3
-      },
-      "highlight": "https://www.youtube.com/watch?v=ZREBLvA6SKU"
+      "home": "Mexico",
+      "away": "England",
+      "date_wib": "2026-07-06 07:00",
+      "venue": "Estadio Azteca, Mexico City",
+      "status": "scheduled",
+      "score": null,
+      "highlight": null
     }
   ]
 }
