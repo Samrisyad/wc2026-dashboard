@@ -4676,8 +4676,11 @@
       "away": "Egypt",
       "date_wib": "2026-07-07 23:00",
       "venue": "Mercedes-Benz Stadium, Atlanta",
-      "status": "scheduled",
-      "score": null,
+      "status": "LIVE",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
       "scorers": [],
       "assists": [],
       "cards": []
