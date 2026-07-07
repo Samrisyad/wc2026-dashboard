@@ -1,33 +1,41 @@
 {
-  "date": "2026-07-06",
+  "date": "2026-07-07",
   "matches": [
     {
-      "match_index": 90,
+      "match_index": 92,
       "group": null,
-      "home": "Brazil",
-      "away": "Norway",
-      "date_wib": "2026-07-06 03:00",
-      "venue": "MetLife Stadium, East Rutherford",
+      "home": "Portugal",
+      "away": "Spain",
+      "date_wib": "2026-07-07 02:00",
+      "venue": "AT&T Stadium, Arlington",
       "status": "FT",
       "score": {
-        "home": 1,
-        "away": 2
+        "home": 0,
+        "away": 1
       },
-      "highlight": "https://www.youtube.com/watch?v=sVjd-XMWlso"
+      "highlight": null
     },
     {
-      "match_index": 91,
+      "match_index": 93,
       "group": null,
-      "home": "Mexico",
-      "away": "England",
-      "date_wib": "2026-07-06 07:00",
-      "venue": "Estadio Azteca, Mexico City",
-      "status": "FT",
-      "score": {
-        "home": 2,
-        "away": 3
-      },
-      "highlight": "https://www.youtube.com/watch?v=guRLeUEydoM"
+      "home": "United States",
+      "away": "Belgium",
+      "date_wib": "2026-07-07 07:00",
+      "venue": "Lumen Field, Seattle",
+      "status": "scheduled",
+      "score": null,
+      "highlight": null
+    },
+    {
+      "match_index": 94,
+      "group": null,
+      "home": "Argentina",
+      "away": "Egypt",
+      "date_wib": "2026-07-07 23:00",
+      "venue": "Mercedes-Benz Stadium, Atlanta",
+      "status": "scheduled",
+      "score": null,
+      "highlight": null
     }
   ]
 }
