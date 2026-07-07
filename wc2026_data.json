@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-07 07:12 WIB",
+  "last_updated": "2026-07-07 13:10 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -4594,7 +4594,8 @@
           "minute": "90+1"
         }
       ],
-      "cards": []
+      "cards": [],
+      "highlight": "https://www.youtube.com/watch?v=iUGHD-ek2HQ"
     },
     {
       "stage": "R16",
@@ -4605,11 +4606,66 @@
       "away": "Belgium",
       "date_wib": "2026-07-07 07:00",
       "venue": "Lumen Field, Seattle",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
-      "cards": []
+      "status": "FT",
+      "score": {
+        "home": 1,
+        "away": 4
+      },
+      "scorers": [
+        {
+          "player": "Charles De Ketelaere",
+          "team": "Belgium",
+          "minute": 9
+        },
+        {
+          "player": "Malik Tillman",
+          "team": "United States",
+          "minute": 31
+        },
+        {
+          "player": "Charles De Ketelaere",
+          "team": "Belgium",
+          "minute": 33
+        },
+        {
+          "player": "Hans Vanaken",
+          "team": "Belgium",
+          "minute": 57
+        },
+        {
+          "player": "Romelu Lukaku",
+          "team": "Belgium",
+          "minute": "90+3"
+        }
+      ],
+      "assists": [
+        {
+          "player": "Nicolas Raskin",
+          "team": "Belgium",
+          "for": "Charles De Ketelaere",
+          "minute": 9
+        },
+        {
+          "player": "Leandro Trossard",
+          "team": "Belgium",
+          "for": "Charles De Ketelaere",
+          "minute": 33
+        },
+        {
+          "player": "Charles De Ketelaere",
+          "team": "Belgium",
+          "for": "Hans Vanaken",
+          "minute": 57
+        },
+        {
+          "player": "Hans Vanaken",
+          "team": "Belgium",
+          "for": "Romelu Lukaku",
+          "minute": "90+3"
+        }
+      ],
+      "cards": [],
+      "highlight": "https://www.youtube.com/watch?v=MSo1KfsUTeY"
     },
     {
       "stage": "R16",
@@ -4661,8 +4717,8 @@
       "match_num": 98,
       "home_from": "winner_M93",
       "away_from": "winner_M94",
-      "home": null,
-      "away": null,
+      "home": "Spain",
+      "away": "Belgium",
       "date_wib": "2026-07-11 02:00",
       "venue": "SoFi Stadium, Inglewood",
       "status": "scheduled",

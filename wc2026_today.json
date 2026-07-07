@@ -13,7 +13,7 @@
         "home": 0,
         "away": 1
       },
-      "highlight": null
+      "highlight": "https://www.youtube.com/watch?v=iUGHD-ek2HQ"
     },
     {
       "match_index": 93,
@@ -22,9 +22,12 @@
       "away": "Belgium",
       "date_wib": "2026-07-07 07:00",
       "venue": "Lumen Field, Seattle",
-      "status": "scheduled",
-      "score": null,
-      "highlight": null
+      "status": "FT",
+      "score": {
+        "home": 1,
+        "away": 4
+      },
+      "highlight": "https://www.youtube.com/watch?v=MSo1KfsUTeY"
     },
     {
       "match_index": 94,
