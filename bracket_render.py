@@ -83,7 +83,7 @@ def match_node(m, extra_class=''):
     """Single match card in bracket."""
     mn = m.get('match_num', '')
     status_cls = 'bn-ft' if m.get('status') == 'FT' else ('bn-live' if m.get('status') == 'LIVE' else '')
-    toggle = 'onclick="this.classList.toggle(\'open\')"' if (m.get('scorers') or m.get('cards')) else ''
+    toggle = 'onclick="showMatchDetail(this, event)"' if (m.get('scorers') or m.get('cards')) else ''
     clickable = 'bn-clickable' if (m.get('scorers') or m.get('cards')) else ''
     
     home_label = team_label(m.get('home'), m.get('home_from'))
@@ -407,7 +407,7 @@ def build_knockout_html(data):
   font-size: 11px;
 }
 
-.bn.open .bn-detail { display: block; }
+/* .bn-detail is always hidden — content is shown via .bn-popup floating overlay */
 .bn-event { padding: 1px 0; line-height: 1.4; }
 
 /* Third-place container */
@@ -426,7 +426,65 @@ def build_knockout_html(data):
   text-transform: uppercase;
   letter-spacing: .05em;
 }
-</style>'''
+
+.bn-popup {
+  position: absolute;
+  z-index: 9999;
+  background: var(--color-card, #fff);
+  border: 1px solid var(--color-border, #e0e0e0);
+  border-radius: 6px;
+  padding: 6px 8px;
+  font-size: 11px;
+  line-height: 1.5;
+  box-shadow: 0 4px 14px rgba(0,0,0,.18);
+  min-width: 160px;
+  max-width: 260px;
+  pointer-events: auto;
+}
+.bn-popup .bn-event { padding: 2px 0; }
+.bn-popup a { color: var(--color-accent, #2563eb); }
+</style>
+<script>
+(function() {
+  var _popup = null;
+  var _src = null;
+
+  function removePopup() {
+    if (_popup && _popup.parentNode) _popup.parentNode.removeChild(_popup);
+    _popup = null;
+    _src = null;
+  }
+
+  window.showMatchDetail = function(el, e) {
+    e.stopPropagation();
+    if (_src === el) { removePopup(); return; }
+    removePopup();
+    var detail = el.querySelector('.bn-detail');
+    if (!detail) return;
+    _popup = document.createElement('div');
+    _popup.className = 'bn-popup';
+    _popup.innerHTML = detail.innerHTML;
+    document.body.appendChild(_popup);
+    var rect = el.getBoundingClientRect();
+    var sY = window.pageYOffset || document.documentElement.scrollTop;
+    var sX = window.pageXOffset || document.documentElement.scrollLeft;
+    _popup.style.top  = (rect.bottom + sY + 4) + 'px';
+    _popup.style.left = (rect.left  + sX) + 'px';
+    _popup.style.width = Math.max(rect.width, 160) + 'px';
+    _src = el;
+    setTimeout(function() {
+      document.addEventListener('click', _outsideHandler);
+    }, 0);
+  };
+
+  function _outsideHandler(e) {
+    if (_popup && !_popup.contains(e.target)) {
+      removePopup();
+      document.removeEventListener('click', _outsideHandler);
+    }
+  }
+})();
+</script>'''
 
     html = f'''{css}
 <section id="knockout" class="section">
