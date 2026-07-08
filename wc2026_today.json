@@ -1,45 +1,17 @@
 {
-  "date": "2026-07-07",
+  "date": "2026-07-08",
   "matches": [
     {
-      "match_index": 92,
+      "match_index": 95,
       "group": null,
-      "home": "Portugal",
-      "away": "Spain",
-      "date_wib": "2026-07-07 02:00",
-      "venue": "AT&T Stadium, Arlington",
+      "home": "Switzerland",
+      "away": "Colombia",
+      "date_wib": "2026-07-08 03:00",
+      "venue": "BC Place, Vancouver",
       "status": "FT",
       "score": {
         "home": 0,
-        "away": 1
-      },
-      "highlight": "https://www.youtube.com/watch?v=iUGHD-ek2HQ"
-    },
-    {
-      "match_index": 93,
-      "group": null,
-      "home": "United States",
-      "away": "Belgium",
-      "date_wib": "2026-07-07 07:00",
-      "venue": "Lumen Field, Seattle",
-      "status": "FT",
-      "score": {
-        "home": 1,
-        "away": 4
-      },
-      "highlight": "https://www.youtube.com/watch?v=MSo1KfsUTeY"
-    },
-    {
-      "match_index": 94,
-      "group": null,
-      "home": "Argentina",
-      "away": "Egypt",
-      "date_wib": "2026-07-07 23:00",
-      "venue": "Mercedes-Benz Stadium, Atlanta",
-      "status": "LIVE",
-      "score": {
-        "home": 0,
-        "away": 1
+        "away": 0
       },
       "highlight": null
     }

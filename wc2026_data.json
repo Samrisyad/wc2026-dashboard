@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-07 13:10 WIB",
+  "last_updated": "2026-07-08 07:30 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -4676,14 +4676,85 @@
       "away": "Egypt",
       "date_wib": "2026-07-07 23:00",
       "venue": "Mercedes-Benz Stadium, Atlanta",
-      "status": "LIVE",
+      "status": "FT",
       "score": {
-        "home": 0,
-        "away": 1
+        "home": 3,
+        "away": 2
       },
-      "scorers": [],
-      "assists": [],
-      "cards": []
+      "scorers": [
+        {
+          "player": "Yasser Ibrahim",
+          "team": "Egypt",
+          "minute": 15
+        },
+        {
+          "player": "Mostafa Ziko",
+          "team": "Egypt",
+          "minute": 67
+        },
+        {
+          "player": "Cristian Romero",
+          "team": "Argentina",
+          "minute": 79
+        },
+        {
+          "player": "Lionel Messi",
+          "team": "Argentina",
+          "minute": 84
+        },
+        {
+          "player": "Enzo Fernández",
+          "team": "Argentina",
+          "minute": "90+2"
+        }
+      ],
+      "assists": [
+        {
+          "player": "Marwan Attia",
+          "team": "Egypt",
+          "for": "Yasser Ibrahim",
+          "minute": 15
+        },
+        {
+          "player": "Lionel Messi",
+          "team": "Argentina",
+          "for": "Cristian Romero",
+          "minute": 79
+        },
+        {
+          "player": "Gonzalo Montiel",
+          "team": "Argentina",
+          "for": "Lionel Messi",
+          "minute": 84
+        },
+        {
+          "player": "Lautaro Martínez",
+          "team": "Argentina",
+          "for": "Enzo Fernández",
+          "minute": "90+2"
+        }
+      ],
+      "cards": [
+        {
+          "player": "Mostafa Shobeir",
+          "team": "Egypt",
+          "type": "yellow",
+          "minute": null
+        },
+        {
+          "player": "Hamdy Fathy",
+          "team": "Egypt",
+          "type": "yellow",
+          "minute": null
+        },
+        {
+          "player": "Marwan Attia",
+          "team": "Egypt",
+          "type": "yellow",
+          "minute": null
+        }
+      ],
+      "highlight": "https://www.youtube.com/watch?v=-cIC4wcHJGs"
     },
     {
       "stage": "R16",
@@ -4694,8 +4765,16 @@
       "away": "Colombia",
       "date_wib": "2026-07-08 03:00",
       "venue": "BC Place, Vancouver",
-      "status": "scheduled",
-      "score": null,
+      "status": "FT",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "aet": true,
+      "pso": {
+        "home": 4,
+        "away": 3
+      },
       "scorers": [],
       "assists": [],
       "cards": []
@@ -4750,8 +4829,8 @@
       "match_num": 100,
       "home_from": "winner_M95",
       "away_from": "winner_M96",
-      "home": null,
-      "away": null,
+      "home": "Argentina",
+      "away": "Switzerland",
       "date_wib": "2026-07-12 08:00",
       "venue": "Hard Rock Stadium, Miami Gardens",
       "status": "scheduled",
