@@ -1,19 +1,4 @@
 {
-  "date": "2026-07-08",
-  "matches": [
-    {
-      "match_index": 95,
-      "group": null,
-      "home": "Switzerland",
-      "away": "Colombia",
-      "date_wib": "2026-07-08 03:00",
-      "venue": "BC Place, Vancouver",
-      "status": "FT",
-      "score": {
-        "home": 0,
-        "away": 0
-      },
-      "highlight": "https://www.youtube.com/watch?v=A1WKO3qa9to"
-    }
-  ]
+  "date": "2026-07-09",
+  "matches": []
 }
