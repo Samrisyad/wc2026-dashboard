@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-09 13:06 WIB",
+  "last_updated": "2026-07-10 07:14 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -4820,11 +4820,46 @@
       "away": "Morocco",
       "date_wib": "2026-07-10 03:00",
       "venue": "Gillette Stadium, Foxborough",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
-      "cards": []
+      "status": "FT",
+      "score": {
+        "home": 2,
+        "away": 0
+      },
+      "scorers": [
+        {
+          "player": "Kylian Mbappé",
+          "team": "France",
+          "minute": 60
+        },
+        {
+          "player": "Ousmane Dembélé",
+          "team": "France",
+          "minute": 66
+        }
+      ],
+      "assists": [
+        {
+          "player": "Désiré Doué",
+          "team": "France",
+          "for": "Kylian Mbappé",
+          "minute": 60
+        },
+        {
+          "player": "Kylian Mbappé",
+          "team": "France",
+          "for": "Ousmane Dembélé",
+          "minute": 66
+        }
+      ],
+      "cards": [
+        {
+          "player": "Issa Diop",
+          "team": "Morocco",
+          "type": "yellow",
+          "minute": null
+        }
+      ],
+      "highlight": "https://www.youtube.com/watch?v=iUgt40yUhtg"
     },
     {
       "stage": "QF",

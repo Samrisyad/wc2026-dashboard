@@ -1,4 +1,19 @@
 {
-  "date": "2026-07-09",
-  "matches": []
+  "date": "2026-07-10",
+  "matches": [
+    {
+      "match_index": 96,
+      "group": null,
+      "home": "France",
+      "away": "Morocco",
+      "date_wib": "2026-07-10 03:00",
+      "venue": "Gillette Stadium, Foxborough",
+      "status": "FT",
+      "score": {
+        "home": 2,
+        "away": 0
+      },
+      "highlight": "https://www.youtube.com/watch?v=iUgt40yUhtg"
+    }
+  ]
 }
