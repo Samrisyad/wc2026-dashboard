@@ -1,19 +1,19 @@
 {
-  "date": "2026-07-10",
+  "date": "2026-07-11",
   "matches": [
     {
-      "match_index": 96,
+      "match_index": 97,
       "group": null,
-      "home": "France",
-      "away": "Morocco",
-      "date_wib": "2026-07-10 03:00",
-      "venue": "Gillette Stadium, Foxborough",
+      "home": "Spain",
+      "away": "Belgium",
+      "date_wib": "2026-07-11 02:00",
+      "venue": "SoFi Stadium, Inglewood",
       "status": "FT",
       "score": {
         "home": 2,
-        "away": 0
+        "away": 1
       },
-      "highlight": "https://www.youtube.com/watch?v=iUgt40yUhtg"
+      "highlight": "https://www.youtube.com/watch?v=cVxqzP0mPcQ"
     }
   ]
 }

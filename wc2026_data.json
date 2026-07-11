@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-10 13:05 WIB",
+  "last_updated": "2026-07-11 07:15 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -4870,11 +4870,45 @@
       "away": "Belgium",
       "date_wib": "2026-07-11 02:00",
       "venue": "SoFi Stadium, Inglewood",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
-      "cards": []
+      "status": "FT",
+      "score": {
+        "home": 2,
+        "away": 1
+      },
+      "scorers": [
+        {
+          "player": "Fabián Ruiz",
+          "team": "Spain",
+          "minute": 30
+        },
+        {
+          "player": "Charles De Ketelaere",
+          "team": "Belgium",
+          "minute": 41
+        },
+        {
+          "player": "Mikel Merino",
+          "team": "Spain",
+          "minute": 88
+        }
+      ],
+      "assists": [
+        {
+          "player": "Timothy Castagne",
+          "team": "Belgium",
+          "for": "Charles De Ketelaere",
+          "minute": 41
+        }
+      ],
+      "cards": [
+        {
+          "player": "Pau Cubarsí",
+          "team": "Spain",
+          "type": "yellow",
+          "minute": 43
+        }
+      ],
+      "highlight": "https://www.youtube.com/watch?v=cVxqzP0mPcQ"
     },
     {
       "stage": "QF",
