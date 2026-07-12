@@ -8,8 +8,11 @@
       "away": "England",
       "date_wib": "2026-07-12 04:00",
       "venue": "BMO Field, Toronto",
-      "status": "scheduled",
-      "score": null,
+      "status": "FT",
+      "score": {
+        "home": 1,
+        "away": 2
+      },
       "highlight": null
     },
     {

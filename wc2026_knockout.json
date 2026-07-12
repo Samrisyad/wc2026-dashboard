@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-11 07:15 WIB",
+  "last_updated": "2026-07-12 07:10 WIB",
   "group_stage_complete": true,
   "group_stage_complete_since": "28 June 2026 WIB",
   "matches": [
@@ -1409,10 +1409,49 @@
       "away": "England",
       "date_wib": "2026-07-12 04:00",
       "venue": "BMO Field, Toronto",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
+      "status": "FT",
+      "score": {
+        "home": 1,
+        "away": 2
+      },
+      "aet": true,
+      "scorers": [
+        {
+          "player": "Andreas Schjelderup",
+          "team": "Norway",
+          "minute": 36
+        },
+        {
+          "player": "Jude Bellingham",
+          "team": "England",
+          "minute": "45+2"
+        },
+        {
+          "player": "Jude Bellingham",
+          "team": "England",
+          "minute": 93
+        }
+      ],
+      "assists": [
+        {
+          "player": "Martin Ødegaard",
+          "team": "Norway",
+          "for": "Andreas Schjelderup",
+          "minute": 36
+        },
+        {
+          "player": "Anthony Gordon",
+          "team": "England",
+          "for": "Jude Bellingham",
+          "minute": "45+2"
+        },
+        {
+          "player": "Morgan Rogers",
+          "team": "England",
+          "for": "Jude Bellingham",
+          "minute": 93
+        }
+      ],
       "cards": []
     },
     {
@@ -1450,7 +1489,7 @@
       "match_num": 102,
       "home_from": "winner_M99",
       "away_from": "winner_M100",
-      "home": null,
+      "home": "England",
       "away": null,
       "date_wib": "2026-07-16 02:00",
       "venue": "AT&T Stadium, Arlington",
