@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-12 07:10 WIB",
+  "last_updated": "2026-07-12 13:10 WIB",
   "group_stage_complete": true,
   "group_stage_complete_since": "28 June 2026 WIB",
   "matches": [
@@ -1452,7 +1452,8 @@
           "minute": 93
         }
       ],
-      "cards": []
+      "cards": [],
+      "highlight": "https://www.youtube.com/watch?v=NuNgBPlriCE"
     },
     {
       "stage": "QF",
@@ -1463,11 +1464,63 @@
       "away": "Switzerland",
       "date_wib": "2026-07-12 08:00",
       "venue": "Hard Rock Stadium, Miami Gardens",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
-      "cards": []
+      "status": "FT",
+      "score": {
+        "home": 3,
+        "away": 1
+      },
+      "scorers": [
+        {
+          "player": "Alexis Mac Allister",
+          "team": "Argentina",
+          "minute": 10
+        },
+        {
+          "player": "Dan Ndoye",
+          "team": "Switzerland",
+          "minute": 67
+        },
+        {
+          "player": "Julián Álvarez",
+          "team": "Argentina",
+          "minute": 112
+        },
+        {
+          "player": "Lautaro Martínez",
+          "team": "Argentina",
+          "minute": "120+1"
+        }
+      ],
+      "assists": [
+        {
+          "player": "Lionel Messi",
+          "team": "Argentina",
+          "for": "Alexis Mac Allister",
+          "minute": 10
+        },
+        {
+          "player": "Thiago Almada",
+          "team": "Argentina",
+          "for": "Lautaro Martínez",
+          "minute": "120+1"
+        }
+      ],
+      "cards": [
+        {
+          "player": "Breel Embolo",
+          "team": "Switzerland",
+          "type": "yellow",
+          "minute": 45
+        },
+        {
+          "player": "Breel Embolo",
+          "team": "Switzerland",
+          "type": "red",
+          "minute": 72
+        }
+      ],
+      "aet": true,
+      "highlight": "https://www.youtube.com/watch?v=18LdlzDgy6k"
     },
     {
       "stage": "SF",
@@ -1490,7 +1543,7 @@
       "home_from": "winner_M99",
       "away_from": "winner_M100",
       "home": "England",
-      "away": null,
+      "away": "Argentina",
       "date_wib": "2026-07-16 02:00",
       "venue": "AT&T Stadium, Arlington",
       "status": "scheduled",

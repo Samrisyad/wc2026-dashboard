@@ -13,7 +13,7 @@
         "home": 1,
         "away": 2
       },
-      "highlight": null
+      "highlight": "https://www.youtube.com/watch?v=NuNgBPlriCE"
     },
     {
       "match_index": 99,
@@ -22,9 +22,12 @@
       "away": "Switzerland",
       "date_wib": "2026-07-12 08:00",
       "venue": "Hard Rock Stadium, Miami Gardens",
-      "status": "scheduled",
-      "score": null,
-      "highlight": null
+      "status": "FT",
+      "score": {
+        "home": 3,
+        "away": 1
+      },
+      "highlight": "https://www.youtube.com/watch?v=18LdlzDgy6k"
     }
   ]
 }
