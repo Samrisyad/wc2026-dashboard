@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-12 13:10 WIB",
+  "last_updated": "2026-07-13 07:05 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -5053,7 +5053,7 @@
       "home_from": "winner_M99",
       "away_from": "winner_M100",
       "home": "England",
-      "away": null,
+      "away": "Argentina",
       "date_wib": "2026-07-16 02:00",
       "venue": "AT&T Stadium, Arlington",
       "status": "scheduled",

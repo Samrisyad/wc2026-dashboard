@@ -1,33 +1,4 @@
 {
-  "date": "2026-07-12",
-  "matches": [
-    {
-      "match_index": 98,
-      "group": null,
-      "home": "Norway",
-      "away": "England",
-      "date_wib": "2026-07-12 04:00",
-      "venue": "BMO Field, Toronto",
-      "status": "FT",
-      "score": {
-        "home": 1,
-        "away": 2
-      },
-      "highlight": "https://www.youtube.com/watch?v=NuNgBPlriCE"
-    },
-    {
-      "match_index": 99,
-      "group": null,
-      "home": "Argentina",
-      "away": "Switzerland",
-      "date_wib": "2026-07-12 08:00",
-      "venue": "Hard Rock Stadium, Miami Gardens",
-      "status": "FT",
-      "score": {
-        "home": 3,
-        "away": 1
-      },
-      "highlight": "https://www.youtube.com/watch?v=18LdlzDgy6k"
-    }
-  ]
+  "date": "2026-07-13",
+  "matches": []
 }
