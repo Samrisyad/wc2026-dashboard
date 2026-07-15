@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-14 13:05 WIB",
+  "last_updated": "2026-07-15 07:20 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -5041,11 +5041,39 @@
       "away": "Spain",
       "date_wib": "2026-07-15 02:00",
       "venue": "MetLife Stadium, East Rutherford",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
-      "cards": []
+      "status": "FT",
+      "score": {
+        "home": 0,
+        "away": 2
+      },
+      "scorers": [
+        {
+          "player": "Mikel Oyarzabal",
+          "team": "Spain",
+          "minute": 22
+        },
+        {
+          "player": "Pedro Porro",
+          "team": "Spain",
+          "minute": 58
+        }
+      ],
+      "assists": [
+        {
+          "player": "Dani Olmo",
+          "team": "Spain",
+          "for": "Pedro Porro",
+          "minute": 58
+        }
+      ],
+      "cards": [
+        {
+          "player": "Kylian Mbappe",
+          "team": "France",
+          "type": "yellow",
+          "minute": 86
+        }
+      ]
     },
     {
       "stage": "SF",
