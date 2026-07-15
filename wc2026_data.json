@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-15 07:20 WIB",
+  "last_updated": "2026-07-16 05:45 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -5073,7 +5073,8 @@
           "type": "yellow",
           "minute": 86
         }
-      ]
+      ],
+      "highlight": "https://www.youtube.com/watch?v=biVFNWSlqTg"
     },
     {
       "stage": "SF",
@@ -5084,18 +5085,69 @@
       "away": "Argentina",
       "date_wib": "2026-07-16 02:00",
       "venue": "AT&T Stadium, Arlington",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
-      "cards": []
+      "status": "FT",
+      "score": {
+        "home": 1,
+        "away": 2
+      },
+      "scorers": [
+        {
+          "player": "Anthony Gordon",
+          "team": "England",
+          "minute": 55
+        },
+        {
+          "player": "Enzo Fernández",
+          "team": "Argentina",
+          "minute": 85
+        },
+        {
+          "player": "Lautaro Martínez",
+          "team": "Argentina",
+          "minute": "90+2"
+        }
+      ],
+      "assists": [
+        {
+          "player": "Morgan Rogers",
+          "team": "England",
+          "for": "Anthony Gordon",
+          "minute": 55
+        },
+        {
+          "player": "Lionel Messi",
+          "team": "Argentina",
+          "for": "Enzo Fernández",
+          "minute": 85
+        },
+        {
+          "player": "Lionel Messi",
+          "team": "Argentina",
+          "for": "Lautaro Martínez",
+          "minute": "90+2"
+        }
+      ],
+      "cards": [
+        {
+          "player": "Elliot Anderson",
+          "team": "England",
+          "type": "yellow",
+          "minute": 37
+        },
+        {
+          "player": "Lisandro Martínez",
+          "team": "Argentina",
+          "type": "yellow",
+          "minute": 42
+        }
+      ]
     },
     {
       "stage": "3rd_place",
       "match_num": 103,
       "home_from": "loser_M101",
       "away_from": "loser_M102",
-      "home": null,
+      "home": "France",
       "away": null,
       "date_wib": "2026-07-19 04:00",
       "venue": "Hard Rock Stadium, Miami Gardens",
@@ -5110,7 +5162,7 @@
       "match_num": 104,
       "home_from": "winner_M101",
       "away_from": "winner_M102",
-      "home": null,
+      "home": "Spain",
       "away": null,
       "date_wib": "2026-07-20 02:00",
       "venue": "MetLife Stadium, East Rutherford",

@@ -1,16 +1,16 @@
 {
-  "date": "2026-07-15",
+  "date": "2026-07-16",
   "matches": [
     {
-      "match_index": 100,
+      "match_index": 101,
       "group": null,
-      "home": "France",
-      "away": "Spain",
-      "date_wib": "2026-07-15 02:00",
-      "venue": "MetLife Stadium, East Rutherford",
+      "home": "England",
+      "away": "Argentina",
+      "date_wib": "2026-07-16 02:00",
+      "venue": "AT&T Stadium, Arlington",
       "status": "FT",
       "score": {
-        "home": 0,
+        "home": 1,
         "away": 2
       },
       "highlight": null
