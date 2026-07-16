@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-16 05:45 WIB",
+  "last_updated": "2026-07-16 13:06 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -5140,7 +5140,8 @@
           "type": "yellow",
           "minute": 42
         }
-      ]
+      ],
+      "highlight": "https://www.youtube.com/watch?v=iwi9DDzVslw"
     },
     {
       "stage": "3rd_place",
@@ -5148,7 +5149,7 @@
       "home_from": "loser_M101",
       "away_from": "loser_M102",
       "home": "France",
-      "away": null,
+      "away": "England",
       "date_wib": "2026-07-19 04:00",
       "venue": "Hard Rock Stadium, Miami Gardens",
       "status": "scheduled",
@@ -5163,7 +5164,7 @@
       "home_from": "winner_M101",
       "away_from": "winner_M102",
       "home": "Spain",
-      "away": null,
+      "away": "Argentina",
       "date_wib": "2026-07-20 02:00",
       "venue": "MetLife Stadium, East Rutherford",
       "status": "scheduled",
