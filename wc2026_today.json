@@ -1,19 +1,4 @@
 {
-  "date": "2026-07-16",
-  "matches": [
-    {
-      "match_index": 101,
-      "group": null,
-      "home": "England",
-      "away": "Argentina",
-      "date_wib": "2026-07-16 02:00",
-      "venue": "AT&T Stadium, Arlington",
-      "status": "FT",
-      "score": {
-        "home": 1,
-        "away": 2
-      },
-      "highlight": "https://www.youtube.com/watch?v=iwi9DDzVslw"
-    }
-  ]
+  "date": "2026-07-17",
+  "matches": []
 }
