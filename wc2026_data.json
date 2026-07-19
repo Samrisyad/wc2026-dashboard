@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-18 15:51 WIB",
+  "last_updated": "2026-07-19 07:20 WIB",
   "groups": {
     "A": [
       "Mexico",
@@ -5152,10 +5152,96 @@
       "away": "England",
       "date_wib": "2026-07-19 04:00",
       "venue": "Hard Rock Stadium, Miami Gardens",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
+      "status": "FT",
+      "score": {
+        "home": 4,
+        "away": 6
+      },
+      "scorers": [
+        {
+          "player": "Declan Rice",
+          "team": "England",
+          "minute": 3
+        },
+        {
+          "player": "Ezri Konsa",
+          "team": "England",
+          "minute": 18
+        },
+        {
+          "player": "Bukayo Saka",
+          "team": "England",
+          "minute": 37
+        },
+        {
+          "player": "Bukayo Saka",
+          "team": "England",
+          "minute": "45+1"
+        },
+        {
+          "player": "Kylian Mbappé",
+          "team": "France",
+          "minute": 48
+        },
+        {
+          "player": "Bradley Barcola",
+          "team": "France",
+          "minute": 54
+        },
+        {
+          "player": "Kylian Mbappé",
+          "team": "France",
+          "minute": 66
+        },
+        {
+          "player": "Bukayo Saka",
+          "team": "England",
+          "minute": 87,
+          "penalty": true
+        },
+        {
+          "player": "Ousmane Dembélé",
+          "team": "France",
+          "minute": "90+6"
+        },
+        {
+          "player": "Jude Bellingham",
+          "team": "England",
+          "minute": "90+8"
+        }
+      ],
+      "assists": [
+        {
+          "player": "Declan Rice",
+          "team": "England",
+          "for": "Ezri Konsa",
+          "minute": 18
+        },
+        {
+          "player": "Marcus Rashford",
+          "team": "England",
+          "for": "Bukayo Saka",
+          "minute": 37
+        },
+        {
+          "player": "Eberechi Eze",
+          "team": "England",
+          "for": "Bukayo Saka",
+          "minute": "45+1"
+        },
+        {
+          "player": "Kylian Mbappé",
+          "team": "France",
+          "for": "Bradley Barcola",
+          "minute": 54
+        },
+        {
+          "player": "Michael Olise",
+          "team": "France",
+          "for": "Kylian Mbappé",
+          "minute": 66
+        }
+      ],
       "cards": []
     },
     {

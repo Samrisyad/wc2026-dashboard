@@ -1,4 +1,19 @@
 {
-  "date": "2026-07-18",
-  "matches": []
+  "date": "2026-07-19",
+  "matches": [
+    {
+      "match_index": 102,
+      "group": null,
+      "home": "France",
+      "away": "England",
+      "date_wib": "2026-07-19 04:00",
+      "venue": "Hard Rock Stadium, Miami Gardens",
+      "status": "FT",
+      "score": {
+        "home": 4,
+        "away": 6
+      },
+      "highlight": null
+    }
+  ]
 }
