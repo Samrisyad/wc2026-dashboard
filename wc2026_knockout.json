@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-19 13:06 WIB",
+  "last_updated": "2026-07-20 07:15 WIB",
   "group_stage_complete": true,
   "group_stage_complete_since": "28 June 2026 WIB",
   "matches": [
@@ -1743,11 +1743,59 @@
       "away": "Argentina",
       "date_wib": "2026-07-20 02:00",
       "venue": "MetLife Stadium, East Rutherford",
-      "status": "scheduled",
-      "score": null,
-      "scorers": [],
-      "assists": [],
-      "cards": []
+      "status": "FT",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "scorers": [
+        {
+          "player": "Ferran Torres",
+          "team": "Spain",
+          "minute": 106
+        }
+      ],
+      "assists": [
+        {
+          "player": "Nico Williams",
+          "team": "Spain",
+          "for": "Ferran Torres",
+          "minute": 106
+        }
+      ],
+      "cards": [
+        {
+          "player": "Lisandro Martínez",
+          "team": "Argentina",
+          "type": "yellow",
+          "minute": 40
+        },
+        {
+          "player": "Leandro Paredes",
+          "team": "Argentina",
+          "type": "yellow",
+          "minute": 52
+        },
+        {
+          "player": "Enzo Fernández",
+          "team": "Argentina",
+          "type": "yellow",
+          "minute": 83
+        },
+        {
+          "player": "Enzo Fernández",
+          "team": "Argentina",
+          "type": "yellow-red",
+          "minute": "90+3"
+        },
+        {
+          "player": "Leandro Paredes",
+          "team": "Argentina",
+          "type": "red",
+          "minute": "120+3"
+        }
+      ],
+      "highlight": "https://www.youtube.com/watch?v=U53sbAzbkYA"
     }
   ]
 }

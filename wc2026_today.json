@@ -1,19 +1,19 @@
 {
-  "date": "2026-07-19",
+  "date": "2026-07-20",
   "matches": [
     {
-      "match_index": 102,
+      "match_index": 103,
       "group": null,
-      "home": "France",
-      "away": "England",
-      "date_wib": "2026-07-19 04:00",
-      "venue": "Hard Rock Stadium, Miami Gardens",
+      "home": "Spain",
+      "away": "Argentina",
+      "date_wib": "2026-07-20 02:00",
+      "venue": "MetLife Stadium, East Rutherford",
       "status": "FT",
       "score": {
-        "home": 4,
-        "away": 6
+        "home": 1,
+        "away": 0
       },
-      "highlight": null
+      "highlight": "https://www.youtube.com/watch?v=U53sbAzbkYA"
     }
   ]
 }
