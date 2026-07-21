@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-20 13:10 WIB",
+  "last_updated": "2026-07-21 07:10 WIB",
   "group_stage_complete": true,
   "group_stage_complete_since": "28 June 2026 WIB",
   "matches": [
@@ -1732,7 +1732,8 @@
           "minute": 66
         }
       ],
-      "cards": []
+      "cards": [],
+      "highlight": "https://www.youtube.com/watch?v=aAM9P-EkQIA"
     },
     {
       "stage": "Final",
