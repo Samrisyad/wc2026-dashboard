@@ -61,6 +61,11 @@ def build_champion_html(data):
     venue      = final.get("venue", "")
     highlight  = final.get("highlight", "")
 
+    # Champion flag image (use flags dict from data)
+    champ_flag_code = data.get("flags", {}).get(champion, "")
+    champ_flag_img  = (f'<img src="https://flagcdn.com/48x36/{champ_flag_code}.png" '
+                       f'style="height:0.75em;vertical-align:middle;border-radius:3px;margin-right:8px;" alt="">')  if champ_flag_code else ""
+
     scorers  = final.get("scorers", [])
     assists  = final.get("assists", [])
     assists_map = {a["for"]: a["player"] for a in assists}
@@ -272,7 +277,7 @@ def build_champion_html(data):
 <div class="ch-banner">
   <div class="ch-eyebrow">🌍 FIFA World Cup 2026™ Champion</div>
   <div class="ch-trophy">🏆</div>
-  <div class="ch-team-name">🇪🇸 {champion.upper()}</div>
+  <div class="ch-team-name">{champ_flag_img}{champion.upper()}</div>
   <div class="ch-result">Final: {champion} {h_goals}–{a_goals} {runner_up} (AET)</div>
   {f'<div class="ch-goal">{goal_html}</div>' if goal_html else ''}
   <div class="ch-venue">📍 {venue} · 20 Jul 2026</div>
